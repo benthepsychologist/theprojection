@@ -36,5 +36,4 @@ blurb: 'MH is the #1-funded US therapeutic area (~$1.27B/14 deals to start 2026)
 
 - **~$1.27B/14 deals to start 2026** flowing to clinician-augmentation
   (psychiatry copilots, AI scribes, payer-aligned platforms) and
-  interventional psychiatry — NOT consumer chatbots. Directly relevant to
-  EFS/Mensio positioning. ⟨seed 2026-07-22⟩
+  interventional psychiatry — NOT consumer chatbots. ⟨seed 2026-07-22⟩
