@@ -1,0 +1,39 @@
+---
+title: Stargate / OpenAI-for-Countries AI infrastructure buildout
+lens: ai
+status: developing
+opened: 2026-06-28
+last_seen: 2026-07-21
+weight: 2
+entities:
+- openai
+- softbank
+- oracle
+- mgx
+thread_kind: project
+blurb: ~$500B / ~10 GW joint venture (OpenAI/SoftBank/Oracle/MGX); ~7 GW + >$400B
+  committed over 3 years; SoftBank carrying a $40B OpenAI loan; sovereign co-investment
+  via "OpenAI for Countries" (UAE live 2026; UK/Norway/Argentina/South Korea). Track
+  sites actually energized, financing/grid bottlenecks, sovereign terms, and slippage.
+---
+
+## 2026-07-21 — The financing gets a fee trail
+
+- **SoftBank's $40B OpenAI bridge loan is minting $100M+ in bank fees**
+  for JPMorgan/Goldman and co-underwriters — the loan named in this
+  thread's watch now has a visible cost of carry.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-21/jpmorgan-goldman-set-for-100-million-paydays-on-softbank-s-record-loan)) ⟨daily 2026-07-21⟩
+
+## ← Backstory
+
+## 2026-07-01 — Sovereign tranche landed
+
+- **SoftBank's $10B OpenAI tranche and MGX's $49B AI-fund close** both
+  landed, before kestrel's first window. ⟨seed 2026-07-22⟩
+
+## 2026-06-28 — Thread opened
+
+- **~7 GW + >$400B committed over 3 years**; UAE live via "OpenAI for
+  Countries" (UK/Norway/Argentina/South Korea in train); the single
+  biggest concentration of AI capital + sovereign money's entry point.
+  ⟨seed 2026-07-22⟩
