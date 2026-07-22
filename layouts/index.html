@@ -6,21 +6,22 @@
 <body>
 {{ partial "masthead.html" . }}
 
-{{ $site := .Site.Data.site }}
-<div class="feed">
-  {{ if $site }}
-    {{ range $i, $t := $site.threads }}
-    <div class="card{{ if eq (mod $i 3) 0 }} wide{{ end }}">
-      <span class="tag {{ $t.lens }}">{{ index (index $.Site.Params.lenses $t.lens) "label" }}</span>
-      <h3><a href="/threads/{{ $t.slug }}/">{{ $t.title }}</a></h3>
-      {{ with $t.blurb }}<p>{{ . }}</p>{{ end }}
-      <span class="meta">{{ upper $t.status }} · LAST SEEN {{ $t.last_seen }}</span>
-    </div>
-    {{ end }}
-  {{ else }}
-    <p style="grid-column:1/-1; color:var(--ink-faint);">No public threads yet — check back soon.</p>
-  {{ end }}
+{{ $p := .Site.Data.payload }}
+{{ if $p }}
+<p class="dateline" style="text-align:center;">Week of {{ $p.week_start }} · centered on {{ $p.today }}
+  · generated {{ $p.generated }} · {{ len $p.days }}/7 days in</p>
+<div class="chip-row" role="group" aria-label="Filter by lens">
+  <span class="chip on" data-lens="all">all lenses</span>
+  <span class="chip" data-lens="ai">AI</span>
+  <span class="chip" data-lens="money">Money</span>
+  <span class="chip" data-lens="mental-health">Mental Health</span>
 </div>
+<div id="dashboard" class="section" style="margin-top:1.6rem;"></div>
+<script id="tp-payload" type="application/json">{{ $p | jsonify }}</script>
+<script src="/js/dashboard.js" defer></script>
+{{ else }}
+<div class="feed"><p style="grid-column:1/-1; color:var(--ink-faint);">No published week yet — check back soon.</p></div>
+{{ end }}
 
 {{ partial "footer.html" . }}
 </body>

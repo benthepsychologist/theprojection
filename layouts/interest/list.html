@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+<div class="thread-header">
+  <h1>Interest</h1>
+  <p class="dek">Entity-tagged items that haven't become their own thread yet — candidates if they recur.</p>
+</div>
+
+{{/* .html is pre-sanitized by kestrel's md_html() at generation time — see
+     layouts/entities/single.html for the full trust-boundary note. */}}
+{{ $p := .Site.Data.payload }}
+{{ $loose := slice }}
+{{ range $p.items }}{{ if not .threads }}{{ $loose = $loose | append . }}{{ end }}{{ end }}
+<div class="section">
+  {{ if $loose }}
+  <ul class="items-list">
+    {{ range $loose }}
+    <li>{{ .html | safeHTML }}
+      <span class="item-meta">
+        {{ .day }}{{ if eq .day $p.today }} · <span class="new">NEW</span>{{ end }}
+        {{ range .entities }}
+          {{ $eslug := . }}{{ $ename := $eslug }}
+          {{ $m := where $p.entities "slug" $eslug }}{{ if $m }}{{ $ename = (index $m 0).name }}{{ end }}
+          <a class="chip ent" href="/entities/{{ $eslug }}/">{{ $ename }}</a>
+        {{ end }}
+      </span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p style="color:var(--ink-faint);">Nothing loose this week — everything's attached to a thread.</p>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

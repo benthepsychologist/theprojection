@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+{{ $slug := .File.ContentBaseName }}
+{{ $p := .Site.Data.payload }}
+{{/* .html below is pre-sanitized by kestrel's md_html() at generation time —
+     escaped first, then a fixed set of tags (b/a/code) re-added. Never
+     reader- or attacker-controlled input; same trust boundary the internal
+     kestrel tool already relies on. Safe to render as-is. */}}
+<div class="thread-header">
+  <h1>{{ .Title }}</h1>
+  <p class="dek">{{ .Params.entity_kind }}{{ with .Params.lenses }} · {{ delimit . ", " }}{{ end }}</p>
+</div>
+
+<div class="section">
+  <h2>Threads</h2>
+  {{ $threads := where $p.threads "entities" "intersect" (slice $slug) }}
+  {{ if $threads }}
+    {{ range $threads }}
+    <div class="qrow">
+      <span class="dash">·</span>
+      <span><a href="/threads/{{ .slug }}/">{{ .title }}</a> — {{ .status }} · last seen {{ .last_seen }}</span>
+    </div>
+    {{ end }}
+  {{ else }}
+    <p style="color:var(--ink-faint);">No threads tagged to this entity yet.</p>
+  {{ end }}
+</div>
+
+<div class="section">
+  <h2>Items this week</h2>
+  {{ $items := where $p.items "entities" "intersect" (slice $slug) }}
+  {{ if $items }}
+  <ul class="items-list">
+    {{ range $items }}
+    <li>{{ .html | safeHTML }}
+      <span class="item-meta">{{ .day }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+    <p style="color:var(--ink-faint);">Nothing tagged this week.</p>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

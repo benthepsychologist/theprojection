@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+<div class="thread-header">
+  <h1>Entities</h1>
+  <p class="dek">People, orgs, and topics referenced by this week's threads — grouped by lens.</p>
+</div>
+
+<div class="section">
+  {{ range $lensKey, $lensCfg := .Site.Params.lenses }}
+    {{ $inLens := where $.Pages "Params.lenses" "intersect" (slice $lensKey) }}
+    {{ if $inLens }}
+    <h2>{{ index $lensCfg "label" }}</h2>
+    <div class="entity-cloud" style="margin-bottom:1rem;">
+      {{ range $inLens.ByTitle }}
+        {{ $tag := "" }}{{ with .Params.entity_kind }}{{ $tag = . }}{{ end }}
+        <a class="chip ent" href="{{ .RelPermalink }}">{{ .Title }}{{ with $tag }} · {{ . }}{{ end }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  {{ end }}
+  {{ if not .Pages }}
+  <p style="color:var(--ink-faint);">No entities referenced yet.</p>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

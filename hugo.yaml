@@ -40,6 +40,12 @@ menus:
     - name: "Threads"
       url: "/threads/"
       weight: 1
+    - name: "Entities"
+      url: "/entities/"
+      weight: 2
+    - name: "Interest"
+      url: "/interest/"
+      weight: 3
     - name: "About"
       url: "/about/"
-      weight: 2
+      weight: 4
