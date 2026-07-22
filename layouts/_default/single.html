@@ -7,6 +7,10 @@
 {{ partial "masthead.html" . }}
 
 {{ if .Params.lens }}
+{{ $slug := .File.ContentBaseName }}
+{{ $p := .Site.Data.payload }}
+{{/* .html below is pre-sanitized by kestrel's md_html() at generation time —
+     see layouts/entities/single.html for the full trust-boundary note. */}}
 <div class="thread-header">
   <span class="tag {{ .Params.lens }}">{{ index (index .Site.Params.lenses .Params.lens) "label" }}</span>
   <h1>{{ .Title }}</h1>
@@ -15,12 +19,55 @@
     <span>STATUS · {{ upper .Params.status }}</span>
     <span>OPENED · {{ .Params.opened }}</span>
     <span>LAST SEEN · {{ .Params.last_seen }}</span>
-    {{ if .Params.entities }}<span>ENTITIES · {{ delimit .Params.entities ", " }}</span>{{ end }}
   </div>
+  {{ if .Params.entities }}
+  <div class="entity-cloud" style="margin-top:.8rem;">
+    {{ range .Params.entities }}
+      {{ $eslug := . }}{{ $ename := $eslug }}
+      {{ $m := where $p.entities "slug" $eslug }}{{ if $m }}{{ $ename = (index $m 0).name }}{{ end }}
+      <a class="chip ent" href="/entities/{{ $eslug }}/">{{ $ename }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
 </div>
+
+{{ $evidence := slice }}
+{{ range $p.items }}{{ if in (.threads | default slice) $slug }}{{ $evidence = $evidence | append . }}{{ end }}{{ end }}
+{{ if $evidence }}
+<div class="section">
+  <h2>This week's evidence</h2>
+  <ul class="items-list">
+    {{ range $evidence }}
+    <li>{{ .html | safeHTML }}
+      <span class="item-meta">{{ .day }}{{ if eq .day $p.today }} · <span class="new">NEW</span>{{ end }}</span>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
 <div class="timeline">
   {{ .Content }}
 </div>
+
+{{ $sibs := slice }}
+{{ range $p.threads }}
+  {{ if ne .slug $slug }}
+    {{ $shared := false }}
+    {{ range .entities }}{{ if in ($.Params.entities | default slice) . }}{{ $shared = true }}{{ end }}{{ end }}
+    {{ if $shared }}{{ $sibs = $sibs | append . }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ if $sibs }}
+<div class="section">
+  <h2>Related threads (shared entities)</h2>
+  {{ range $sibs }}
+  <div class="qrow"><span class="dash">·</span>
+    <span><a href="/threads/{{ .slug }}/">{{ .title }}</a></span>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
 {{ else }}
 <div class="thread-header">
   <h1>{{ .Title }}</h1>

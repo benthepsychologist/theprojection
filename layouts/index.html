@@ -17,7 +17,13 @@
   <span class="chip" data-lens="mental-health">Mental Health</span>
 </div>
 <div id="dashboard" class="section" style="margin-top:1.6rem;"></div>
-<script id="tp-payload" type="application/json">{{ $p | jsonify }}</script>
+{{/* jsonify alone would get quoted-as-a-JS-string-literal by Go's
+     html/template script-context auto-escaper (double-encoding — the bug
+     that shipped). safeJS stops that, but it also opts out of the
+     escaper's own </script>-breaking protection, so that guard has to be
+     applied by hand here instead, same fix render_read.py already uses
+     for the internal page's payload. */}}
+<script id="tp-payload" type="application/json">{{ (replace ($p | jsonify) "</" "<\\/") | safeJS }}</script>
 <script src="/js/dashboard.js" defer></script>
 {{ else }}
 <div class="feed"><p style="grid-column:1/-1; color:var(--ink-faint);">No published week yet — check back soon.</p></div>
