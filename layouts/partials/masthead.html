@@ -1,0 +1,11 @@
+<header class="masthead">
+  <img class="watermark" src="{{ .Site.Params.mark }}" alt="" aria-hidden="true">
+  <div class="inner">
+    <div class="mark"><img src="{{ .Site.Params.mark }}" alt="The Projection — a symmetric watercolor butterfly"></div>
+    <h1 class="wordmark"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></h1>
+    <p class="tagline">{{ .Site.Params.tagline }}</p>
+  </div>
+  <nav class="primary">
+    {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+  </nav>
+</header>

@@ -1,0 +1,45 @@
+baseURL: "https://theprojection.org"
+languageCode: "en-us"
+title: "The Projection"
+
+outputs:
+  home: ["HTML", "RSS"]
+  section: ["HTML", "RSS"]
+  page: ["HTML"]
+
+enableRobotsTXT: true
+disableKinds: ["taxonomy", "term"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+
+params:
+  tagline: "The surface is never the system."
+  description: >
+    Inference economics, governed infrastructure, and epistemics — read
+    through a clinical psychologist who builds software. Published from
+    kestrel, Ben's personal intelligence layer.
+  favicon: "/favicon.png"
+  mark: "/images/mark.png"
+
+  lenses:
+    ai:
+      label: "AI"
+      color: "#0070E0"
+    money:
+      label: "Money"
+      color: "#A86302"
+    mental-health:
+      label: "Mental Health"
+      color: "#E50B1E"
+
+menus:
+  main:
+    - name: "Threads"
+      url: "/threads/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2

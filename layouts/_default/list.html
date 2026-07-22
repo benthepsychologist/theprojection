@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+<div class="feed">
+  {{ range (.Pages.ByParam "last_seen").Reverse }}
+  <div class="card">
+    {{ if .Params.lens }}<span class="tag {{ .Params.lens }}">{{ index (index $.Site.Params.lenses .Params.lens) "label" }}</span>{{ end }}
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ with .Params.blurb }}<p>{{ . }}</p>{{ end }}
+    {{ if .Params.status }}<span class="meta">{{ upper .Params.status }} · LAST SEEN {{ .Params.last_seen }}</span>{{ end }}
+  </div>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+{{ if .Params.lens }}
+<div class="thread-header">
+  <span class="tag {{ .Params.lens }}">{{ index (index .Site.Params.lenses .Params.lens) "label" }}</span>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.blurb }}<p class="dek">{{ . }}</p>{{ end }}
+  <div class="thread-meta">
+    <span>STATUS · {{ upper .Params.status }}</span>
+    <span>OPENED · {{ .Params.opened }}</span>
+    <span>LAST SEEN · {{ .Params.last_seen }}</span>
+    {{ if .Params.entities }}<span>ENTITIES · {{ delimit .Params.entities ", " }}</span>{{ end }}
+  </div>
+</div>
+<div class="timeline">
+  {{ .Content }}
+</div>
+{{ else }}
+<div class="thread-header">
+  <h1>{{ .Title }}</h1>
+</div>
+<div class="timeline">
+  {{ .Content }}
+</div>
+{{ end }}
+
+{{ partial "footer.html" . }}
+</body>
+</html>

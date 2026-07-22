@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+{{ $site := .Site.Data.site }}
+<div class="feed">
+  {{ if $site }}
+    {{ range $i, $t := $site.threads }}
+    <div class="card{{ if eq (mod $i 3) 0 }} wide{{ end }}">
+      <span class="tag {{ $t.lens }}">{{ index (index $.Site.Params.lenses $t.lens) "label" }}</span>
+      <h3><a href="/threads/{{ $t.slug }}/">{{ $t.title }}</a></h3>
+      {{ with $t.blurb }}<p>{{ . }}</p>{{ end }}
+      <span class="meta">{{ upper $t.status }} · LAST SEEN {{ $t.last_seen }}</span>
+    </div>
+    {{ end }}
+  {{ else }}
+    <p style="grid-column:1/-1; color:var(--ink-faint);">No public threads yet — check back soon.</p>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+</body>
+</html>
