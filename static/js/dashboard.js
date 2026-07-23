@@ -13,6 +13,9 @@
   var LENSES = ["ai", "money", "mental-health"];
   var LENS_LABEL = { ai: "AI", money: "Money", "mental-health": "Mental Health" };
   var lensFilter = "all";
+  // set fresh on every render(); read by the "copy for AI chat" button so it
+  // always reflects whatever's currently on screen (incl. the lens filter).
+  var counts = {}, upByThread = {}, movers = [], quiet = [];
 
   function e(tag, cls, text) {
     var n = document.createElement(tag);
@@ -80,7 +83,7 @@
     });
 
     // rank threads by weight x move-size (weight amplifies, never fabricates)
-    var counts = {};
+    counts = {};
     P.items.forEach(function (it) {
       (it.threads || []).forEach(function (s) {
         counts[s] = counts[s] || { week: 0, today: 0 };
@@ -92,7 +95,7 @@
       var c = counts[t.slug] || { week: 0, today: 0 };
       return (t.weight || 2) * (c.today * 2 + c.week);
     }
-    var upByThread = {};
+    upByThread = {};
     (P.upcoming || []).forEach(function (u) {
       if (u.thread) (upByThread[u.thread] = upByThread[u.thread] || []).push(u);
     });
@@ -103,7 +106,7 @@
         return score(b) - score(a) || (b.weight || 2) - (a.weight || 2) ||
           (b.last_seen < a.last_seen ? -1 : 1);
       });
-    var movers = [], quiet = [];
+    movers = []; quiet = [];
     act.forEach(function (t) {
       var c = counts[t.slug] || { week: 0, today: 0 };
       var ups = upByThread[t.slug] || [];
@@ -268,4 +271,64 @@
     });
   });
   render();
+
+  // "Copy this week for AI chat" — data-driven (not DOM-walked, since the
+  // homepage already has the structured payload). Reuses counts/movers/
+  // quiet/upByThread, which render() keeps fresh on every re-render
+  // (including lens-filter changes), so the copy always matches the screen.
+  function itemText(it) {
+    if (!window.TPChatCopy) return (it.html || "").replace(/<[^>]+>/g, "");
+    var d = document.createElement("div");
+    d.innerHTML = it.html;
+    return window.TPChatCopy.domToText(d).replace(/\n+/g, " ").trim();
+  }
+  function buildWeeklyChatText() {
+    var L = [];
+    L.push("# The Projection — weekly read");
+    L.push("Week of " + P.week_start + " · centered on " + P.today + " · generated " + P.generated +
+      (lensFilter !== "all" ? " · filtered to " + LENS_LABEL[lensFilter] : ""));
+    var th = (P.throughlines || {})[P.today] || {};
+    LENSES.filter(lensOk).forEach(function (l) {
+      if (th[l]) L.push("\n**" + LENS_LABEL[l] + " today:** " + th[l]);
+    });
+    if (movers.length) {
+      L.push("\n## This week's highlights");
+      movers.slice(0, 5).forEach(function (t, i) {
+        var c = counts[t.slug] || { week: 0, today: 0 };
+        L.push((i + 1) + ". " + t.title + " — " + c.week + " this wk" +
+          (c.today ? ", " + c.today + " today" : ""));
+      });
+    }
+    if (movers.length) {
+      L.push("\n## Active threads");
+      movers.forEach(function (t) {
+        L.push("\n### " + t.title + " (" + (LENS_LABEL[t.lens] || t.lens) + ")");
+        P.items.filter(function (it) {
+          return lensOk(it.lens) && (it.threads || []).indexOf(t.slug) >= 0;
+        }).forEach(function (it) { L.push("- " + itemText(it)); });
+        (upByThread[t.slug] || []).forEach(function (u) {
+          L.push("⏳ due " + u.due + ": " + u.claim + " [" + u.status + "]");
+        });
+      });
+    }
+    if (quiet.length) {
+      L.push("\n## Quiet threads (no movement this week)");
+      quiet.forEach(function (t) { L.push("- " + t.title + " · last seen " + t.last_seen); });
+    }
+    var noThread = (P.upcoming || []).filter(function (u) { return !u.thread; });
+    if (noThread.length) {
+      L.push("\n## Also on the calendar");
+      noThread.forEach(function (u) { L.push("- " + u.due + ": " + u.claim + " [" + u.status + "]"); });
+    }
+    L.push("\n---\nI'm pasting The Projection's tracked weekly read (from kestrel, " +
+      "a personal intelligence feed). Ask me anything about these developments, " +
+      "or tell me what stands out.");
+    return L.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+  }
+  var weekBtn = document.getElementById("copy-chat-week");
+  if (weekBtn && window.TPChatCopy) {
+    weekBtn.addEventListener("click", function () {
+      window.TPChatCopy.copyToClipboard(buildWeeklyChatText(), weekBtn);
+    });
+  }
 })();

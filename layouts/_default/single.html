@@ -29,8 +29,14 @@
     {{ end }}
   </div>
   {{ end }}
+  <button class="copy-chat-btn" id="copy-chat-thread"
+    data-title="{{ .Title }}"
+    data-meta="Status: {{ upper .Params.status }} · Lens: {{ index (index .Site.Params.lenses .Params.lens) "label" }} · Opened: {{ .Params.opened }} · Last seen: {{ .Params.last_seen }}"
+    data-blurb="{{ .Params.blurb }}"
+    data-url="{{ .Permalink }}">💬 Copy for AI chat</button>
 </div>
 
+<div id="chat-copy-root">
 {{ $evidence := slice }}
 {{ range $p.items }}{{ if in (.threads | default slice) $slug }}{{ $evidence = $evidence | append . }}{{ end }}{{ end }}
 {{ if $evidence }}
@@ -48,6 +54,7 @@
 
 <div class="timeline">
   {{ .Content }}
+</div>
 </div>
 
 {{ $sibs := slice }}
@@ -76,6 +83,8 @@
   {{ .Content }}
 </div>
 {{ end }}
+
+<script src="/js/copy-chat.js" defer></script>
 
 {{ partial "footer.html" . }}
 </body>

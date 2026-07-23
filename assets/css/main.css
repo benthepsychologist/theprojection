@@ -211,6 +211,13 @@ details.quiet summary{ cursor:pointer; color:var(--ink-faint); font-size:.85rem;
 
 .entity-cloud{ display:flex; flex-wrap:wrap; gap:.4rem; }
 
+.copy-chat-btn{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.72rem; letter-spacing:.03em;
+  padding:.45rem .85rem; border:1px solid var(--rule); border-radius:999px; background:var(--paper);
+  color:var(--brand); cursor:pointer; margin-top:1rem; display:inline-block;
+}
+.copy-chat-btn:hover{ background:var(--brand-tint); border-color:var(--brand); }
+
 .calrow{ display:flex; gap:.8rem; align-items:baseline; padding:.6rem 0; border-bottom:1px solid var(--rule); font-size:.87rem; flex-wrap:wrap; }
 .calrow .due{ font-family:'IBM Plex Mono',ui-monospace,monospace; color:var(--ink-faint); white-space:nowrap; }
 .calrow .claim{ flex:1; min-width:200px; }
