@@ -2,8 +2,11 @@
 
 **theprojection.org** — a public, thread-centric read on AI inference
 economics, governed infrastructure, and epistemics. Published, not
-generated on the spot: every thread on this site was reviewed by hand
-before publication.
+generated on the spot: every thread is curated daily against dated
+evidence before it's ever tracked, and once it's tracked it publishes
+automatically — no separate manual approve-before-it-goes-live step. See
+[`/about/`](https://theprojection.org/about/) for the human-facing version
+of this and the full picture of how it's used.
 
 This repo is the **published surface only**. It is generated and pushed by
 a separate private tool (kestrel) — nothing about how threads are collected,
@@ -27,11 +30,13 @@ and should not be hand-edited — edits belong upstream.
 | path | what |
 | --- | --- |
 | `hugo.yaml` | site config — lens labels/colors, menus, tagline |
-| `data/site.json` | homepage feed data — **generated**, do not hand-edit |
-| `content/threads/*.md` | one page per published thread — **generated**, do not hand-edit |
+| `data/payload.json` | homepage feed data — **generated**, do not hand-edit |
+| `content/threads/*.md`, `content/entities/*.md` | one page per published thread/entity — **generated**, do not hand-edit |
 | `content/about.md` | the one hand-authored page |
 | `layouts/` | homepage, thread page, list page, shared partials |
 | `assets/css/main.css` | the whole brand system — palette sampled from the mark, see `/about/` |
+| `static/js/dashboard.js` | homepage renderer — highlights strip, ranked/collapsible thread cards |
+| `static/js/copy-chat.js` | "copy for AI chat" — packages a thread (or the whole week) to the clipboard, no backend |
 | `static/images/mark.png` | the logo (background already transparent) |
 | `static/fonts/` | self-hosted webfont files |
 
