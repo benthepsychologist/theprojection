@@ -55,26 +55,58 @@
   function hostname(url) {
     try { return new URL(url).hostname.replace(/^www\./, ""); } catch (e) { return null; }
   }
-  // Cheap per-item visual: the source domain's favicon. No backend, no
-  // CORS issue (plain <img>), nothing cached — an item that ages out of
-  // this week's payload just stops rendering one, nothing to clean up.
-  // "Don't worry if it breaks" (Ben) — onerror just hides it.
-  function favicon(url) {
-    var h = hostname(url);
-    if (!h) return null;
-    var img = document.createElement("img");
-    img.className = "favicon";
-    img.src = "https://www.google.com/s2/favicons?domain=" + h + "&sz=32";
-    img.alt = "";
-    img.loading = "lazy";
-    img.onerror = function () { img.style.display = "none"; };
-    return img;
+  // Real per-article thumbnail (it.img — captured server-side, og:image
+  // with a twitter:image fallback) when there is one; otherwise a colored
+  // tile (deterministic per source domain, so a given outlet always reads
+  // the same) with that domain's favicon centered at real size — not the
+  // tiny 14px afterthought this used to be. "Don't worry if it breaks"
+  // (Ben) — a failed image load just swaps to the fallback tile.
+  function feedThumb(it) {
+    var wrap = e("div", "feed-thumb");
+    if (it.img) {
+      var img = document.createElement("img");
+      img.src = it.img;
+      img.alt = "";
+      img.loading = "lazy";
+      img.onerror = function () {
+        if (img.parentNode) img.parentNode.removeChild(img);
+        wrap.appendChild(fallbackTile(it));
+      };
+      wrap.appendChild(img);
+    } else {
+      wrap.appendChild(fallbackTile(it));
+    }
+    return wrap;
   }
-  function itemLi(it, showDay) {
-    var li = e("li");
-    var fi = it.url && favicon(it.url);
-    if (fi) li.appendChild(fi);
-    li.appendChild(frag(it.html));
+  function fallbackTile(it) {
+    var host = it.url && hostname(it.url);
+    var tile = e("div", "feed-thumb-fallback");
+    var hue = hashHue(host || it.lens || "x");
+    tile.style.background = "linear-gradient(135deg, hsl(" + hue + ",55%,42%), hsl(" +
+      ((hue + 40) % 360) + ",60%,28%))";
+    if (host) {
+      var fi = document.createElement("img");
+      fi.className = "favicon-lg";
+      fi.src = "https://www.google.com/s2/favicons?domain=" + host + "&sz=64";
+      fi.alt = "";
+      fi.loading = "lazy";
+      fi.onerror = function () { fi.style.display = "none"; };
+      tile.appendChild(fi);
+    }
+    return tile;
+  }
+  // A feed-card, not a list row — real space, one click target for the
+  // whole row (not just the tiny "Source" link buried in the sentence).
+  function feedItem(it, showDay) {
+    var row = e("div", "feed-item");
+    var thumbLink = e("a", "feed-thumb-link");
+    if (it.url) { thumbLink.href = it.url; thumbLink.target = "_blank"; thumbLink.rel = "noopener"; }
+    else thumbLink.href = "#";
+    thumbLink.appendChild(feedThumb(it));
+    row.appendChild(thumbLink);
+
+    var body = e("div", "feed-body");
+    body.appendChild(frag(it.html));
     var meta = e("div", "item-meta");
     var bits = [];
     if (showDay) bits.push(it.day);
@@ -88,8 +120,20 @@
     (it.entities || []).forEach(function (s) {
       meta.appendChild(link("/entities/" + s + "/", entName(s), "chip ent"));
     });
-    li.appendChild(meta);
-    return li;
+    body.appendChild(meta);
+    row.appendChild(body);
+
+    // whole-row click-through (Ben: "not enticed to click on anything") —
+    // real links/buttons inside (the source link in it.html, thread/entity
+    // chips) keep their own behavior; anywhere else opens the article.
+    if (it.url) {
+      row.addEventListener("click", function (ev) {
+        if (ev.target.closest("a, button")) return;
+        ev.stopPropagation();
+        window.open(it.url, "_blank", "noopener");
+      });
+    }
+    return row;
   }
   // Deterministic per-thread "art" — no image to source, no network call,
   // never breaks: a small gradient strip seeded by the slug so each thread
@@ -252,16 +296,16 @@
 
       var wk = weekItemsFor(t);
       if (wk.length) {
-        var headlines = e("ul", "headlines");
-        wk.slice(0, 2).forEach(function (it) { headlines.appendChild(itemLi(it, true)); });
+        var headlines = e("div", "headlines feed-list");
+        wk.slice(0, 2).forEach(function (it) { headlines.appendChild(feedItem(it, true)); });
         card.appendChild(headlines);
         var rest = wk.slice(2);
         if (rest.length) {
           card.appendChild(e("div", "evidence-toggle-line",
             "+ " + rest.length + " more update" + (rest.length === 1 ? "" : "s") + " — tap to expand"));
           var body = e("div", "evidence-body");
-          var ul = e("ul", "evidence");
-          rest.forEach(function (it) { ul.appendChild(itemLi(it, true)); });
+          var ul = e("div", "evidence feed-list");
+          rest.forEach(function (it) { ul.appendChild(feedItem(it, true)); });
           body.appendChild(ul);
           card.appendChild(body);
         }
@@ -335,8 +379,8 @@
       lede.appendChild(link("/interest/", "Interest"));
       lede.appendChild(document.createTextNode(" page."));
       lsec.appendChild(lede);
-      var ul2 = e("ul", "items-list");
-      loose.slice(0, 8).forEach(function (it) { ul2.appendChild(itemLi(it, true)); });
+      var ul2 = e("div", "items-list feed-list");
+      loose.slice(0, 8).forEach(function (it) { ul2.appendChild(feedItem(it, true)); });
       lsec.appendChild(ul2);
       root.appendChild(lsec);
     }

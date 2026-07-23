@@ -56,15 +56,26 @@
 {{ if $evidence }}
 <div class="section">
   <h2>This week's evidence</h2>
-  <ul class="items-list">
+  <div class="feed-list">
     {{ range $evidence }}
     {{ $host := "" }}
     {{ with .url }}{{ with urls.Parse . }}{{ $host = .Host }}{{ end }}{{ end }}
-    <li>{{ if $host }}<img class="favicon" src="https://www.google.com/s2/favicons?domain={{ $host }}&sz=32" alt="" loading="lazy" onerror="this.style.display='none'">{{ end }}{{ .html | safeHTML }}
-      <span class="item-meta">{{ .day }}{{ if eq .day $p.today }} · <span class="new">NEW</span>{{ end }}</span>
-    </li>
+    <div class="feed-item" {{ with .url }}data-url="{{ . }}"{{ end }}>
+      <a class="feed-thumb-link" href="{{ .url | default "#" }}" {{ if .url }}target="_blank" rel="noopener"{{ end }}>
+        <div class="feed-thumb">
+          <div class="feed-thumb-fallback">
+            {{ if $host }}<img class="favicon-lg" src="https://www.google.com/s2/favicons?domain={{ $host }}&sz=64" alt="" loading="lazy" onerror="this.style.display='none'">{{ end }}
+          </div>
+          {{ with .img }}<img src="{{ . }}" alt="" loading="lazy" onerror="this.style.display='none'">{{ end }}
+        </div>
+      </a>
+      <div class="feed-body">
+        {{ .html | safeHTML }}
+        <span class="item-meta">{{ .day }}{{ if eq .day $p.today }} · <span class="new">NEW</span>{{ end }}</span>
+      </div>
+    </div>
     {{ end }}
-  </ul>
+  </div>
 </div>
 {{ end }}
 

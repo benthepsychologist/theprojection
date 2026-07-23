@@ -85,6 +85,15 @@
     for (var i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
     return h % 360;
   }
+  // Whole-row click-through for server-rendered feed items (thread pages) —
+  // same behavior as the JS-built homepage cards. The thumbnail is already
+  // its own <a>; this just extends the click target to the rest of the row.
+  document.addEventListener("click", function (ev) {
+    var row = ev.target.closest(".feed-item[data-url]");
+    if (!row || ev.target.closest("a, button")) return;
+    window.open(row.getAttribute("data-url"), "_blank", "noopener");
+  });
+
   document.addEventListener("DOMContentLoaded", function () {
     var art = document.querySelector(".thread-art[data-slug]");
     if (art) {

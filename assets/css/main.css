@@ -22,7 +22,7 @@
   --ink:#171410; --ink-body:#3A352E; --ink-faint:#7A7469;
   --brand:#E01279; --brand-tint:#FCE7F2;
   --lens-ai:#0070E0; --lens-money:#A86302; --lens-mh:#E50B1E;
-  --max-width:900px;
+  --max-width:960px;
 }
 
 *{ box-sizing:border-box; }
@@ -157,78 +157,100 @@ a.chip{ text-decoration:none; }
 .verdict p{ margin:0; font-size:.9rem; color:var(--ink-body); }
 
 .tcard{
-  background:var(--paper); border:1px solid var(--rule); border-radius:5px;
-  padding:0 1.1rem 1rem; margin-bottom:.9rem; cursor:pointer; overflow:hidden;
+  background:var(--paper); border:1px solid var(--rule); border-radius:7px;
+  padding:0 1.3rem 1.3rem; margin-bottom:1.3rem; cursor:pointer; overflow:hidden;
 }
-.tcard.meta{ border-color:var(--brand); border-width:1.5px; }
+.tcard.meta{ border-color:var(--brand); border-width:2px; }
 .tcard .tart{
-  height:8px; margin:0 -1.1rem .8rem; background-size:cover; background-position:center;
+  height:10px; margin:0 -1.3rem 1rem; background-size:cover; background-position:center;
 }
 .tcard .thead{ display:flex; justify-content:space-between; align-items:baseline; gap:.8rem; flex-wrap:wrap; }
-.tcard .thead a{ font-family:'Piazzolla',Georgia,serif; font-weight:700; font-size:1.08rem; color:var(--ink); }
-.tcard .thead .lens{ font-size:.78rem; color:var(--ink-faint); }
+.tcard .thead a{ font-family:'Piazzolla',Georgia,serif; font-weight:700; font-size:1.32rem; color:var(--ink); }
+.tcard .thead .lens{ font-size:.82rem; color:var(--ink-faint); }
 .tcard .count{
-  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.7rem; color:var(--brand);
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.76rem; color:var(--brand);
   white-space:nowrap; font-variant-numeric:tabular-nums;
 }
 .tcard .breadcrumb{
-  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.68rem; color:var(--ink-faint);
-  margin-top:.3rem;
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.72rem; color:var(--ink-faint);
+  margin-top:.35rem;
 }
 .tcard .breadcrumb a{ color:var(--brand); }
 .tcard .tsummary{
-  font-size:.87rem; color:var(--ink-body); margin:.5rem 0 0; max-width:none;
-  font-family:'Newsreader',Georgia,serif; font-style:italic;
+  font-size:1rem; color:var(--ink-body); margin:.6rem 0 0; max-width:none;
+  font-family:'Newsreader',Georgia,serif; font-style:italic; line-height:1.5;
 }
-.tcard .subthreads{ display:flex; flex-wrap:wrap; gap:.35rem; margin-top:.6rem; }
-.tcard ul.headlines{ margin:.6rem 0 0; padding-left:1.1rem; }
-.tcard ul.headlines li{ font-size:.87rem; margin-bottom:.5rem; }
-.tcard ul.evidence{ margin:.5rem 0 0; padding-left:1.1rem; }
-.tcard ul.evidence li{ font-size:.85rem; margin-bottom:.45rem; }
+.tcard .subthreads{ display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.7rem; }
+.tcard .subthreads .chip{ font-size:.78rem; padding:.35rem .8rem; }
+
+/* ---------- feed cards (the item, not the thread) ---------- */
+.feed-list{ margin-top:.8rem; display:flex; flex-direction:column; gap:.9rem; }
+.feed-item{
+  display:flex; gap:.9rem; align-items:flex-start; padding:.6rem; margin:0 -.6rem;
+  border-radius:6px; transition:background .12s ease; cursor:pointer;
+}
+.feed-item:hover{ background:var(--paper-dim); }
+.feed-thumb-link{ flex:none; display:block; }
+.feed-thumb, .feed-thumb-fallback{
+  width:clamp(76px,22vw,116px); height:clamp(76px,22vw,116px); border-radius:6px;
+  overflow:hidden; background:var(--paper-dim); display:flex; align-items:center; justify-content:center;
+}
+.feed-thumb{ position:relative; }
+/* A real <img> sibling always covers the fallback tile beneath — used on
+   the server-rendered thread page, where both exist in the DOM at once
+   so a broken image (onerror hides it) just reveals the tile underneath
+   with no JS needed to swap anything. The JS-built homepage version only
+   ever has one child, so this is a no-op there. */
+.feed-thumb > img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+.feed-thumb-fallback{
+  background:linear-gradient(135deg, var(--brand) 0%, #22262c 100%);
+}
+.favicon-lg{ width:34%; height:34%; border-radius:6px; filter:drop-shadow(0 1px 3px rgba(0,0,0,.35)); }
+.feed-body{ flex:1; min-width:0; padding-top:.1rem; }
+.feed-body strong{ font-size:1.06rem; }
+.feed-body p, .feed-body{ font-size:1rem; line-height:1.55; }
+.feed-item .item-meta{ margin-top:.5rem; }
+
 .tcard .evidence-toggle-line{
-  margin-top:.5rem; font-size:.78rem; color:var(--brand);
+  margin-top:.7rem; font-size:.85rem; color:var(--brand); font-weight:600;
   font-family:'IBM Plex Mono',ui-monospace,monospace;
 }
 .tcard .evidence-body{ display:none; }
 .tcard.expanded .evidence-body{ display:block; }
 .tcard.expanded .evidence-toggle-line{ display:none; }
 .tcard .pending-toggle{
-  display:block; margin-top:.6rem; padding:0; border:none; background:none; cursor:pointer;
-  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.78rem; color:var(--lens-mh);
+  display:block; margin-top:.8rem; padding:0; border:none; background:none; cursor:pointer;
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.84rem; font-weight:600; color:var(--lens-mh);
 }
 .tcard .pending-body{ display:none; }
-.tcard.pending-open .pending-body{ display:block; margin-top:.3rem; }
+.tcard.pending-open .pending-body{ display:block; margin-top:.4rem; }
 .tcard .copy-chat-btn.small{
-  margin-top:.7rem; font-size:.66rem; padding:.3rem .65rem; display:inline-block;
-}
-.favicon{
-  width:14px; height:14px; border-radius:2px; vertical-align:-2px; margin-right:.35rem;
-  background:var(--paper-dim);
+  margin-top:.9rem; font-size:.7rem; padding:.35rem .75rem; display:inline-block;
 }
 
 .highlights{ margin-top:1.8rem; }
 .highlight-list{ list-style:none; margin:0; padding:0; counter-reset:hl; }
 .highlight-row{
-  counter-increment:hl; display:flex; gap:.7rem; align-items:baseline;
-  padding:.55rem 0; border-bottom:1px dotted var(--rule); font-size:.92rem;
+  counter-increment:hl; display:flex; gap:.8rem; align-items:baseline;
+  padding:.7rem 0; border-bottom:1px dotted var(--rule); font-size:1.02rem;
 }
 .highlight-row::before{
   content:counter(hl); font-family:'IBM Plex Mono',ui-monospace,monospace;
-  color:var(--brand); font-size:.8rem; min-width:1.1rem;
+  color:var(--brand); font-size:.85rem; min-width:1.2rem;
 }
-.highlight-row .weight-dots{ color:var(--brand); font-size:.75rem; white-space:nowrap; }
+.highlight-row .weight-dots{ color:var(--brand); font-size:.8rem; white-space:nowrap; }
 .highlight-row .grow{ flex:1; }
 .highlight-row .grow a{ font-weight:600; color:var(--ink); }
 .highlight-row .hmeta{
-  display:block; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.68rem;
-  color:var(--ink-faint); margin-top:.1rem;
+  display:block; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.72rem;
+  color:var(--ink-faint); margin-top:.15rem;
 }
 .item-meta{
-  display:block; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.64rem;
+  display:block; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.7rem;
   color:var(--ink-faint); margin-top:.2rem;
 }
 .item-meta .new{ color:var(--brand); font-weight:600; }
-.item-meta a.chip{ font-size:.62rem; padding:.05rem .4rem; margin-right:.2rem; }
+.item-meta a.chip{ font-size:.68rem; padding:.1rem .5rem; margin-right:.25rem; }
 .exp-row{ display:flex; gap:.6rem; align-items:baseline; font-size:.82rem; margin-top:.5rem; flex-wrap:wrap; }
 .exp-row .due{ font-family:'IBM Plex Mono',ui-monospace,monospace; color:var(--ink-faint); white-space:nowrap; }
 .exp-row .grow{ flex:1; min-width:180px; }
