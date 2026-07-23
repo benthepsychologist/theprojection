@@ -97,20 +97,49 @@
       if (u.thread) (upByThread[u.thread] = upByThread[u.thread] || []).push(u);
     });
 
-    var tsec = e("div", "section");
-    tsec.appendChild(e("h2", "", "🧵 Active threads this week"));
     var act = P.threads
       .filter(function (t) { return lensOk(t.lens) && t.status !== "resolved"; })
       .sort(function (a, b) {
         return score(b) - score(a) || (b.weight || 2) - (a.weight || 2) ||
           (b.last_seen < a.last_seen ? -1 : 1);
       });
-    var quiet = [];
+    var movers = [], quiet = [];
     act.forEach(function (t) {
       var c = counts[t.slug] || { week: 0, today: 0 };
       var ups = upByThread[t.slug] || [];
-      if (!c.week && !ups.length) { quiet.push(t); return; }
+      if (!c.week && !ups.length) quiet.push(t);
+      else movers.push(t);
+    });
+
+    // highlights strip — the top movers, ranked, one line each, before any
+    // full-card detail. This is the "read this if nothing else" summary.
+    if (movers.length) {
+      var hsec = e("div", "section highlights");
+      hsec.appendChild(e("h2", "", "✨ This week's highlights"));
+      var hol = e("ol", "highlight-list");
+      movers.slice(0, 5).forEach(function (t) {
+        var c = counts[t.slug] || { week: 0, today: 0 };
+        var li = e("li", "highlight-row");
+        li.appendChild(e("span", "weight-dots", dots(t.weight)));
+        var g = e("span", "grow");
+        g.appendChild(link("#tcard-" + t.slug, t.title));
+        var meta = e("span", "hmeta", (c.today ? c.today + " new today · " : "") +
+          c.week + " this wk · " + (LENS_LABEL[t.lens] || t.lens));
+        g.appendChild(meta);
+        li.appendChild(g);
+        hol.appendChild(li);
+      });
+      hsec.appendChild(hol);
+      root.appendChild(hsec);
+    }
+
+    var tsec = e("div", "section");
+    tsec.appendChild(e("h2", "", "🧵 Active threads this week"));
+    movers.forEach(function (t, idx) {
+      var c = counts[t.slug] || { week: 0, today: 0 };
+      var ups = upByThread[t.slug] || [];
       var card = e("div", "tcard");
+      card.id = "tcard-" + t.slug;
       var head = e("div", "thead");
       head.appendChild(link("/threads/" + t.slug + "/", t.title));
       head.appendChild(e("span", "count", dots(t.weight) + "  " +
@@ -122,9 +151,16 @@
         return lensOk(it.lens) && (it.threads || []).indexOf(t.slug) >= 0;
       });
       if (wk.length) {
+        // top 2 movers open by default (the highlights strip already named
+        // them); the rest collapse — keeps the page short on mobile while
+        // still reachable, not hidden.
+        var det = e("details", "evidence-toggle");
+        if (idx < 2) det.open = true;
+        det.appendChild(e("summary", "", wk.length + " update" + (wk.length === 1 ? "" : "s") + " this week"));
         var ul = e("ul", "evidence");
         wk.forEach(function (it) { ul.appendChild(itemLi(it, true)); });
-        card.appendChild(ul);
+        det.appendChild(ul);
+        card.appendChild(det);
       }
       ups.forEach(function (u) {
         var r = e("div", "exp-row");

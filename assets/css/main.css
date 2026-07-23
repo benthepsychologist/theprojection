@@ -161,6 +161,30 @@ a.chip{ text-decoration:none; }
 .tcard .latest .tdate{ font-family:'IBM Plex Mono',ui-monospace,monospace; color:var(--ink-faint); }
 .tcard ul.evidence{ margin:.6rem 0 0; padding-left:1.1rem; }
 .tcard ul.evidence li{ font-size:.85rem; margin-bottom:.45rem; }
+.tcard details.evidence-toggle{ margin-top:.5rem; }
+.tcard details.evidence-toggle summary{
+  cursor:pointer; font-size:.82rem; color:var(--ink-faint);
+  font-family:'IBM Plex Mono',ui-monospace,monospace;
+}
+.tcard details.evidence-toggle[open] summary{ margin-bottom:.2rem; }
+
+.highlights{ margin-top:1.8rem; }
+.highlight-list{ list-style:none; margin:0; padding:0; counter-reset:hl; }
+.highlight-row{
+  counter-increment:hl; display:flex; gap:.7rem; align-items:baseline;
+  padding:.55rem 0; border-bottom:1px dotted var(--rule); font-size:.92rem;
+}
+.highlight-row::before{
+  content:counter(hl); font-family:'IBM Plex Mono',ui-monospace,monospace;
+  color:var(--brand); font-size:.8rem; min-width:1.1rem;
+}
+.highlight-row .weight-dots{ color:var(--brand); font-size:.75rem; white-space:nowrap; }
+.highlight-row .grow{ flex:1; }
+.highlight-row .grow a{ font-weight:600; color:var(--ink); }
+.highlight-row .hmeta{
+  display:block; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.68rem;
+  color:var(--ink-faint); margin-top:.1rem;
+}
 .item-meta{
   display:block; font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.64rem;
   color:var(--ink-faint); margin-top:.2rem;
