@@ -11,10 +11,24 @@
 {{ $p := .Site.Data.payload }}
 {{/* .html below is pre-sanitized by kestrel's md_html() at generation time —
      see layouts/entities/single.html for the full trust-boundary note. */}}
+<div class="thread-art" data-slug="{{ $slug }}" data-lens="{{ .Params.lens }}"></div>
 <div class="thread-header">
   <span class="tag {{ .Params.lens }}">{{ index (index .Site.Params.lenses .Params.lens) "label" }}</span>
+  {{ if eq .Params.thread_kind "meta" }}<span class="tag meta-tag">BIG PICTURE</span>{{ end }}
   <h1>{{ .Title }}</h1>
   {{ with .Params.blurb }}<p class="dek">{{ . }}</p>{{ end }}
+  {{ with .Params.parent }}
+    {{ $pt := index (where $p.threads "slug" .) 0 }}
+    {{ if $pt }}<p class="breadcrumb">part of <a href="/threads/{{ .}}/">{{ $pt.title }}</a></p>{{ end }}
+  {{ end }}
+  {{ if eq .Params.thread_kind "meta" }}
+    {{ $kids := where $p.threads "parent" $slug }}
+    {{ if $kids }}
+    <div class="subthreads" style="margin-top:.6rem;">
+      {{ range $kids }}<a class="chip" href="/threads/{{ .slug }}/">{{ .title }}</a>{{ end }}
+    </div>
+    {{ end }}
+  {{ end }}
   <div class="thread-meta">
     <span>STATUS · {{ upper .Params.status }}</span>
     <span>OPENED · {{ .Params.opened }}</span>
@@ -44,7 +58,9 @@
   <h2>This week's evidence</h2>
   <ul class="items-list">
     {{ range $evidence }}
-    <li>{{ .html | safeHTML }}
+    {{ $host := "" }}
+    {{ with .url }}{{ with urls.Parse . }}{{ $host = .Host }}{{ end }}{{ end }}
+    <li>{{ if $host }}<img class="favicon" src="https://www.google.com/s2/favicons?domain={{ $host }}&sz=32" alt="" loading="lazy" onerror="this.style.display='none'">{{ end }}{{ .html | safeHTML }}
       <span class="item-meta">{{ .day }}{{ if eq .day $p.today }} · <span class="new">NEW</span>{{ end }}</span>
     </li>
     {{ end }}

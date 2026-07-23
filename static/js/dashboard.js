@@ -15,7 +15,7 @@
   var lensFilter = "all";
   // set fresh on every render(); read by the "copy for AI chat" button so it
   // always reflects whatever's currently on screen (incl. the lens filter).
-  var counts = {}, upByThread = {}, movers = [], quiet = [];
+  var counts = {}, upByThread = {}, movers = [], quiet = [], childrenOf = {};
 
   function e(tag, cls, text) {
     var n = document.createElement(tag);
@@ -43,12 +43,37 @@
   function lensOk(l) {
     return lensFilter === "all" || l === lensFilter;
   }
+  function weekItemsFor(t) {
+    return P.items.filter(function (it) {
+      return lensOk(it.lens) && (it.threads || []).indexOf(t.slug) >= 0;
+    }).sort(function (a, b) { return a.day < b.day ? 1 : (a.day > b.day ? -1 : 0); });
+  }
   function dots(weight) {
     var w = weight || 2;
     return "●●●".slice(0, w) + "○○○".slice(0, 3 - w);
   }
+  function hostname(url) {
+    try { return new URL(url).hostname.replace(/^www\./, ""); } catch (e) { return null; }
+  }
+  // Cheap per-item visual: the source domain's favicon. No backend, no
+  // CORS issue (plain <img>), nothing cached — an item that ages out of
+  // this week's payload just stops rendering one, nothing to clean up.
+  // "Don't worry if it breaks" (Ben) — onerror just hides it.
+  function favicon(url) {
+    var h = hostname(url);
+    if (!h) return null;
+    var img = document.createElement("img");
+    img.className = "favicon";
+    img.src = "https://www.google.com/s2/favicons?domain=" + h + "&sz=32";
+    img.alt = "";
+    img.loading = "lazy";
+    img.onerror = function () { img.style.display = "none"; };
+    return img;
+  }
   function itemLi(it, showDay) {
     var li = e("li");
+    var fi = it.url && favicon(it.url);
+    if (fi) li.appendChild(fi);
     li.appendChild(frag(it.html));
     var meta = e("div", "item-meta");
     var bits = [];
@@ -65,6 +90,30 @@
     });
     li.appendChild(meta);
     return li;
+  }
+  // Deterministic per-thread "art" — no image to source, no network call,
+  // never breaks: a small gradient strip seeded by the slug so each thread
+  // is visually distinct and recognizable at a glance across visits.
+  var LENS_HEX = { ai: "#0070E0", money: "#A86302", "mental-health": "#E50B1E" };
+  function hashHue(str) {
+    var h = 0;
+    for (var i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+    return h % 360;
+  }
+  function threadArt(t) {
+    var base = LENS_HEX[t.lens] || "#E01279";
+    var hue = hashHue(t.slug);
+    var svg = "data:image/svg+xml;utf8," + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="36">' +
+      '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0">' +
+      '<stop offset="0" stop-color="' + base + '" stop-opacity="0.9"/>' +
+      '<stop offset="1" stop-color="hsl(' + hue + ',70%,45%)" stop-opacity="0.75"/>' +
+      '</linearGradient></defs>' +
+      '<rect width="400" height="36" fill="url(#g)"/>' +
+      '</svg>');
+    var img = e("div", "tart");
+    img.style.backgroundImage = "url('" + svg + "')";
+    return img;
   }
 
   function render() {
@@ -91,8 +140,27 @@
         if (it.day === P.today) counts[s].today++;
       });
     });
+    // meta-threads aggregate their children's activity for RANKING only —
+    // a separate computed rollup (rankCounts), never stored, and never
+    // shown as the card's own "N this week" badge (that stays the meta-
+    // thread's own direct items, so the number on screen always matches
+    // what's actually in the card — no "says 5, shows 2" mismatch).
+    childrenOf = {};
+    P.threads.forEach(function (t) {
+      if (t.parent) (childrenOf[t.parent] = childrenOf[t.parent] || []).push(t);
+    });
+    var rankCounts = {};
+    P.threads.forEach(function (t) { rankCounts[t.slug] = counts[t.slug] || { week: 0, today: 0 }; });
+    P.threads.filter(function (t) { return t.kind === "meta"; }).forEach(function (m) {
+      var agg = counts[m.slug] || { week: 0, today: 0 };
+      (childrenOf[m.slug] || []).forEach(function (c) {
+        var cc = counts[c.slug] || { week: 0, today: 0 };
+        agg = { week: agg.week + cc.week, today: agg.today + cc.today };
+      });
+      rankCounts[m.slug] = agg;
+    });
     function score(t) {
-      var c = counts[t.slug] || { week: 0, today: 0 };
+      var c = rankCounts[t.slug] || { week: 0, today: 0 };
       return (t.weight || 2) * (c.today * 2 + c.week);
     }
     upByThread = {};
@@ -108,9 +176,11 @@
       });
     movers = []; quiet = [];
     act.forEach(function (t) {
-      var c = counts[t.slug] || { week: 0, today: 0 };
+      // a meta-thread counts as active if ANY child moved, even with no
+      // items tagged to the meta-thread itself directly.
+      var active = t.kind === "meta" ? (rankCounts[t.slug] || {}).week : (counts[t.slug] || {}).week;
       var ups = upByThread[t.slug] || [];
-      if (!c.week && !ups.length) quiet.push(t);
+      if (!active && !ups.length) quiet.push(t);
       else movers.push(t);
     });
 
@@ -136,13 +206,18 @@
       root.appendChild(hsec);
     }
 
-    var tsec = e("div", "section");
-    tsec.appendChild(e("h2", "", "🧵 Active threads this week"));
-    movers.forEach(function (t, idx) {
+    // Cards are collapsed by default, always — the "China decoupling has
+    // 13 points open, takes seconds to parse" problem (Ben). What stays
+    // visible without a tap: the header, the developing-story summary,
+    // and the one or two most recent headlines. Everything else is one
+    // click away (the whole card is the click target), not hidden for good.
+    function buildCard(t) {
       var c = counts[t.slug] || { week: 0, today: 0 };
       var ups = upByThread[t.slug] || [];
-      var card = e("div", "tcard");
+      var card = e("div", "tcard" + (t.kind === "meta" ? " meta" : ""));
       card.id = "tcard-" + t.slug;
+      card.appendChild(threadArt(t));
+
       var head = e("div", "thead");
       head.appendChild(link("/threads/" + t.slug + "/", t.title));
       head.appendChild(e("span", "count", dots(t.weight) + "  " +
@@ -150,31 +225,89 @@
       card.appendChild(head);
       card.appendChild(e("div", "lens", LENS_LABEL[t.lens] || t.lens));
 
-      var wk = P.items.filter(function (it) {
-        return lensOk(it.lens) && (it.threads || []).indexOf(t.slug) >= 0;
-      });
-      if (wk.length) {
-        // top 2 movers open by default (the highlights strip already named
-        // them); the rest collapse — keeps the page short on mobile while
-        // still reachable, not hidden.
-        var det = e("details", "evidence-toggle");
-        if (idx < 2) det.open = true;
-        det.appendChild(e("summary", "", wk.length + " update" + (wk.length === 1 ? "" : "s") + " this week"));
-        var ul = e("ul", "evidence");
-        wk.forEach(function (it) { ul.appendChild(itemLi(it, true)); });
-        det.appendChild(ul);
-        card.appendChild(det);
+      if (t.parent) {
+        var pt = threadBy(t.parent);
+        if (pt) {
+          var bc = e("div", "breadcrumb");
+          bc.appendChild(document.createTextNode("part of "));
+          bc.appendChild(link("#tcard-" + pt.slug, pt.title));
+          card.appendChild(bc);
+        }
       }
-      ups.forEach(function (u) {
-        var r = e("div", "exp-row");
-        r.appendChild(e("span", "due", "⏳ " + u.due));
-        r.appendChild(e("span", "grow", u.claim));
-        r.appendChild(e("span", "status status-" + u.status,
-          u.status === "pending" ? "pending" : u.status.replace("-", " ")));
-        card.appendChild(r);
+      if (t.blurb) card.appendChild(e("p", "tsummary", t.blurb));
+
+      if (t.kind === "meta") {
+        var kids = (childrenOf[t.slug] || []).slice()
+          .sort(function (a, b) { return score(b) - score(a); });
+        if (kids.length) {
+          var sub = e("div", "subthreads");
+          kids.forEach(function (k) {
+            var kc = counts[k.slug] || { week: 0, today: 0 };
+            sub.appendChild(link("#tcard-" + k.slug,
+              k.title + (kc.week ? " · " + kc.week : ""), "chip"));
+          });
+          card.appendChild(sub);
+        }
+      }
+
+      var wk = weekItemsFor(t);
+      if (wk.length) {
+        var headlines = e("ul", "headlines");
+        wk.slice(0, 2).forEach(function (it) { headlines.appendChild(itemLi(it, true)); });
+        card.appendChild(headlines);
+        var rest = wk.slice(2);
+        if (rest.length) {
+          card.appendChild(e("div", "evidence-toggle-line",
+            "+ " + rest.length + " more update" + (rest.length === 1 ? "" : "s") + " — tap to expand"));
+          var body = e("div", "evidence-body");
+          var ul = e("ul", "evidence");
+          rest.forEach(function (it) { ul.appendChild(itemLi(it, true)); });
+          body.appendChild(ul);
+          card.appendChild(body);
+        }
+      }
+
+      if (ups.length) {
+        var pendBtn = e("button", "pending-toggle", "⏳ " + ups.length + " pending");
+        pendBtn.type = "button";
+        pendBtn.addEventListener("click", function (ev) {
+          ev.stopPropagation();
+          card.classList.toggle("pending-open");
+        });
+        card.appendChild(pendBtn);
+        var pendBody = e("div", "pending-body");
+        ups.forEach(function (u) {
+          var r = e("div", "exp-row");
+          r.appendChild(e("span", "due", "⏳ " + u.due));
+          r.appendChild(e("span", "grow", u.claim));
+          r.appendChild(e("span", "status status-" + u.status,
+            u.status === "pending" ? "pending" : u.status.replace("-", " ")));
+          pendBody.appendChild(r);
+        });
+        card.appendChild(pendBody);
+      }
+
+      var copyBtn = e("button", "copy-chat-btn small", "💬 Copy this thread");
+      copyBtn.type = "button";
+      copyBtn.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        if (window.TPChatCopy) window.TPChatCopy.copyToClipboard(threadChatText(t), copyBtn);
       });
-      tsec.appendChild(card);
-    });
+      card.appendChild(copyBtn);
+
+      // whole-card click expands the "more updates" body — except real
+      // links/buttons, which keep their own behavior (Ben: "click anywhere
+      // on the CARD to expand to see all the sources").
+      card.addEventListener("click", function (ev) {
+        if (ev.target.closest("a, button")) return;
+        card.classList.toggle("expanded");
+      });
+      return card;
+    }
+
+    var tsec = e("div", "section");
+    tsec.appendChild(e("h2", "", "🧵 Active threads this week"));
+    movers.forEach(function (t) { tsec.appendChild(buildCard(t)); });
     if (quiet.length) {
       var d = e("details", "quiet");
       var s = e("summary", "", quiet.length + " quiet thread" + (quiet.length === 1 ? "" : "s") +
@@ -281,6 +414,40 @@
     var d = document.createElement("div");
     d.innerHTML = it.html;
     return window.TPChatCopy.domToText(d).replace(/\n+/g, " ").trim();
+  }
+  // Per-card "Copy this thread" — same idea as the whole-week button, one
+  // level down. A meta-thread's copy lists its sub-threads (titles +
+  // counts) rather than flattening every child's items in — same "big
+  // picture, not a flood" rule the card itself follows.
+  function threadChatText(t) {
+    var L = [];
+    L.push("# " + t.title);
+    L.push("Status: " + (t.status || "").toUpperCase() + " · Lens: " + (LENS_LABEL[t.lens] || t.lens) +
+      " · Opened: " + t.opened + " · Last seen: " + t.last_seen);
+    if (t.blurb) L.push("\nWatch: " + t.blurb);
+    if (t.parent) {
+      var pt = threadBy(t.parent);
+      if (pt) L.push("\nPart of: " + pt.title);
+    }
+    if (t.kind === "meta" && (childrenOf[t.slug] || []).length) {
+      L.push("\n## Sub-threads");
+      childrenOf[t.slug].forEach(function (k) {
+        var kc = counts[k.slug] || { week: 0, today: 0 };
+        L.push("- " + k.title + " — " + kc.week + " this wk");
+      });
+    }
+    var wk = weekItemsFor(t);
+    if (wk.length) {
+      L.push("\n## This week's evidence");
+      wk.forEach(function (it) { L.push("- " + itemText(it)); });
+    }
+    (upByThread[t.slug] || []).forEach(function (u) {
+      L.push("⏳ due " + u.due + ": " + u.claim + " [" + u.status + "]");
+    });
+    L.push("\nSource: https://theprojection.org/threads/" + t.slug + "/ (The Projection)");
+    L.push("\n---\nI'm pasting a tracked news thread from The Projection. Ask me " +
+      "anything about it, or tell me what stands out.");
+    return L.join("\n").replace(/\n{3,}/g, "\n\n").trim();
   }
   function buildWeeklyChatText() {
     var L = [];

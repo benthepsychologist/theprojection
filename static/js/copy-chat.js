@@ -76,6 +76,30 @@
 
   window.TPChatCopy = { domToText: domToText, copyToClipboard: copyToClipboard };
 
+  // Deterministic per-thread "art" strip (same generator as dashboard.js —
+  // duplicated, not shared, since these load on different pages and it's
+  // a dozen lines). No image to source, no network call, never breaks.
+  var LENS_HEX = { ai: "#0070E0", money: "#A86302", "mental-health": "#E50B1E" };
+  function hashHue(str) {
+    var h = 0;
+    for (var i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+    return h % 360;
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var art = document.querySelector(".thread-art[data-slug]");
+    if (art) {
+      var base = LENS_HEX[art.getAttribute("data-lens")] || "#E01279";
+      var hue = hashHue(art.getAttribute("data-slug"));
+      var svg = "data:image/svg+xml;utf8," + encodeURIComponent(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="10">' +
+        '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0">' +
+        '<stop offset="0" stop-color="' + base + '" stop-opacity="0.9"/>' +
+        '<stop offset="1" stop-color="hsl(' + hue + ',70%,45%)" stop-opacity="0.75"/>' +
+        '</linearGradient></defs><rect width="900" height="10" fill="url(#g)"/></svg>');
+      art.style.backgroundImage = "url('" + svg + "')";
+    }
+  });
+
   // Self-wiring for thread single pages: a button#copy-chat-thread with
   // data-title/data-meta/data-blurb/data-url, packaging #chat-copy-root.
   document.addEventListener("DOMContentLoaded", function () {

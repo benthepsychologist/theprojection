@@ -92,6 +92,7 @@ nav.primary a:hover{ color:var(--brand); }
 }
 
 /* ---------- thread single page ---------- */
+.thread-art{ height:10px; background-size:cover; background-position:center; }
 .thread-header{ max-width:var(--max-width); margin:0 auto; padding:2.4rem 1.5rem 1.2rem; }
 .thread-header .tag{ margin-bottom:.7rem; }
 .thread-header h1{
@@ -99,6 +100,12 @@ nav.primary a:hover{ color:var(--brand); }
   color:var(--ink); margin:0 0 .5rem; text-wrap:balance;
 }
 .thread-header .dek{ font-family:'Newsreader',Georgia,serif; font-style:italic; color:var(--ink-faint); font-size:1.05rem; }
+.tag.meta-tag{ color:var(--brand); background:var(--brand-tint); margin-left:.4rem; }
+.breadcrumb{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.75rem; color:var(--ink-faint);
+  margin:.5rem 0 0;
+}
+.breadcrumb a{ color:var(--brand); }
 .thread-meta{
   display:flex; flex-wrap:wrap; gap:1.2rem; margin-top:1rem; padding-top:1rem;
   border-top:1px solid var(--rule); font-family:'IBM Plex Mono',ui-monospace,monospace;
@@ -149,7 +156,14 @@ a.chip{ text-decoration:none; }
 }
 .verdict p{ margin:0; font-size:.9rem; color:var(--ink-body); }
 
-.tcard{ background:var(--paper); border:1px solid var(--rule); border-radius:3px; padding:1rem 1.1rem; margin-bottom:.9rem; }
+.tcard{
+  background:var(--paper); border:1px solid var(--rule); border-radius:5px;
+  padding:0 1.1rem 1rem; margin-bottom:.9rem; cursor:pointer; overflow:hidden;
+}
+.tcard.meta{ border-color:var(--brand); border-width:1.5px; }
+.tcard .tart{
+  height:8px; margin:0 -1.1rem .8rem; background-size:cover; background-position:center;
+}
 .tcard .thead{ display:flex; justify-content:space-between; align-items:baseline; gap:.8rem; flex-wrap:wrap; }
 .tcard .thead a{ font-family:'Piazzolla',Georgia,serif; font-weight:700; font-size:1.08rem; color:var(--ink); }
 .tcard .thead .lens{ font-size:.78rem; color:var(--ink-faint); }
@@ -157,16 +171,40 @@ a.chip{ text-decoration:none; }
   font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.7rem; color:var(--brand);
   white-space:nowrap; font-variant-numeric:tabular-nums;
 }
-.tcard .latest{ font-size:.85rem; color:var(--ink-faint); margin-top:.5rem; }
-.tcard .latest .tdate{ font-family:'IBM Plex Mono',ui-monospace,monospace; color:var(--ink-faint); }
-.tcard ul.evidence{ margin:.6rem 0 0; padding-left:1.1rem; }
+.tcard .breadcrumb{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.68rem; color:var(--ink-faint);
+  margin-top:.3rem;
+}
+.tcard .breadcrumb a{ color:var(--brand); }
+.tcard .tsummary{
+  font-size:.87rem; color:var(--ink-body); margin:.5rem 0 0; max-width:none;
+  font-family:'Newsreader',Georgia,serif; font-style:italic;
+}
+.tcard .subthreads{ display:flex; flex-wrap:wrap; gap:.35rem; margin-top:.6rem; }
+.tcard ul.headlines{ margin:.6rem 0 0; padding-left:1.1rem; }
+.tcard ul.headlines li{ font-size:.87rem; margin-bottom:.5rem; }
+.tcard ul.evidence{ margin:.5rem 0 0; padding-left:1.1rem; }
 .tcard ul.evidence li{ font-size:.85rem; margin-bottom:.45rem; }
-.tcard details.evidence-toggle{ margin-top:.5rem; }
-.tcard details.evidence-toggle summary{
-  cursor:pointer; font-size:.82rem; color:var(--ink-faint);
+.tcard .evidence-toggle-line{
+  margin-top:.5rem; font-size:.78rem; color:var(--brand);
   font-family:'IBM Plex Mono',ui-monospace,monospace;
 }
-.tcard details.evidence-toggle[open] summary{ margin-bottom:.2rem; }
+.tcard .evidence-body{ display:none; }
+.tcard.expanded .evidence-body{ display:block; }
+.tcard.expanded .evidence-toggle-line{ display:none; }
+.tcard .pending-toggle{
+  display:block; margin-top:.6rem; padding:0; border:none; background:none; cursor:pointer;
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.78rem; color:var(--lens-mh);
+}
+.tcard .pending-body{ display:none; }
+.tcard.pending-open .pending-body{ display:block; margin-top:.3rem; }
+.tcard .copy-chat-btn.small{
+  margin-top:.7rem; font-size:.66rem; padding:.3rem .65rem; display:inline-block;
+}
+.favicon{
+  width:14px; height:14px; border-radius:2px; vertical-align:-2px; margin-right:.35rem;
+  background:var(--paper-dim);
+}
 
 .highlights{ margin-top:1.8rem; }
 .highlight-list{ list-style:none; margin:0; padding:0; counter-reset:hl; }
