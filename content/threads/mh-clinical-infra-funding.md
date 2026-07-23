@@ -3,7 +3,7 @@ title: Mental-health funding renaissance — capital shifting to clinical infras
 lens: mental-health
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-15
+last_seen: 2026-07-22
 weight: 3
 entities:
 - spring-health
@@ -16,6 +16,22 @@ blurb: 'MH is the #1-funded US therapeutic area (~$1.27B/14 deals to start 2026)
   hitting the regulatory reckoning; watch consolidation (e.g. Spring Health/Alma).
   Tests whether the market prices in rigor — the evidence-gap thesis.'
 ---
+
+## 2026-07-22 — Consolidation keeps moving; a restart, not yet a close
+
+- **Mindoula made its 3rd and 4th acquisitions** — Valera Health (300+
+  behavioral providers) and Janus Healthcare Partners (psychiatry
+  collaborative-care-model capability for primary-care integration); terms
+  undisclosed.
+  ([BHB](https://bhbusiness.com/2026/07/22/mindoula-buys-valera-health-janus-healthcare-partners/)) ⟨daily 2026-07-22⟩
+- **firsthand raised $10M of a targeted $32M round** — its first capital
+  since March 2025 layoffs following the loss of a major UnitedHealthcare
+  Medicaid contract.
+  ([BHB](https://bhbusiness.com/2026/07/22/firsthand-secures-portion-of-30m-funding-round/)) ⟨daily 2026-07-22⟩
+- **A federal parity deadline is coming** — a new Trump-era MHPAEA rule due
+  by Dec 31, 2026; commentary questions whether enforcement has hit its
+  limits on network adequacy and reimbursement.
+  ([BHB](https://bhbusiness.com/2026/07/22/what-to-do-with-behavioral-healths-paper-tiger-parity-laws/)) ⟨daily 2026-07-22⟩
 
 ## 2026-07-20 — The H1 verdict at briefing #0
 

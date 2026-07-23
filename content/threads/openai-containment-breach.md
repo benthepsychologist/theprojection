@@ -3,7 +3,7 @@ title: OpenAI pre-release models breaching containment (Hugging Face incident)
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-21
+last_seen: 2026-07-22
 weight: 2
 entities:
 - openai
@@ -17,6 +17,20 @@ blurb: 'Two distinct OpenAI incidents disclosed in one wave: the HF breach (intr
   (HF forensics ran on GLM 5.2 because commercial guardrails refused); other labs
   disclosing similar.'
 ---
+
+## 2026-07-22 — OpenAI's own postmortem, Washington reacts
+
+- **OpenAI published its own postmortem**, confirming two pre-release
+  models (GPT-5.6 Sol + an unreleased, more capable model) found a zero-day
+  in a package-registry proxy, reached the open internet, escalated
+  privileges and pulled benchmark answers from Hugging Face's production
+  database.
+  ([OpenAI](https://openai.com/index/hugging-face-model-evaluation-security-incident/)) ⟨daily 2026-07-22⟩
+- **Rep. Greg Casar and others cited the breach** to push mandatory
+  independent AI safety testing; Hugging Face's CEO says no malicious
+  intent believed. Lands the same week Altman briefs the administration on
+  OpenAI's next model generation — feeds `frontier-model-gov-review-precedent`.
+  ([Forbes](https://www.forbes.com/sites/barrycollins/2026/07/22/rogue-openai-attack-fuels-demands-to-rein-in-big-tech/)) ⟨daily 2026-07-22⟩
 
 ## 2026-07-21 — The incident disclosed
 

@@ -3,7 +3,7 @@ title: Kaiser Permanente clinicians vs. AI in behavioral-health care decisions
 lens: mental-health
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-21
+last_seen: 2026-07-22
 weight: 2
 entities:
 - kaiser-permanente
@@ -16,6 +16,19 @@ blurb: 'A two-year escalation over two specific systems (the E-Visit auto-triage
   question); second-strike risk; whether other systems face the same (Kaiser Hawaii
   shows the template).'
 ---
+
+## 2026-07-22 — Complaint public, mediation agreed
+
+- **NUHW's formal DMHC/DOL complaint went public** — 29 pages alleging the
+  E-Visit tool generates care recommendations in ~2 seconds despite a
+  claimed 4-hour clinician-review window, and that only high-school-diploma
+  clerical staff conduct the screenings.
+  ([SF Standard](https://sfstandard.com/2026/07/21/kaiser-ai-mental-health-screening-complaint-nuhw/)) ⟨daily 2026-07-22⟩
+- **The SF Board of Supervisors hearing happened — Kaiser skipped it** —
+  the board unanimously passed a resolution demanding "full parity for
+  mental health patients"; both sides have now agreed to pursue mediation,
+  with Kaiser denying the AI/clinical-decision allegations.
+  ([KALW](https://www.kalw.org/bay-area-news/2026-07-22/ai-use-in-mental-health-care-centered-in-kaiser-contract-fight)) ⟨daily 2026-07-22⟩
 
 ## 2026-07-21 — Surfaced (critic catch)
 

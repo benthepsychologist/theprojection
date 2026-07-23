@@ -3,7 +3,7 @@ title: AI circular financing — vendors funding their own customers
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-20
+last_seen: 2026-07-22
 weight: 3
 entities:
 - nvidia
@@ -16,6 +16,19 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
   A correction here hits everything in radar Q1/Q2.'
 ---
+
+## 2026-07-22 — The first capex verdict landed negative
+
+- **Alphabet beat on revenue and Cloud growth but raised 2026 capex
+  guidance to $195–205B** (from $180–190B), with more flagged for 2027;
+  GOOGL fell ~5% after-hours — the market reading accelerating AI spend as
+  a warning sign, not confirmation the revenue is catching up.
+  ([CNBC](https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html)) ⟨daily 2026-07-22⟩
+- **Apollo's $35B Broadcom/Anthropic private-credit SPV started trading**
+  among Wall Street banks — chip purchases financed off Broadcom's balance
+  sheet, hardware leased back to Anthropic. Another circular loop, this one
+  securitized and now liquid.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-22/wall-street-banks-trading-parts-of-35-billion-ai-chip-deal)) ⟨daily 2026-07-22⟩
 
 ## 2026-07-20 — The capex referendum scheduled
 

@@ -3,7 +3,7 @@ title: State-level therapy-chatbot bans — the statehouse regulatory vector
 lens: mental-health
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-20
+last_seen: 2026-07-22
 weight: 2
 entities:
 - character-ai
@@ -16,6 +16,18 @@ blurb: 'The wave is ~10+ enacted instruments in two species (crawl 2026-07-22 co
   these laws (so far only xAI v. Colorado''s discrimination law); Colorado-mandate
   copycats.'
 ---
+
+## 2026-07-22 — Hawaii turns out to already be resolved; NY's real deadline found
+
+- **Correction: Hawaii's SB 3001 was already signed** — Gov. Green signed
+  it July 14 as Act 248 (AI-companion disclosures, self-harm response
+  protocols, annual BHA reports); the ledger had this as still-pending
+  until this pass found it.
+  ([West Hawaii Today](https://www.westhawaiitoday.com/2026/07/16/hawaii-news/hawaii-enacts-ai-laws-to-protect-children/)) ⟨daily 2026-07-22⟩
+- **NY's Hochul still hasn't acted on S9051B/S9408A** — and her actual
+  statutory deadline is Dec 31, 2026, not the ~Aug 31 placeholder the
+  ledger carried; corrected in `upcoming.yaml`.
+  ([multistate.ai](https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws)) ⟨daily 2026-07-22⟩
 
 ## ← Backstory (crawl 2026-07-22 → artifacts/findings/state-therapy-chatbot-bans-2026-07-22.md)
 

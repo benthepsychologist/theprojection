@@ -12,11 +12,13 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
 
-## 2026-07-22 — Allotment day
+## 2026-07-22 — Allotment landed as staged
 
-- **Subscription closed 07-20; final allotment results due ~today** ahead
-  of the confirmed 07-27 listing, pricing unchanged at 8.66 yuan/share.
-  ([BigGo Finance](https://finance.biggo.com/news/503cd6f5-6bde-4e19-8e0c-e4bd74249f8b)) ⟨daily 2026-07-22⟩
+- **Final allotment rate 0.47%** — retail 212× oversubscribed across 9.4M
+  accounts, institutional 570×; a clawback shifted ~502M shares from the
+  institutional to the retail tranche; $9.8B raise confirmed, 07-27 STAR
+  Market listing on track.
+  ([SCMP](https://www.scmp.com/tech/article/3360892/chinese-memory-giant-cxmt-oversubscribed-212-times-mega-shanghai-ipo)) ⟨daily 2026-07-22⟩
 
 ## ← Backstory (crawl 2026-07-22 → artifacts/findings/cxmt-memory-ipo-2026-07-22.md)
 
