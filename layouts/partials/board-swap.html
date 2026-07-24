@@ -1,0 +1,7 @@
+{{- /* Ships every projection's label maps to the client + loads the swapper.
+       Params: labels, default. Used on the board list and per-actor pages. */ -}}
+<script>
+window.__BOARD_LABELS  = {{ .labels.projections | jsonify }};
+window.__BOARD_DEFAULT = {{ .default | jsonify }};
+</script>
+<script src="/js/map.js" defer></script>

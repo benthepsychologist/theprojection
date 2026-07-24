@@ -13,24 +13,11 @@
 {{ $default := $labels.default }}
 {{ $proj    := index $labels.projections $default }}
 
-{{/* houses by slug, for held_by lookups */}}
+{{/* houses + org display names by slug (names resolved in board.json) */}}
 {{ $houseBySlug := dict }}
 {{ range $board.houses }}{{ $houseBySlug = merge $houseBySlug (dict .slug .) }}{{ end }}
-
-{{/* display names — entity names where we have them, a small override map
-     for the non-entity actors, humanized slug as a last resort. Names are
-     surface, not system: they live here, not in the neutral board. */}}
-{{ $entityName := dict }}
-{{ range $payload.entities }}{{ $entityName = merge $entityName (dict .slug .name) }}{{ end }}
-{{ $override := dict
-    "amazon-aws" "Amazon" "meta-ai" "Meta" "alibaba-qwen" "Alibaba" "spacex" "SpaceXAI"
-    "microsoft-mai" "Microsoft MAI" "sk-hynix" "SK Hynix" "cxmt" "CXMT" "tsmc" "TSMC"
-    "pif" "PIF" "mgx" "MGX" "nuhw" "NUHW" "silk-road" "The Silk Road"
-    "united-states" "United States" "china" "China" "european-union" "European Union"
-    "united-kingdom" "United Kingdom" "france" "France" "uae" "UAE" "saudi-arabia" "Saudi Arabia"
-    "russia" "Russia" "us-state-legislatures" "US State Legislatures" "eu-ai-act" "EU AI Act"
-    "proposed-sro" "Proposed SRO" "nsa-frontier-review" "NSA Frontier Review"
-    "caisi" "CAISI" "fda" "FDA" "dmhc" "DMHC" "mhra" "MHRA" "kaiser-permanente" "Kaiser Permanente" }}
+{{ $orgName := dict }}
+{{ range $board.orgs }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
 
 {{ $rankOrder := slice "state" "integrated-power" "sovereign-actor" "subsidiary-actor" "alliance" "dependent-actor" "guild" "regulator" "resource-layer" "capital-layer" "route-layer" }}
 
@@ -42,12 +29,7 @@
     <p class="board-lede">Who holds what, and what posture they're in. The
       structure is fixed; the vocabulary is a projection over it — flip it
       and nothing underneath moves. States never wear the costume.</p>
-    <div class="vocab" role="group" aria-label="Vocabulary">
-      <span class="vocab-label">Vocabulary</span>
-      {{ range $key, $p := $labels.projections }}
-      <button class="vocab-opt{{ if eq $key $default }} on{{ end }}" data-proj="{{ $key }}">{{ $p.label }}</button>
-      {{ end }}
-    </div>
+    {{ partial "vocab-toggle.html" (dict "labels" $labels "default" $default) }}
   </div>
 
   {{/* ---- legend (generated from the active projection) ---- */}}
@@ -81,13 +63,10 @@
     <div class="realm-grid">
       {{ range $o := . }}
       {{ $slug := $o.slug }}
-      {{ $name := or (index $override $slug) (index $entityName $slug) (title (replace $slug "-" " ")) }}
-      {{ $isEntity := isset $entityName $slug }}
       {{ $tc := len (where $payload.threads "entities" "intersect" (slice $slug)) }}
       <div class="realm r-{{ $rank }}">
         <div class="realm-top">
-          {{ if $isEntity }}<a class="realm-name" href="/entities/{{ $slug }}/">{{ $name }}</a>
-          {{ else }}<span class="realm-name">{{ $name }}</span>{{ end }}
+          <a class="realm-name" href="/map/{{ $slug }}/">{{ $o.name }}</a>
           {{ if $o.dual_filed }}<span class="dual" title="also filed under {{ delimit $o.dual_filed ", " }}">✦</span>{{ end }}
         </div>
         <div class="realm-meta">
@@ -125,8 +104,7 @@
         {{ with $h.holds }}
         <div class="house-holds">
           {{ range $hs := . }}
-          {{ $hn := or (index $override $hs) (index $entityName $hs) (title (replace $hs "-" " ")) }}
-          <a class="hold" href="/entities/{{ $hs }}/">{{ $hn }}</a>
+          <a class="hold" href="/map/{{ $hs }}/">{{ index $orgName $hs }}</a>
           {{ end }}
         </div>
         {{ else }}<div class="house-holds none">inheriting — holds no realm yet</div>{{ end }}
@@ -143,11 +121,7 @@
 
 </main>
 
-<script>
-window.__BOARD_LABELS   = {{ $labels.projections | jsonify }};
-window.__BOARD_DEFAULT  = {{ $default | jsonify }};
-</script>
-<script src="/js/map.js" defer></script>
+{{ partial "board-swap.html" (dict "labels" $labels "default" $default) }}
 
 {{ partial "footer.html" . }}
 </body>

@@ -1,0 +1,7 @@
+{{- /* The vocabulary switcher. Params: labels, default. map.js wires clicks. */ -}}
+<div class="vocab" role="group" aria-label="Vocabulary">
+  <span class="vocab-label">Vocabulary</span>
+  {{ range $key, $p := .labels.projections }}
+  <button class="vocab-opt{{ if eq $key $.default }} on{{ end }}" data-proj="{{ $key }}">{{ $p.label }}</button>
+  {{ end }}
+</div>

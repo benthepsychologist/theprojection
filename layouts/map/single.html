@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+{{ $slug    := .File.ContentBaseName }}
+{{ $kind    := .Params.board_kind }}
+{{ $board   := .Site.Data.board }}
+{{ $labels  := .Site.Data.labels }}
+{{ $payload := .Site.Data.payload }}
+{{ $default := $labels.default }}
+{{ $proj    := index $labels.projections $default }}
+
+{{ $houseBySlug := dict }}
+{{ range $board.houses }}{{ $houseBySlug = merge $houseBySlug (dict .slug .) }}{{ end }}
+{{ $orgBySlug := dict }}{{ $orgName := dict }}
+{{ range $board.orgs }}{{ $orgBySlug = merge $orgBySlug (dict .slug .) }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
+
+<main class="wrap board actor">
+
+  <p class="crumb"><a href="/map/">← The Map</a></p>
+
+  {{/* =================== ORG =================== */}}
+  {{ if eq $kind "org" }}
+  {{ with index $orgBySlug $slug }}
+  {{ $o := . }}
+  {{ $r := index $proj.ranks $o.rank }}
+  {{ $threads := where $payload.threads "entities" "intersect" (slice $slug) }}
+  {{ $vassals := where $board.orgs "liege" $slug }}
+  {{ $isEntity := false }}{{ range $payload.entities }}{{ if eq .slug $slug }}{{ $isEntity = true }}{{ end }}{{ end }}
+
+  <div class="actor-head">
+    <span class="badge rank r-{{ $o.rank }}" data-lk="rank:{{ $o.rank }}">{{ $r.label }}</span>
+    <h1 class="actor-name">{{ $o.name }}</h1>
+    {{ if $o.dual_filed }}<p class="actor-dual">✦ also filed under {{ delimit $o.dual_filed ", " }}</p>{{ end }}
+    <p class="actor-gloss-rank" data-gloss="rank:{{ $o.rank }}">{{ $r.gloss }}</p>
+  </div>
+
+  <div class="actor-facts">
+    {{ if $o.held_by }}{{ $h := index $houseBySlug $o.held_by }}
+    <div class="fact"><span class="fact-k">Held by</span>
+      <a href="/map/{{ $o.held_by }}/">{{ partial "house-chip.html" (dict "h" $h "proj" $proj) }}</a></div>{{ end }}
+    {{ if $o.liege }}
+    <div class="fact"><span class="fact-k">Within</span>
+      <a href="/map/{{ $o.liege }}/">{{ index $orgName $o.liege }}</a></div>{{ end }}
+    {{ if $o.posture }}
+    <div class="fact"><span class="fact-k">Posture</span>
+      <span class="badge posture" data-lk="posture:{{ $o.posture }}">{{ (index $proj.postures $o.posture).label }}</span></div>{{ end }}
+    {{ with $o.condition }}
+    <div class="fact"><span class="fact-k">Condition</span>
+      {{ range $c := . }}<span class="badge cond" data-lk="condition:{{ $c }}">{{ (index $proj.conditions $c).label }}</span> {{ end }}</div>{{ end }}
+    {{ if $o.sphere }}{{ if ne $o.sphere "none" }}
+    <div class="fact"><span class="fact-k">Sphere</span> <span class="sphere">{{ $o.sphere }}</span></div>{{ end }}{{ end }}
+    {{ if $o.tier }}
+    <div class="fact"><span class="fact-k">Tier</span> {{ humanize $o.tier }}</div>{{ end }}
+  </div>
+
+  {{ with $o.succession }}
+  <div class="actor-succession">
+    <strong>In succession</strong> — from {{ partial "house-chip.html" (dict "h" (index $houseBySlug .from) "proj" $proj) }}
+    to <a href="/map/{{ .to }}/">{{ partial "house-chip.html" (dict "h" (index $houseBySlug .to) "proj" $proj) }}</a>,
+    effective {{ .effective }}. {{ .note }}
+  </div>
+  {{ end }}
+
+  {{ with $o.gloss }}<p class="actor-gloss">{{ . }}</p>{{ end }}
+
+  {{ with $o.holdings }}
+  <div class="section">
+    <h2>Holdings</h2>
+    <div class="tag-row">{{ range . }}<span class="hold-tag">{{ humanize . }}</span>{{ end }}</div>
+  </div>{{ end }}
+
+  {{ with $vassals }}
+  <div class="section">
+    <h2>{{ (index $proj.ranks "dependent-actor").label }}s</h2>
+    <div class="tag-row">{{ range . }}<a class="hold" href="/map/{{ .slug }}/">{{ .name }}</a>{{ end }}</div>
+  </div>{{ end }}
+
+  <div class="section">
+    <h2>Open threads</h2>
+    {{ if $threads }}
+    {{ range $threads }}
+    <div class="qrow">
+      <span class="dash">·</span>
+      <span><a href="/threads/{{ .slug }}/">{{ .title }}</a>
+        {{ with .genre }}<span class="badge gen" data-lk="genre:{{ . }}">{{ (index $proj.genres .).label }}</span>{{ end }}
+        — {{ .status }} · last seen {{ .last_seen }}</span>
+    </div>
+    {{ end }}
+    {{ else }}<p class="none">No threads tagged to this actor this week.</p>{{ end }}
+  </div>
+
+  {{ if $isEntity }}<p class="actor-foot"><a href="/entities/{{ $slug }}/">Full item history for {{ $o.name }} →</a></p>{{ end }}
+
+  {{ end }}{{/* with org */}}
+
+  {{/* =================== HOUSE =================== */}}
+  {{ else if eq $kind "house" }}
+  {{ with index $houseBySlug $slug }}
+  {{ $h := . }}
+  {{ $inheriting := where $board.orgs "succession.to" $slug }}
+  {{ $heldSlugs := $h.holds }}
+  {{ $threads := where $payload.threads "entities" "intersect" (or $heldSlugs (slice "")) }}
+
+  <div class="actor-head">
+    <span class="badge house" data-housekind="label">{{ $proj.house.label }}</span>
+    <h1 class="actor-name" data-lk="house" data-name="{{ $h.name }}">{{ replace (replace $proj.house.template "{surname}" (index (last 1 (split $h.name " ")) 0)) "{name}" $h.name }}</h1>
+    <p class="actor-person">{{ $h.name }}</p>
+    <p class="actor-gloss-rank" data-housekind="gloss">{{ $proj.house.gloss }}</p>
+  </div>
+
+  {{ with $h.gloss }}<p class="actor-gloss">{{ . }}</p>{{ end }}
+
+  <div class="section">
+    <h2>Holds</h2>
+    {{ if $h.holds }}
+    <div class="realm-grid">
+      {{ range $hs := $h.holds }}{{ $o := index $orgBySlug $hs }}
+      <a class="realm-lite" href="/map/{{ $hs }}/">
+        <span class="badge rank r-{{ $o.rank }}" data-lk="rank:{{ $o.rank }}">{{ (index $proj.ranks $o.rank).label }}</span>
+        <span class="realm-name">{{ $o.name }}</span>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}<p class="none">Holds no realm yet.</p>{{ end }}
+    {{ with $inheriting }}
+    <p class="inheriting">Inheriting {{ range . }}<a href="/map/{{ .slug }}/">{{ .name }}</a>{{ end }} on succession.</p>{{ end }}
+  </div>
+
+  {{ if $threads }}
+  <div class="section">
+    <h2>Across its realms this week</h2>
+    {{ range $threads }}
+    <div class="qrow">
+      <span class="dash">·</span>
+      <span><a href="/threads/{{ .slug }}/">{{ .title }}</a>
+        {{ with .genre }}<span class="badge gen" data-lk="genre:{{ . }}">{{ (index $proj.genres .).label }}</span>{{ end }}
+        — {{ .status }}</span>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ end }}{{/* with house */}}
+  {{ end }}{{/* kind */}}
+
+  <div class="actor-vocab">{{ partial "vocab-toggle.html" (dict "labels" $labels "default" $default) }}</div>
+
+</main>
+
+{{ partial "board-swap.html" (dict "labels" $labels "default" $default) }}
+
+{{ partial "footer.html" . }}
+</body>
+</html>
