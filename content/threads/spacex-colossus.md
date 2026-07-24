@@ -8,7 +8,7 @@ weight: 2
 entities:
 - spacex
 - elon-musk
-parent: where-the-capex-lands
+parent: ai-datacenter-sites
 thread_kind: project
 blurb: SpaceXAI's self-owned training compute (Colossus, Memphis) — the "owns its
   mines" fact that makes it structurally distinct from OpenAI/Anthropic, who rent.
