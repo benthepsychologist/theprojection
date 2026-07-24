@@ -8,6 +8,7 @@ weight: 1
 entities:
 - openai
 - broadcom
+parent: where-the-capex-lands
 thread_kind: project
 blurb: OpenAI's first custom inference ASIC, co-developed with Broadcom (9-month cycle,
   ~50% claimed cost/GPU). Track end-2026 deployment, real perf/cost vs. claims, and

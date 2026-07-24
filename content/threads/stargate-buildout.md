@@ -10,6 +10,7 @@ entities:
 - softbank
 - oracle
 - mgx
+parent: where-the-capex-lands
 thread_kind: project
 blurb: ~$500B / ~10 GW joint venture (OpenAI/SoftBank/Oracle/MGX); ~7 GW + >$400B
   committed over 3 years; SoftBank carrying a $40B OpenAI loan; sovereign co-investment
