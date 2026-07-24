@@ -3,7 +3,7 @@ title: The Reckoning
 lens: mental-health
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-23
+last_seen: 2026-07-24
 weight: 3
 entities:
 - character-ai
@@ -17,6 +17,17 @@ blurb: 'The capability/approval gap for AI mental-health chatbots is being close
   real regulatory pathway (FDA/MHRA), case outcomes, and any big-tech health-arm move
   into the vacuum. Ben''s sharpest edge — the evidence-gap thesis playing out live.'
 ---
+
+## 2026-07-24 — The frontier lab enters health as its harm docket peaks
+
+- **OpenAI's ChatGPT Health went GA to all US users 18+** (07-23, surfaced
+  by the health crawl) — the same week as suicide/psychosis-reinforcement
+  suits and a 42-state AG probe. The evidence-gap thesis in one move: a
+  formal health layer built *because* the de-facto usage is the liability
+  (>1M/week suicidal-planning signals). Does it raise the standard of care,
+  or wall off "health" while the general model keeps causing harm? Feeds
+  `openai-health` + `bigtech-into-health`.
+  ([TechCrunch](https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/)) ⟨daily 2026-07-24⟩
 
 ## 2026-07-23 — An incumbent claims the "safe AI" ground
 
