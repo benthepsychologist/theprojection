@@ -409,3 +409,12 @@ a.realm-name:hover{ color:var(--brand); }
 .actor-foot{ margin:1.6rem 0 0; font-size:.9rem; }
 .actor-vocab{ margin:2.4rem 0 1rem; text-align:center; }
 .none{ color:var(--ink-faint); font-style:italic; font-size:.9rem; }
+
+/* ---------- The Map: per-actor synthesis ("what it's up to now") ---------- */
+.actor-doing{ background:var(--paper-dim); border-left:3px solid var(--brand); border-radius:2px; padding:.9rem 1.1rem; margin:1.2rem 0; }
+.actor-doing .doing-h{ font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.66rem; font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:var(--brand); margin:0 0 .4rem; }
+.actor-doing p{ margin:.2rem 0; font-size:1rem; line-height:1.6; color:var(--ink); }
+.actor-doing .asof{ font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.66rem; color:var(--ink-faint); margin-top:.5rem; }
+.items-list{ list-style:none; padding:0; margin:.4rem 0; }
+.items-list li{ padding:.5rem 0; border-bottom:1px dotted var(--rule); font-size:.94rem; }
+.item-meta{ font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.66rem; color:var(--ink-faint); margin-left:.3rem; }

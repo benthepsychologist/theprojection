@@ -79,7 +79,8 @@
         {{ with $o.succession }}
         <p class="succession">→ {{ partial "house-chip.html" (dict "h" (index $houseBySlug .to) "proj" $proj) }} <span class="succ-date">eff. {{ .effective }}</span></p>
         {{ end }}
-        {{ with $o.gloss }}<p class="realm-gloss">{{ . }}</p>{{ end }}
+        {{ if $o.doing }}<p class="realm-gloss">{{ $o.doing | truncate 140 }}</p>
+        {{ else }}{{ with $o.gloss }}<p class="realm-gloss">{{ . | truncate 140 }}</p>{{ end }}{{ end }}
       </div>
       {{ end }}
     </div>
