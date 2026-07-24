@@ -1,5 +1,5 @@
 ---
-title: GPT-5.6 release timing and access regime
+title: GPT-5.6
 lens: ai
 status: resolved
 opened: 2026-06-26

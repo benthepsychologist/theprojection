@@ -1,5 +1,5 @@
 ---
-title: State-level therapy-chatbot bans — the statehouse regulatory vector
+title: Chatbot Bans
 lens: mental-health
 status: open
 opened: 2026-07-22

@@ -1,5 +1,5 @@
 ---
-title: Meta AI infrastructure capex
+title: Meta Capex
 lens: ai
 status: developing
 opened: 2026-07-23

@@ -1,9 +1,9 @@
 ---
-title: Google/Alphabet AI capex
+title: Google Capex
 lens: ai
 status: developing
 opened: 2026-07-23
-last_seen: 2026-07-22
+last_seen: 2026-07-23
 weight: 2
 entities:
 - google
@@ -15,11 +15,17 @@ blurb: Alphabet raised 2026 capex guidance to $195-205B (from $180-190B) on 07-2
   the spend, and the market's read (capex-as-confidence vs. capex-as-anxiety).
 ---
 
-## 2026-07-23 — Thread opened; market reaction continues
+## 2026-07-23 — Thread opened; the full Q2 picture lands
 
 - **Opened** — split out of `ai-circular-financing-risk` so Google's capex
   trajectory has its own thread rather than one line inside the broader
   circular-financing story. ⟨steer 2026-07-23⟩
+- **Full Q2 detail, finalize sweep**: revenue $119.8B (+24% YoY, beat),
+  Google Cloud +82% to $24.8B with a $514B backlog — but stock fell over
+  6% (not the ~5% first-read) and 2027 capex flagged to "increase
+  significantly." Also disclosed: Google is testing Gemini 3.5 Pro and has
+  begun pretraining Gemini 4.
+  ([CNBC](https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html)) ⟨daily 2026-07-23⟩
 - **GOOGL still soft in premarket** — continuation of 07-22's after-hours
   reaction, not new news.
   ([Tickmill](https://www.tickmill.com/blog/daily-market-outlook-july-23-2026)) ⟨daily 2026-07-23⟩

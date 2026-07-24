@@ -1,9 +1,9 @@
 ---
-title: Stargate / OpenAI-for-Countries AI infrastructure buildout
+title: Stargate
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-22
+last_seen: 2026-07-23
 weight: 2
 entities:
 - openai

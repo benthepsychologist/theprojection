@@ -1,5 +1,5 @@
 ---
-title: OpenAI IPO timing and valuation
+title: OpenAI IPO
 lens: ai
 status: developing
 opened: 2026-06-27

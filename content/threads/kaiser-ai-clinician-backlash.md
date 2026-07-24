@@ -1,9 +1,9 @@
 ---
-title: Kaiser Permanente clinicians vs. AI in behavioral-health care decisions
+title: Kaiser vs. AI
 lens: mental-health
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-22
+last_seen: 2026-07-23
 weight: 2
 entities:
 - kaiser-permanente
@@ -16,6 +16,20 @@ blurb: 'A two-year escalation over two specific systems (the E-Visit auto-triage
   question); second-strike risk; whether other systems face the same (Kaiser Hawaii
   shows the template).'
 ---
+
+## 2026-07-23 — "Unacceptable": the hearing gets a second wave
+
+- **Coverage of Tuesday's SF Board of Supervisors hearing crested a day
+  late** — Kaiser no-showed; Supervisor Walton called it "extremely
+  disrespectful," Supervisor Chen called the testimony "infuriating,
+  concerning and unacceptable." NUHW's "Terrible Three" framing
+  crystallized: AI expansion without a no-replacement guarantee, layoffs
+  paired with outside-contractor referrals, and Kaiser taking sole control
+  of BH clinical policy.
+  ([KQED](https://www.kqed.org/news/12091959/unacceptable-san-francisco-officials-question-kaisers-approach-to-ai-in-mental-health)) ⟨daily 2026-07-23⟩
+- **No firm mediation date yet** — per Kaiser's own labor-relations page,
+  NUHW indicated it's "not available until August," so Tuesday's hearing
+  pressure hasn't produced a locked session date. ⟨daily 2026-07-23⟩
 
 ## 2026-07-22 — Complaint public, mediation agreed
 

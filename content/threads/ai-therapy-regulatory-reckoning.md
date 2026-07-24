@@ -1,9 +1,9 @@
 ---
-title: AI therapy/companion chatbots — the regulatory and liability reckoning
+title: The Reckoning
 lens: mental-health
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-01
+last_seen: 2026-07-23
 weight: 3
 entities:
 - character-ai
@@ -17,6 +17,18 @@ blurb: 'The capability/approval gap for AI mental-health chatbots is being close
   real regulatory pathway (FDA/MHRA), case outcomes, and any big-tech health-arm move
   into the vacuum. Ben''s sharpest edge — the evidence-gap thesis playing out live.'
 ---
+
+## 2026-07-23 — An incumbent claims the "safe AI" ground
+
+- **Talkspace launched "Tee," a proprietary AI mental-health guide** —
+  explicitly positioned against "mass-market chatbots," HIPAA-protected;
+  GM of AI Michael Rodio framed it around "100M people/week already using
+  AI for MH." An incumbent teletherapy player claiming the regulated
+  ground before regulation forces the question — direct evidence of the
+  reckoning dynamic.
+  ([Telecom Reseller](https://telecomreseller.com/2026/07/23/talkspace-introduces-t-a-purpose-built-ai-mental-health-guide-podcast/)) ⟨daily 2026-07-23⟩
+- **PA v. Character.AI still unruled** — no hearing or injunction
+  decision found; status unchanged since the 05-01 filing. ⟨daily 2026-07-23⟩
 
 ## 2026-07-20 — Status check at briefing #0
 

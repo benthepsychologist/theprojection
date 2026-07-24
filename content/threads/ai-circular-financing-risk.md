@@ -1,9 +1,9 @@
 ---
-title: AI circular financing — vendors funding their own customers
+title: Circular Financing
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-22
+last_seen: 2026-07-23
 weight: 3
 entities:
 - nvidia
@@ -16,6 +16,21 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
   A correction here hits everything in radar Q1/Q2.'
 ---
+
+## 2026-07-23 — The next circular deal, and a credit-market echo
+
+- **AMD will invest up to $5B in Anthropic**, tied to Anthropic deploying
+  up to 2GW of AMD Instinct MI450/MI455X GPUs (first GW live H1 2027) —
+  unlike AMD's OpenAI/Meta warrant deals this is straight equity, making
+  AMD both supplier and shareholder; trade press explicitly calling it
+  "the next circular deal."
+  ([CNBC](https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html)) ⟨daily 2026-07-23⟩
+- **Hyperscaler bond cover ratios fell from ~5x (Feb 2026) to under 2x
+  (July)** — Goldman and JPMorgan both launched new products this week to
+  trade AI-debt exposure; a BofA fund-manager survey found 48% now name
+  AI hyperscaler capex the top systemic-credit-event risk. The anxiety is
+  showing up as a credit story now, not just an equity one.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-23/tech-bonds-hit-by-selloff-as-ai-debt-fears-race-through-markets)) ⟨daily 2026-07-23⟩
 
 ## 2026-07-22 — The first capex verdict landed negative
 

@@ -1,9 +1,9 @@
 ---
-title: CXMT's Shanghai IPO — capital-side marker of the memory squeeze
+title: CXMT IPO
 lens: money
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-22
+last_seen: 2026-07-23
 weight: 1
 entities: []
 thread_kind: story
@@ -11,6 +11,17 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   DRAM/HBM capacity into the global squeeze. Track first-day reception, capacity-buildout
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
+
+## 2026-07-23 — Pricing finalized, extreme oversubscription
+
+- **Pricing finalized at 8.66 yuan/share, raising ~$8.6B** (up from an
+  earlier $4.3–4.4B target range) — implied market cap ~588B yuan
+  (~$87B) at listing.
+  ([BigGo Finance](https://finance.biggo.com/news/503cd6f5-6bde-4e19-8e0c-e4bd74249f8b)) ⟨daily 2026-07-23⟩
+- **Institutional bookbuilding came in 462.85x oversubscribed** — roughly
+  4x SMIC's 114.97x when it listed on the STAR Market in 2020, an extreme
+  demand signal. Listing date confirmed July 27, ticker 688825.
+  ([EBC](https://www.ebc.com/forex/cxmt-ipo-688825-dram-china-2026)) ⟨daily 2026-07-23⟩
 
 ## 2026-07-22 — Allotment landed as staged
 

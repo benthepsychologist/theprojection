@@ -1,9 +1,9 @@
 ---
-title: Institutionalized government review of frontier releases
+title: Frontier Gatekeeping
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-21
+last_seen: 2026-07-23
 weight: 3
 entities:
 - openai
@@ -19,6 +19,22 @@ blurb: 'The gpt-5.6 gating dynamic made permanent — and it''s all one buildout
   is named (SRO?); Meta''s exclusion made official; CAISI leadership (3 directors
   in a year — can it run classified review?); the first model actually gated.'
 ---
+
+## 2026-07-23 — CAISI's third leadership change in a year
+
+- **CAISI Director Chris Fall resigned after just 3 months** (dated
+  07-20, analysis landing 07-23) — NIST's Arvind Raman is acting
+  director; Commerce says a permanent pick is coming "in the coming
+  weeks." Live question for whether CAISI can run the classified
+  frontier-threshold review due ~08-01.
+  ⟨daily 2026-07-23⟩
+- **A bipartisan House "AI Kill Switch Act" + independent-audit bill was
+  floated**, prompted by `openai-containment-breach`'s escalation.
+  ([US News](https://www.usnews.com/news/top-news/articles/2026-07-23/ai-kill-switch-bill-floated-by-us-house-lawmakers)) ⟨daily 2026-07-23⟩
+- **Confirmed: "Gold Eagle" is the cybersecurity-vulnerability
+  clearinghouse under EO 14409**, distinct from the still-unnamed 30-day
+  pre-release review framework due ~08-01 — don't conflate the two.
+  ⟨daily 2026-07-23⟩
 
 ## 2026-07-21 — Gating gets a schedule
 

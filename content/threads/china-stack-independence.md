@@ -1,9 +1,9 @@
 ---
-title: China decoupling the full AI stack — and the US market reaction
+title: China's Stack
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-22
+last_seen: 2026-07-23
 weight: 3
 entities:
 - zhipu-ai
@@ -17,6 +17,37 @@ blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3
   rules; September US-China talks) plus Beijing''s own proposed export controls on
   its models/chips. US chip-equity reaction is the measure.'
 ---
+
+## 2026-07-23 — The White House names a name
+
+- **OSTP Director Michael Kratsios directly accused Moonshot of
+  distilling Anthropic's Fable model to build Kimi K3** — the first time a
+  senior US official has named a specific Chinese lab; separately
+  alleged Moonshot obtained restricted Nvidia GB300 chips via Thailand.
+  Treasury Secretary Bessent: "sanctions and the Entity List are both on
+  the table." Under Secretary of State Helberg called it a "heist of
+  invaluable American IP."
+  ([SCMP](https://www.scmp.com/tech/tech-war/article/3361625/global-ai-experts-push-back-us-distillation-claims-against-moonshots-kimi-k3-model)) ⟨daily 2026-07-23⟩
+- **Moonshot denies it** — only 15 days elapsed between Fable's July 1
+  release and K3's July 15 launch; independent researchers (Redwood's
+  Ryan Greenblatt) call the evidence "thinner than official statements
+  suggest," circumstantial (K3 self-identifying as Claude at unusual
+  rates has innocent explanations — scraped transcripts, leaked system
+  prompts). Lands right before K3's open weights ship (07-27), adding
+  legal-risk overhang for adopters.
+  ⟨daily 2026-07-23⟩
+- **China separately weighing its own tighter export controls** on AI
+  models and chips — MofCom reportedly consulting Alibaba/ByteDance on
+  restricting overseas transfer of training data and model weights.
+  ⟨daily 2026-07-23⟩
+- **Cross-thread irony**: Hugging Face used Zhipu's open-weight GLM-5.2
+  to investigate `openai-containment-breach` — a Chinese open model
+  defending against a US lab's rogue AI, the same day this accusation
+  landed. ⟨daily 2026-07-23⟩
+- **2026-07-24: split out** — the Kratsios/Bessent distillation accusation
+  above now has its own thread, `kimi-distillation-fight` (ben-steer);
+  further developments on that specific story land there, not here.
+  ⟨steer 2026-07-24⟩
 
 ## 2026-07-22 — Washington splits; the exits line up
 

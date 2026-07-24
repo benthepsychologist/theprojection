@@ -1,5 +1,5 @@
 ---
-title: Microsoft's MAI models and decoupling from OpenAI
+title: Microsoft's Hedge
 lens: ai
 status: developing
 opened: 2026-06-28

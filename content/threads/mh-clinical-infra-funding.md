@@ -1,9 +1,9 @@
 ---
-title: Mental-health funding renaissance — capital shifting to clinical infrastructure
+title: The Funding Shift
 lens: mental-health
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-22
+last_seen: 2026-07-23
 weight: 3
 entities:
 - spring-health
@@ -16,6 +16,20 @@ blurb: 'MH is the #1-funded US therapeutic area (~$1.27B/14 deals to start 2026)
   hitting the regulatory reckoning; watch consolidation (e.g. Spring Health/Alma).
   Tests whether the market prices in rigor — the evidence-gap thesis.'
 ---
+
+## 2026-07-23 — An incumbent repositions; a policy vehicle surfaces
+
+- **Teladoc unveiled "Teladoc One,"** a virtual-care model with
+  "always-on AI support" between visits — multidisciplinary team
+  including MH therapists, cardiometabolic focus first, broader rollout
+  January 2027.
+  ([Fierce Healthcare](https://www.fiercehealthcare.com/health-tech/teladoc-health-virtual-care-model-employers-health-plans-ties-payment-results)) ⟨daily 2026-07-23⟩
+- **The CMS ACCESS Model's behavioral-health track surfaced** — launched
+  07-05, ~85 of 150+ accepted applicants chose the BH track, including
+  five watchlist entities at once (Headspace, SonderMind, Concert Health,
+  Mindoula Health, April Health by Wysa) tied to outcomes-based payment.
+  Offered as a thread candidate in the 07-23 digest, not yet folded in.
+  ⟨daily 2026-07-23⟩
 
 ## 2026-07-22 — Consolidation keeps moving; a restart, not yet a close
 

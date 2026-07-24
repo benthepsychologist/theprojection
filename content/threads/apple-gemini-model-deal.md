@@ -1,5 +1,5 @@
 ---
-title: Apple's Gemini-powered Apple Intelligence (model layer outsourced to Google)
+title: Apple × Gemini
 lens: ai
 status: developing
 opened: 2026-06-28

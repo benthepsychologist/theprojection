@@ -1,5 +1,5 @@
 ---
-title: Microsoft/Azure AI infrastructure capex
+title: Microsoft Capex
 lens: ai
 status: developing
 opened: 2026-07-23

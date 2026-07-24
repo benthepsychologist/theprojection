@@ -1,5 +1,5 @@
 ---
-title: OpenAI custom inference silicon (Broadcom 'Jalapeño')
+title: Jalapeño
 lens: ai
 status: developing
 opened: 2026-06-27
