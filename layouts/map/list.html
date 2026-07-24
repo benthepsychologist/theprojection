@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+{{/* ---- data ---- */}}
+{{ $board   := .Site.Data.board }}
+{{ $labels  := .Site.Data.labels }}
+{{ $payload := .Site.Data.payload }}
+{{ $default := $labels.default }}
+{{ $proj    := index $labels.projections $default }}
+
+{{/* houses by slug, for held_by lookups */}}
+{{ $houseBySlug := dict }}
+{{ range $board.houses }}{{ $houseBySlug = merge $houseBySlug (dict .slug .) }}{{ end }}
+
+{{/* display names — entity names where we have them, a small override map
+     for the non-entity actors, humanized slug as a last resort. Names are
+     surface, not system: they live here, not in the neutral board. */}}
+{{ $entityName := dict }}
+{{ range $payload.entities }}{{ $entityName = merge $entityName (dict .slug .name) }}{{ end }}
+{{ $override := dict
+    "amazon-aws" "Amazon" "meta-ai" "Meta" "alibaba-qwen" "Alibaba" "spacex" "SpaceXAI"
+    "microsoft-mai" "Microsoft MAI" "sk-hynix" "SK Hynix" "cxmt" "CXMT" "tsmc" "TSMC"
+    "pif" "PIF" "mgx" "MGX" "nuhw" "NUHW" "silk-road" "The Silk Road"
+    "united-states" "United States" "china" "China" "european-union" "European Union"
+    "united-kingdom" "United Kingdom" "france" "France" "uae" "UAE" "saudi-arabia" "Saudi Arabia"
+    "russia" "Russia" "us-state-legislatures" "US State Legislatures" "eu-ai-act" "EU AI Act"
+    "proposed-sro" "Proposed SRO" "nsa-frontier-review" "NSA Frontier Review"
+    "caisi" "CAISI" "fda" "FDA" "dmhc" "DMHC" "mhra" "MHRA" "kaiser-permanente" "Kaiser Permanente" }}
+
+{{ $rankOrder := slice "state" "integrated-power" "sovereign-actor" "subsidiary-actor" "alliance" "dependent-actor" "guild" "regulator" "resource-layer" "capital-layer" "route-layer" }}
+
+<main class="wrap board">
+
+  <div class="board-intro">
+    <h1 class="board-title">The Map</h1>
+    <p class="board-masthead" data-masthead>{{ $proj.masthead }}</p>
+    <p class="board-lede">Who holds what, and what posture they're in. The
+      structure is fixed; the vocabulary is a projection over it — flip it
+      and nothing underneath moves. States never wear the costume.</p>
+    <div class="vocab" role="group" aria-label="Vocabulary">
+      <span class="vocab-label">Vocabulary</span>
+      {{ range $key, $p := $labels.projections }}
+      <button class="vocab-opt{{ if eq $key $default }} on{{ end }}" data-proj="{{ $key }}">{{ $p.label }}</button>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* ---- legend (generated from the active projection) ---- */}}
+  <details class="legend-wrap" open>
+    <summary>Legend</summary>
+    <div class="legend">
+      <div class="legend-row">
+        <span class="badge house" data-housekind="label">{{ $proj.house.label }}</span>
+        <span class="legend-gloss" data-housekind="gloss">{{ $proj.house.gloss }}</span>
+      </div>
+      {{ range $rank := $rankOrder }}
+      {{ $r := index $proj.ranks $rank }}
+      <div class="legend-row">
+        <span class="badge rank r-{{ $rank }}" data-lk="rank:{{ $rank }}">{{ $r.label }}</span>
+        <span class="legend-gloss" data-gloss="rank:{{ $rank }}">{{ $r.gloss }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </details>
+
+  {{/* ---- realms, grouped by rank (structural order — NOT a power ladder) ---- */}}
+  {{ range $rank := $rankOrder }}
+  {{ $group := where $board.orgs "rank" $rank }}
+  {{ with $group }}
+  {{ $r := index $proj.ranks $rank }}
+  <section class="rank-group">
+    <h2 class="rank-head">
+      <span class="badge rank r-{{ $rank }}" data-lk="rank:{{ $rank }}">{{ $r.label }}</span>
+      <span class="rank-n">{{ len . }}</span>
+    </h2>
+    <div class="realm-grid">
+      {{ range $o := . }}
+      {{ $slug := $o.slug }}
+      {{ $name := or (index $override $slug) (index $entityName $slug) (title (replace $slug "-" " ")) }}
+      {{ $isEntity := isset $entityName $slug }}
+      {{ $tc := len (where $payload.threads "entities" "intersect" (slice $slug)) }}
+      <div class="realm r-{{ $rank }}">
+        <div class="realm-top">
+          {{ if $isEntity }}<a class="realm-name" href="/entities/{{ $slug }}/">{{ $name }}</a>
+          {{ else }}<span class="realm-name">{{ $name }}</span>{{ end }}
+          {{ if $o.dual_filed }}<span class="dual" title="also filed under {{ delimit $o.dual_filed ", " }}">✦</span>{{ end }}
+        </div>
+        <div class="realm-meta">
+          {{ if $o.held_by }}{{ partial "house-chip.html" (dict "h" (index $houseBySlug $o.held_by) "proj" $proj) }}{{ end }}
+          {{ if $o.posture }}<span class="badge posture" data-lk="posture:{{ $o.posture }}">{{ (index $proj.postures $o.posture).label }}</span>{{ end }}
+          {{ range $c := $o.condition }}<span class="badge cond" data-lk="condition:{{ $c }}">{{ (index $proj.conditions $c).label }}</span>{{ end }}
+          {{ if $o.sphere }}{{ if ne $o.sphere "none" }}<span class="sphere">{{ $o.sphere }}</span>{{ end }}{{ end }}
+          {{ if gt $tc 0 }}<span class="tc">{{ $tc }} thread{{ if gt $tc 1 }}s{{ end }}</span>{{ end }}
+        </div>
+        {{ with $o.succession }}
+        <p class="succession">→ {{ partial "house-chip.html" (dict "h" (index $houseBySlug .to) "proj" $proj) }} <span class="succ-date">eff. {{ .effective }}</span></p>
+        {{ end }}
+        {{ with $o.gloss }}<p class="realm-gloss">{{ . }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+  {{/* ---- Houses (people) — the other roster, by what they hold ---- */}}
+  <section class="rank-group houses-section">
+    <h2 class="rank-head">
+      <span class="badge house" data-housekind="label">{{ $proj.house.label }}</span>
+      <span class="rank-n">{{ len $board.houses }}</span>
+    </h2>
+    <p class="rank-gloss" data-housekind="gloss">{{ $proj.house.gloss }}</p>
+    <div class="houses-grid">
+      {{ range $h := $board.houses }}
+      <div class="house-card">
+        <div class="house-name">
+          {{ partial "house-chip.html" (dict "h" $h "proj" $proj "strong" true) }}
+          <span class="house-person">{{ $h.name }}</span>
+        </div>
+        {{ with $h.holds }}
+        <div class="house-holds">
+          {{ range $hs := . }}
+          {{ $hn := or (index $override $hs) (index $entityName $hs) (title (replace $hs "-" " ")) }}
+          <a class="hold" href="/entities/{{ $hs }}/">{{ $hn }}</a>
+          {{ end }}
+        </div>
+        {{ else }}<div class="house-holds none">inheriting — holds no realm yet</div>{{ end }}
+        {{ with $h.gloss }}<p class="realm-gloss">{{ . }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <p class="board-foot muted">The board is derived from <a href="/threads/">the threads</a> and
+    published from kestrel. Rank is a structural position, not a ranking — States
+    and Empires are not on one ladder. Promotion, demotion, and succession are
+    events, never silent edits.</p>
+
+</main>
+
+<script>
+window.__BOARD_LABELS   = {{ $labels.projections | jsonify }};
+window.__BOARD_DEFAULT  = {{ $default | jsonify }};
+</script>
+<script src="/js/map.js" defer></script>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

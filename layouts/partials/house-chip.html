@@ -1,0 +1,8 @@
+{{- /* Renders a House chip in the DEFAULT projection's vocabulary server-side
+       (feudal: "House {surname}", plain: "{name}") so it's correct before JS
+       and for no-JS readers; map.js re-labels it on a vocabulary swap.
+       Params: h (house object), proj (active projection), strong (bool). */ -}}
+{{- $h := .h -}}
+{{- $surname := index (last 1 (split $h.name " ")) 0 -}}
+{{- $label := replace (replace .proj.house.template "{surname}" $surname) "{name}" $h.name -}}
+<span class="chip house{{ if .strong }} strong{{ end }}" data-lk="house" data-name="{{ $h.name }}">{{ $label }}</span>

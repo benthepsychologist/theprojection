@@ -1,0 +1,109 @@
+# data/labels.yaml — vocabulary projections over the neutral board taxonomy.
+#
+# "The surface is never the system." The board (kestrel: attention/board.yaml)
+# classifies every actor in NEUTRAL kinds. This file is the COSTUME — it maps
+# each neutral kind to a display label + a one-line legend gloss. Swap the
+# active projection to re-skin the whole board without reclassifying anyone;
+# the on-page vocabulary button toggles between the projections below.
+#
+# Each kind carries { label, gloss }. The /map/ legend is GENERATED from
+# these, so the vocabulary can never drift from the words on the page.
+#
+# `costumable: false` on a kind means it keeps its neutral label in EVERY
+# projection — this is how "the costume ends where sovereignty begins" is
+# ENFORCED by the renderer instead of remembered by a human. States carry it.
+#
+# TWO ENTITY KINDS carry labels: `house` (people) and the org `ranks`. The
+# `house.template` is the one place a label interpolates an actor field
+# rather than being a static string — feudal "House {surname}", plain "{name}"
+# (surname = last token of the House's name).
+
+default: feudal
+
+projections:
+
+  # ---- Projection 1: plain (neutral passthrough) --------------------------
+  plain:
+    label: "Plain"
+    masthead: "Major actors, by structural position. People hold organizations."
+    house:  { label: "People", template: "{name}", gloss: "The principal person controlling one or more organizations." }
+    ranks:
+      state:            { label: "State",            gloss: "Writes law rather than lobbying for it.", costumable: false }
+      integrated-power: { label: "Integrated Power", gloss: "Multiple frontier efforts, owns its compute, has dependents." }
+      sovereign-actor:  { label: "Independent Actor", gloss: "Own model line and capital; may rent compute." }
+      subsidiary-actor: { label: "Semi-autonomous Unit", gloss: "A distinct court inside an integrated power." }
+      alliance:         { label: "Alliance",         gloss: "Temporary coalition; dissolves." }
+      dependent-actor:  { label: "Dependent",        gloss: "Holds position at another's pleasure." }
+      regulator:        { label: "Regulator",        gloss: "Writes rules over actors it doesn't own." }
+      resource-layer:   { label: "Resource Layer",   gloss: "Fabs, memory, power, land." }
+      capital-layer:    { label: "Capital Layer",    gloss: "Sovereign wealth, asset managers, lenders." }
+      route-layer:      { label: "Trade Layer",      gloss: "What moves between spheres." }
+      guild:            { label: "Institution",      gloss: "Non-AI-native actor — health system, union, body." }
+    postures:
+      at-war:        { label: "contesting" }
+      hedging:       { label: "hedging" }
+      consolidating: { label: "consolidating" }
+      expanding:     { label: "expanding" }
+      retrenching:   { label: "retrenching" }
+      dormant:       { label: "dormant" }
+    conditions:
+      in-succession: { label: "in succession" }
+      under-review:  { label: "under regulatory review" }
+    genres:
+      succession:         { label: "succession" }
+      border-war:         { label: "border dispute" }
+      partnership:        { label: "partnership" }
+      authority-claim:    { label: "authority claim" }
+      labor-action:       { label: "labor action" }
+      legitimacy-dispute: { label: "legitimacy dispute" }
+      hedge:              { label: "hedge" }
+      capital-flow:       { label: "capital flow" }
+      buildout-race:      { label: "buildout race" }
+      scarcity:           { label: "scarcity" }
+      exogenous-shock:    { label: "exogenous shock" }
+      coalition:          { label: "coalition" }
+      resource-move:      { label: "resource move" }
+      financing:          { label: "financing" }
+
+  # ---- Projection 2: feudal (the costume) ---------------------------------
+  feudal:
+    label: "The Map"
+    masthead: "The costume ends where sovereignty begins."
+    house:  { label: "Houses", template: "House {surname}", gloss: "A person who holds one or more realms. Succession is tracked; a realm can change Houses." }
+    ranks:
+      state:            { label: "State",         gloss: "A legal monopoly on force. No House, no ruler — the asymmetry is the point.", costumable: false }
+      integrated-power: { label: "Empire",        gloss: "Multiple armies, owns its mines, holds vassals. Decline is watched." }
+      sovereign-actor:  { label: "Kingdom",       gloss: "Own capital and model line, freedom of action. May rent its mines. Held by a House." }
+      subsidiary-actor: { label: "March",         gloss: "A semi-autonomous court inside an empire, often with more freedom than the capital." }
+      alliance:         { label: "Confederation", gloss: "An alliance of convenience across houses. It dissolves; the dissolution is a story." }
+      dependent-actor:  { label: "Vassal",        gloss: "Holds its position at another's pleasure. Many are double vassals — app store and model provider both." }
+      regulator:        { label: "The Church",    gloss: "Claimed moral jurisdiction over actors it doesn't own, exercised across borders. Dioceses belong to States." }
+      resource-layer:   { label: "The Mines",     gloss: "Fabs, memory, power, land — the resource beneath the war." }
+      capital-layer:    { label: "The Treasury",  gloss: "Moneylenders to kings." }
+      route-layer:      { label: "The Silk Road", gloss: "Not an actor — the road between the two apex spheres, and what moves on it." }
+      guild:            { label: "Guilds & Estates", gloss: "Institutional actors that are neither kingdom nor vassal — health systems, unions, professional bodies." }
+    postures:
+      at-war:        { label: "at war" }
+      hedging:       { label: "hedging" }
+      consolidating: { label: "consolidating" }
+      expanding:     { label: "expanding" }
+      retrenching:   { label: "retrenching" }
+      dormant:       { label: "dormant" }
+    conditions:
+      in-succession: { label: "in succession" }
+      under-review:  { label: "under interdict" }
+    genres:
+      succession:         { label: "succession" }
+      border-war:         { label: "border war" }
+      partnership:        { label: "marriage alliance" }
+      authority-claim:    { label: "investiture" }
+      labor-action:       { label: "revolt" }
+      legitimacy-dispute: { label: "heresy trial" }
+      hedge:              { label: "hedge" }
+      capital-flow:       { label: "tribute" }
+      buildout-race:      { label: "siege" }
+      scarcity:           { label: "famine" }
+      exogenous-shock:    { label: "act of god" }
+      coalition:          { label: "confederation" }
+      resource-move:      { label: "mines" }
+      financing:          { label: "treasury" }
