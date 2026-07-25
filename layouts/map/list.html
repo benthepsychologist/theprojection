@@ -28,9 +28,12 @@
   <div class="board-intro">
     <h1 class="board-title">The Map</h1>
     <p class="board-masthead" data-masthead>{{ $proj.masthead }}</p>
-    <p class="board-lede">Who holds what, and what posture they're in. The
-      structure is fixed; the vocabulary is a projection over it — flip it
-      and nothing underneath moves. States never wear the costume.</p>
+    <p class="board-lede">Grouped by <strong>pocket</strong> — where the money,
+      power, and infrastructure sit. Each card reads three axes: what the actor
+      <strong>commands</strong> (capitalization), how <strong>free</strong> that
+      capital is (optionality), and the economy in its <strong>orbit</strong>
+      (gravity). The vocabulary is a projection — flip it and nothing underneath
+      moves. States never wear the costume.</p>
     {{ partial "vocab-toggle.html" (dict "labels" $labels "default" $default) }}
   </div>
 
@@ -52,42 +55,57 @@
     </div>
   </details>
 
-  {{/* ---- realms, grouped by rank (structural order — NOT a power ladder) ---- */}}
-  {{ range $rank := $rankOrder }}
-  {{ $group := where $board.orgs "rank" $rank }}
-  {{ with $group }}
-  {{ $r := index $proj.ranks $rank }}
-  <section class="rank-group">
-    <h2 class="rank-head">
-      <span class="badge rank r-{{ $rank }}" data-lk="rank:{{ $rank }}">{{ $r.label }}</span>
-      <span class="rank-n">{{ len . }}</span>
-    </h2>
-    <div class="realm-grid">
-      {{ range $o := . }}
-      {{ $slug := $o.slug }}
-      {{ $tc := len (where $payload.threads "entities" "intersect" (slice $slug)) }}
-      <div class="realm r-{{ $rank }}">
-        <div class="realm-top">
-          <a class="realm-name" href="/map/{{ $slug }}/">{{ $o.name }}</a>
-          {{ if $o.dual_filed }}<span class="dual" title="also filed under {{ delimit $o.dual_filed ", " }}">✦</span>{{ end }}
-        </div>
-        <div class="realm-meta">
-          {{ if $o.held_by }}{{ partial "house-chip.html" (dict "h" (index $houseBySlug $o.held_by) "proj" $proj) }}{{ end }}
-          {{ if $o.posture }}<span class="badge posture" data-lk="posture:{{ $o.posture }}">{{ (index $proj.postures $o.posture).label }}</span>{{ end }}
-          {{ range $c := $o.condition }}<span class="badge cond" data-lk="condition:{{ $c }}">{{ (index $proj.conditions $c).label }}</span>{{ end }}
-          {{ if $o.sphere }}{{ if ne $o.sphere "none" }}<span class="sphere">{{ $o.sphere }}</span>{{ end }}{{ end }}
-          {{ if gt $tc 0 }}<span class="tc">{{ $tc }} thread{{ if gt $tc 1 }}s{{ end }}</span>{{ end }}
-        </div>
-        {{ with $o.succession }}
-        <p class="succession">→ {{ partial "house-chip.html" (dict "h" (index $houseBySlug .to) "proj" $proj) }} <span class="succ-date">eff. {{ .effective }}</span></p>
-        {{ end }}
-        {{ if $o.doing }}<p class="realm-gloss">{{ $o.doing | truncate 140 }}</p>
-        {{ else }}{{ with $o.gloss }}<p class="realm-gloss">{{ . | truncate 140 }}</p>{{ end }}{{ end }}
+  {{/* ---- the board, grouped by POCKET (money / power / infra / health) ---- */}}
+  {{ $superGroups := slice
+     (dict "title" "Money" "note" "capital pools — who commands the money" "pockets" (slice "capital" "insurance"))
+     (dict "title" "Power" "note" "the model + platform powers" "pockets" (slice "hyperscaler" "frontier-lab"))
+     (dict "title" "Infrastructure" "note" "the silicon everything else runs on" "pockets" (slice "foundry" "chips"))
+     (dict "title" "Health" "note" "payers + providers — the care economy" "pockets" (slice "health")) }}
+  {{ range $sg := $superGroups }}
+  <section class="super-group">
+    <h2 class="super-head">{{ $sg.title }}<span class="super-note">{{ $sg.note }}</span></h2>
+    {{ range $pk := $sg.pockets }}
+    {{ $group := where $board.orgs "pocket" $pk }}
+    {{ with $group }}
+    {{ $pl := index $proj.pockets $pk }}
+    <div class="pocket-group">
+      <h3 class="pocket-head">
+        <span class="badge pocket p-{{ $pk }}" data-lk="pocket:{{ $pk }}">{{ if $pl }}{{ $pl.label }}{{ else }}{{ humanize $pk }}{{ end }}</span>
+        <span class="rank-n">{{ len . }}</span>
+        {{ if $pl }}<span class="pocket-gloss" data-gloss="pocket:{{ $pk }}">{{ $pl.gloss }}</span>{{ end }}
+      </h3>
+      <div class="realm-grid">
+        {{ range $o := . }}{{ partial "realm-card.html" (dict "o" $o "proj" $proj "houseBySlug" $houseBySlug "payload" $payload) }}{{ end }}
       </div>
-      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{/* ---- States (never pocketed, never costumed) ---- */}}
+  {{ $states := where $board.orgs "rank" "state" }}
+  {{ with $states }}
+  {{ $r := index $proj.ranks "state" }}
+  <section class="rank-group">
+    <h2 class="rank-head"><span class="badge rank r-state" data-lk="rank:state">{{ $r.label }}</span><span class="rank-n">{{ len . }}</span></h2>
+    <p class="rank-gloss" data-gloss="rank:state">{{ $r.gloss }}</p>
+    <div class="realm-grid">
+      {{ range $o := . }}{{ partial "realm-card.html" (dict "o" $o "proj" $proj "houseBySlug" $houseBySlug "payload" $payload) }}{{ end }}
     </div>
   </section>
   {{ end }}
+
+  {{/* ---- Other actors: kingdoms not yet pocketed + the regulator/route stubs ---- */}}
+  {{ $inst := slice }}
+  {{ range $board.orgs }}{{ if and (ne .rank "state") (not .pocket) }}{{ $inst = $inst | append . }}{{ end }}{{ end }}
+  {{ with $inst }}
+  <details class="rank-group other-actors">
+    <summary><span class="other-h">Other actors</span> <span class="rank-n">{{ len . }}</span> <span class="super-note">un-pocketed — regulators, the stubs, and actors still on the tail of the spin-up</span></summary>
+    <div class="realm-grid">
+      {{ range $o := . }}{{ partial "realm-card.html" (dict "o" $o "proj" $proj "houseBySlug" $houseBySlug "payload" $payload) }}{{ end }}
+    </div>
+  </details>
   {{ end }}
 
   {{/* ---- Houses (people) — the other roster, by what they hold ---- */}}
@@ -104,6 +122,7 @@
           {{ partial "house-chip.html" (dict "h" $h "proj" $proj "strong" true) }}
           <span class="house-person">{{ $h.name }}</span>
         </div>
+        {{ with $h.deployable }}<p class="deployable"><span class="dep-k">deployable</span> {{ . }}</p>{{ end }}
         {{ with $h.holds }}
         <div class="house-holds">
           {{ range $hs := . }}

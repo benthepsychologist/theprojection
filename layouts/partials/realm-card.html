@@ -1,0 +1,29 @@
+{{- /* realm-card.html — one org card. Params: o, proj, houseBySlug, payload */ -}}
+{{ $o := .o }}{{ $proj := .proj }}{{ $houseBySlug := .houseBySlug }}{{ $payload := .payload }}
+{{ $slug := $o.slug }}
+{{ $tc := len (where $payload.threads "entities" "intersect" (slice $slug)) }}
+<div class="realm r-{{ $o.rank }}{{ with $o.pocket }} p-{{ . }}{{ end }}">
+  <div class="realm-top">
+    <a class="realm-name" href="/map/{{ $slug }}/">{{ $o.name }}</a>
+    {{ if $o.dual_filed }}<span class="dual" title="also filed under {{ delimit $o.dual_filed ", " }}">✦</span>{{ end }}
+  </div>
+  <div class="realm-meta">
+    {{ if $o.held_by }}{{ partial "house-chip.html" (dict "h" (index $houseBySlug $o.held_by) "proj" $proj) }}{{ end }}
+    {{ if $o.posture }}<span class="badge posture" data-lk="posture:{{ $o.posture }}">{{ (index $proj.postures $o.posture).label }}</span>{{ end }}
+    {{ range $c := $o.condition }}<span class="badge cond" data-lk="condition:{{ $c }}">{{ (index $proj.conditions $c).label }}</span>{{ end }}
+    {{ if $o.sphere }}{{ if ne $o.sphere "none" }}<span class="sphere">{{ $o.sphere }}</span>{{ end }}{{ end }}
+    {{ if gt $tc 0 }}<span class="tc">{{ $tc }} thread{{ if gt $tc 1 }}s{{ end }}</span>{{ end }}
+  </div>
+  {{ if or $o.capitalization $o.optionality $o.gravity }}
+  <dl class="axes">
+    {{ with $o.capitalization }}<div class="ax"><dt>cap</dt><dd>{{ . | truncate 64 }}</dd></div>{{ end }}
+    {{ with $o.optionality }}<div class="ax"><dt>opt</dt><dd>{{ . | truncate 64 }}</dd></div>{{ end }}
+    {{ with $o.gravity }}<div class="ax"><dt>grav</dt><dd>{{ . | truncate 64 }}</dd></div>{{ end }}
+  </dl>
+  {{ end }}
+  {{ with $o.succession }}
+  <p class="succession">→ {{ partial "house-chip.html" (dict "h" (index $houseBySlug .to) "proj" $proj) }} <span class="succ-date">eff. {{ .effective }}</span></p>
+  {{ end }}
+  {{ if $o.doing }}<p class="realm-gloss">{{ $o.doing | truncate 140 }}</p>
+  {{ else }}{{ with $o.gloss }}<p class="realm-gloss">{{ . | truncate 140 }}</p>{{ end }}{{ end }}
+</div>

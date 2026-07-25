@@ -418,3 +418,39 @@ a.realm-name:hover{ color:var(--brand); }
 .items-list{ list-style:none; padding:0; margin:.4rem 0; }
 .items-list li{ padding:.5rem 0; border-bottom:1px dotted var(--rule); font-size:.94rem; }
 .item-meta{ font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.66rem; color:var(--ink-faint); margin-left:.3rem; }
+
+/* ---- pocket grouping + axes (2026-07-25) ------------------------------ */
+.super-group{ max-width:var(--max-width); margin:0 auto 2.4rem; }
+.super-head{ font-size:1.15rem; display:flex; align-items:baseline; gap:.6rem;
+  flex-wrap:wrap; border-bottom:2px solid var(--brand); padding-bottom:.35rem;
+  margin:0 0 1.1rem; }
+.super-note{ font-size:.78rem; font-weight:400; color:var(--ink-faint); }
+.pocket-group{ margin:0 0 1.5rem; }
+.pocket-head{ display:flex; align-items:baseline; gap:.5rem; flex-wrap:wrap; margin:0 0 .7rem; }
+.pocket-gloss{ font-size:.76rem; color:var(--ink-faint); font-weight:400; }
+.badge.pocket{ background:color-mix(in srgb, var(--brand) 12%, transparent);
+  color:var(--brand); border-color:transparent; text-transform:uppercase;
+  letter-spacing:.02em; }
+/* the axes strip on a realm card */
+.axes{ margin:.55rem 0 0; padding:.5rem 0 0; border-top:1px dotted var(--rule);
+  display:grid; gap:.32rem; }
+.axes .ax{ display:grid; grid-template-columns:2.5rem 1fr; gap:.4rem; align-items:baseline; }
+.axes dt{ font-size:.6rem; text-transform:uppercase; letter-spacing:.04em;
+  color:var(--brand); font-weight:700; }
+.axes dd{ margin:0; font-size:.74rem; color:var(--ink-faint); line-height:1.35; }
+/* deployable on a House card */
+.deployable{ font-size:.8rem; color:var(--ink); margin:.4rem 0 0; line-height:1.4; }
+.deployable .dep-k{ font-size:.6rem; text-transform:uppercase; letter-spacing:.04em;
+  color:var(--brand); font-weight:700; margin-right:.35rem; }
+/* the un-pocketed tail */
+.other-actors{ max-width:var(--max-width); margin:0 auto 2rem; }
+.other-actors > summary{ cursor:pointer; display:flex; align-items:baseline;
+  gap:.5rem; flex-wrap:wrap; border-bottom:1px solid var(--rule); padding-bottom:.4rem; }
+.other-h{ font-weight:600; font-size:1.05rem; }
+.other-actors .realm-grid{ margin-top:1rem; }
+/* full axes on the single actor page */
+.axes-full{ display:grid; gap:.75rem; margin:.4rem 0 0; }
+.ax-row dt{ font-size:.66rem; text-transform:uppercase; letter-spacing:.04em;
+  color:var(--brand); font-weight:700; margin-bottom:.15rem; }
+.ax-row dd{ margin:0; color:var(--ink); line-height:1.5; }
+.dep-lead{ line-height:1.5; margin:.2rem 0 0; }

@@ -32,6 +32,14 @@ projections:
       kingdom:     { label: "Organization", gloss: "An organization on the board — differentiated by capitalization, optionality, and economic gravity, not by rank." }
       regulator:   { label: "Regulator",    gloss: "Writes rules over actors it doesn't own. (Stub — a state organ, pending re-home.)" }
       route-layer: { label: "Trade Layer",  gloss: "What moves between spheres. (Stub — not an actor.)" }
+    pockets:
+      hyperscaler:  { label: "Hyperscalers",  gloss: "Cloud + platform giants; own the compute and the distribution." }
+      frontier-lab: { label: "Frontier labs", gloss: "The model-makers — capital is raised compute money." }
+      foundry:      { label: "Foundries",     gloss: "The fabs. Whoever prints the silicon." }
+      chips:        { label: "Chips",         gloss: "Designers, intermediaries, and memory — the silicon layer." }
+      capital:      { label: "Capital",       gloss: "Asset managers + sovereign funds; command money they don't own." }
+      insurance:    { label: "Insurance",     gloss: "Long-duration capital pools; mostly constrained." }
+      health:       { label: "Health",        gloss: "Payers + providers — the care economy." }
     postures:
       at-war:        { label: "contesting" }
       hedging:       { label: "hedging" }
@@ -68,6 +76,14 @@ projections:
       kingdom:     { label: "Kingdom", gloss: "A realm held by a House. Its weight is its treasury (capitalization), the freedom of its coin (optionality), and the economy in its orbit (gravity) — not a fixed rung." }
       regulator:   { label: "The Church", gloss: "Claimed moral jurisdiction over actors it doesn't own. (Stub — belongs to a State, pending re-home.)" }
       route-layer: { label: "The Silk Road", gloss: "The road between the apex spheres, and what moves on it. (Stub — not an actor.)" }
+    pockets:
+      hyperscaler:  { label: "The Great Powers", gloss: "They own the compute and the roads; the rest pay to pass." }
+      frontier-lab: { label: "The Sorcerers",     gloss: "Conjurers of models; their treasuries are borrowed spellpower." }
+      foundry:      { label: "The Foundries",     gloss: "Where the silicon is cast. Few, and irreplaceable." }
+      chips:        { label: "The Forges",        gloss: "Smiths of the war material — designers, brokers, and the memory guilds." }
+      capital:      { label: "The Treasuries",    gloss: "Moneylenders and sovereign coffers; they direct coin they do not own." }
+      insurance:    { label: "The Underwriters",  gloss: "Vast, slow vaults of pledged coin, bound by covenant." }
+      health:       { label: "The Infirmaries",   gloss: "Those who hold the gates to care — and the purse for it." }
     postures:
       at-war:        { label: "at war" }
       hedging:       { label: "hedging" }

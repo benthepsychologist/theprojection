@@ -63,6 +63,9 @@
       {{ range $c := . }}<span class="badge cond" data-lk="condition:{{ $c }}">{{ (index $proj.conditions $c).label }}</span> {{ end }}</div>{{ end }}
     {{ if $o.sphere }}{{ if ne $o.sphere "none" }}
     <div class="fact"><span class="fact-k">Sphere</span> <span class="sphere">{{ $o.sphere }}</span></div>{{ end }}{{ end }}
+    {{ with $o.pocket }}{{ $pl := index $proj.pockets . }}
+    <div class="fact"><span class="fact-k">Pocket</span>
+      <span class="badge pocket p-{{ . }}" data-lk="pocket:{{ . }}">{{ if $pl }}{{ $pl.label }}{{ else }}{{ humanize . }}{{ end }}</span></div>{{ end }}
     {{ if $o.tier }}
     <div class="fact"><span class="fact-k">Tier</span> {{ humanize $o.tier }}</div>{{ end }}
   </div>
@@ -76,6 +79,18 @@
   {{ end }}
 
   {{ with $o.gloss }}<p class="actor-gloss">{{ . }}</p>{{ end }}
+
+  {{ if or $o.capitalization $o.optionality $o.gravity }}
+  <div class="section axes-section">
+    <h2>The axes</h2>
+    <dl class="axes-full">
+      {{ with $o.capitalization }}<div class="ax-row"><dt>Commanded capital</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{ with $o.optionality }}<div class="ax-row"><dt>Optionality</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{ with $o.gravity }}<div class="ax-row"><dt>Gravity</dt><dd>{{ . }}</dd></div>{{ end }}
+    </dl>
+    {{ with $o.axes_asof }}<p class="asof">axes as of {{ . }} · gravity shown gross (undeflated)</p>{{ end }}
+  </div>
+  {{ end }}
 
   {{ with $o.holdings }}
   <div class="section">
@@ -132,6 +147,13 @@
   </div>
 
   {{ with $h.gloss }}<p class="actor-gloss">{{ . }}</p>{{ end }}
+
+  {{ with $h.deployable }}
+  <div class="section axes-section">
+    <h2>Deployable capital</h2>
+    <p class="dep-lead">{{ . }}</p>
+    {{ with $h.deployable_asof }}<p class="asof">as of {{ . }} · what they could personally set in motion within ~12 months</p>{{ end }}
+  </div>{{ end }}
 
   <div class="section">
     <h2>Holds</h2>
