@@ -19,7 +19,9 @@
 {{ $orgName := dict }}
 {{ range $board.orgs }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
 
-{{ $rankOrder := slice "state" "integrated-power" "sovereign-actor" "subsidiary-actor" "alliance" "dependent-actor" "guild" "regulator" "resource-layer" "capital-layer" "route-layer" }}
+{{/* Structural kinds, not a power ladder — actors differ by axis ($ capitalization,
+     optionality, gravity), not rank. regulator + route-layer are stubs pending re-home. */}}
+{{ $rankOrder := slice "state" "kingdom" "regulator" "route-layer" }}
 
 <main class="wrap board">
 
@@ -116,9 +118,10 @@
   </section>
 
   <p class="board-foot muted">The board is derived from <a href="/threads/">the threads</a> and
-    published from kestrel. Rank is a structural position, not a ranking — States
-    and Empires are not on one ladder. Promotion, demotion, and succession are
-    events, never silent edits.</p>
+    published from kestrel. There is no rank ladder — Kingdoms are told apart by
+    what they command: capitalization (how much they can spend), optionality (how
+    free that capital is), and gravity (the economy in their orbit). Sovereignty
+    is graded, not a rung. Succession is an event, never a silent edit.</p>
 
 </main>
 

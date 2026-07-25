@@ -85,7 +85,7 @@
 
   {{ with $vassals }}
   <div class="section">
-    <h2>{{ (index $proj.ranks "dependent-actor").label }}s</h2>
+    <h2>Dependents</h2>
     <div class="tag-row">{{ range . }}<a class="hold" href="/map/{{ .slug }}/">{{ .name }}</a>{{ end }}</div>
   </div>{{ end }}
 
