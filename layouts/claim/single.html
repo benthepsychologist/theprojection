@@ -12,6 +12,7 @@
 {{ $nameBySlug := dict }}
 {{ range $board.orgs }}{{ $nameBySlug = merge $nameBySlug (dict .slug .name) }}{{ end }}
 {{ range $board.houses }}{{ $nameBySlug = merge $nameBySlug (dict .slug .name) }}{{ end }}
+{{ $claimById := dict }}{{ range .Site.Data.claims }}{{ $claimById = merge $claimById (dict .id .) }}{{ end }}
 
 <main class="wrap claim">
 {{ range $c := .Site.Data.claims }}{{ if eq $c.id $cid }}
@@ -31,6 +32,19 @@
     {{ with $c.basis }}<p class="claim-basis">{{ . }}</p>{{ end }}
   </div>
 
+  {{ with $c.members }}
+  <div class="claim-section">
+    <h2>Member claims <span class="n">{{ len . }}</span></h2>
+    <p class="src-meta">This is an aggregate — its evidence is the members' own claims.</p>
+    <ul class="cites">
+      {{ range $mid := . }}{{ $m := index $claimById $mid }}
+      <li><a href="/claim/{{ $mid }}/">{{ or (index $nameBySlug $m.subject) (humanize $m.subject) }}</a> <span class="src-meta">{{ $m.value | truncate 90 }}</span></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
+  {{ if not $c.aggregate }}
   <div class="claim-section">
     <h2>Citations <span class="n">{{ len $c.sources }}</span></h2>
     {{ if $c.sources }}
@@ -46,6 +60,7 @@
     </ul>
     {{ else }}<p class="none">No citation on file — flagged as an estimate.</p>{{ end }}
   </div>
+  {{ end }}
 
   <div class="claim-section">
     <h2>Threads <span class="n">{{ len $threads }}</span></h2>

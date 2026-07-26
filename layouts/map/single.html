@@ -221,6 +221,21 @@
     <p class="actor-gloss-rank">{{ if $pl }}{{ $pl.gloss }}{{ else }}{{ $g.gloss }}{{ end }}</p>
   </div>
 
+  {{ $myClaims := where $claims "subject" $slug }}
+  {{ with $myClaims }}
+  <div class="section metrics-section">
+    <h2>The metrics <span class="src-meta">— aggregated from members; click for the breakdown</span></h2>
+    <dl class="metrics">
+      {{ range $c := . }}
+      <a class="metric-row" href="/claim/{{ $c.id }}/">
+        <dt>{{ $c.label }}</dt>
+        <dd>{{ $c.value | truncate 150 }} <span class="cite-n">{{ len $c.members }} members →</span></dd>
+      </a>
+      {{ end }}
+    </dl>
+  </div>
+  {{ end }}
+
   {{ if $isSector }}
   {{ range $pk := (where $board.groups "tier" "G1") }}{{ if in $pk.member_of $slug }}
   {{ $pkOrgs := where $board.orgs "pocket" $pk.slug }}{{ $ppl := index $proj.pockets $pk.slug }}
