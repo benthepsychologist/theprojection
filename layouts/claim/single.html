@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+{{ $cid     := .Params.claim_id }}
+{{ $board   := .Site.Data.board }}
+{{ $payload := .Site.Data.payload }}
+{{ $nameBySlug := dict }}
+{{ range $board.orgs }}{{ $nameBySlug = merge $nameBySlug (dict .slug .name) }}{{ end }}
+{{ range $board.houses }}{{ $nameBySlug = merge $nameBySlug (dict .slug .name) }}{{ end }}
+
+<main class="wrap claim">
+{{ range $c := .Site.Data.claims }}{{ if eq $c.id $cid }}
+{{ $subjName := or (index $nameBySlug $c.subject) (humanize $c.subject) }}
+{{ $threads := where $payload.threads "entities" "intersect" (slice $c.subject) }}
+
+  <p class="crumb"><a href="/map/{{ $c.subject }}/">← {{ $subjName }}</a></p>
+
+  <div class="claim-head">
+    <span class="claim-dim">{{ $c.label }}</span>
+    <h1 class="claim-val">{{ $c.value }}</h1>
+    <p class="claim-meta">
+      {{ with $c.confidence }}<span class="conf c-{{ . }}">{{ . }} confidence</span> · {{ end }}
+      {{ with $c.as_of }}as of {{ . }} · {{ end }}
+      about <a href="/map/{{ $c.subject }}/">{{ $subjName }}</a>
+    </p>
+    {{ with $c.basis }}<p class="claim-basis">{{ . }}</p>{{ end }}
+  </div>
+
+  <div class="claim-section">
+    <h2>Citations <span class="n">{{ len $c.sources }}</span></h2>
+    {{ if $c.sources }}
+    <ul class="cites">
+      {{ range $c.sources }}
+      <li>
+        {{ if .url }}<a href="{{ .url }}" rel="nofollow noopener" target="_blank">{{ .title }}</a>{{ else }}<span class="src-title">{{ .title }}</span>{{ end }}
+        {{ with .figure }}<span class="fig">{{ . }}</span>{{ end }}
+        {{ with .as_of }}<span class="src-meta">{{ . }}</span>{{ end }}
+        {{ with .reliability }}<span class="conf c-{{ . }}">{{ . }}</span>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}<p class="none">No citation on file — flagged as an estimate.</p>{{ end }}
+  </div>
+
+  <div class="claim-section">
+    <h2>Threads <span class="n">{{ len $threads }}</span></h2>
+    {{ if $threads }}
+    <ul class="cites">{{ range $threads }}<li><a href="/threads/{{ .slug }}/">{{ .title }}</a> <span class="src-meta">{{ .status }}</span></li>{{ end }}</ul>
+    {{ else }}<p class="none">No thread tagged to this actor yet.</p>{{ end }}
+  </div>
+
+  <p class="board-foot muted">A claim is one metric we assert about a node —
+    the value is the summary, this page is the receipt. Sourced from kestrel;
+    supersedes-history not yet shown. <a href="/map/{{ $c.subject }}/">Back to {{ $subjName }}</a>.</p>
+
+{{ end }}{{ end }}
+</main>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

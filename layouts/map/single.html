@@ -20,6 +20,7 @@
 {{ range $board.orgs }}{{ $orgBySlug = merge $orgBySlug (dict .slug .) }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
 {{ $groupBySlug := dict }}{{ range $board.groups }}{{ $groupBySlug = merge $groupBySlug (dict .slug .) }}{{ end }}
 {{ $sectorLabels := dict "finance" "Finance" "power" "Power" "infra" "Infrastructure" "care" "Care" }}
+{{ $claims := .Site.Data.claims }}
 
 <main class="wrap board actor">
 
@@ -87,7 +88,20 @@
 
   {{ with $o.gloss }}<p class="actor-gloss">{{ . }}</p>{{ end }}
 
-  {{ if or $o.capitalization $o.optionality $o.gravity }}
+  {{ $myClaims := where $claims "subject" $slug }}
+  {{ if $myClaims }}
+  <div class="section metrics-section">
+    <h2>The metrics <span class="src-meta">— click any for its citations + threads</span></h2>
+    <dl class="metrics">
+      {{ range $c := $myClaims }}
+      <a class="metric-row" href="/claim/{{ $c.id }}/">
+        <dt>{{ $c.label }}{{ with $c.confidence }} <span class="conf c-{{ . }}">{{ . }}</span>{{ end }}</dt>
+        <dd>{{ $c.value | truncate 190 }} <span class="cite-n">{{ len $c.sources }} src →</span></dd>
+      </a>
+      {{ end }}
+    </dl>
+  </div>
+  {{ else if or $o.capitalization $o.optionality $o.gravity }}
   <div class="section axes-section">
     <h2>The axes</h2>
     <dl class="axes-full">
