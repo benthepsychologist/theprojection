@@ -18,7 +18,9 @@
 # rather than being a static string — feudal "House {surname}", plain "{name}"
 # (surname = last token of the House's name).
 
-default: feudal
+# default = plain (Ben, 2026-07-26): accuracy first, metaphors later. The feudal
+# costume stays available via the vocab toggle; it's just not the front door.
+default: plain
 
 projections:
 

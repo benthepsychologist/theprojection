@@ -14,11 +14,13 @@
     {{ if $o.sphere }}{{ if ne $o.sphere "none" }}<span class="sphere">{{ $o.sphere }}</span>{{ end }}{{ end }}
     {{ if gt $tc 0 }}<span class="tc">{{ $tc }} thread{{ if gt $tc 1 }}s{{ end }}</span>{{ end }}
   </div>
-  {{ if or $o.capitalization $o.optionality $o.gravity }}
+  {{ with $o.capitalization }}
+  <p class="cap-line"><span class="cap-k">capital</span> {{ . | truncate 112 }}</p>
+  {{ end }}
+  {{ if or $o.optionality $o.gravity }}
   <dl class="axes">
-    {{ with $o.capitalization }}<div class="ax"><dt>cap</dt><dd>{{ . | truncate 64 }}</dd></div>{{ end }}
-    {{ with $o.optionality }}<div class="ax"><dt>opt</dt><dd>{{ . | truncate 64 }}</dd></div>{{ end }}
-    {{ with $o.gravity }}<div class="ax"><dt>grav</dt><dd>{{ . | truncate 64 }}</dd></div>{{ end }}
+    {{ with $o.optionality }}<div class="ax"><dt>opt</dt><dd>{{ . | truncate 60 }}</dd></div>{{ end }}
+    {{ with $o.gravity }}<div class="ax"><dt>grav</dt><dd>{{ . | truncate 60 }}</dd></div>{{ end }}
   </dl>
   {{ end }}
   {{ with $o.succession }}

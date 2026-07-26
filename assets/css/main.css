@@ -454,3 +454,19 @@ a.realm-name:hover{ color:var(--brand); }
   color:var(--brand); font-weight:700; margin-bottom:.15rem; }
 .ax-row dd{ margin:0; color:var(--ink); line-height:1.5; }
 .dep-lead{ line-height:1.5; margin:.2rem 0 0; }
+
+/* ---- capital-led card + readability pass (2026-07-26) ---------------- */
+.cap-line{ margin:.6rem 0 0; padding:.55rem 0 0; border-top:1px solid var(--rule);
+  font-size:.82rem; color:var(--ink); line-height:1.4; }
+.cap-k{ display:inline-block; font-size:.58rem; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--brand); font-weight:700; margin-right:.4rem;
+  vertical-align:.08em; }
+.axes{ border-top:none; padding-top:.35rem; gap:.25rem; }
+.axes dt{ font-size:.56rem; color:var(--ink-faint); font-weight:700; }
+.axes dd{ font-size:.72rem; }
+/* more air between the big groupings */
+.super-group{ margin-bottom:3rem; }
+.super-head{ font-size:1.35rem; letter-spacing:-.01em; }
+.pocket-head{ margin-top:1.2rem; }
+.realm-grid{ gap:.9rem; }
+.realm{ padding:.8rem .9rem; }
