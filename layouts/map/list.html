@@ -12,135 +12,92 @@
 {{ $payload := .Site.Data.payload }}
 {{ $default := $labels.default }}
 {{ $proj    := index $labels.projections $default }}
-
-{{/* houses + org display names by slug (names resolved in board.json) */}}
-{{ $houseBySlug := dict }}
-{{ range $board.houses }}{{ $houseBySlug = merge $houseBySlug (dict .slug .) }}{{ end }}
+{{ $groups  := $board.groups }}
 {{ $orgName := dict }}
 {{ range $board.orgs }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
-
-{{/* Structural kinds, not a power ladder — actors differ by axis ($ capitalization,
-     optionality, gravity), not rank. regulator + route-layer are stubs pending re-home. */}}
-{{ $rankOrder := slice "state" "kingdom" "regulator" "route-layer" }}
+{{ $sectorLabels := dict "finance" "Finance" "power" "Power" "infra" "Infrastructure" "care" "Care" }}
 
 <main class="wrap board">
 
   <div class="board-intro">
     <h1 class="board-title">The Map</h1>
     <p class="board-masthead" data-masthead>{{ $proj.masthead }}</p>
-    <p class="board-lede">Grouped by <strong>pocket</strong> — where the money,
-      power, and infrastructure sit. Each card reads three axes: what the actor
-      <strong>commands</strong> (capitalization), how <strong>free</strong> that
-      capital is (optionality), and the economy in its <strong>orbit</strong>
-      (gravity). The vocabulary is a projection — flip it and nothing underneath
-      moves. States never wear the costume.</p>
+    <p class="board-lede">A map of where the <strong>capital</strong> is — who commands it,
+      how free it is, and the economy in its orbit. Every actor is a node; <strong>pockets</strong>
+      and <strong>sectors</strong> are cohorts of aligned interest. Open a pocket to see its
+      members and what moved this week.</p>
     {{ partial "vocab-toggle.html" (dict "labels" $labels "default" $default) }}
   </div>
 
-  {{/* ---- legend (generated from the active projection) ---- */}}
-  <details class="legend-wrap" open>
-    <summary>Legend</summary>
-    <div class="legend">
-      <div class="legend-row">
-        <span class="badge house" data-housekind="label">{{ $proj.house.label }}</span>
-        <span class="legend-gloss" data-housekind="gloss">{{ $proj.house.gloss }}</span>
-      </div>
-      {{ range $rank := $rankOrder }}
-      {{ $r := index $proj.ranks $rank }}
-      <div class="legend-row">
-        <span class="badge rank r-{{ $rank }}" data-lk="rank:{{ $rank }}">{{ $r.label }}</span>
-        <span class="legend-gloss" data-gloss="rank:{{ $rank }}">{{ $r.gloss }}</span>
-      </div>
+  {{/* ---- sectors (G2) -> pocket tiles (G1) ---- */}}
+  {{ range $sector := (where $groups "tier" "G2") }}
+  <section class="sector">
+    <div class="sector-head">
+      <a class="sector-name" href="/map/{{ $sector.slug }}/">{{ or (index $sectorLabels $sector.slug) (humanize $sector.slug) }}</a>
+      <span class="sector-gloss">{{ $sector.gloss }}</span>
+    </div>
+    <div class="pocket-tiles">
+      {{ range $pk := (where $groups "tier" "G1") }}
+      {{ if in $pk.member_of $sector.slug }}
+      {{ $pkOrgs := where $board.orgs "pocket" $pk.slug }}
+      {{ $pl := index $proj.pockets $pk.slug }}
+      <a class="pocket-tile p-{{ $pk.slug }}" href="/map/{{ $pk.slug }}/">
+        <div class="tile-top">
+          <span class="tile-name" data-lk="pocket:{{ $pk.slug }}">{{ if $pl }}{{ $pl.label }}{{ else }}{{ humanize $pk.slug }}{{ end }}</span>
+          <span class="tile-n">{{ len $pkOrgs }}</span>
+        </div>
+        <p class="tile-gloss" data-gloss="pocket:{{ $pk.slug }}">{{ if $pl }}{{ $pl.gloss }}{{ else }}{{ $pk.gloss }}{{ end }}</p>
+        <p class="tile-members">{{ range $i, $o := (first 6 $pkOrgs) }}{{ if $i }} · {{ end }}{{ $o.name }}{{ end }}{{ if gt (len $pkOrgs) 6 }} · +{{ sub (len $pkOrgs) 6 }}{{ end }}</p>
+      </a>
+      {{ end }}
       {{ end }}
     </div>
-  </details>
-
-  {{/* ---- the board, grouped by POCKET (money / power / infra / health) ---- */}}
-  {{ $superGroups := slice
-     (dict "title" "Money" "note" "capital pools — who commands the money" "pockets" (slice "capital" "insurance"))
-     (dict "title" "Power" "note" "the model + platform powers" "pockets" (slice "hyperscaler" "frontier-lab"))
-     (dict "title" "Infrastructure" "note" "the silicon everything else runs on" "pockets" (slice "foundry" "chips"))
-     (dict "title" "Health" "note" "payers + providers — the care economy" "pockets" (slice "health")) }}
-  {{ range $sg := $superGroups }}
-  <section class="super-group">
-    <h2 class="super-head">{{ $sg.title }}<span class="super-note">{{ $sg.note }}</span></h2>
-    {{ range $pk := $sg.pockets }}
-    {{ $group := where $board.orgs "pocket" $pk }}
-    {{ with $group }}
-    {{ $pl := index $proj.pockets $pk }}
-    <div class="pocket-group">
-      <h3 class="pocket-head">
-        <span class="badge pocket p-{{ $pk }}" data-lk="pocket:{{ $pk }}">{{ if $pl }}{{ $pl.label }}{{ else }}{{ humanize $pk }}{{ end }}</span>
-        <span class="rank-n">{{ len . }}</span>
-        {{ if $pl }}<span class="pocket-gloss" data-gloss="pocket:{{ $pk }}">{{ $pl.gloss }}</span>{{ end }}
-      </h3>
-      <div class="realm-grid">
-        {{ range $o := . }}{{ partial "realm-card.html" (dict "o" $o "proj" $proj "houseBySlug" $houseBySlug "payload" $payload) }}{{ end }}
-      </div>
-    </div>
-    {{ end }}
-    {{ end }}
   </section>
   {{ end }}
 
-  {{/* ---- States (never pocketed, never costumed) ---- */}}
+  {{/* ---- States ---- */}}
   {{ $states := where $board.orgs "rank" "state" }}
   {{ with $states }}
-  {{ $r := index $proj.ranks "state" }}
-  <section class="rank-group">
-    <h2 class="rank-head"><span class="badge rank r-state" data-lk="rank:state">{{ $r.label }}</span><span class="rank-n">{{ len . }}</span></h2>
-    <p class="rank-gloss" data-gloss="rank:state">{{ $r.gloss }}</p>
-    <div class="realm-grid">
-      {{ range $o := . }}{{ partial "realm-card.html" (dict "o" $o "proj" $proj "houseBySlug" $houseBySlug "payload" $payload) }}{{ end }}
+  <section class="sector states-sector">
+    <div class="sector-head"><span class="sector-name">States</span>
+      <span class="sector-gloss">sovereigns — graded, on the same axes as the corps</span></div>
+    <div class="chip-row">
+      {{ range $o := . }}<a class="node-chip" href="/map/{{ $o.slug }}/">{{ $o.name }}</a>{{ end }}
     </div>
   </section>
   {{ end }}
 
-  {{/* ---- Other actors: kingdoms not yet pocketed + the regulator/route stubs ---- */}}
+  {{/* ---- People (Houses) — the deployable-capital roster ---- */}}
+  <section class="sector houses-sector">
+    <div class="sector-head"><span class="sector-name" data-housekind="label">{{ $proj.house.label }}</span>
+      <span class="sector-gloss" data-housekind="gloss">{{ $proj.house.gloss }}</span></div>
+    <div class="houses-grid">
+      {{ range $h := $board.houses }}
+      <a class="house-card" href="/map/{{ $h.slug }}/">
+        <div class="house-name"><span class="house-person">{{ $h.name }}</span></div>
+        {{ with $h.deployable }}<p class="deployable"><span class="dep-k">deployable</span> {{ . | truncate 88 }}</p>{{ end }}
+        {{ with $h.holds }}<div class="house-holds">{{ range $hs := . }}<span class="hold">{{ index $orgName $hs }}</span>{{ end }}</div>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </section>
+
+  {{/* ---- the un-pocketed tail (agencies, regulators, actors on the tail) ---- */}}
   {{ $inst := slice }}
   {{ range $board.orgs }}{{ if and (ne .rank "state") (not .pocket) }}{{ $inst = $inst | append . }}{{ end }}{{ end }}
   {{ with $inst }}
-  <details class="rank-group other-actors">
-    <summary><span class="other-h">Other actors</span> <span class="rank-n">{{ len . }}</span> <span class="super-note">un-pocketed — regulators, the stubs, and actors still on the tail of the spin-up</span></summary>
-    <div class="realm-grid">
-      {{ range $o := . }}{{ partial "realm-card.html" (dict "o" $o "proj" $proj "houseBySlug" $houseBySlug "payload" $payload) }}{{ end }}
+  <details class="other-actors">
+    <summary><span class="other-h">Other actors</span> <span class="tile-n">{{ len . }}</span> <span class="sector-gloss">agencies, regulators, and the un-pocketed tail</span></summary>
+    <div class="chip-row">
+      {{ range $o := . }}<a class="node-chip" href="/map/{{ $o.slug }}/">{{ $o.name }}</a>{{ end }}
     </div>
   </details>
   {{ end }}
 
-  {{/* ---- Houses (people) — the other roster, by what they hold ---- */}}
-  <section class="rank-group houses-section">
-    <h2 class="rank-head">
-      <span class="badge house" data-housekind="label">{{ $proj.house.label }}</span>
-      <span class="rank-n">{{ len $board.houses }}</span>
-    </h2>
-    <p class="rank-gloss" data-housekind="gloss">{{ $proj.house.gloss }}</p>
-    <div class="houses-grid">
-      {{ range $h := $board.houses }}
-      <div class="house-card">
-        <div class="house-name">
-          {{ partial "house-chip.html" (dict "h" $h "proj" $proj "strong" true) }}
-          <span class="house-person">{{ $h.name }}</span>
-        </div>
-        {{ with $h.deployable }}<p class="deployable"><span class="dep-k">deployable</span> {{ . }}</p>{{ end }}
-        {{ with $h.holds }}
-        <div class="house-holds">
-          {{ range $hs := . }}
-          <a class="hold" href="/map/{{ $hs }}/">{{ index $orgName $hs }}</a>
-          {{ end }}
-        </div>
-        {{ else }}<div class="house-holds none">inheriting — holds no realm yet</div>{{ end }}
-        {{ with $h.gloss }}<p class="realm-gloss">{{ . }}</p>{{ end }}
-      </div>
-      {{ end }}
-    </div>
-  </section>
-
-  <p class="board-foot muted">The board is derived from <a href="/threads/">the threads</a> and
-    published from kestrel. There is no rank ladder — Kingdoms are told apart by
-    what they command: capitalization (how much they can spend), optionality (how
-    free that capital is), and gravity (the economy in their orbit). Sovereignty
-    is graded, not a rung. Succession is an event, never a silent edit.</p>
+  <p class="board-foot muted">Every actor is a node — person, house, corp, state, or agency —
+    with a level (how independent it is) and a capital story: in, out, available, operating,
+    deployed. Pockets and sectors are group-nodes: cohorts, not actors. Derived from
+    <a href="/threads/">the threads</a>, published from kestrel.</p>
 
 </main>
 

@@ -18,6 +18,8 @@
 {{ range $board.houses }}{{ $houseBySlug = merge $houseBySlug (dict .slug .) }}{{ end }}
 {{ $orgBySlug := dict }}{{ $orgName := dict }}
 {{ range $board.orgs }}{{ $orgBySlug = merge $orgBySlug (dict .slug .) }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
+{{ $groupBySlug := dict }}{{ range $board.groups }}{{ $groupBySlug = merge $groupBySlug (dict .slug .) }}{{ end }}
+{{ $sectorLabels := dict "finance" "Finance" "power" "Power" "infra" "Infrastructure" "care" "Care" }}
 
 <main class="wrap board actor">
 
@@ -34,10 +36,15 @@
   {{ $isEntity := false }}{{ range $payload.entities }}{{ if eq .slug $slug }}{{ $isEntity = true }}{{ end }}{{ end }}
 
   <div class="actor-head">
-    <span class="badge rank r-{{ $o.rank }}" data-lk="rank:{{ $o.rank }}">{{ $r.label }}</span>
+    <div class="node-line">
+      {{ with $o.kind }}<span class="badge kind k-{{ . }}">{{ . }}</span>{{ end }}
+      {{ with $o.level }}<span class="lvl">{{ . }}</span>{{ end }}
+      {{ with $o.pocket }}{{ $pl := index $proj.pockets . }}<a class="badge pocket p-{{ . }}" href="/map/{{ . }}/" data-lk="pocket:{{ . }}">{{ if $pl }}{{ $pl.label }}{{ else }}{{ humanize . }}{{ end }}</a>{{ end }}
+      {{ if $o.posture }}<span class="badge posture posture-lg" data-lk="posture:{{ $o.posture }}">{{ (index $proj.postures $o.posture).label }}</span>{{ end }}
+      {{ range $c := $o.condition }}<span class="badge cond" data-lk="condition:{{ $c }}">{{ (index $proj.conditions $c).label }}</span>{{ end }}
+    </div>
     <h1 class="actor-name">{{ $o.name }}</h1>
     {{ if $o.dual_filed }}<p class="actor-dual">✦ also filed under {{ delimit $o.dual_filed ", " }}</p>{{ end }}
-    <p class="actor-gloss-rank" data-gloss="rank:{{ $o.rank }}">{{ $r.gloss }}</p>
   </div>
 
   {{ with $o.doing }}
@@ -186,6 +193,51 @@
   {{ end }}
 
   {{ end }}{{/* with house */}}
+
+  {{/* =================== GROUP (pocket / sector) =================== */}}
+  {{ else if eq $kind "group" }}
+  {{ with index $groupBySlug $slug }}
+  {{ $g := . }}
+  {{ $isSector := eq $g.tier "G2" }}
+  {{ $pl := index $proj.pockets $slug }}
+
+  <div class="actor-head">
+    <div class="node-line"><span class="badge kind k-group">{{ if $isSector }}sector{{ else }}pocket{{ end }}</span></div>
+    <h1 class="actor-name">{{ if $isSector }}{{ or (index $sectorLabels $slug) (humanize $slug) }}{{ else if $pl }}{{ $pl.label }}{{ else }}{{ humanize $slug }}{{ end }}</h1>
+    <p class="actor-gloss-rank">{{ if $pl }}{{ $pl.gloss }}{{ else }}{{ $g.gloss }}{{ end }}</p>
+  </div>
+
+  {{ if $isSector }}
+  {{ range $pk := (where $board.groups "tier" "G1") }}{{ if in $pk.member_of $slug }}
+  {{ $pkOrgs := where $board.orgs "pocket" $pk.slug }}{{ $ppl := index $proj.pockets $pk.slug }}
+  <div class="section">
+    <h2><a href="/map/{{ $pk.slug }}/">{{ if $ppl }}{{ $ppl.label }}{{ else }}{{ humanize $pk.slug }}{{ end }}</a> <span class="rank-n">{{ len $pkOrgs }}</span></h2>
+    <div class="realm-grid">
+      {{ range $o := $pkOrgs }}{{ partial "realm-card.html" (dict "o" $o "proj" $proj "houseBySlug" $houseBySlug "payload" $payload) }}{{ end }}
+    </div>
+  </div>
+  {{ end }}{{ end }}
+  {{ else }}
+  {{ $members := where $board.orgs "pocket" $slug }}
+  {{ $mslugs := slice }}{{ range $members }}{{ $mslugs = $mslugs | append .slug }}{{ end }}
+  {{ $news := where $payload.items "entities" "intersect" $mslugs }}
+  {{ with $news }}
+  <div class="section pocket-news">
+    <h2>What's new this week</h2>
+    <ul class="items-list">
+      {{ range first 14 . }}<li>{{ .html | safeHTML }} <span class="item-meta">{{ .day }}</span></li>{{ end }}
+    </ul>
+  </div>
+  {{ else }}<div class="section"><p class="none">No tagged moves for this pocket this week.</p></div>{{ end }}
+  <div class="section">
+    <h2>Members <span class="rank-n">{{ len $members }}</span></h2>
+    <div class="realm-grid">
+      {{ range $o := $members }}{{ partial "realm-card.html" (dict "o" $o "proj" $proj "houseBySlug" $houseBySlug "payload" $payload) }}{{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  {{ end }}{{/* with group */}}
   {{ end }}{{/* kind */}}
 
   <div class="actor-vocab">{{ partial "vocab-toggle.html" (dict "labels" $labels "default" $default) }}</div>

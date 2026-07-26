@@ -470,3 +470,46 @@ a.realm-name:hover{ color:var(--brand); }
 .pocket-head{ margin-top:1.2rem; }
 .realm-grid{ gap:.9rem; }
 .realm{ padding:.8rem .9rem; }
+
+/* ==== node-map overhaul (2026-07-26) ================================== */
+/* sectors */
+.sector{ max-width:var(--max-width); margin:0 auto 2.6rem; }
+.sector-head{ display:flex; align-items:baseline; gap:.7rem; flex-wrap:wrap;
+  border-bottom:2px solid var(--brand); padding-bottom:.4rem; margin:0 0 1.1rem; }
+.sector-name{ font-size:1.4rem; font-weight:700; letter-spacing:-.01em; color:var(--ink); text-decoration:none; }
+a.sector-name:hover{ color:var(--brand); }
+.sector-gloss{ font-size:.82rem; color:var(--ink-faint); font-weight:400; }
+/* pocket tiles */
+.pocket-tiles{ display:grid; gap:1rem; grid-template-columns:1fr; }
+@media (min-width:560px){ .pocket-tiles{ grid-template-columns:1fr 1fr; } }
+@media (min-width:940px){ .pocket-tiles{ grid-template-columns:1fr 1fr 1fr; } }
+.pocket-tile{ display:block; border:1px solid var(--rule); border-radius:8px;
+  padding:1rem 1.05rem; background:var(--paper); text-decoration:none; color:var(--ink);
+  transition:border-color .12s, transform .12s; }
+.pocket-tile:hover{ border-color:var(--brand); transform:translateY(-2px); }
+.tile-top{ display:flex; align-items:center; justify-content:space-between; gap:.5rem; }
+.tile-name{ font-size:1.05rem; font-weight:700; color:var(--ink); }
+.tile-n{ font-size:.72rem; font-weight:700; color:var(--brand);
+  background:color-mix(in srgb, var(--brand) 12%, transparent); border-radius:999px;
+  padding:.1rem .5rem; }
+.tile-gloss{ font-size:.8rem; color:var(--ink-faint); margin:.45rem 0 .55rem; line-height:1.4; }
+.tile-members{ font-size:.74rem; color:var(--ink); margin:0; line-height:1.5;
+  border-top:1px dotted var(--rule); padding-top:.5rem; }
+/* node chips (states, other actors) */
+.chip-row{ display:flex; flex-wrap:wrap; gap:.5rem; }
+.node-chip{ display:inline-block; border:1px solid var(--rule); border-radius:999px;
+  padding:.3rem .75rem; font-size:.82rem; color:var(--ink); text-decoration:none; background:var(--paper); }
+.node-chip:hover{ border-color:var(--brand); color:var(--brand); }
+/* houses as clickable cards */
+a.house-card{ display:block; text-decoration:none; color:var(--ink); }
+a.house-card:hover{ border-color:var(--brand); }
+.house-holds .hold{ font-size:.74rem; color:var(--ink-faint); }
+/* the node-line on actor pages: kind · level · pocket · POSTURE */
+.node-line{ display:flex; flex-wrap:wrap; align-items:center; gap:.45rem; margin-bottom:.5rem; }
+.badge.kind{ text-transform:uppercase; letter-spacing:.04em; background:color-mix(in srgb, var(--ink) 8%, transparent);
+  color:var(--ink); border-color:transparent; font-weight:700; }
+.badge.kind.k-group{ background:color-mix(in srgb, var(--brand) 14%, transparent); color:var(--brand); }
+.lvl{ font-size:.66rem; font-weight:700; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.05em; }
+.posture-lg{ font-size:.8rem !important; padding:.22rem .6rem !important; font-weight:700; }
+a.badge.pocket{ text-decoration:none; }
+.pocket-news .items-list li{ margin-bottom:.5rem; }
