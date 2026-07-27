@@ -7,6 +7,7 @@ last_seen: 2026-07-27
 weight: 1
 entities:
 - cxmt
+- micron
 thread_kind: story
 blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Chinese
   DRAM/HBM capacity into the global squeeze. Track first-day reception, capacity-buildout
