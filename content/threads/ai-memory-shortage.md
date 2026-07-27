@@ -10,6 +10,8 @@ entities:
 - apple
 - microsoft
 - cxmt
+- sk-hynix
+- micron
 thread_kind: story
 blurb: The data-center buildout is diverting wafer capacity to HBM, spiking DRAM/NAND
   prices and forcing consumer-hardware price hikes (Apple, Microsoft). Track how far

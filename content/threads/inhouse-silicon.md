@@ -9,6 +9,8 @@ entities:
 - amazon-aws
 - microsoft
 - meta-ai
+- openai
+- broadcom
 parent: ai-compute-spend
 thread_kind: story
 blurb: The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE- only,

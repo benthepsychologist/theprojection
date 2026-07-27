@@ -9,6 +9,7 @@ entities:
 - spacex
 - elon-musk
 - tesla
+parent: frontier-lab-ipos
 thread_kind: story
 blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-07-24
   corrected the framing: "SpaceXAI" is only the AI subsidiary). IPO''d 06-12 at $135/~$1.75T

@@ -9,6 +9,7 @@ entities:
 - openai
 - sam-altman
 - softbank
+parent: frontier-lab-ipos
 thread_kind: story
 blurb: Reported slip to 2027 chasing a ~$1T valuation; Altman rejecting a lower price.
   Track confirmed timing, valuation target, and macro/AI-stock spillover (SoftBank
