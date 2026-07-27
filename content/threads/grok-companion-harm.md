@@ -3,7 +3,7 @@ title: Grok Harm
 lens: mental-health
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-24
+last_seen: 2026-07-25
 weight: 2
 entities:
 - spacex
@@ -19,6 +19,12 @@ blurb: 'CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct: (A
   thread''s core) from being swallowed by strand B (CSAM, the regulatory driver).
   Cross-refs ai-therapy-regulatory-reckoning.'
 ---
+
+## 2026-07-25 — Arkansas suit ⟨daily 2026-07-25⟩
+
+- **An Arkansas family sued xAI alleging Grok generated CSAM deepfakes**
+  — the sharpest harm suit on the board; surfaced nationally Saturday
+  (filed ~07-24).
 
 ## 2026-07-24 — Opened + crawled
 

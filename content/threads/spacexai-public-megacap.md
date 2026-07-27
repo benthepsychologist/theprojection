@@ -3,7 +3,7 @@ title: Musk Megacap
 lens: money
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-24
+last_seen: 2026-07-26
 weight: 1
 entities:
 - spacex
@@ -19,6 +19,18 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   Watch: the Aug-6 lock-up (911.5M shares); Musk''s ~82% voting control; whether the
   Anthropic lease-back is real revenue or circular financing. Q7 material.'
 ---
+
+## 2026-07-27 — All-time low; date corrected ⟨daily 2026-07-27⟩
+
+- **Fresh record low, third straight down day** — ~48–50% off the
+  post-IPO peak, ~$600B erased over six weeks; HSBC initiated at $115
+  (Friday closed $115.07 vs the $135 issue = −14.8%); Morgan Stanley:
+  ~$100–115 prices the AI/Starlink optionality at zero.
+- **⚠ Correction:** the 07-25/26 weekly sweep misreported SpaceX as
+  "pricing its IPO 07-24." Verified against primary source
+  (⟨daily 2026-07-27⟩): **priced 2026-06-11 at $135/sh ($1.77T, $75B
+  raised — largest-ever IPO), trading since 2026-06-12 as Nasdaq:SPCX.**
+  Last week's real story was the below-issue slide, not a listing.
 
 ## 2026-07-24 — Opened + crawled
 

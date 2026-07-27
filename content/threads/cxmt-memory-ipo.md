@@ -3,7 +3,7 @@ title: CXMT IPO
 lens: money
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-23
+last_seen: 2026-07-27
 weight: 1
 entities:
 - cxmt
@@ -12,6 +12,13 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   DRAM/HBM capacity into the global squeeze. Track first-day reception, capacity-buildout
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
+
+## 2026-07-27 — The debut ⟨daily 2026-07-27⟩
+
+- **Closed +466% at ~$489B — the most valuable China-listed company,**
+  above Intel's market cap; Asia's biggest 2026 IPO (~$8.5-9.1B raised).
+  Micron −8% on the read-through. Overhangs: a US DoD ban and a
+  three-year HBM deficit. The squeeze's capital-markets marker, delivered.
 
 ## 2026-07-23 — Pricing finalized, extreme oversubscription
 

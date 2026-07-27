@@ -3,7 +3,7 @@ title: Distillation Fight
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-23
+last_seen: 2026-07-26
 weight: 3
 entities:
 - moonshot-ai
@@ -17,6 +17,13 @@ blurb: 'The White House (OSTP''s Kratsios) directly accused Moonshot of distilli
   Moonshot''s response, independent verification one way or the other, and whether
   it chills enterprise adoption of K3.'
 ---
+
+## 2026-07-26 — K3 weights live ⟨daily 2026-07-26⟩
+
+- **Kimi K3 open weights shipped a day EARLY** — billed the largest
+  open-weight model ever, mid distillation-accusation and mid $50B
+  pre-IPO push; David Sacks publicly pushed back on the "Chinese model"
+  framing the same day.
 
 ## 2026-07-23 — The White House names a name
 

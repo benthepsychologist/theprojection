@@ -3,7 +3,7 @@ title: Circular Financing
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-23
+last_seen: 2026-07-26
 weight: 3
 entities:
 - nvidia
@@ -16,6 +16,28 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
   A correction here hits everything in radar Q1/Q2.'
 ---
+
+## 2026-07-27 — The market answers ⟨daily 2026-07-27⟩
+
+- **NVDA −4%, credit-default swaps wider, on its own guarantee** — "AI
+  stocks crash" headlines; Axios "reignites circular concerns"; the AI
+  index slid into bear territory and ASML plunged on China news. The
+  guarantor's credit is now the story. (Figure unresolved across outlets:
+  $250B / $500B campus / $750B deal-stack framings.)
+
+## 2026-07-26 — The guarantee ⟨daily 2026-07-26⟩
+
+- **Nvidia in talks to guarantee $250–500B of financing for OpenAI's 10GW
+  Ohio campus** (WSJ late Sunday; Reuters/Bloomberg/CNBC followed) — the
+  chip vendor backstopping its biggest customer's debt. Chanos: "financing
+  its own chip sales"; Burry: "around and around we go."
+
+## 2026-07-24 — The credit market blinks ⟨daily 2026-07-24⟩
+
+- **Moody's: AI spending threatens Amazon/Meta/Alphabet credit quality**
+  — first rating-agency framing.
+- **BlackRock's $12.3B Meta data-center bond drew soft demand** — the
+  survey anxiety showing up in a live deal.
 
 ## 2026-07-23 — The next circular deal, and a credit-market echo
 

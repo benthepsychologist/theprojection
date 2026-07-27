@@ -3,6 +3,7 @@ title: Nuclear for AI
 lens: ai
 status: open
 opened: 2026-07-24
+last_seen: 2026-07-25
 weight: 2
 entities:
 - amazon-aws
@@ -15,6 +16,12 @@ blurb: The nuclear-for-AI wave — but ~0 net-new MW power any AI datacenter bef
   announced is <20% of projected demand; every genuinely new SMR/Gen-IV project is
   2030s-weighted. Watch which actually clear licensing.
 ---
+
+## 2026-07-25 — First federal dollar ⟨daily 2026-07-25⟩
+
+- **DOE tapped Oklo/X-Energy for a $200M nuclear-for-AI push**; aggregate
+  nuclear deals signed by AI companies now ≈ 7M homes of power (07-26
+  figure). The thread's first real items since opening quiet.
 
 ## 2026-07-24 — Opened + crawled
 

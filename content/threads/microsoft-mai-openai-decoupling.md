@@ -3,7 +3,7 @@ title: Microsoft's Hedge
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-21
+last_seen: 2026-07-24
 weight: 2
 entities:
 - microsoft

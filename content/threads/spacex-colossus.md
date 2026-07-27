@@ -3,7 +3,7 @@ title: Colossus
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-24
+last_seen: 2026-07-25
 weight: 2
 entities:
 - spacex
