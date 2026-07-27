@@ -17,6 +17,14 @@ blurb: The nuclear-for-AI wave — but ~0 net-new MW power any AI datacenter bef
   2030s-weighted. Watch which actually clear licensing.
 ---
 
+## 2026-07-27 — The nuclear book across the four ⟨crawl 2026-07-27⟩
+
+- Microsoft: TMI/Crane 2027 (DOE $1B, NRC draft + FERC cleared) ·
+  Amazon: Talen 1.92GW/17yr firm + X-Energy 5GW-by-2039 · Google:
+  TVA/Kairos Gen-IV (2030) · Meta: RFP awards ≤6.6GW (Oklo/TerraPower/
+  Vistra) — but hedged with a 7.5GW gas pivot. Skeptical note: SMR
+  timelines lag near-term demand (Bulletin, 07-20).
+
 ## 2026-07-25 — First federal dollar ⟨daily 2026-07-25⟩
 
 - **DOE tapped Oklo/X-Energy for a $200M nuclear-for-AI push**; aggregate

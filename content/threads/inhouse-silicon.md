@@ -20,6 +20,13 @@ blurb: The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE
   Watch whether displacement reaches frontier training.
 ---
 
+## 2026-07-27 — Four programs, one wall ⟨crawl 2026-07-27⟩
+
+- TPU v7 Ironwood (Broadcom/MediaTek/TSMC co-design) · Maia 200
+  (dual-purpose, volumes undisclosed) · Trainium 1.4M deployed ·
+  MTIA "millions" H100-eq, Iris Sept-26. All four decline to state the
+  own-vs-Nvidia split — the wall every capex crawl hit.
+
 ## 2026-07-24 — Opened + crawled
 
 - **Thread opened** (ben-steer). ⟨steer 2026-07-24⟩

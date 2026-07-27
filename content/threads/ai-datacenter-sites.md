@@ -16,6 +16,20 @@ blurb: Where the capex lands in CONCRETE — the specific gigawatt campuses. Sta
   the specific-sites worklist lives here.
 ---
 
+## 2026-07-27 — The site map, four actors traced ⟨crawl 2026-07-27⟩
+
+- **Google:** 15+ US states + India — MO $15B · MI 1GW "Cannoli" · TX
+  Panhandle 1GW+ · NextEra ≥3 GW-scale campuses · India $15B Visakhapatnam
+  (one outlet: 5GW, thin). A land-grab, not megasites.
+- **Microsoft:** two named ~2GW builds — the WI+GA fiber-linked
+  "AI superfactory" + Pecos TX (Chevron co-located). No company-wide GW
+  total exists.
+- **Amazon:** Rainier live (New Carlisle IN, 500K Trainium2, $26B) ·
+  MS $25B · PA $20B · NC $10B (07-20).
+- **Meta:** Hyperion 5GW/$50B+ — **80% sold to Blue Owl** · El Paso
+  $10B/1GW under live local pushback · Prometheus GW-figure unclear ·
+  the 3-month tent builds are real.
+
 ## 2026-07-24 — Opened
 
 - **Thread opened** (ben-steer) — meta-thread — groups the child threads below. ⟨steer 2026-07-24⟩
