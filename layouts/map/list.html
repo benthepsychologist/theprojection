@@ -14,24 +14,31 @@
     gap:14px;flex-wrap:wrap;margin:0 0 10px}
   .plate-title{font-family:var(--serif);font-size:20px;font-weight:600;margin:0}
   .plate-enc{font-family:var(--sans);font-size:11px;color:var(--ink-45);margin:0;text-align:right}
-  :root{--opt-free:#5C8A4E;--opt-mixed:#C39A2E;--opt-constrained:#C06A2E;--opt-locked:#A23A32}
+  :root{
+    /* optionality fills — deepened for chart legibility (Ben 2026-07-27: "the graph needs to POP") */
+    --opt-free:#3E7E2E;--opt-mixed:#C4920A;--opt-constrained:#C25A14;--opt-locked:#B02418;
+    /* chart-only BRIGHT sector rings — saturated variants of the page pigments;
+       the muted originals stay everywhere else */
+    --ring-finance:#1F6FC2;--ring-power:#C22A96;--ring-infra:#9A8A00;--ring-care:#12A47E}
   .q-name{font-family:var(--serif);font-weight:600;letter-spacing:.02em;
-    fill:var(--ink);opacity:.085;text-transform:uppercase}
+    fill:var(--ink);opacity:.12;text-transform:uppercase}
   .plate .axis-line{stroke:var(--ink-24);stroke-width:1}
-  .plate .tick text{font-family:var(--sans);font-size:10px;fill:var(--ink-45);
-    font-variant-numeric:tabular-nums}
+  .plate .tick text{font-family:var(--sans);font-size:12px;fill:var(--ink-70);
+    font-variant-numeric:tabular-nums;font-weight:600}
   .plate .tick line{stroke:var(--ink-12);stroke-width:1}
   .plate .thresh{stroke:var(--ink-12);stroke-width:1;stroke-dasharray:2 5}
   .plate .diag{stroke:var(--ink-24);stroke-width:1;stroke-dasharray:1 6;fill:none}
-  .plate .diag-lbl,.plate .axis-title{font-family:var(--sans);font-size:10.5px;
-    fill:var(--ink-45);letter-spacing:.04em}
-  .plate .lead{stroke:var(--ink-24);stroke-width:.8}
-  .plate .lbl{font-family:var(--serif);font-size:12.5px;fill:var(--ink-70)}
+  .plate .diag-lbl{font-family:var(--sans);font-size:11px;fill:var(--ink-70);
+    letter-spacing:.04em;font-weight:600}
+  .plate .axis-title{font-family:var(--sans);font-size:15px;fill:var(--ink);
+    letter-spacing:.02em;font-weight:600}
+  .plate .lead{stroke:var(--ink-45);stroke-width:1}
+  .plate .lbl{font-family:var(--serif);font-size:14px;fill:var(--ink);font-weight:600}
   @media(max-width:640px){.plate .lbl,.plate .lead{display:none}}
   .plate .bubble{cursor:pointer;transition:opacity .2s ease}
-  .plate .bubble .ring{fill:none;stroke-width:1.5}
+  .plate .bubble .ring{fill:none;stroke-width:3}
   .plate .bubble:focus-visible{outline:none}
-  .plate .bubble:focus-visible .ring{stroke:var(--live);stroke-width:2.4}
+  .plate .bubble:focus-visible .ring{stroke:var(--live);stroke-width:4}
   .plate-rail{position:sticky;top:16px;display:flex;flex-direction:column;gap:12px}
   .receipt{background:var(--paper-2);border:1px solid var(--hair);border-radius:3px;
     padding:16px 16px 12px;min-height:210px}
@@ -121,10 +128,10 @@
           <div class="lg-row"><span class="lg-dot" style="background:var(--opt-constrained)"></span>constrained — debt / parent</div>
           <div class="lg-row"><span class="lg-dot" style="background:var(--opt-locked)"></span>locked — client / fiduciary / state</div>
           <h4>Ring = sector</h4>
-          <div class="lg-row"><span class="lg-ring" style="border-color:var(--power)"></span>Power</div>
-          <div class="lg-row"><span class="lg-ring" style="border-color:var(--infra)"></span>Infrastructure</div>
-          <div class="lg-row"><span class="lg-ring" style="border-color:var(--finance)"></span>Finance</div>
-          <div class="lg-row"><span class="lg-ring" style="border-color:var(--care)"></span>Care</div>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-power)"></span>Power</div>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-infra)"></span>Infrastructure</div>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-finance)"></span>Finance</div>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-care)"></span>Care</div>
         </div>
       </div>
     </div>
