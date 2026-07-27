@@ -6,7 +6,6 @@ opened: 2026-07-24
 weight: 2
 entities:
 - apple
-- apple-health
 parent: bigtech-into-health
 thread_kind: story
 blurb: Apple's AI coach ('Mulberry') keeps slipping — no AI, and no AI mental- health,

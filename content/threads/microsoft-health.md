@@ -6,7 +6,6 @@ opened: 2026-07-24
 weight: 2
 entities:
 - microsoft
-- microsoft-nuance
 parent: bigtech-into-health
 thread_kind: story
 blurb: Large and fast, but somatic-first (Dragon Copilot, MAI-DxO, Copilot Health,

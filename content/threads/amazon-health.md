@@ -6,7 +6,6 @@ opened: 2026-07-24
 weight: 2
 entities:
 - amazon-aws
-- amazon-health
 parent: bigtech-into-health
 thread_kind: story
 blurb: Amazon's push is primary-care + pharmacy + a Bedrock 'Health AI' agent layer;

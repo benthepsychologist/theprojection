@@ -6,7 +6,6 @@ opened: 2026-07-24
 weight: 2
 entities:
 - google
-- verily
 parent: bigtech-into-health
 thread_kind: story
 blurb: Google mid-pivot — Verily spun OUT to independence (not wound down); energy

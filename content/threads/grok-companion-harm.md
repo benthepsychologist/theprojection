@@ -7,6 +7,7 @@ last_seen: 2026-07-25
 weight: 2
 entities:
 - spacex
+- xai
 thread_kind: story
 blurb: 'CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct: (A)
   clinical MH harm — Grok benchmarked WORST of tested models on suicide/psychosis

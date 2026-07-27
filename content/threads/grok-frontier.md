@@ -8,6 +8,7 @@ weight: 2
 entities:
 - spacex
 - elon-musk
+- xai
 thread_kind: story
 blurb: 'The Grok line closing the frontier gap as a FAST FOLLOWER, not mid-pack (crawl
   2026-07-24 corrected our seed): Grok 4.5 (07-08) posted the biggest single-gen leap

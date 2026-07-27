@@ -8,6 +8,7 @@ weight: 2
 entities:
 - spacex
 - elon-musk
+- xai
 parent: ai-datacenter-sites
 thread_kind: project
 blurb: SpaceXAI's self-owned training compute (Colossus, Memphis) — the "owns its
