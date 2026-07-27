@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+<style>
+  /* metric methodology page — scoped, consumes the board tokens */
+  .metric-page{max-width:660px}
+  .metric-head{margin:0 0 26px;padding-bottom:18px;border-bottom:1px solid var(--hair)}
+  .metric-kicker{font-family:var(--sans);font-size:11px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--ink-45);margin:0 0 8px}
+  .metric-title{font-family:var(--serif);font-size:clamp(30px,5vw,42px);font-weight:600;
+    line-height:1.02;letter-spacing:-.01em;margin:0 0 14px;text-wrap:balance}
+  .metric-facts{display:flex;flex-direction:column;gap:4px;margin:0}
+  .metric-fact{display:flex;gap:10px;align-items:baseline;font-size:14px}
+  .metric-fact dt{font-family:var(--sans);font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-45);min-width:74px}
+  .metric-fact dd{margin:0;font-family:var(--sans);font-size:13px;color:var(--ink-70);
+    font-variant-numeric:tabular-nums}
+  .metric-body{font-family:var(--serif);font-size:16px;line-height:1.62;color:var(--ink)}
+  .metric-body p{margin:0 0 15px;max-width:65ch}
+  .metric-body strong{font-weight:600}
+  .metric-body a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink-45)}
+  .metric-body a:hover{text-decoration-color:var(--ink)}
+  .metric-body table{border-collapse:collapse;margin:6px 0 18px;font-size:14px;width:100%}
+  .metric-body th{font-family:var(--sans);font-size:10.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--ink-45);text-align:left;font-weight:600;
+    padding:6px 14px 6px 0;border-bottom:1px solid var(--hair)}
+  .metric-body td{padding:7px 14px 7px 0;border-bottom:1px solid var(--ink-06);
+    vertical-align:top;line-height:1.45}
+  .metric-body td:first-child{white-space:nowrap;font-weight:600}
+  .metric-table-wrap{overflow-x:auto}
+  .metric-foot{margin-top:30px;padding-top:14px;border-top:1px solid var(--hair);
+    font-style:italic;font-size:13.5px;color:var(--ink-45)}
+  .metric-foot a{color:var(--ink-70)}
+</style>
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+<main class="wrap board-paper metric-page">
+  <p class="crumb"><a href="/metric/">← The metrics</a></p>
+  <header class="metric-head">
+    <p class="metric-kicker">Methodology</p>
+    <h1 class="metric-title">{{ .Title }}</h1>
+    <dl class="metric-facts">
+      {{ with .Params.unit }}<div class="metric-fact"><dt>Unit</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{ with .Params.role }}<div class="metric-fact"><dt>Role</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{ with .Params.adopted }}<div class="metric-fact"><dt>Adopted from</dt><dd>{{ . }}</dd></div>{{ end }}
+    </dl>
+  </header>
+
+  <div class="metric-body">{{ .Content }}</div>
+
+  <p class="metric-foot">This page is the recipe; each actor's figures live on
+    its own claims, sources attached. Recipes change only in the open — edits
+    are logged like any board change. <a href="/map/">Back to the map</a>.</p>
+</main>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

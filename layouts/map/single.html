@@ -22,7 +22,7 @@
 {{ $sectorLabels := dict "finance" "Finance" "power" "Power" "infra" "Infrastructure" "care" "Care" }}
 {{ $claims := .Site.Data.claims }}
 
-<main class="wrap board actor">
+<main class="wrap board actor board-paper">
 
   <p class="crumb"><a href="/map/">← The Map</a></p>
 
@@ -101,11 +101,12 @@
       {{ end }}
     </dl>
   </div>
-  {{ else if or $o.capitalization $o.optionality $o.gravity }}
+  {{ else if or $o.commanded_capital $o.optionality $o.gravity $o.thrust }}
   <div class="section axes-section">
     <h2>The axes</h2>
     <dl class="axes-full">
-      {{ with $o.capitalization }}<div class="ax-row"><dt>Commanded capital</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{ with $o.commanded_capital }}<div class="ax-row"><dt>Commanded capital</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{ with $o.thrust }}<div class="ax-row"><dt>Thrust</dt><dd>{{ . }}</dd></div>{{ end }}
       {{ with $o.optionality }}<div class="ax-row"><dt>Optionality</dt><dd>{{ . }}</dd></div>{{ end }}
       {{ with $o.gravity }}<div class="ax-row"><dt>Gravity</dt><dd>{{ . }}</dd></div>{{ end }}
     </dl>

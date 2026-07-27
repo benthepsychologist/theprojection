@@ -2,6 +2,64 @@
 <html lang="en">
 <head>
 {{ partial "head.html" . }}
+<style>
+  /* ---- the board plate (thrust × gravity) — scoped to this page ---- */
+  .plate-stage{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:20px;
+    align-items:start;margin:26px 0 40px}
+  @media(max-width:860px){.plate-stage{grid-template-columns:1fr}}
+  .plate{background:var(--paper-2);border:1px solid var(--hair);border-radius:3px;
+    padding:6px;box-shadow:0 1px 0 var(--ink-06),0 22px 50px -34px rgba(27,32,39,.35)}
+  .plate svg{display:block;width:100%;height:auto}
+  .plate-head{display:flex;justify-content:space-between;align-items:baseline;
+    gap:14px;flex-wrap:wrap;margin:0 0 10px}
+  .plate-title{font-family:var(--serif);font-size:20px;font-weight:600;margin:0}
+  .plate-enc{font-family:var(--sans);font-size:11px;color:var(--ink-45);margin:0;text-align:right}
+  :root{--opt-free:#5C8A4E;--opt-mixed:#C39A2E;--opt-constrained:#C06A2E;--opt-locked:#A23A32}
+  .q-name{font-family:var(--serif);font-weight:600;letter-spacing:.02em;
+    fill:var(--ink);opacity:.085;text-transform:uppercase}
+  .plate .axis-line{stroke:var(--ink-24);stroke-width:1}
+  .plate .tick text{font-family:var(--sans);font-size:10px;fill:var(--ink-45);
+    font-variant-numeric:tabular-nums}
+  .plate .tick line{stroke:var(--ink-12);stroke-width:1}
+  .plate .thresh{stroke:var(--ink-12);stroke-width:1;stroke-dasharray:2 5}
+  .plate .diag{stroke:var(--ink-24);stroke-width:1;stroke-dasharray:1 6;fill:none}
+  .plate .diag-lbl,.plate .axis-title{font-family:var(--sans);font-size:10.5px;
+    fill:var(--ink-45);letter-spacing:.04em}
+  .plate .lead{stroke:var(--ink-24);stroke-width:.8}
+  .plate .lbl{font-family:var(--serif);font-size:12.5px;fill:var(--ink-70)}
+  @media(max-width:640px){.plate .lbl,.plate .lead{display:none}}
+  .plate .bubble{cursor:pointer;transition:opacity .2s ease}
+  .plate .bubble .ring{fill:none;stroke-width:1.5}
+  .plate .bubble:focus-visible{outline:none}
+  .plate .bubble:focus-visible .ring{stroke:var(--live);stroke-width:2.4}
+  .plate-rail{position:sticky;top:16px;display:flex;flex-direction:column;gap:12px}
+  .receipt{background:var(--paper-2);border:1px solid var(--hair);border-radius:3px;
+    padding:16px 16px 12px;min-height:210px}
+  .r-eyebrow{font-family:var(--sans);font-size:10px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--ink-45);margin:0 0 8px}
+  .r-name{font-family:var(--serif);font-size:21px;font-weight:600;margin:0;line-height:1.05}
+  .r-name a{color:var(--ink);text-decoration:none}
+  .r-name a:hover{text-decoration:underline;text-decoration-color:var(--ink-45)}
+  .r-posture{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--ink-70);margin:3px 0 10px}
+  .r-fig{border-top:1px solid var(--hair);padding:8px 0}
+  .r-fig-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .r-k{font-family:var(--sans);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
+  .r-k a{color:var(--ink-45);text-decoration:none;border-bottom:1px dotted var(--ink-24)}
+  .r-k a:hover{color:var(--ink)}
+  .r-v{font-family:var(--sans);font-size:16px;font-weight:600;
+    font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .r-src{font-family:var(--serif);font-style:italic;font-size:11.5px;color:var(--ink-70);
+    line-height:1.4;margin:2px 0 0}
+  .r-more{font-family:var(--sans);font-size:11px;margin:10px 0 0}
+  .r-more a{color:var(--ink-70)}
+  .plate-legend{font-family:var(--sans);font-size:11px;color:var(--ink-70);
+    border-top:1px solid var(--hair);padding-top:10px}
+  .plate-legend h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-45);margin:8px 0 6px;font-weight:600}
+  .lg-row{display:flex;align-items:center;gap:7px;margin:0 0 4px}
+  .lg-dot{width:11px;height:11px;border-radius:50%;flex:none}
+  .lg-ring{width:11px;height:11px;border-radius:50%;flex:none;border:2px solid;background:transparent}
+</style>
 </head>
 <body>
 {{ partial "masthead.html" . }}
@@ -17,7 +75,7 @@
 {{ range $board.orgs }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
 {{ $sectorLabels := dict "finance" "Finance" "power" "Power" "infra" "Infrastructure" "care" "Care" }}
 
-<main class="wrap board">
+<main class="wrap board board-paper">
 
   <div class="board-intro">
     <h1 class="board-title">The Map</h1>
@@ -28,6 +86,57 @@
       members and what moved this week.</p>
     {{ partial "vocab-toggle.html" (dict "labels" $labels "default" $default) }}
   </div>
+
+  {{/* ---- the plate: thrust × gravity, size = weight, fill = optionality, ring = sector ---- */}}
+  {{ $axed := slice }}
+  {{ range $board.orgs }}{{ if .axes_num }}
+    {{ $axed = $axed | append (dict "slug" .slug "name" .name "pocket" (or .pocket "")
+        "posture" (or .posture "") "optionality" (or .optionality "")
+        "thrust" (or .thrust "") "cc" (or .commanded_capital "") "grav" (or .gravity "")
+        "num" .axes_num) }}
+  {{ end }}{{ end }}
+  {{ with $axed }}
+  <section class="plate-section">
+    <div class="plate-head">
+      <h2 class="plate-title">Thrust × Gravity</h2>
+      <p class="plate-enc">size = <a href="/metric/commanded-capital/">weight</a> ·
+        fill = <a href="/metric/optionality/">optionality</a> · ring = sector</p>
+    </div>
+    <div class="plate-stage">
+      <div class="plate">
+        <svg viewBox="0 0 1000 800" role="img"
+             aria-label="Actors plotted by thrust and gravity; bubble size is commanded capital, fill is optionality, ring is sector"></svg>
+      </div>
+      <div class="plate-rail">
+        <div class="receipt" id="plate-receipt" aria-live="polite">
+          <p class="r-eyebrow">The receipt</p>
+          <p class="r-src" style="font-size:13px">Hover or tap a mark for its figures.
+            Above the diagonal, an actor moves more economy than it spends —
+            the chokepoints. The largest circles sit parked in the bottom-left.</p>
+        </div>
+        <div class="plate-legend">
+          <h4>Fill = <a href="/metric/optionality/" style="color:inherit">optionality</a></h4>
+          <div class="lg-row"><span class="lg-dot" style="background:var(--opt-free)"></span>free — its own, unencumbered</div>
+          <div class="lg-row"><span class="lg-dot" style="background:var(--opt-mixed)"></span>mixed — partly bound</div>
+          <div class="lg-row"><span class="lg-dot" style="background:var(--opt-constrained)"></span>constrained — debt / parent</div>
+          <div class="lg-row"><span class="lg-dot" style="background:var(--opt-locked)"></span>locked — client / fiduciary / state</div>
+          <h4>Ring = sector</h4>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--power)"></span>Power</div>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--infra)"></span>Infrastructure</div>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--finance)"></span>Finance</div>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--care)"></span>Care</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    window.PLATE_DATA = {
+      actors: {{ $axed | jsonify | safeJS }},
+      groups: {{ $groups | jsonify | safeJS }}
+    };
+  </script>
+  <script src="/js/board-plate.js" defer></script>
+  {{ end }}
 
   {{/* ---- sectors (G2) -> pocket tiles (G1) ---- */}}
   {{ range $sector := (where $groups "tier" "G2") }}

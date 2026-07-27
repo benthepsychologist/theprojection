@@ -14,7 +14,7 @@
     {{ if $o.sphere }}{{ if ne $o.sphere "none" }}<span class="sphere">{{ $o.sphere }}</span>{{ end }}{{ end }}
     {{ if gt $tc 0 }}<span class="tc">{{ $tc }} thread{{ if gt $tc 1 }}s{{ end }}</span>{{ end }}
   </div>
-  {{ with $o.capitalization }}
+  {{ with $o.commanded_capital }}
   <p class="cap-line"><span class="cap-k">capital</span> {{ . | truncate 112 }}</p>
   {{ end }}
   {{ if or $o.optionality $o.gravity }}

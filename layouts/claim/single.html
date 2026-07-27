@@ -2,6 +2,61 @@
 <html lang="en">
 <head>
 {{ partial "head.html" . }}
+<style>
+/* ==== claim page: receipt (above fold) / working (below fold) ======
+   Scoped here (not assets/css/main.css — that file is owned by a
+   parallel brand-token pass). Uses the new brand tokens directly per
+   spec; they resolve once that pass lands. ==================== */
+.claim-receipt{
+  background:var(--paper-2);
+  border:1px solid var(--hair);
+  border-radius:10px;
+  padding:1.5rem 1.6rem 1.7rem;
+  margin:0 0 1.4rem;
+}
+.claim-receipt .claim-head{ border-bottom:1px solid var(--hair); padding-bottom:1rem; margin-bottom:1.1rem; }
+.claim-receipt .claim-dim{
+  font-family:var(--sans); font-size:.72rem; text-transform:uppercase;
+  letter-spacing:.07em; font-weight:700; color:var(--live);
+}
+.claim-receipt .claim-val{
+  font-family:var(--sans); font-variant-numeric:tabular-nums;
+  font-size:clamp(1.6rem,4.6vw,2.5rem); font-weight:700; line-height:1.25;
+  color:var(--ink); margin:.4rem 0 .6rem; letter-spacing:-.01em;
+}
+.claim-receipt .claim-meta{ font-family:var(--sans); font-size:.82rem; color:var(--ink-45); margin:0 0 .6rem; }
+.claim-receipt .claim-meta a{ color:var(--live); }
+.claim-receipt .claim-basis{ font-family:var(--serif); font-size:.98rem; line-height:1.55; color:var(--ink-70); margin:0; }
+
+.receipt-cites h2{ font-family:var(--sans); }
+ul.receipt-cite-list{ display:grid; gap:.7rem; list-style:none; padding:0; margin:.6rem 0 0; }
+li.receipt-cite{
+  border:1px solid var(--hair); border-radius:8px; padding:.7rem .9rem;
+  background:var(--paper); transition:border-color .12s, background .12s;
+}
+li.receipt-cite:hover{ border-color:var(--live); background:color-mix(in srgb, var(--live) 5%, transparent); }
+li.receipt-cite a{ font-family:var(--serif); font-weight:600; font-size:1rem; color:var(--ink); }
+li.receipt-cite a:hover{ color:var(--live); }
+li.receipt-cite .fig{
+  font-family:var(--sans); font-variant-numeric:tabular-nums; font-size:.86rem;
+  color:var(--ink-70); margin-top:.35rem; display:block;
+}
+li.receipt-cite .cite-meta{ margin:.4rem 0 0; }
+li.receipt-cite .src-meta{ font-family:var(--sans); color:var(--ink-45); margin-left:0; margin-right:.5rem; }
+
+.receipt-agg-note{ font-family:var(--serif); font-style:italic; color:var(--ink-45); font-size:.92rem; margin:1.1rem 0 0; }
+
+.claim-fold{ border:none; border-top:1px dashed var(--hair); margin:0 0 1.8rem; }
+.claim-fold-label{
+  display:block; text-align:center; font-family:var(--sans); font-size:.66rem;
+  text-transform:uppercase; letter-spacing:.1em; color:var(--ink-45);
+  margin:-1.9rem 0 1.8rem; position:relative;
+}
+.claim-fold-label span{ background:var(--paper); padding:0 .6rem; }
+
+.claim-working .claim-section h2{ font-family:var(--sans); }
+.claim-basis-narrative{ font-family:var(--serif); font-size:1rem; line-height:1.6; color:var(--ink-70); margin:.6rem 0 0; }
+</style>
 </head>
 <body>
 {{ partial "masthead.html" . }}
@@ -14,59 +69,81 @@
 {{ range $board.houses }}{{ $nameBySlug = merge $nameBySlug (dict .slug .name) }}{{ end }}
 {{ $claimById := dict }}{{ range .Site.Data.claims }}{{ $claimById = merge $claimById (dict .id .) }}{{ end }}
 
-<main class="wrap claim">
+<main class="wrap claim board-paper">
 {{ range $c := .Site.Data.claims }}{{ if eq $c.id $cid }}
 {{ $subjName := or (index $nameBySlug $c.subject) (humanize $c.subject) }}
 {{ $threads := where $payload.threads "entities" "intersect" (slice $c.subject) }}
 
   <p class="crumb"><a href="/map/{{ $c.subject }}/">← {{ $subjName }}</a></p>
 
-  <div class="claim-head">
-    <span class="claim-dim">{{ $c.label }}</span>
-    <h1 class="claim-val">{{ $c.value }}</h1>
-    <p class="claim-meta">
-      {{ with $c.confidence }}<span class="conf c-{{ . }}">{{ . }} confidence</span> · {{ end }}
-      {{ with $c.as_of }}as of {{ . }} · {{ end }}
-      about <a href="/map/{{ $c.subject }}/">{{ $subjName }}</a>
-    </p>
-    {{ with $c.basis }}<p class="claim-basis">{{ . }}</p>{{ end }}
-  </div>
+  {{/* ============ ABOVE THE FOLD — THE RECEIPT ============
+       The sourced figures this number is built from. First thing seen. */}}
+  <section class="claim-receipt">
+    <div class="claim-head">
+      <span class="claim-dim">{{ $c.label }}</span>
+      <h1 class="claim-val">{{ $c.value }}</h1>
+      <p class="claim-meta">
+        {{ with $c.confidence }}<span class="conf c-{{ . }}">{{ . }} confidence</span> · {{ end }}
+        {{ with $c.as_of }}as of {{ . }} · {{ end }}
+        about <a href="/map/{{ $c.subject }}/">{{ $subjName }}</a>
+      </p>
+      {{ with $c.basis }}<p class="claim-basis">{{ . }}</p>{{ end }}
+    </div>
 
-  {{ with $c.members }}
-  <div class="claim-section">
-    <h2>Member claims <span class="n">{{ len . }}</span></h2>
-    <p class="src-meta">This is an aggregate — its evidence is the members' own claims.</p>
-    <ul class="cites">
-      {{ range $mid := . }}{{ $m := index $claimById $mid }}
-      <li><a href="/claim/{{ $mid }}/">{{ or (index $nameBySlug $m.subject) (humanize $m.subject) }}</a> <span class="src-meta">{{ $m.value | truncate 90 }}</span></li>
-      {{ end }}
-    </ul>
-  </div>
-  {{ end }}
+    {{ if not $c.aggregate }}
+    <div class="claim-section receipt-cites">
+      <h2>Sourced figures <span class="n">{{ len $c.sources }}</span></h2>
+      {{ if $c.sources }}
+      <ul class="cites receipt-cite-list">
+        {{ range $c.sources }}
+        <li class="receipt-cite">
+          {{ if .url }}<a href="{{ .url }}" rel="nofollow noopener" target="_blank">{{ .title }}</a>{{ else }}<span class="src-title">{{ .title }}</span>{{ end }}
+          {{ with .figure }}<span class="fig">{{ . }}</span>{{ end }}
+          <p class="cite-meta">
+            {{ with .as_of }}<span class="src-meta">{{ . }}</span>{{ end }}
+            {{ with .reliability }}<span class="conf c-{{ . }}">{{ . }}</span>{{ end }}
+          </p>
+        </li>
+        {{ end }}
+      </ul>
+      {{ else }}<p class="none">No citation on file — flagged as an estimate.</p>{{ end }}
+    </div>
+    {{ else }}
+    <p class="receipt-agg-note">Aggregate of {{ len $c.members }} member claims — each member's sourced figures are below.</p>
+    {{ end }}
+  </section>
 
-  {{ if not $c.aggregate }}
-  <div class="claim-section">
-    <h2>Citations <span class="n">{{ len $c.sources }}</span></h2>
-    {{ if $c.sources }}
-    <ul class="cites">
-      {{ range $c.sources }}
-      <li>
-        {{ if .url }}<a href="{{ .url }}" rel="nofollow noopener" target="_blank">{{ .title }}</a>{{ else }}<span class="src-title">{{ .title }}</span>{{ end }}
-        {{ with .figure }}<span class="fig">{{ . }}</span>{{ end }}
-        {{ with .as_of }}<span class="src-meta">{{ . }}</span>{{ end }}
-        {{ with .reliability }}<span class="conf c-{{ . }}">{{ . }}</span>{{ end }}
-      </li>
-      {{ end }}
-    </ul>
-    {{ else }}<p class="none">No citation on file — flagged as an estimate.</p>{{ end }}
-  </div>
-  {{ end }}
+  <hr class="claim-fold">
+  <span class="claim-fold-label"><span>the working</span></span>
 
-  <div class="claim-section">
-    <h2>Threads <span class="n">{{ len $threads }}</span></h2>
-    {{ if $threads }}
-    <ul class="cites">{{ range $threads }}<li><a href="/threads/{{ .slug }}/">{{ .title }}</a> <span class="src-meta">{{ .status }}</span></li>{{ end }}</ul>
-    {{ else }}<p class="none">No thread tagged to this actor yet.</p>{{ end }}
+  {{/* ============ BELOW THE FOLD — THE WORKING ============
+       Basis narrative, member claims (aggregates), related threads. */}}
+  <div class="claim-working">
+    {{ with $c.basis }}
+    <div class="claim-section">
+      <h2>Basis</h2>
+      <p class="claim-basis-narrative">{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ with $c.members }}
+    <div class="claim-section">
+      <h2>Member claims <span class="n">{{ len . }}</span></h2>
+      <p class="src-meta">This is an aggregate — its evidence is the members' own claims.</p>
+      <ul class="cites">
+        {{ range $mid := . }}{{ $m := index $claimById $mid }}
+        <li><a href="/claim/{{ $mid }}/">{{ or (index $nameBySlug $m.subject) (humanize $m.subject) }}</a> <span class="src-meta">{{ $m.value | truncate 90 }}</span></li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    <div class="claim-section">
+      <h2>Threads <span class="n">{{ len $threads }}</span></h2>
+      {{ if $threads }}
+      <ul class="cites">{{ range $threads }}<li><a href="/threads/{{ .slug }}/">{{ .title }}</a> <span class="src-meta">{{ .status }}</span></li>{{ end }}</ul>
+      {{ else }}<p class="none">No thread tagged to this actor yet.</p>{{ end }}
+    </div>
   </div>
 
   <p class="board-foot muted">A claim is one metric we assert about a node —
