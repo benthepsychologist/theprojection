@@ -29,8 +29,22 @@ everything but accounting) · take-or-pay compute and power reservations
 critically, **maintenance capex**. Buybacks are excluded here and tracked as
 their own signed channel: [capital returned](/metric/capital-returned/).
 
+**Depreciation, never amortization.** The netting term is **depreciation
+only** — the proxy for physical wear-and-replacement. *Amortization of
+acquisition intangibles is excluded*: writing down a past deal's goodwill
+has nothing to do with maintaining machines, and netting it produces
+artifacts (Broadcom's capex minus its VMware amortization once printed a
+absurd *negative* thrust on this board — corrected under this rule).
+
+**Guarantees are not thrust.** A financing *guarantee* (e.g. a vendor
+backstopping a customer's debt) is contingent exposure — quasi-debt in
+rating-agency terms — not deployed capital. It enters the receipt as a
+contingent commitment and converts to thrust only as it actually funds.
+Equity *stakes*, by contrast, are cash deployed into new positions and
+count in full.
+
 **The maintenance split, honestly.** The computable heuristic is
-maintenance ≈ D&A, so thrust-capex ≈ capex − D&A. It's what makes Intel
+maintenance ≈ depreciation, so thrust-capex ≈ capex − depreciation. It's what makes Intel
 legible — capex ~$12.1B, D&A ~$12.4B, thrust ≈ **zero** — and it's also
 known to distort during a buildout: depreciation reflects a small historical
 base while current spend is huge, and if AI hardware truly lives 2–3 years
