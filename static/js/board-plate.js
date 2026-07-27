@@ -1,7 +1,7 @@
 /* The board plate — the POWER view (Ben, 2026-07-27).
    Columns = optionality (free → locked) · Y = weight ($B, log, kind-labeled)
-   Size = GRAVITY (who breaks if they stop) · Fill = THRUST as heat (how hot
-   they're burning) · Ring = sector, neon.
+   Size = GRAVITY (who breaks if they stop) · Fill = BURN, thrust÷weight (how
+   hard they're accelerating) · Ring = sector, neon.
    Data injected by layouts/map/list.html as window.PLATE_DATA {actors, groups}.
    Light-only by design, like the rest of the identity. */
 (function(){
@@ -56,13 +56,16 @@
   function rs(v){var s=Math.sqrt(v),lo=Math.sqrt(gmin),hi=Math.sqrt(gmax);
     return 7+(s-lo)/(hi-lo)*40;}
 
-  // fill = thrust heat. log ramp $0.3B -> $150B/yr; <=0.3 = ash (idle/negative)
-  var STOPS=[[0,0x4A,0x4E,0x54],[0.35,0x9E,0x2A,0x18],[0.62,0xE8,0x5D,0x0D],
-             [0.85,0xF7,0xB0,0x1B],[1,0xFF,0xF0,0x9E]];
+  // fill = BURN: thrust / weight — acceleration, not raw force (Ben 2026-07-27:
+  // "a smaller company spending more is accelerating faster"). Log ramp over
+  // burn 0.005 -> 1.0; <=0.005 (or negative thrust) = ash. NOTE: this ratio is
+  // a burn-intensity display, NEVER optionality (that stays the measured band).
+  var STOPS=[[0,0x3A,0x3A,0x42],[0.30,0xC4,0x0E,0x0E],[0.55,0xFF,0x3D,0x00],
+             [0.75,0xFF,0x8F,0x00],[0.90,0xFF,0xC8,0x00],[1,0xFF,0xFB,0xE0]];
   function heat(t){
     if(t==null) return "#8A97A3";
-    if(t<=0.3) return "#8A97A3"; // ash — idle or negative
-    var x=(lg(t)-lg(0.3))/(lg(150)-lg(0.3)); x=Math.max(0,Math.min(1,x));
+    if(t<=0.005) return "#8A97A3"; // ash — idle, negative, or near-zero burn
+    var x=(lg(t)-lg(0.005))/(lg(1.0)-lg(0.005)); x=Math.max(0,Math.min(1,x));
     for(var i=1;i<STOPS.length;i++){
       if(x<=STOPS[i][0]){
         var a=STOPS[i-1],b=STOPS[i],f=(x-a[0])/(b[0]-a[0]);
@@ -71,7 +74,7 @@
         return "rgb("+r+","+g+","+bl+")";
       }
     }
-    return "rgb(255,240,158)";
+    return "rgb(255,251,224)";
   }
 
   function fmt(v){var n=Math.abs(v);
@@ -136,7 +139,7 @@
     var a=A[p.i];
     var g=el("g",{"class":"bubble",tabindex:"0",role:"link","aria-label":a.name,"data-i":p.i});
     g.appendChild(el("circle",{cx:p.cx,cy:p.cy,r:p.r,
-      fill:a.graded?heat(a.t):"var(--ink-45)","fill-opacity":"0.92"}));
+      fill:a.graded?heat(a.t>0?a.t/a.w:0):"var(--ink-45)","fill-opacity":"0.92"}));
     g.appendChild(el("circle",{cx:p.cx,cy:p.cy,r:p.r,"class":"ring",
       stroke:SECTOR[a.sector]||"var(--ink-24)"}));
     g.addEventListener("mouseenter",function(){hover(p.i);});
@@ -176,9 +179,12 @@
       l.style.opacity=(+l.getAttribute("data-lead")===i)?"1":"0.3";});
     var a=A[i];
     var nd=a.w*(BANDFACTOR[a.opt]||0.6);
+    var burn=a.t>0?a.t/a.w:0;
     var rows=[
       ["Gravity","gravity","~"+fmt(a.g)+"/yr",a.gravTxt],
       ["Thrust","thrust",(a.t<0?"−":"")+fmt(Math.abs(a.t))+"/yr",a.thrustTxt],
+      ["Burn","thrust",burn>0.005?(burn).toFixed(2):"≈0",
+        "thrust ÷ weight — acceleration; the fill color"],
       ["Weight","commanded-capital",fmt(a.w),a.ccTxt],
       ["Net deployable","optionality","≈ "+fmt(nd),
         "weight × "+(a.graded?a.opt:"ungraded")+" band ("+(BANDFACTOR[a.opt]||0.6)+")"],

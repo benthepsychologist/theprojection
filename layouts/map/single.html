@@ -19,7 +19,7 @@
 {{ $orgBySlug := dict }}{{ $orgName := dict }}
 {{ range $board.orgs }}{{ $orgBySlug = merge $orgBySlug (dict .slug .) }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
 {{ $groupBySlug := dict }}{{ range $board.groups }}{{ $groupBySlug = merge $groupBySlug (dict .slug .) }}{{ end }}
-{{ $sectorLabels := dict "finance" "Finance" "power" "Power" "infra" "Infrastructure" "care" "Care" }}
+{{ $sectorLabels := dict "finance" "Finance" "power" "Big Tech" "infra" "Infrastructure" "care" "Care" }}
 {{ $claims := .Site.Data.claims }}
 
 <main class="wrap board actor board-paper">

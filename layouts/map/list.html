@@ -17,7 +17,7 @@
   :root{
     /* chart-only NEON sector rings (Ben 2026-07-27: "almost neon") —
        the muted page pigments stay everywhere else */
-    --ring-finance:#00A8FF;--ring-power:#FF1FAE;--ring-infra:#A8D400;--ring-care:#00E5A8}
+    --ring-finance:#00E5FF;--ring-power:#FF1FAE;--ring-infra:#C6FF00;--ring-care:#00FFC6}
   .col-h{font-family:var(--serif);font-weight:600;font-size:22px;
     letter-spacing:.06em;fill:var(--ink)}
   .col-gloss{font-family:var(--sans);font-size:11px;fill:var(--ink-45)}
@@ -68,7 +68,7 @@
   .lg-ring{width:11px;height:11px;border-radius:50%;flex:none;border:2px solid;background:transparent}
   .lg-ramp{display:flex;align-items:center;gap:7px;font-size:10.5px;color:var(--ink-45)}
   .lg-ramp i{flex:1;height:10px;border-radius:5px;
-    background:linear-gradient(90deg,#8A97A3 0%,#4A4E54 8%,#9E2A18 35%,#E85D0D 62%,#F7B01B 85%,#FFF09E 100%)}
+    background:linear-gradient(90deg,#8A97A3 0%,#3A3A42 8%,#C40E0E 30%,#FF3D00 55%,#FF8F00 75%,#FFC800 90%,#FFFBE0 100%)}
 </style>
 </head>
 <body>
@@ -83,7 +83,7 @@
 {{ $groups  := $board.groups }}
 {{ $orgName := dict }}
 {{ range $board.orgs }}{{ $orgName = merge $orgName (dict .slug .name) }}{{ end }}
-{{ $sectorLabels := dict "finance" "Finance" "power" "Power" "infra" "Infrastructure" "care" "Care" }}
+{{ $sectorLabels := dict "finance" "Finance" "power" "Big Tech" "infra" "Infrastructure" "care" "Care" }}
 
 <main class="wrap board board-paper">
 
@@ -110,7 +110,7 @@
     <div class="plate-head">
       <h2 class="plate-title">Thrust × Gravity</h2>
       <p class="plate-enc">size = <a href="/metric/gravity/">gravity</a> ·
-        heat = <a href="/metric/thrust/">thrust</a> · height =
+        heat = burn (<a href="/metric/thrust/">thrust</a>÷weight) · height =
         <a href="/metric/commanded-capital/">weight</a> · columns =
         <a href="/metric/optionality/">optionality</a> · ring = sector</p>
     </div>
@@ -130,10 +130,10 @@
         <div class="plate-legend">
           <h4>Size = <a href="/metric/gravity/" style="color:inherit">gravity</a></h4>
           <div class="lg-row">the economy that breaks if the actor stops</div>
-          <h4>Heat = <a href="/metric/thrust/" style="color:inherit">thrust</a></h4>
-          <div class="lg-ramp"><span>idle / negative</span><i></i><span>$150B+/yr</span></div>
+          <h4>Heat = burn (<a href="/metric/thrust/" style="color:inherit">thrust</a> ÷ weight)</h4>
+          <div class="lg-ramp"><span>idle</span><i></i><span>all-in</span></div>
           <h4>Ring = sector</h4>
-          <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-power)"></span>Power</div>
+          <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-power)"></span>Big Tech</div>
           <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-infra)"></span>Infrastructure</div>
           <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-finance)"></span>Finance</div>
           <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-care)"></span>Care</div>
