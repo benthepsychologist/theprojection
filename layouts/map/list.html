@@ -15,13 +15,13 @@
   .plate-title{font-family:var(--serif);font-size:20px;font-weight:600;margin:0}
   .plate-enc{font-family:var(--sans);font-size:11px;color:var(--ink-45);margin:0;text-align:right}
   :root{
-    /* optionality fills — deepened for chart legibility (Ben 2026-07-27: "the graph needs to POP") */
-    --opt-free:#3E7E2E;--opt-mixed:#C4920A;--opt-constrained:#C25A14;--opt-locked:#B02418;
-    /* chart-only BRIGHT sector rings — saturated variants of the page pigments;
-       the muted originals stay everywhere else */
-    --ring-finance:#1F6FC2;--ring-power:#C22A96;--ring-infra:#9A8A00;--ring-care:#12A47E}
-  .q-name{font-family:var(--serif);font-weight:600;letter-spacing:.02em;
-    fill:var(--ink);opacity:.12;text-transform:uppercase}
+    /* chart-only NEON sector rings (Ben 2026-07-27: "almost neon") —
+       the muted page pigments stay everywhere else */
+    --ring-finance:#00A8FF;--ring-power:#FF1FAE;--ring-infra:#A8D400;--ring-care:#00E5A8}
+  .col-h{font-family:var(--serif);font-weight:600;font-size:22px;
+    letter-spacing:.06em;fill:var(--ink)}
+  .col-gloss{font-family:var(--sans);font-size:11px;fill:var(--ink-45)}
+  .plate .col-rule{stroke:var(--ink-12);stroke-width:1;stroke-dasharray:1 4}
   .plate .axis-line{stroke:var(--ink-24);stroke-width:1}
   .plate .tick text{font-family:var(--sans);font-size:12px;fill:var(--ink-70);
     font-variant-numeric:tabular-nums;font-weight:600}
@@ -66,6 +66,9 @@
   .lg-row{display:flex;align-items:center;gap:7px;margin:0 0 4px}
   .lg-dot{width:11px;height:11px;border-radius:50%;flex:none}
   .lg-ring{width:11px;height:11px;border-radius:50%;flex:none;border:2px solid;background:transparent}
+  .lg-ramp{display:flex;align-items:center;gap:7px;font-size:10.5px;color:var(--ink-45)}
+  .lg-ramp i{flex:1;height:10px;border-radius:5px;
+    background:linear-gradient(90deg,#8A97A3 0%,#4A4E54 8%,#9E2A18 35%,#E85D0D 62%,#F7B01B 85%,#FFF09E 100%)}
 </style>
 </head>
 <body>
@@ -106,27 +109,29 @@
   <section class="plate-section">
     <div class="plate-head">
       <h2 class="plate-title">Thrust × Gravity</h2>
-      <p class="plate-enc">size = <a href="/metric/commanded-capital/">weight</a> ·
-        fill = <a href="/metric/optionality/">optionality</a> · ring = sector</p>
+      <p class="plate-enc">size = <a href="/metric/gravity/">gravity</a> ·
+        heat = <a href="/metric/thrust/">thrust</a> · height =
+        <a href="/metric/commanded-capital/">weight</a> · columns =
+        <a href="/metric/optionality/">optionality</a> · ring = sector</p>
     </div>
     <div class="plate-stage">
       <div class="plate">
         <svg viewBox="0 0 1000 800" role="img"
-             aria-label="Actors plotted by thrust and gravity; bubble size is commanded capital, fill is optionality, ring is sector"></svg>
+             aria-label="Actors in four optionality columns by commanded capital; bubble size is gravity, fill is thrust heat, ring is sector"></svg>
       </div>
       <div class="plate-rail">
         <div class="receipt" id="plate-receipt" aria-live="polite">
           <p class="r-eyebrow">The receipt</p>
-          <p class="r-src" style="font-size:13px">Hover or tap a mark for its figures.
-            Above the diagonal, an actor moves more economy than it spends —
-            the chokepoints. The largest circles sit parked in the bottom-left.</p>
+          <p class="r-src" style="font-size:13px">Hover or tap a mark for its
+            figures. The giants are the chokepoints — the economy that breaks
+            if they stop. The heavy, cold pools sit high in the locked column.
+            White-hot means capital is being committed <em>now</em>.</p>
         </div>
         <div class="plate-legend">
-          <h4>Fill = <a href="/metric/optionality/" style="color:inherit">optionality</a></h4>
-          <div class="lg-row"><span class="lg-dot" style="background:var(--opt-free)"></span>free — its own, unencumbered</div>
-          <div class="lg-row"><span class="lg-dot" style="background:var(--opt-mixed)"></span>mixed — partly bound</div>
-          <div class="lg-row"><span class="lg-dot" style="background:var(--opt-constrained)"></span>constrained — debt / parent</div>
-          <div class="lg-row"><span class="lg-dot" style="background:var(--opt-locked)"></span>locked — client / fiduciary / state</div>
+          <h4>Size = <a href="/metric/gravity/" style="color:inherit">gravity</a></h4>
+          <div class="lg-row">the economy that breaks if the actor stops</div>
+          <h4>Heat = <a href="/metric/thrust/" style="color:inherit">thrust</a></h4>
+          <div class="lg-ramp"><span>idle / negative</span><i></i><span>$150B+/yr</span></div>
           <h4>Ring = sector</h4>
           <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-power)"></span>Power</div>
           <div class="lg-row"><span class="lg-ring" style="border-color:var(--ring-infra)"></span>Infrastructure</div>
