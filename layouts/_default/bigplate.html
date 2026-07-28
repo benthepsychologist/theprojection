@@ -61,7 +61,7 @@
 {{ partial "masthead.html" . }}
 {{ $board := .Site.Data.board }}
 {{ $axed := slice }}
-{{ range $board.orgs }}{{ if .axes_num }}
+{{ range $board.orgs }}{{ if and .axes_num (ne .kind "state") (ne .kind "agency") }}
   {{ $axed = $axed | append (dict "slug" .slug "name" .name "pocket" (or .pocket "")
       "posture" (or .posture "") "optionality" (or .optionality "")
       "thrust" (or .thrust "") "cc" (or .commanded_capital "") "grav" (or .gravity "")
