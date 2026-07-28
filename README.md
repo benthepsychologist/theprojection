@@ -9,7 +9,7 @@ automatically — no separate manual approve-before-it-goes-live step. See
 of this and the full picture of how it's used.
 
 This repo is the **published surface only**. It is generated and pushed by
-a separate private tool (kestrel) — nothing about how threads are collected,
+a separate open-source tool ([kestrel](https://github.com/benthepsychologist/kestrel)) — nothing about how threads are collected,
 scored, or curated lives here. If you're reading this on GitHub: `data/`
 and `content/threads/*.md` are overwritten wholesale on every publish run
 and should not be hand-edited — edits belong upstream.
@@ -42,6 +42,25 @@ and should not be hand-edited — edits belong upstream.
 | `static/js/copy-chat.js` | "copy for AI chat" — packages a thread (or the whole week) to the clipboard, no backend |
 | `static/images/mark.png` | the logo (background already transparent) |
 | `static/fonts/` | self-hosted webfont files |
+
+## Data sourcing & API usage
+
+The upstream tool gathers from public sources under a standing set of
+commitments (the canonical signup/use-case text lives in kestrel's
+[`sources/API-SIGNUP.md`](https://github.com/benthepsychologist/kestrel/blob/master/sources/API-SIGNUP.md)):
+
+- **Personal, non-commercial research.** Low-volume, scheduled
+  (daily-to-weekly) queries — never bulk harvesting, never redistribution
+  of source datasets. Result sets are buffered briefly with provenance
+  records of every fetch.
+- **Attribution, always.** Anything published here links back to its
+  original source; claim pages carry their citations inline. Data under
+  attribution licenses (e.g. CC BY 4.0) is credited per its terms.
+- **Well-behaved clients.** Custom lightweight collectors that respect
+  documented rate limits and identify themselves with a contact
+  User-Agent: `kestrel/0.1 (personal research; ben@getmensio.com)`.
+- **Contact:** ben@getmensio.com — source owners with any concern about
+  how their data appears here are invited to write.
 
 ## Local build
 
