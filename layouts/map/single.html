@@ -137,16 +137,33 @@
 
   <div class="section">
     <h2>Projects &amp; threads</h2>
-    {{ if $threads }}
-    {{ range $threads }}
+    {{ $live := slice }}{{ $done := slice }}
+    {{ range $threads }}{{ if or (eq .status "resolved") (eq .status "retired") }}{{ $done = $done | append . }}{{ else }}{{ $live = $live | append . }}{{ end }}{{ end }}
+    {{ $tById := dict }}{{ range $payload.threads }}{{ $tById = merge $tById (dict .slug .title) }}{{ end }}
+    {{ if $live }}
+    {{ range sort $live "depth" "desc" }}
     <div class="qrow">
-      <span class="dash">·</span>
+      <span class="dash">{{ if eq .kind "meta" }}◉{{ else }}·{{ end }}</span>
       <span><a href="/threads/{{ .slug }}/">{{ .title }}</a>
         {{ with .genre }}<span class="badge gen" data-lk="genre:{{ . }}">{{ (index $proj.genres .).label }}</span>{{ end }}
-        — {{ .status }} · last seen {{ .last_seen }}</span>
+        {{ with .parent }}<span class="badge parent-tag">&#8627; {{ or (index $tById .) . }}</span>{{ end }}
+        &mdash; {{ .status }} &middot; last seen {{ .last_seen }}
+        {{ if gt .depth 0 }}&middot; <span class="depth-n">{{ .depth }} entries</span>{{ end }}</span>
     </div>
     {{ end }}
-    {{ else }}<p class="none">No threads tagged to this actor this week.</p>{{ end }}
+    {{ else }}<p class="none">No live threads tagged to this actor this week.</p>{{ end }}
+    {{ with $done }}
+    <details class="concluded-threads">
+      <summary>Concluded <span class="tile-n">{{ len . }}</span></summary>
+      {{ range . }}
+      <div class="qrow muted">
+        <span class="dash">·</span>
+        <span><a href="/threads/{{ .slug }}/">{{ .title }}</a> &mdash; {{ .status }}
+          {{ if gt .depth 0 }}&middot; <span class="depth-n">{{ .depth }} entries</span>{{ end }}</span>
+      </div>
+      {{ end }}
+    </details>
+    {{ end }}
   </div>
 
   {{ if $isEntity }}<p class="actor-foot"><a href="/entities/{{ $slug }}/">Full item history for {{ $o.name }} →</a></p>{{ end }}

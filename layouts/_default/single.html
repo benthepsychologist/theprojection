@@ -29,6 +29,38 @@
     </div>
     {{ end }}
   {{ end }}
+  {{/* W6 (2026-07-28): the reach=spend diagonal lives where its story lives —
+       the circular-financing threads. Self-contained: tokens + data local. */}}
+  {{ if in (slice "ai-circular-financing-risk" "nvidia-vendor-financing") $slug }}
+  {{ $board := .Site.Data.board }}
+  {{ $axed := slice }}
+  {{ range $board.orgs }}{{ if .axes_num }}{{ $axed = $axed | append (dict "slug" .slug "name" .name "pocket" (or .pocket "") "num" .axes_num) }}{{ end }}{{ end }}
+  {{ if $axed }}
+  <style>
+    .diag-plate{background:#E7E4DB;border:1px solid rgba(27,32,39,.14);
+      border-radius:3px;padding:6px;margin:1.1rem 0 .4rem}
+    .diag-plate svg{display:block;width:100%;height:auto}
+    .diag-cap{font-size:.78rem;color:rgba(27,32,39,.55);font-style:italic;margin:.2rem 0 1rem}
+    .diag-plate .dax{stroke:rgba(27,32,39,.3);stroke-width:1}
+    .diag-plate .dtick{font:600 11px system-ui;fill:rgba(27,32,39,.6)}
+    .diag-plate .ddiag{stroke:rgba(27,32,39,.35);stroke-width:1;stroke-dasharray:1 6;fill:none}
+    .diag-plate .dlbl{font:600 11px system-ui;fill:rgba(27,32,39,.65)}
+    .diag-plate .dtitle{font:600 13px system-ui;fill:#1B2027}
+    .diag-plate .dname{font:600 12px Georgia,serif;fill:#1B2027}
+    .diag-plate .dbub{cursor:pointer}
+  </style>
+  <div class="diag-plate">
+    <svg viewBox="0 0 1000 720" role="img"
+         aria-label="Actors by thrust and gravity; the diagonal marks reach equals spend"></svg>
+  </div>
+  <p class="diag-cap">The coordinate this thread is about: above the diagonal, an
+    actor moves more economy than it commits — size = weight, heat = burn,
+    ring = sector. Click a mark for its receipts.</p>
+  <script>window.DIAG_DATA={actors:{{ $axed | jsonify | safeJS }},groups:{{ $board.groups | jsonify | safeJS }}};</script>
+  <script src="/js/diagonal-plate.js" defer></script>
+  {{ end }}
+  {{ end }}
+
   <div class="thread-meta">
     <span>STATUS · {{ upper .Params.status }}</span>
     <span>OPENED · {{ .Params.opened }}</span>
