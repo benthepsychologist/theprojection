@@ -13,10 +13,10 @@ thread_kind: story
 blurb: 'Qualcomm''s datacenter re-entry, eight years after Centriq died: Dragonfly
   C1000 CPU + AI300 accelerator (Investor Day 06-24, stock +15%), Meta and Microsoft
   named launch customers, $15B datacenter revenue by 2029 target, paired same-day
-  with the $3.9B Modular buy (an explicit anti-CUDA software play). The Tenstorrent
-  talks died (CEO denial within two weeks); Ventana/RISC-V status unclear — does Dragonfly
-  supersede it? First live test: Q3 FY26 earnings 07-29 (tomorrow) — does Dragonfly
-  move guidance?'
+  with the announced $3.9B Modular acquisition (close expected H2-26 — audit 07-28)
+  (an explicit anti-CUDA software play). The Tenstorrent talks died (CEO denial within
+  two weeks); Ventana/RISC-V status unclear — does Dragonfly supersede it? First live
+  test: Q3 FY26 earnings 07-29 (tomorrow) — does Dragonfly move guidance?'
 ---
 
 ## 2026-06-24 — Investor Day: the re-entry ⟨crawl 2026-07-28⟩
