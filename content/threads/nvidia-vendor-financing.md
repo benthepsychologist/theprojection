@@ -3,7 +3,7 @@ title: Nvidia as Lender
 lens: money
 status: open
 opened: 2026-07-27
-last_seen: 2026-07-27
+last_seen: 2026-07-28
 weight: 3
 entities:
 - nvidia
@@ -17,6 +17,13 @@ blurb: 'Nvidia''s turn from chip vendor to the buildout''s lender of last resort
   and each new customer-equity position. Sits inside the circular-financing story
   but is its own actor-move.'
 ---
+
+## 2026-07-28 — Record CDS day ⟨daily 2026-07-28⟩
+
+- **The guarantee firmed to $250B** (WSJ tier-1; the $500B print didn't
+  verify) — NVDA −5%, CDS record single-day widening. **+ $5B into
+  pre-product SSI** the same day: the lender now backs companies with no
+  product at all.
 
 ## 2026-07-27 — The market answers ⟨daily 2026-07-27⟩
 

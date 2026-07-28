@@ -15,6 +15,12 @@ blurb: 'Is the tape turning against the AI trade as a whole? Distinct from the c
   changes actual capex behavior.'
 ---
 
+## 2026-07-28 — Circuit breakers ⟨daily 2026-07-28⟩
+
+- **Korea's session closed −10–11% with circuit breakers triggered** — SK
+  Hynix below $140 into its own earnings; NVDA −5% + record CDS move the
+  same day. Both legs of the turn fired at once, the day before FOMC.
+
 ## 2026-07-28 — The Seoul leg ⟨crawl 2026-07-28⟩
 
 - **The turn went global: KOSPI −10.84% ("Black Tuesday"), SK Hynix
