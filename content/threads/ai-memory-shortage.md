@@ -13,9 +13,12 @@ entities:
 - sk-hynix
 - micron
 thread_kind: story
-blurb: The data-center buildout is diverting wafer capacity to HBM, spiking DRAM/NAND
-  prices and forcing consumer-hardware price hikes (Apple, Microsoft). Track how far
-  the squeeze spreads and any capacity-expansion responses (Samsung/SK Hynix/Micron).
+blurb: 'The data-center buildout is diverting wafer capacity to HBM — a reported THREE-YEAR
+  HBM deficit — spiking DRAM/NAND prices and forcing consumer-hardware price hikes
+  (Apple, Microsoft). Now also the capacity-race ledger (backlog W5: widened here,
+  not a new thread): Samsung/SK Hynix/Micron expansion responses, CXMT''s state-funded
+  push (charging ABOVE Samsung; new modules with no price relief; DoD ban overhang),
+  and who blinks first on capex.'
 ---
 
 ## 2026-07-23 — The supply side raises guidance too
