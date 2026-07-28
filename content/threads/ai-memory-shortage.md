@@ -21,6 +21,45 @@ blurb: 'The data-center buildout is diverting wafer capacity to HBM — a report
   and who blinks first on capex.'
 ---
 
+## 2026-07-28 — Capacity-race backstory: the trio, plus a same-day shock
+
+- **The trio's HBM race, mapped.** Backward crawl on Samsung/SK Hynix/Micron
+  finds SK Hynix still the incumbent (~55% HBM share, first to clear
+  Nvidia's HBM4 Vera Rubin qualification, commanding a reported 60-70% of
+  that volume) but Samsung projected by UBS to overtake it on HBM
+  bit-capacity share in 2027 (41% vs 39%) — Samsung's first-ever lead —
+  even though it's still stuck at Nvidia's "paid evaluation" stage for
+  HBM4 as of 07-17, no confirmed volume order. Micron is #3 and the most
+  exposed to Nvidia's on-again-off-again favor (excluded from early Vera
+  Rubin slots in Feb, reinstated by June) but posted the trio's standout
+  quarter (Q3 FY26: $41.5B revenue vs $9.3B a year ago, 84.6% gross
+  margin) while running a $200B US buildout as the only US-based DRAM
+  maker.
+  ⟨crawl 2026-07-28⟩
+- **The "three-year HBM deficit" claim, sourced.** It traces to **SK
+  Hynix's own Q1 2026 earnings call (04-23)** — CFO Kim Woo-hyun and VP
+  Park Joon-deok guiding that demand will outpace supply for at least
+  three years. Company guidance, not an outside analyst estimate — the
+  CXMT-thread framing that repeated it (via a 07-27 Tech Times piece)
+  draws from this same-origin figure, not a fresh source. DRAM's 2026
+  YTD price trajectory stays genuinely unsettled across sources — the
+  only claims that clear medium confidence are outcome-side (Samsung's
+  confirmed Q2 sequential DRAM +44%/NAND +53%; SK Hynix's ~72-77%
+  operating margins), not a clean industry percentage.
+  ⟨crawl 2026-07-28⟩
+- **"Black Tuesday" — the squeeze gets a same-day shock.** CXMT's Shanghai
+  STAR-market debut (07-27, +466% to ~$489B) triggered a 2026-07-28 Seoul
+  selloff: KOSPI -10.84% with a circuit breaker, SK Hynix -14.65% —
+  Korean financial press attributed it directly to investors "refocus[ing]
+  on... China's growing competitiveness in the memory... industries,"
+  compounding a Wall Street chip selloff and Middle East tension. The
+  sharpest, most immediate market pricing of CXMT-as-threat found in
+  either this crawl or last week's CXMT-focused one — worth checking
+  whether it holds past SK Hynix's 07-29 and Samsung's 07-30 earnings
+  prints, or gets partly reversed.
+  ⟨crawl 2026-07-28⟩ Finding:
+  artifacts/findings/memory-trio-2026-07-28.md
+
 ## 2026-07-23 — The supply side raises guidance too
 
 - **TSMC raised 2026 capex guidance to $60–64B** plus an additional $100B
