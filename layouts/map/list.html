@@ -14,6 +14,15 @@
     gap:14px;flex-wrap:wrap;margin:0 0 10px}
   .plate-title{font-family:var(--serif);font-size:20px;font-weight:600;margin:0}
   .plate-enc{font-family:var(--sans);font-size:11px;color:var(--ink-45);margin:0;text-align:right}
+  .plate-controls{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .pf-row{display:flex;gap:4px;flex-wrap:wrap}
+  .pf-chip{font-family:var(--sans);font-size:11px;color:var(--ink-70);
+    background:transparent;border:1px solid var(--hair);border-radius:2px;
+    padding:4px 9px;cursor:pointer;text-decoration:none;text-transform:capitalize}
+  .pf-chip:hover{border-color:var(--ink-24);color:var(--ink)}
+  .pf-chip.active{color:#fff;background:var(--ink);border-color:var(--ink)}
+  .pf-reset{border-style:dashed}
+  .pf-big{font-weight:600}
   :root{
     /* chart-only NEON sector rings (Ben 2026-07-27: "almost neon") —
        the muted page pigments stay everywhere else */
@@ -108,7 +117,12 @@
   {{ with $axed }}
   <section class="plate-section">
     <div class="plate-head">
-      <h2 class="plate-title">Thrust × Gravity</h2>
+      <h2 class="plate-title">The Plate</h2>
+      <div class="plate-controls">
+        <div id="plate-filters" class="pf-row" aria-label="Filter by pocket"></div>
+        <button type="button" id="plate-reset" class="pf-chip pf-reset">reset</button>
+        <a class="pf-chip pf-big" href="/plate/">open big ⤢</a>
+      </div>
       <p class="plate-enc">size = <a href="/metric/gravity/">gravity</a> ·
         heat = burn (<a href="/metric/thrust/">thrust</a>÷weight) · height =
         <a href="/metric/commanded-capital/">weight</a> · columns =

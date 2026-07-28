@@ -33,12 +33,13 @@
     return"mixed"; // ungraded actors sit mid-board, fill goes ink — flagged in receipt
   }
 
-  var A = D.actors.map(function(a){
+  var ALL = D.actors.map(function(a){
     return {slug:a.slug,name:a.name,posture:a.posture,opt:band(a.optionality),
       graded:!!a.optionality,optRaw:a.optionality,thrustTxt:a.thrust,
-      ccTxt:a.cc,gravTxt:a.grav,sector:pk2sec[a.pocket]||"",
+      ccTxt:a.cc,gravTxt:a.grav,pocket:a.pocket||"",sector:pk2sec[a.pocket]||"",
       w:+a.num.weight, t:+a.num.thrust, g:+a.num.gravity};
   });
+  var A = ALL;
 
   var NS="http://www.w3.org/2000/svg";
   var W=1000,H=800,ML=96,MR=24,MT=76,MB=64,L=ML,R=W-MR,T=MT,B=H-MB;
@@ -50,9 +51,9 @@
   var colW=(R-L)/BANDS.length;
   function colC(b){return L+colW*(BANDS.indexOf(b)+0.5);}
 
-  // size = gravity (sqrt area)
-  var gmin=Math.min.apply(null,A.map(function(a){return a.g;})),
-      gmax=Math.max.apply(null,A.map(function(a){return a.g;}));
+  // size = gravity (sqrt area) — domain over ALL actors so filters don't rescale
+  var gmin=Math.min.apply(null,ALL.map(function(a){return a.g;})),
+      gmax=Math.max.apply(null,ALL.map(function(a){return a.g;}));
   function rs(v){var s=Math.sqrt(v),lo=Math.sqrt(gmin),hi=Math.sqrt(gmax);
     return 7+(s-lo)/(hi-lo)*40;}
 
@@ -82,6 +83,12 @@
     if(n>=10)return "$"+Math.round(v)+"B";
     if(n>=1)return "$"+v.toFixed(1).replace(/\.0$/,"")+"B";
     return "$"+v.toFixed(1)+"B";}
+
+  var DEFAULT_RECEIPT=null;
+  function render(pocket){
+    A = pocket ? ALL.filter(function(a){return a.pocket===pocket;}) : ALL;
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+    if(DEFAULT_RECEIPT!==null) receipt.innerHTML=DEFAULT_RECEIPT;
 
   // ---- column furniture ----
   BANDS.forEach(function(b,i){
@@ -166,6 +173,8 @@
     });
   });
 
+  } // end render()
+
   // ---- the receipt ----
   var receipt=document.getElementById("plate-receipt");
   function esc(s){var d=document.createElement("i");d.textContent=s||"";return d.innerHTML;}
@@ -202,4 +211,41 @@
     h+='<p class="r-more"><a href="/map/'+esc(a.slug)+'/">Full receipt — every figure sourced →</a></p>';
     receipt.innerHTML=h;
   }
+
+  function deselect(){
+    svg.querySelectorAll(".bubble").forEach(function(b){b.style.opacity="1";
+      b.querySelector(".ring").setAttribute("stroke-width","3");});
+    svg.querySelectorAll("[data-lbl]").forEach(function(t){t.style.opacity="1";});
+    svg.querySelectorAll("[data-lead]").forEach(function(l){l.style.opacity="1";});
+    if(DEFAULT_RECEIPT!==null) receipt.innerHTML=DEFAULT_RECEIPT;
+  }
+  // click on empty plate = deselect (Ben 2026-07-28: "no way to unselect")
+  svg.addEventListener("click",function(e){
+    if(!e.target.closest || !e.target.closest(".bubble")) deselect();
+  });
+  var resetBtn=document.getElementById("plate-reset");
+  if(resetBtn) resetBtn.addEventListener("click",deselect);
+
+  // pocket filter chips
+  var filtBox=document.getElementById("plate-filters");
+  if(filtBox){
+    var pockets=[]; ALL.forEach(function(a){
+      if(a.pocket && pockets.indexOf(a.pocket)<0) pockets.push(a.pocket);});
+    pockets.sort();
+    var mk=function(label,val){
+      var b=document.createElement("button");
+      b.type="button"; b.className="pf-chip"+(val?"":" active");
+      b.textContent=label; b.dataset.pocket=val;
+      b.addEventListener("click",function(){
+        filtBox.querySelectorAll(".pf-chip").forEach(function(c){c.classList.remove("active");});
+        b.classList.add("active"); render(val||null);
+      });
+      filtBox.appendChild(b);
+    };
+    mk("All","");
+    pockets.forEach(function(pk){ mk(pk.replace(/-/g," "), pk); });
+  }
+
+  DEFAULT_RECEIPT=receipt?receipt.innerHTML:null;
+  render(null);
 })();

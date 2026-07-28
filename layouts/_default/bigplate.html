@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+<style>
+  /* big-plate page: same encoding, full width (Ben 2026-07-28: "a 'big'
+     version on another page"). Reuses the map page's plate classes. */
+  .bigwrap{max-width:1700px;margin:0 auto;padding:0 clamp(10px,2vw,30px)}
+  .plate-stage{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;
+    align-items:start;margin:14px 0 40px}
+  @media(max-width:900px){.plate-stage{grid-template-columns:1fr}}
+  .plate{background:var(--paper-2);border:1px solid var(--hair);border-radius:3px;
+    padding:6px;box-shadow:0 1px 0 var(--ink-06),0 22px 50px -34px rgba(27,32,39,.35)}
+  .plate svg{display:block;width:100%;height:auto}
+  .plate-head{display:flex;justify-content:space-between;align-items:baseline;
+    gap:14px;flex-wrap:wrap;margin:14px 0 10px}
+  .plate-title{font-family:var(--serif);font-size:24px;font-weight:600;margin:0}
+  .plate-controls{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .pf-row{display:flex;gap:4px;flex-wrap:wrap}
+  .pf-chip{font-family:var(--sans);font-size:11.5px;color:var(--ink-70);
+    background:transparent;border:1px solid var(--hair);border-radius:2px;
+    padding:5px 10px;cursor:pointer;text-decoration:none;text-transform:capitalize}
+  .pf-chip:hover{border-color:var(--ink-24);color:var(--ink)}
+  .pf-chip.active{color:#fff;background:var(--ink);border-color:var(--ink)}
+  .pf-reset{border-style:dashed}
+  :root{--ring-finance:#00B8D9;--ring-power:#B44BFF;--ring-infra:#00C853;--ring-care:#2962FF}
+  .col-h{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.06em;fill:var(--ink)}
+  .col-gloss{font-family:var(--sans);font-size:11px;fill:var(--ink-45)}
+  .plate .col-rule{stroke:var(--ink-12);stroke-width:1;stroke-dasharray:1 4}
+  .plate .axis-line{stroke:var(--ink-24);stroke-width:1}
+  .plate .tick text{font-family:var(--sans);font-size:12px;fill:var(--ink-70);
+    font-variant-numeric:tabular-nums;font-weight:600}
+  .plate .tick line{stroke:var(--ink-12);stroke-width:1}
+  .plate .axis-title{font-family:var(--sans);font-size:15px;fill:var(--ink);
+    letter-spacing:.02em;font-weight:600}
+  .plate .lead{stroke:var(--ink-45);stroke-width:1}
+  .plate .lbl{font-family:var(--serif);font-size:14px;fill:var(--ink);font-weight:600}
+  .plate .bubble{cursor:pointer;transition:opacity .2s ease}
+  .plate .bubble .ring{fill:none;stroke-width:3}
+  .plate .bubble:focus-visible{outline:none}
+  .plate .bubble:focus-visible .ring{stroke:var(--live);stroke-width:4}
+  .plate-rail{position:sticky;top:16px;display:flex;flex-direction:column;gap:12px}
+  .receipt{background:var(--paper-2);border:1px solid var(--hair);border-radius:3px;
+    padding:16px 16px 12px;min-height:210px}
+  .r-eyebrow{font-family:var(--sans);font-size:10px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--ink-45);margin:0 0 8px}
+  .r-name{font-family:var(--serif);font-size:21px;font-weight:600;margin:0;line-height:1.05}
+  .r-name a{color:var(--ink);text-decoration:none}
+  .r-posture{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--ink-70);margin:3px 0 10px}
+  .r-fig{border-top:1px solid var(--hair);padding:8px 0}
+  .r-fig-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .r-k{font-family:var(--sans);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
+  .r-k a{color:var(--ink-45);text-decoration:none;border-bottom:1px dotted var(--ink-24)}
+  .r-v{font-family:var(--sans);font-size:16px;font-weight:600;font-variant-numeric:tabular-nums}
+  .r-src{font-family:var(--serif);font-style:italic;font-size:11.5px;color:var(--ink-70);line-height:1.4;margin:2px 0 0}
+  .r-more{font-family:var(--sans);font-size:11px;margin:10px 0 0}
+  .r-more a{color:var(--ink-70)}
+</style>
+</head>
+<body class="board-paper">
+{{ partial "masthead.html" . }}
+{{ $board := .Site.Data.board }}
+{{ $axed := slice }}
+{{ range $board.orgs }}{{ if .axes_num }}
+  {{ $axed = $axed | append (dict "slug" .slug "name" .name "pocket" (or .pocket "")
+      "posture" (or .posture "") "optionality" (or .optionality "")
+      "thrust" (or .thrust "") "cc" (or .commanded_capital "") "grav" (or .gravity "")
+      "num" .axes_num) }}
+{{ end }}{{ end }}
+<main class="bigwrap board-paper">
+  <div class="plate-head">
+    <h1 class="plate-title">The Plate — full board</h1>
+    <div class="plate-controls">
+      <div id="plate-filters" class="pf-row" aria-label="Filter by pocket"></div>
+      <button type="button" id="plate-reset" class="pf-chip pf-reset">reset</button>
+      <a class="pf-chip" href="/map/">← back to the map</a>
+    </div>
+  </div>
+  <div class="plate-stage">
+    <div class="plate">
+      <svg viewBox="0 0 1000 800" role="img"
+           aria-label="All actors in optionality columns; size gravity, heat burn, ring sector"></svg>
+    </div>
+    <div class="plate-rail">
+      <div class="receipt" id="plate-receipt" aria-live="polite">
+        <p class="r-eyebrow">The receipt</p>
+        <p class="r-src" style="font-size:13px">Hover or tap a mark for its
+          figures; click empty paper to clear. Filter by pocket above.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+  window.PLATE_DATA = {
+    actors: {{ $axed | jsonify | safeJS }},
+    groups: {{ $board.groups | jsonify | safeJS }}
+  };
+</script>
+<script src="/js/board-plate.js" defer></script>
+{{ partial "footer.html" . }}
+</body>
+</html>
