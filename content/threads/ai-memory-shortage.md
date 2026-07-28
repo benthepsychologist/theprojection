@@ -3,7 +3,7 @@ title: Memory Squeeze
 lens: ai
 status: developing
 opened: 2026-06-27
-last_seen: 2026-07-26
+last_seen: 2026-07-28
 weight: 2
 entities:
 - samsung

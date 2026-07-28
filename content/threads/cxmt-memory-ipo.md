@@ -3,7 +3,7 @@ title: CXMT IPO
 lens: money
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-27
+last_seen: 2026-07-28
 weight: 1
 entities:
 - cxmt
@@ -13,6 +13,14 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   DRAM/HBM capacity into the global squeeze. Track first-day reception, capacity-buildout
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
+
+## 2026-07-28 — Black Tuesday ⟨crawl 2026-07-28⟩
+
+- **The debut's second-day shockwave: Seoul sold off hard** — SK Hynix
+  −14.65%, KOSPI −10.84%, coverage explicitly attributing the rout to
+  CXMT's STAR debut — the market's first sharp repricing of CXMT as a
+  real competitive threat, not a domestic-substitution story. One-day
+  reaction; check whether it holds past SK Hynix's 07-29 print.
 
 ## 2026-07-27 — The debut ⟨daily 2026-07-27⟩
 
