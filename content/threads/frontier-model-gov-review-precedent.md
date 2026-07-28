@@ -3,7 +3,7 @@ title: Frontier Gatekeeping
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-23
+last_seen: 2026-07-28
 weight: 3
 entities:
 - openai
@@ -19,6 +19,17 @@ blurb: 'The gpt-5.6 gating dynamic made permanent — and it''s all one buildout
   is named (SRO?); Meta''s exclusion made official; CAISI leadership (3 directors
   in a year — can it run classified review?); the first model actually gated.'
 ---
+
+## 2026-07-28 — Labs push back on the Kill Switch Act
+
+- **CNBC reports OpenAI and Google DeepMind "making their case" to
+  Congress as lawmakers weigh the AI Kill Switch Act** — the bipartisan
+  Lieu-Moran bill (introduced 07-23) that would let DHS compel shutdown
+  of frontier systems at >$500M-AI-revenue firms, fines to $20M/day.
+  Direct continuation of the 07-23 entry below; full article text not
+  yet retrieved past headline/outlet/date — flagged for a depth pass if
+  Ben wants specifics on what each lab is arguing.
+  ([CNBC, via Google News](https://news.google.com/rss/articles/CBMivwFBVV95cUxQRi05WEtQa2lRelZaUzZDWkRyRkFfWTVIMzU2bDljQzAxdjBlMHhQZXNXcDVDdmxhYnZhWmJCUTg5ZkIybmpfOVVEaUlnQWFCWm5rNGFxbTlaNUtMeDRMSm9URF9YMmI1UjhSa1dna1J4aEhOTGxzVG5zVE5lV2lqX1BrVzZRS0NGNG9qbUVvd2JjdkZ1N1RpM3BYNk9mYVRGYjdjQ004R0VvYV9iYThlVmYxTEU5M1JIajBEREtydw?oc=5)) ⟨daily 2026-07-28⟩
 
 ## 2026-07-23 — CAISI's third leadership change in a year
 

@@ -14,6 +14,27 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
 
+## 2026-07-28 — Washington reacts, a DeepSeek-linked fund profits ⟨daily 2026-07-28⟩
+
+- **A "senior federal official" told the New York Post there's "a real
+  suspicion" of CCP-orchestrated price action** behind the 466% debut
+  surge, six weeks after the Pentagon named CXMT a "Chinese military
+  company" (§1260H list). Coverage frames this as a fresh Capitol Hill
+  probe, but the underlying ask — Entity List designation, an executive
+  order blocking US purchases — traces to a Moolenaar/Whitesides letter
+  to Commerce Secretary Lutnick **dated July 16, which predates the
+  debut and never mentions the IPO** (confirmed against the letter
+  itself). Treat "surge triggers Congressional probe" as aggregator
+  conflation of old pressure + new news, not a fresh action — the one
+  genuinely new element is the federal official's on-the-record
+  suspicion of manipulated pricing.
+  ([TechTimes](https://www.techtimes.com/articles/321807/20260728/cxmts-466-first-day-surge-spooked-micron-triggered-capitol-hill-probe.htm) ·
+  [House Select Committee on the CCP — letter text](https://chinaselectcommittee.house.gov/media/letters/moolenaar-whitesides-to-secretary-lutnick-hold-firm-on-chinese-memory-chips-ban)) ⟨daily 2026-07-28⟩
+- **DeepSeek founder Liang Wenfeng's High-Flyer hedge fund confirmed
+  among the debut's biggest winners** — the 12.55B-share institutional
+  bid flagged in the 07-22 crawl paid off on the 466% pop.
+  (Bloomberg, via Google News RSS) ⟨daily 2026-07-28⟩
+
 ## 2026-07-28 — Black Tuesday ⟨crawl 2026-07-28⟩
 
 - **The debut's second-day shockwave: Seoul sold off hard** — SK Hynix

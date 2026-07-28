@@ -21,6 +21,28 @@ blurb: 'The data-center buildout is diverting wafer capacity to HBM — a report
   and who blinks first on capex.'
 ---
 
+## 2026-07-28 — Demand side widens: Anthropic joins, talent war escalates
+
+- **Anthropic asked SK Hynix for chip supply to build its own custom AI
+  silicon, and separately struck supply agreements with both Samsung and
+  SK Hynix** — SK Group chair Chey Tae-won disclosed the ask at a San
+  Francisco AI summit (Bloomberg, 07-25); Dario Amodei confirmed the
+  Samsung + SK Hynix supply deals days later without giving terms
+  (volume, components, or duration). Widens the squeeze's demand side
+  past hyperscalers to frontier AI labs themselves — SK Hynix also
+  participated in Anthropic's May Series H round.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-25/sk-chair-says-anthropic-asked-for-supplies-to-make-its-own-chips) ·
+  [Digitimes](https://www.digitimes.com/news/a20260728PD201/anthropic-sk-hynix-chips-chairman-ceo.html)) ⟨daily 2026-07-28⟩
+- **Samsung's chip talent is defecting to SK Hynix over a bonus gap
+  reported as wide as 100x** — ~200 Samsung engineers have moved to SK
+  Hynix since December (SK Hynix pays out 10% of operating profit as a
+  profit-sharing pool, fattened by record HBM margins); Samsung won an
+  18-month injunction this month against two ex-employees joining SK
+  Hynix, citing chips as protected "national core technology." A
+  labor-market echo of the same squeeze — the profit differential is now
+  visibly reallocating headcount, not just capital.
+  ([MIT Technology Review](https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/)) ⟨daily 2026-07-28⟩
+
 ## 2026-07-28 — Capacity-race backstory: the trio, plus a same-day shock
 
 - **The trio's HBM race, mapped.** Backward crawl on Samsung/SK Hynix/Micron

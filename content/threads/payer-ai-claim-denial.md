@@ -20,6 +20,18 @@ blurb: 'The concept lived in board glosses; now the evidence supports a thread: 
   nH Predict suit (quiet, distinct docket).'
 ---
 
+## 2026-07-15 — UnitedHealth self-reports the practice under discovery
+
+- **CEO Stephen Hemsley told Q2 2026 earnings-call investors "virtually
+  everything" UHC does now runs through AI**, including a 96% first-pass
+  prior-authorization approval rate and a committed 30% cut to prior-auth
+  volume by year-end — the identical claims-automation UHC is under
+  federal discovery over (nH Predict/naviHealth). Optum Rx separately
+  cut AI-driven Rx approval times from 8+ hours to under 30 seconds. The
+  company is leaning further into the exact practice its own litigation
+  disputes, in public, on the record.
+  ([PYMNTS](https://www.pymnts.com/earnings/2026/unitedhealths-ai-runs-every-function-of-its-business/)) ⟨daily 2026-07-28⟩
+
 ## 2026 — The evidence base at opening ⟨crawl 2026-07-28⟩
 
 - **04-23 — federal court ordered broad discovery into UnitedHealthcare's

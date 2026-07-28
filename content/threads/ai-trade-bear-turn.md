@@ -15,6 +15,23 @@ blurb: 'Is the tape turning against the AI trade as a whole? Distinct from the c
   changes actual capex behavior.'
 ---
 
+## 2026-07-28 — FOMC eve: mixed tape, rate odds still elevated
+
+- **Going into tomorrow's 2pm ET decision, the tape is mixed rather than
+  uniformly bearish:** CoreWeave −30% in a month, SpaceX touching a fresh
+  post-IPO low (~$110.85, Morgan Stanley pricing its AI unit at zero),
+  and Nvidia's own CDS still wide — but Intel just posted its best quarter
+  in 15 years (+25% revenue) and oil is now falling sharply (Brent −4.8%
+  to ~$84 on the US-Iran pause), which cuts against one of the week's own
+  drivers of Fed hike odds. Breadth question from 07-27 stays open: still
+  AI-specific + macro-crosswind, not one clean story.
+- **Fed hike odds sit ~25-35%** across trackers (CME FedWatch ~34.7% as
+  of 07-27; a same-day FinanceFeeds read has it at 25%) — up from ~24% on
+  07-21, but consensus still points to a HOLD tomorrow with odds shifting
+  to a September hike instead (77% per one prediction-market read). See
+  the FOMC brief for detail.
+  ⟨daily 2026-07-28⟩
+
 ## 2026-07-28 — Circuit breakers ⟨daily 2026-07-28⟩
 
 - **Korea's session closed −10–11% with circuit breakers triggered** — SK

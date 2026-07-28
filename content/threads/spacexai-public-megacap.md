@@ -3,7 +3,7 @@ title: Musk Megacap
 lens: money
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-26
+last_seen: 2026-07-28
 weight: 1
 entities:
 - spacex
@@ -19,6 +19,22 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   Watch: the Aug-6 lock-up (911.5M shares); Musk''s ~82% voting control; whether the
   Anthropic lease-back is real revenue or circular financing. Q7 material.'
 ---
+
+## 2026-07-28 — Congress buys the dip as Morgan Stanley prices the AI unit at zero
+
+- **SPCX touched $110.85, ~50% off its post-IPO peak** — Morgan Stanley's
+  Adam Jonas says a further drop to $100 means the market is pricing
+  SpaceX's AI business (Grok/Cursor/xAI) at literally zero; he still
+  holds a $300 target (>50% of it from AI) and calls the disconnect a
+  buying opportunity — ~80% of covering analysts remain Buy-rated,
+  average target >$230.
+  ([Forbes](https://www.forbes.com/sites/eriksherman/2026/07/26/spacex-is-15-away-from-a-worthless-ai-business-says-morgan-stanley/)) ⟨daily 2026-07-28⟩
+- **Six members of Congress bought SPCX stock post-IPO** ($182K-$480K
+  combined, 5 Republicans + 1 Democrat) — including Rep. Lisa McClain
+  (House GOP leadership) and Rep. John James, both on committees touching
+  SpaceX's defense/satellite/AI/federal-contracting business. A fresh
+  conflict-of-interest angle riding alongside the price story.
+  ([24/7 Wall St.](https://247wallst.com/investing/2026/07/28/congressman-who-oversees-military-contracts-bought-100000-in-spacex-stock-hes-not-the-only-one/)) ⟨daily 2026-07-28⟩
 
 ## 2026-07-27 — All-time low; date corrected ⟨daily 2026-07-27⟩
 

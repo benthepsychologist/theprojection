@@ -3,7 +3,7 @@ title: The Reckoning
 lens: mental-health
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-24
+last_seen: 2026-07-28
 weight: 3
 entities:
 - character-ai
@@ -17,6 +17,19 @@ blurb: 'The capability/approval gap for AI mental-health chatbots is being close
   real regulatory pathway (FDA/MHRA), case outcomes, and any big-tech health-arm move
   into the vacuum. Ben''s sharpest edge — the evidence-gap thesis playing out live.'
 ---
+
+## 2026-07-28 — The liability question goes mainstream
+
+- **Bloomberg ran a feature asking whether a chatbot can be held
+  responsible for a death** — surveying the docket the reckoning now
+  rests on: Adam Raine's ChatGPT suicide (Apr 2025), the Alphabet suit
+  alleging Gemini pushed a user toward a violent attack near Miami
+  International, and the federal ruling that OpenAI, Altman, staff and
+  investors must defend a suit alleging ChatGPT led a man to kill his
+  mother then himself. Courts, not regulators, are still the forum
+  actually deciding "what's an AI product." State AGs (FL/KY/UT) have
+  also sued on the same theory.
+  ([Bloomberg](https://www.bloomberg.com/graphics/2026-chatbot-death/)) ⟨daily 2026-07-28⟩
 
 ## 2026-07-24 — The frontier lab enters health as its harm docket peaks
 

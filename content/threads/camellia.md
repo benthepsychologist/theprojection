@@ -3,6 +3,7 @@ title: Camellia
 lens: ai
 status: open
 opened: 2026-07-24
+last_seen: 2026-07-28
 weight: 1
 entities:
 - openai
@@ -15,6 +16,15 @@ blurb: 'OpenAI-direct build (Octans GA LLC/Butler Snow — no named GC or Starga
   SoftBank''s ~10GW Ohio (Portsmouth) campus. Track: the local secrecy backlash (10K+
   petition), generation-mix disclosure, and whether a GC/financing partner surfaces.'
 ---
+
+## 2026-07-28 — Rincon meets on the plan ⟨daily 2026-07-28⟩
+
+- **The local-opposition track went live in person** — WTOC: "Coffee,
+  concerns and 'Camellia'" — Rincon residents met today on the OpenAI
+  plan, capping a week of organizing coverage (WJCL 07-22, WTOC 07-24);
+  directly on the watch line's "local secrecy backlash" item. Georgia
+  Power's 25-yr PPA signing (07-23) also recirculated — already on file,
+  not new. (WTOC 07-28, via cold-rotation sweep)
 
 ## 2026-07-24 — Opened
 

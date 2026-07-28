@@ -18,6 +18,18 @@ blurb: 'The chokepoint is cashing in: capex raised 15% to $60-64B + another $100
   Our ~90% advanced-node anchor is carried, not re-verified. Next: Q3 earnings.'
 ---
 
+## 2026-07-28 — 7.1 earthquake hits TSMC's Kumamoto plant
+
+- **A 7.1-magnitude earthquake struck Kumamoto, Japan**, prompting a
+  tsunami warning and a precautionary staff evacuation at TSMC's JASM
+  fab; TSMC confirmed all personnel safe and structural integrity intact
+  after inspection, with operations "gradually resuming" the same day.
+  TSM shares fell ~3.6% on 07-28, though coverage splits the cause
+  between the earthquake and separate export-control/macro concerns —
+  not a clean single-cause read.
+  ([Focus Taiwan](https://focustaiwan.tw/business/202607280018) ·
+  [TradingKey](https://www.tradingkey.com/news/market-movers/262059040-market-movers-tsm-20260728)) ⟨daily 2026-07-28⟩
+
 ## ← Backstory
 
 <!-- /crawl appends below; finding pointer goes in the heading line -->

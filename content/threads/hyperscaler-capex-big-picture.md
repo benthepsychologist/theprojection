@@ -3,7 +3,7 @@ title: Hyperscaler Capex
 lens: ai
 status: open
 opened: 2026-07-23
-last_seen: 2026-07-27
+last_seen: 2026-07-28
 weight: 3
 entities:
 - google
@@ -21,6 +21,23 @@ blurb: 'The combined 2026 plan is now ~$610-650B across the four (Google $195-20
   and capex migrating off balance sheets (Blue Owl, bonds, leases → the financing
   threads). Earnings Wed/Thu (Meta+MSFT 07-29, AMZN 07-30) are the live test.'
 ---
+
+## 2026-07-28 — Eve of Meta/Microsoft earnings: financing keeps migrating off-balance-sheet, Nvidia becomes financier-of-last-resort
+
+- **Two same-day instances of the off-balance-sheet pattern**: Meta
+  formalized a second 80/20 asset-sale JV (BlackRock, $14B, El Paso —
+  see `meta-capex`), and Nvidia emerged as a prospective ~$250-500B
+  financing backstop for OpenAI's 10GW Ohio site (see
+  `stargate-buildout`) — the chip vendor increasingly underwriting its
+  own customers' buildouts.
+- **Meta reports tomorrow (07-29), Microsoft the same day, Amazon
+  07-30** — consensus has coalesced around ~$136-138B FY26 Meta capex
+  (mid-guidance, up ~$67B YoY) with 2027 seen rising further; this
+  week's commentary (CNBC, Seeking Alpha, Yahoo/Motley Fool) frames
+  Meta/Microsoft/Amazon as the next test after Alphabet's guidance raise,
+  with combined 2026 AI spend across Alphabet/Amazon/Meta alone put over
+  $500B before Microsoft is even added.
+  ⟨daily 2026-07-28⟩
 
 ## 2026-07-27 — THE CAPEX PICTURE: four actors, one table ⟨crawl 2026-07-27⟩
 

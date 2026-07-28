@@ -3,7 +3,7 @@ title: Circular Financing
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-26
+last_seen: 2026-07-28
 weight: 3
 entities:
 - nvidia
@@ -16,6 +16,23 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
   A correction here hits everything in radar Q1/Q2.'
 ---
+
+## 2026-07-28 — The lender backs a company with no product
+
+- **Nvidia invests $5B in Ilya Sutskever's Safe Superintelligence** (SSI,
+  ~$32B valuation), bundled with access to Nvidia's Vera Rubin compute
+  platform — SSI has shipped no commercial product. The stake ladder now
+  runs from established GPU customers (Nebius, CoreWeave) to a
+  pre-revenue research lab, deepening the same "vendor funds its own
+  demand" pattern this thread tracks.
+  ([SiliconANGLE](https://siliconangle.com/2026/07/28/ilya-sutskevers-safe-superintelligence-gets-access-nvidias-vera-rubin-platform/)) ⟨daily 2026-07-28⟩
+- **The Ohio guarantee's figures resolved, not conflicted:** the
+  "$500B" NYT/Forbes headlines describe the total Piketon, Ohio
+  project cost; Nvidia's own guarantee stays $250B; a third, separate
+  $350B figure covers Nvidia possibly financing its own chip sales into
+  the same site — three numbers, one deal, still gated on Commerce
+  Secretary Lutnick's sign-off. See `nvidia-vendor-financing` for detail.
+  ⟨daily 2026-07-28⟩
 
 ## 2026-07-27 — The market answers ⟨daily 2026-07-27⟩
 

@@ -3,7 +3,7 @@ title: Stargate
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-26
+last_seen: 2026-07-28
 weight: 2
 entities:
 - openai
@@ -17,6 +17,21 @@ blurb: ~$500B / ~10 GW joint venture (OpenAI/SoftBank/Oracle/MGX); ~7 GW + >$400
   via "OpenAI for Countries" (UAE live 2026; UK/Norway/Argentina/South Korea). Track
   sites actually energized, financing/grid bottlenecks, sovereign terms, and slippage.
 ---
+
+## 2026-07-27 — Nvidia in talks to backstop up to $500B for a 10GW Ohio megasite
+
+- **Nvidia is discussing a ~$250B lease/construction-financing
+  backstop** (separately, up to $350B more for chips) so OpenAI can lease
+  a planned 10GW campus that SB Energy — SoftBank's power-development
+  subsidiary — is building on the former Portsmouth uranium-enrichment
+  site in Piketon, Pike County, Ohio; full project cost including chips
+  could exceed $500B, matching the JV's original 2025 headline figure
+  even though this specific site isn't itself branded "Stargate." A
+  20-year OpenAI/SB Energy lease is under negotiation; first 800MW phase
+  targeted 2028. WSJ broke it 07-26, converging across Bloomberg/CNBC/
+  DCD/NYT through 07-28 — still described everywhere as early-stage and
+  could change.
+  ([CNBC](https://www.cnbc.com/2026/07/27/nvidia-and-openai-in-talks-for-up-to-250-billion-dollar-ai-backstop.html)) ([Data Center Dynamics](https://www.datacenterdynamics.com/en/news/openai-in-talks-to-lease-10gw-data-center-from-sb-energy-in-ohio/)) ⟨daily 2026-07-28, evidence dated 2026-07-26/27⟩
 
 ## 2026-07-22 — A new site: Georgia
 

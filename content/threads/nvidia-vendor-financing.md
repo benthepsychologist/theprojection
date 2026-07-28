@@ -24,6 +24,17 @@ blurb: 'Nvidia''s turn from chip vendor to the buildout''s lender of last resort
   verify) — NVDA −5%, CDS record single-day widening. **+ $5B into
   pre-product SSI** the same day: the lender now backs companies with no
   product at all.
+- **Figure resolved, not contradicted:** NYT/Forbes's "$500 billion"
+  headlines (07-27/28) refer to the **total project cost** of the Piketon,
+  Ohio site (a former uranium-enrichment plant SoftBank is redeveloping
+  with US/Japan government support) — Nvidia's own backstop stays $250B
+  across every outlet. A **third, separate figure** also surfaced: Nvidia
+  is weighing financing $350B of its own chip purchases for the same
+  site. Deal isn't final until Commerce Secretary Lutnick signs off;
+  Anthropic, Microsoft, and Google are named as competing bidders for the
+  same capacity.
+  ([Forbes](https://www.forbes.com/sites/tylerroush/2026/07/27/nvidia-and-openai-discussing-500-billion-data-center-heres-what-we-know/) /
+  [Bloomberg](https://www.bloomberg.com/news/articles/2026-07-26/nvidia-in-talks-on-250-billion-backing-for-openai-hub-wsj-says)) ⟨daily 2026-07-28⟩
 
 ## 2026-07-27 — The market answers ⟨daily 2026-07-27⟩
 

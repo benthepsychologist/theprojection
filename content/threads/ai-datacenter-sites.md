@@ -3,6 +3,7 @@ title: Datacenter Sites
 lens: ai
 status: open
 opened: 2026-07-24
+last_seen: 2026-07-28
 weight: 3
 entities:
 - openai
@@ -15,6 +16,16 @@ blurb: Where the capex lands in CONCRETE — the specific gigawatt campuses. Sta
   Colossus, Camellia + the 100s of sites. Category meta under where-the-capex-lands;
   the specific-sites worklist lives here.
 ---
+
+## 2026-07-28 — A fifth megasite enters the map: Ohio's 10GW Portsmouth campus
+
+- **OpenAI/SB Energy's planned 10GW Piketon, OH campus (the former
+  Portsmouth uranium site) got a financing-backstop story** — Nvidia
+  weighing ~$250B toward the lease/construction, pushing total project
+  cost toward $500B; full detail and sourcing in `stargate-buildout`. If
+  it holds, this is the single largest site figure in this thread's
+  tracker — bigger than any of the four hyperscalers' named individual
+  sites. ⟨daily 2026-07-28⟩
 
 ## 2026-07-27 — The site map, four actors traced ⟨crawl 2026-07-27⟩
 

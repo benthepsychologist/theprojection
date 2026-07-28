@@ -8,19 +8,76 @@ weight: 2
 entities:
 - intel
 thread_kind: story
-blurb: 'The subsidized-builder paradox, filing-pinned: $10.9B outside equity (US 9.9%/$8.9B
-  — the real mechanism is a 240.5M-share WARRANT that triggers only if foundry ownership
-  drops below 51%, a breakup poison pill; Nvidia $5B + real x86/NVLink co-design;
-  SoftBank $2B, now pinned) taken in the SAME six-week window as 24k layoffs and the
-  DE/PL fab kills. Thrust ≈ 0 stands. Turnaround thesis = 18A/14A: risk production
-  06-26, "running smoothly," no yield % anywhere; customers accumulating (Maia 2,
-  Tesla $20B Terafab, Apple prelim Trump-confirmed, Fortinet), none lost. Ohio slipped
-  to 2030-31. CXMT''s cap passed Intel''s the week Intel shed ~$90B.'
+blurb: 'The subsidized-builder paradox, filing-pinned: $10.9B outside equity (US $8.9B/9.9%-at-announce,
+  8.6% now — crawl 07-28; the real mechanism is a 240.5M-share WARRANT that triggers
+  only if foundry ownership drops below 51%, a breakup poison pill; Nvidia $5B + real
+  x86/NVLink co-design; SoftBank $2B, now pinned) taken in the SAME six-week window
+  as 24k layoffs and the DE/PL fab kills. Thrust ≈ 0 stands. Turnaround thesis = 18A/14A:
+  risk production 06-26, "running smoothly," no yield % anywhere; customers accumulating
+  (Maia 2, Tesla $20B Terafab, Apple prelim Trump-confirmed, Fortinet), none lost.
+  Ohio slipped to 2030-31. CXMT''s cap passed Intel''s the week Intel shed ~$90B.'
 ---
+
+## 2026-07-26 — The stake, marked to market: $8.9B → $36-42B
+
+- **The government's Intel stake is now worth $36-42B**, up from the
+  $8.9B paid — cited alongside a wider, uncoordinated federal equity
+  portfolio: ~$26.7B across ~30 equity/quasi-equity deals scattered
+  across Commerce (17), Defense (7), DFC (6), and Energy (2), with **no
+  centralized oversight** (no TARP-style inspector general or GAO audit
+  equivalent). Directly answers this thread's "does the state stake
+  change behavior" watch: so far, no — it's accumulating with no visible
+  governance layer.
+  ([Fortune](https://fortune.com/2026/07/26/the-u-s-government-invested-27-billion-in-corporate-stakes-good-luck-finding-them/)) ⟨daily 2026-07-28⟩
+- **⚠ Contradiction, unresolved — three figures, one stake:** Trump says
+  the position "made about $70 billion in eight or nine months"; a
+  separate Yahoo Finance/Treasury-sourced figure puts unrealized gains at
+  "roughly $47.6 billion" (implying ~$56.5B current value); Fortune/
+  TheNextWeb/Biggo separately size the whole position at $36-42B. None of
+  the three reconcile with each other on the same $8.9B cost basis.
+  Flagging, not resolving — worth a dedicated crawl if Ben wants the real
+  number.
+  ([Yahoo Finance](https://finance.yahoo.com/economy/policy/articles/trump-says-government-intel-stake-143115077.html)) ⟨daily 2026-07-28⟩
+
+## 2026-07-23 — Q2 2026: the best quarter in ~15 years
+
+- **Revenue $16.13B (+25% YoY, fastest growth in ~15 years), adjusted EPS
+  $0.42 vs $0.21 expected** — AI-driven business (Foundry + AI-adjacent
+  products) grew 70%+ YoY and now runs ~70% of revenue; gross margin
+  41.8%, ~280bp above guidance. Stock fell 2.46% in the regular session to
+  $100.10, then rose 3.44% after-hours as investors digested the beat.
+  2026 capex guidance raised to $20B+.
+  ([TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262050823-intel-earnings-report-q2-2026-intc-ai-data-center-intel-foundry-tradingkey)) ⟨daily 2026-07-28⟩
+- **This is the first real revenue evidence behind the turnaround thesis**
+  this thread tracks (18A/14A execution, foundry customer wins) — thrust
+  was reading ≈0 in the crawl; today's print is the first print that
+  argues otherwise, pending confirmation the AI-segment growth holds.
 
 ## ← Backstory
 
 <!-- /crawl appends below; finding pointer goes in the heading line -->
+
+### Backstory — the stake-value tangle, resolved 2026-07-28
+Finding: `artifacts/findings/intel-stake-tangle-2026-07-28.md` · Bundle:
+`artifacts/bundles/intel-stake-tangle-2026-07-28/provenance.yaml`
+
+- **The three public figures are one position measured three ways** —
+  fixed basis 433.3M sh @ $20.469 = $8.87B: **$36B** = April price ·
+  **$42B** = July price (Fortune, the best current figure) · **~$56.5B**
+  = the May-8 price peak ($129 intraday, Apple-deal day; a Kobeissi
+  Letter number). **Trump's "$70B" gain is unsupported** — needs ~$182/sh
+  stock-only (never traded), reachable only by counting the warrant's
+  240.5M shares at full spot with the $20 strike and non-exercisability
+  ignored, at pre-selloff prices. ⟨crawl 2026-07-28⟩
+- **The filing-accurate number nobody uses: the government holds 290.3M
+  shares today, not 433.3M** — 143M still escrowed against future Secure
+  Enclave disbursements (Q2 FY26 10-Q). Literal current value **$25-28B**,
+  gain ≈ $19-21B. Ownership diluted to **8.6%** (5.8% issued-only) by the
+  SoftBank (Aug-25) and Nvidia (closed Dec-25) raises — the "9.9%" is a
+  2025 headline. ⟨crawl 2026-07-28⟩
+- **No SC 13D/13G was ever filed** for the position — 8-Ks and press
+  releases only; unusual for a >5% holder, and the disclosure-side twin
+  of Fortune's "in no budget document" finding. ⟨crawl 2026-07-28⟩
 
 ### Backstory — reconstructed 2026-07-28
 Finding: `artifacts/findings/intel-rescue-2026-07-28.md` · Bundle:

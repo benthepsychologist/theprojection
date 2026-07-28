@@ -19,6 +19,26 @@ blurb: 'The neocloud wager, quantified: $99.4B backlog (Q1-26; OpenAI $18.4B + M
   08-11.'
 ---
 
+## 2026-07-28 — Stock slides further despite one new logo
+
+- **Shares down ~30% in a month, ~43% over the past year** — the
+  sell-off tracks a wider AI-cloud re-rating (bottom-line discipline over
+  growth-at-all-costs) plus a Bloomberg report that Meta is building its
+  own AI cloud-infrastructure business, a potential competitive threat.
+  ([Benzinga](https://www.benzinga.com/trading-ideas/movers/26/07/60734642/coreweave-shares-fall-30-in-a-month-as-ai-cloud-valuations-contract)) ⟨daily 2026-07-28⟩
+- **Flow Traders signed as a new customer** — training foundation models
+  for its AI-driven quant trading strategy on CoreWeave Cloud, chosen
+  after a competitive eval of multi-node training performance. Continues
+  the diversification away from the top-two-customer concentration this
+  thread already flags, though not enough to move the stock today.
+  ([Investing.com](https://ca.investing.com/news/stock-market-news/flow-traders-selects-coreweave-for-ai-training-workloads-93CH-4756697)) ⟨daily 2026-07-28⟩
+- **Note, not a new signal:** CEO Michael Intrator and CDO Brannin McBee
+  have both been selling stock through July under pre-arranged 10b5-1
+  plans (Intrator: ~370K shares 07-07/08, ~199K 07-14, ~304K 07-21; McBee:
+  similar cadence) — routine and disclosed, not a fresh pre-earnings
+  signal, but the run-rate is large enough to track into 08-11.
+  ([Investing.com](https://www.investing.com/news/insider-trading-news/coreweave-ceo-michael-intrator-sells-2407m-in-company-shares-93CH-4810342)) ⟨daily 2026-07-28⟩
+
 ## ← Backstory
 
 <!-- crawl finding: artifacts/findings/coreweave-backlog-bet-2026-07-28.md

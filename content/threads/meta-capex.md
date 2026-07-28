@@ -3,7 +3,7 @@ title: Meta Capex
 lens: ai
 status: developing
 opened: 2026-07-23
-last_seen: 2026-07-27
+last_seen: 2026-07-28
 weight: 2
 entities:
 - meta-ai
@@ -18,6 +18,18 @@ blurb: 'The week''s reversal: Meta QUIT RE100 amid a 7.5GW gas buildout (07-23/2
   Moody''s credit warning 07-24. OPEN DISCREPANCY: our $76B TTM basis vs the $135B/
   $145B guidance figures that actually recur — resolve at earnings Wednesday 07-29.'
 ---
+
+## 2026-07-28 — El Paso's financing structure completes, one day before earnings
+
+- **Meta and BlackRock formalized a $14B El Paso, TX data-center joint
+  venture** — BlackRock-managed funds (with Global Infrastructure
+  Partners and HPS Investment Partners) take an 80% stake, financed
+  partly by the $12.5B bond that just priced; Meta keeps 20%,
+  contributing ~$2.3B of land and in-progress construction. The 1GW
+  campus, already under construction, targets 2028 operations — the same
+  80/20 off-balance-sheet pattern as Hyperion's Blue Owl sale, now
+  repeated at a second site the day before earnings.
+  ([Meta](https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/)) ([CNBC](https://www.cnbc.com/2026/07/28/meta-blackrock-partner-on-14-billion-el-paso-data-center.html)) ⟨daily 2026-07-28⟩
 
 ## 2026-07-23 — Thread opened
 
