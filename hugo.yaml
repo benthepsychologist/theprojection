@@ -37,18 +37,29 @@ params:
 
 menus:
   main:
+    # The three beats lead the nav — each carries its own morning briefing,
+    # and until now a lens was only a filter chip with no shareable URL.
+    - name: "AI"
+      url: "/beat/ai/"
+      weight: 1
+    - name: "Money"
+      url: "/beat/money/"
+      weight: 2
+    - name: "Mental Health"
+      url: "/beat/mental-health/"
+      weight: 3
     - name: "The Map"
       url: "/map/"
-      weight: 1
+      weight: 4
     - name: "Threads"
       url: "/threads/"
-      weight: 2
+      weight: 5
     - name: "Entities"
       url: "/entities/"
-      weight: 3
+      weight: 6
     - name: "Interest"
       url: "/interest/"
-      weight: 4
+      weight: 7
     - name: "About"
       url: "/about/"
-      weight: 5
+      weight: 8

@@ -10,8 +10,15 @@
 {{ if $p }}
 <p class="dateline" style="text-align:center;">Week of {{ $p.week_start }} · centered on {{ $p.today }}
   · generated {{ $p.generated }} · {{ len $p.days }}/7 days in</p>
+{{/* The briefing leads, per AGENTS.md discipline 10's fixed page order:
+     flash rail -> executive summary -> today's calendar -> ranked content.
+     The compact front readout still renders below the dashboard. */}}
+{{ partial "briefing.html" (dict "ctx" . "scope" "front") }}
 <div class="chip-row" role="group" aria-label="Filter by lens">
   <span class="chip on" data-lens="all">all lenses</span>
+  {{/* these stay JS filters, not links — the beat PAGES are in the nav.
+       Wrapping the label in an anchor here would navigate on click and
+       kill the in-page filter these chips exist to drive. */}}
   <span class="chip" data-lens="ai">AI</span>
   <span class="chip" data-lens="money">Money</span>
   <span class="chip" data-lens="mental-health">Mental Health</span>

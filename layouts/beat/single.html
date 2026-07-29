@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+{{/* the flash rail is already rendered by masthead.html */}}
+{{ $lens := .Params.lens }}
+{{ partial "briefing.html" (dict "ctx" . "scope" (printf "lens:%s" $lens)) }}
+{{ partial "readout.html" (dict "ctx" . "scope" (printf "lens:%s" $lens)) }}
+{{ $p := .Site.Data.payload }}
+
+<div class="thread-header">
+  <h1>{{ .Title }}</h1>
+  <p class="dek">One of three lenses · everything kestrel tracks under this beat</p>
+</div>
+
+<div class="section">
+  <h2>Threads on this beat</h2>
+  {{ $threads := where $p.threads "lens" $lens }}
+  {{ if $threads }}
+    {{ range sort $threads "last_seen" "desc" }}
+    <div class="qrow">
+      <span class="dash">·</span>
+      <span><a href="/threads/{{ .slug }}/">{{ .title }}</a> — {{ .status }} · last seen {{ .last_seen }}</span>
+    </div>
+    {{ end }}
+  {{ else }}
+    <p style="color:var(--ink-faint);">No live threads on this beat.</p>
+  {{ end }}
+</div>
+
+<div class="section">
+  <h2>Items this week</h2>
+  {{/* .html is pre-sanitized by kestrel's md_html() at generation time —
+       escaped first, then a fixed tag set re-added. Same trust boundary the
+       entity and thread layouts already rely on. */}}
+  {{ $items := where $p.items "lens" $lens }}
+  {{ if $items }}
+  <ul class="items-list">
+    {{ range $items }}
+    <li><span class="item-day">{{ .day }}</span> {{ .html | safeHTML }}</li>
+    {{ end }}
+  </ul>
+  {{ else }}
+    <p style="color:var(--ink-faint);">Nothing curated on this beat this week.</p>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

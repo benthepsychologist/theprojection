@@ -1,0 +1,82 @@
+{{/* Morning briefing — the front page and each beat page.
+
+     Ben, 2026-07-29: "Morning briefing on the front page and on each beat
+     page please. And it can be a little more chunky than the thread pages
+     since presumably more happened. It should COVER everything that's in
+     the executive summary now. Easier to scan, not less information."
+
+     So this is NOT a longer summary. It is the same ground the compact
+     summary covers, opened out into labelled sections so the eye can jump
+     straight to the part it wants:
+
+       gist      one line — the day in a sentence
+       lead      3-5 bullets ranked by SALIENCE, no lens quota
+       sections  on the front, EXACTLY the three lenses, so nothing goes
+                 dark while the lead stays purely ranked; on a beat page,
+                 themes within that lens
+       watch     1-3 open questions
+
+     A fact may appear in `lead` and again in its section. That repetition
+     is deliberate — the lead is the ranking, the sections are the
+     coverage — and it is why this reads as a briefing rather than a list.
+
+     Call: {{ partial "briefing.html" (dict "ctx" . "scope" "lens:ai") }} */}}
+{{ $r := index (.ctx.Site.Data.readouts.readouts) .scope }}
+{{ with $r }}{{ with .briefing }}
+{{ $b := . }}
+<section class="briefing" aria-label="Morning briefing">
+
+  <p class="briefing-label">Morning briefing
+    {{ with $r.generated }}<time class="briefing-stamp" datetime="{{ . }}"></time>{{ end }}
+  </p>
+
+  {{ with $b.gist }}<p class="briefing-gist">{{ . }}</p>{{ end }}
+
+  {{ with $b.lead }}
+  <ol class="briefing-lead">
+    {{ range . }}
+    <li>
+      <span class="briefing-emoji" aria-hidden="true">{{ .emoji }}</span>
+      <span class="briefing-text">
+        {{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
+        {{ else }}{{ .text }}{{ end }}
+      </span>
+    </li>
+    {{ end }}
+  </ol>
+  {{ end }}
+
+  {{ with $b.sections }}
+  <div class="briefing-sections">
+    {{ range . }}
+    <section class="briefing-section">
+      <h3 class="briefing-heading">
+        <span class="briefing-emoji" aria-hidden="true">{{ .emoji }}</span>{{ .heading }}
+      </h3>
+      <ul>
+        {{ range .bullets }}
+        <li>
+          <span class="briefing-emoji" aria-hidden="true">{{ .emoji }}</span>
+          <span class="briefing-text">
+            {{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
+            {{ else }}{{ .text }}{{ end }}
+          </span>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $b.watch }}
+  <div class="briefing-watch">
+    <p class="briefing-watch-label"><span aria-hidden="true">👀</span> Open</p>
+    <ul>
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
+</section>
+{{ end }}{{ end }}
