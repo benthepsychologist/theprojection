@@ -31,6 +31,22 @@ here: Hugo renders it, Cloudflare serves it, nothing runs server-side. The
 site's own code is public and [MIT-licensed](https://github.com/benthepsychologist/theprojection)
 if you want to see exactly how a thread becomes a page.
 
+**What's at the top of every page.** Each page opens with a readout in
+three parts: *Breaking* (anything from today), *News* (the last seven
+days), and a short *Summary*. The first two are assembled mechanically
+from the same dated item record the threads themselves are built from —
+no model writes them, so they can't drift from what the sources actually
+say. The summary is different: it's written by a language model against
+that page's tracked material, and regenerated only when the evidence
+underneath it changes. Treat it as orientation, not citation — the dated
+bullets and their source links are the record.
+
+Above all of that, rarely, a **flash** — a single banner carrying
+something that would lead a general news front page whether or not it
+touches AI, money, or mental health. The bar is deliberately high: most
+days there is none, and if you start seeing them often, that's a bug
+rather than a busy week. A flash can be dismissed; it returns on reload.
+
 **How I use it.** This started as a private morning read — three lenses I
 actually track, so I'm not reconstructing context on a news cycle from
 scratch every day. What's here is that same read, minus whatever's
