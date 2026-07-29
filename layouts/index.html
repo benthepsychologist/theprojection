@@ -20,6 +20,7 @@
   <button class="copy-chat-btn" id="copy-chat-week">💬 Copy this week for AI chat</button>
 </div>
 <div id="dashboard" class="section" style="margin-top:1.6rem;"></div>
+{{ partial "readout.html" (dict "ctx" . "scope" "front") }}
 {{/* jsonify alone would get quoted-as-a-JS-string-literal by Go's
      html/template script-context auto-escaper (double-encoding — the bug
      that shipped). safeJS stops that, but it also opts out of the

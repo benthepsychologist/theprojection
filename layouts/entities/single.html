@@ -7,6 +7,7 @@
 {{ partial "masthead.html" . }}
 
 {{ $slug := .File.ContentBaseName }}
+{{ partial "readout.html" (dict "ctx" . "scope" (printf "entity:%s" $slug)) }}
 {{ $p := .Site.Data.payload }}
 {{/* .html below is pre-sanitized by kestrel's md_html() at generation time —
      escaped first, then a fixed set of tags (b/a/code) re-added. Never

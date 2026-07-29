@@ -8,6 +8,7 @@
 
 {{ if .Params.lens }}
 {{ $slug := .File.ContentBaseName }}
+{{ partial "readout.html" (dict "ctx" . "scope" (printf "thread:%s" $slug)) }}
 {{ $p := .Site.Data.payload }}
 {{/* .html below is pre-sanitized by kestrel's md_html() at generation time —
      see layouts/entities/single.html for the full trust-boundary note. */}}

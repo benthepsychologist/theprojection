@@ -4,11 +4,17 @@
      that only appears on the homepage isn't a flash.
 
      `critical` ONLY. `major` severities travel in the payload for the
-     executive summary to fold in, and must never render here — the rail
+     executive readout to fold in, and must never render here — the rail
      stops meaning anything if it fires often. Normally at most one.
 
-     Server-rendered from data/payload.json, deliberately: no JS, nothing
-     to fail, present in the HTML source.
+     Server-rendered from data/payload.json, deliberately: no JS needed to
+     see it, nothing to fail, present in the HTML source.
+
+     DISMISSAL (Ben, 2026-07-29): "click to close... stays closed.
+     reappears on reload." So it is deliberately IN-MEMORY ONLY — no
+     cookie, no sessionStorage, no query param. Closing removes the node
+     for this view; a reload brings it back. That is the whole spec, and
+     it is the reason there is no persistence code here to go wrong.
 
      Brand: this uses INK, not a new hue. --live (#E01279) is reserved for
      selection / "changed this week" and is NOT available here; --lens-mh
@@ -19,6 +25,7 @@
   {{ range where .flash "severity" "critical" }}
   <aside class="flash" role="alert" aria-label="Breaking">
     <div class="flash-inner">
+      <button type="button" class="flash-close" aria-label="Dismiss this flash">&times;</button>
       <p class="flash-kicker">Flash · {{ .date }}</p>
       <p class="flash-head">{{ .headline }}</p>
       {{ with .body }}<p class="flash-body">{{ . }}</p>{{ end }}
@@ -31,3 +38,14 @@
   </aside>
   {{ end }}
 {{ end }}
+<script>
+/* In-memory only, by design (see comment above): no storage, so a reload
+   restores the rail. Delegated so it costs one listener regardless of how
+   many rails render. */
+document.addEventListener("click", function (ev) {
+  var b = ev.target.closest && ev.target.closest(".flash-close");
+  if (!b) return;
+  var rail = b.closest(".flash");
+  if (rail) rail.remove();
+});
+</script>

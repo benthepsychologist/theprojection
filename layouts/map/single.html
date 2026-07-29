@@ -7,6 +7,7 @@
 {{ partial "masthead.html" . }}
 
 {{ $slug    := .File.ContentBaseName }}
+{{ partial "readout.html" (dict "ctx" . "scope" (printf "node:%s" $slug)) }}
 {{ $kind    := .Params.board_kind }}
 {{ $board   := .Site.Data.board }}
 {{ $labels  := .Site.Data.labels }}

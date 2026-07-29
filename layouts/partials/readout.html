@@ -1,0 +1,70 @@
+{{/* Executive readout — the block that goes at the top of every page.
+     Ben, 2026-07-29: "leverage cheap sonnet class LLMs to put an exec
+     readout on literally every page... probably use a structure like: at
+     the top: NEWS: recent news items (less than a week), BREAKING: same
+     day news, and then the general summary."
+
+     ORDER NOTE: rendered BREAKING → NEWS → SUMMARY rather than the order
+     Ben listed. Same-day is a strict subset of "this week" and is the more
+     urgent of the two, so putting it second would bury it under items it
+     supersedes. Trivial to flip if he wants his literal order.
+
+     BREAKING and NEWS are derived mechanically in tools/readouts.py from
+     the dated item record — no model touches them, so they cannot drift
+     from what the digests actually say. Only SUMMARY is model-written,
+     and only when a fingerprint over the underlying inputs changes.
+
+     Bullets are links (Ben: "bullet points that encourage me to click") —
+     to the source where an item has a URL, otherwise to the thread page
+     that owns it, so a bullet is never a dead end.
+
+     TIMESTAMP is deliberately "behind the scenes" (Ben's words): a title
+     attribute and a <time datetime> for machines, not a visible line of
+     chrome.
+
+     Call: {{ partial "readout.html" (dict "ctx" . "scope" "thread:foo") }} */}}
+{{ $r := index (.ctx.Site.Data.readouts.readouts) .scope }}
+{{ with $r }}
+<section class="readout" aria-label="Executive readout">
+
+  {{ with .breaking }}
+  <div class="readout-block readout-breaking">
+    <p class="readout-label">Breaking</p>
+    <ul>
+      {{ range . }}
+      <li>
+        {{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
+        {{ else if .threads }}<a href="/threads/{{ index .threads 0 }}/">{{ .text }}</a>
+        {{ else }}{{ .text }}{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
+  {{ with .news }}
+  <div class="readout-block readout-news">
+    <p class="readout-label">News <span class="readout-sub">· last 7 days</span></p>
+    <ul>
+      {{ range . }}
+      <li>
+        {{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
+        {{ else if .threads }}<a href="/threads/{{ index .threads 0 }}/">{{ .text }}</a>
+        {{ else }}{{ .text }}{{ end }}
+        <span class="readout-day">{{ .day }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
+  {{ with .summary }}
+  <div class="readout-block readout-summary">
+    <p class="readout-label">Summary</p>
+    <p class="readout-prose" {{ with $r.generated }}title="readout generated {{ . }}"{{ end }}>{{ . }}</p>
+  </div>
+  {{ end }}
+
+  {{ with $r.generated }}<time class="readout-stamp" datetime="{{ . }}"></time>{{ end }}
+</section>
+{{ end }}
