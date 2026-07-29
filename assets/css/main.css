@@ -271,6 +271,42 @@ a.chip{ text-decoration:none; }
 .readout-prose{ margin:0; font-size:.95rem; line-height:1.6; color:var(--ink-body); max-width:64ch; }
 .readout-stamp{ display:none; }
 
+/* Structured summary (Ben, 2026-07-29 — "bullets and emojis and delight",
+   the v1 paragraph replaced). Four slots: a lead GIST, salience-ranked
+   BULLETS, per-lens BEATS on the front only, and a closing WATCH line.
+   The gist carries the weight so the eye lands there first; the beats are
+   deliberately quieter than the bullets, because they are the balance
+   floor rather than the ranking. */
+.readout-gist{
+  margin:0 0 .7rem; font-size:1.06rem; line-height:1.45; font-weight:500;
+  color:var(--ink); max-width:60ch;
+}
+.readout-points{ margin:0 0 .2rem; }
+.readout-summary .readout-points li{
+  justify-content:flex-start; align-items:flex-start;
+  border-bottom:0; padding:.26rem 0; font-size:.93rem; line-height:1.5;
+}
+.readout-emoji{ flex:none; font-size:.95rem; line-height:1.5; }
+.readout-point-text{ color:var(--ink-body); }
+.readout-points a{ color:inherit; }
+
+.readout-beats{
+  margin:.7rem 0 0; padding-top:.55rem; border-top:1px dotted var(--rule);
+  display:grid; gap:.1rem .9rem; max-width:70ch;
+}
+.readout-beats dt{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.62rem;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--ink-faint);
+  font-weight:600; padding-top:.2rem;
+}
+.readout-beats dd{
+  margin:0 0 .35rem; font-size:.89rem; line-height:1.45; color:var(--ink-body);
+}
+.readout-watch{
+  margin:.7rem 0 0; font-size:.89rem; line-height:1.5; color:var(--ink-body);
+  display:flex; gap:.45rem; align-items:baseline; max-width:64ch;
+}
+
 @media (min-width:820px){
   /* Breaking and News sit side by side; the summary spans beneath them,
      so the eye gets the scannable lists first and the prose second. */
@@ -278,9 +314,16 @@ a.chip{ text-decoration:none; }
   .readout-summary{ grid-column:1 / -1; }
   .readout-breaking:only-child, .readout-news:only-child{ grid-column:1 / -1; }
 }
+@media (min-width:560px){
+  /* Label beside its sentence once there is room; stacked below that, so
+     a beat never squeezes to a two-word column on a phone. */
+  .readout-beats{ grid-template-columns:auto 1fr; }
+  .readout-beats dd{ margin-bottom:.15rem; }
+}
 @media (max-width:640px){
   .readout{ padding:0 1.1rem; }
   .readout li{ font-size:.88rem; }
+  .readout-gist{ font-size:1rem; }
 }
 
 .tcard{

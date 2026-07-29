@@ -18,6 +18,25 @@
      to the source where an item has a URL, otherwise to the thread page
      that owns it, so a bullet is never a dead end.
 
+     SUMMARY IS STRUCTURED (Ben, 2026-07-29: "I wanted bullets and emojis
+     and delight. It's still just a paragraph."). It arrives as slots this
+     template lays out, never as prose to print:
+
+       gist     one lead sentence — the whole scope in one line
+       bullets  3-5 × {emoji, text, url}, each a full sentence, ranked by
+                SALIENCE with no lens quota
+       beats    FRONT ONLY — one sentence per lens (ai / money /
+                mental-health). This is the cross-lens balance floor: the
+                bullets above are ranked purely on salience and are NOT
+                padded to give each lens a turn, so the beats are what
+                guarantee no lens goes dark.
+       watch    one closing sentence — the open question
+
+     The emoji is typed (money / legal / buildout / research / risk /
+     health / geopolitics / market / deal / launch) and is aria-hidden: it
+     marks the KIND of development and never carries a fact by itself,
+     because the voice pipeline strips all but six status emojis.
+
      TIMESTAMP is deliberately "behind the scenes" (Ben's words): a title
      attribute and a <time datetime> for machines, not a visible line of
      chrome.
@@ -59,9 +78,47 @@
   {{ end }}
 
   {{ with .summary }}
-  <div class="readout-block readout-summary">
+  {{ $s := . }}
+  <div class="readout-block readout-summary" {{ with $r.generated }}title="readout generated {{ . }}"{{ end }}>
     <p class="readout-label">Summary</p>
-    <p class="readout-prose" {{ with $r.generated }}title="readout generated {{ . }}"{{ end }}>{{ . }}</p>
+
+    {{ if reflect.IsMap $s }}
+      {{ with $s.gist }}<p class="readout-gist">{{ . }}</p>{{ end }}
+
+      {{ with $s.bullets }}
+      <ul class="readout-points">
+        {{ range . }}
+        <li>
+          <span class="readout-emoji" aria-hidden="true">{{ .emoji }}</span>
+          <span class="readout-point-text">
+            {{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
+            {{ else }}{{ .text }}{{ end }}
+          </span>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
+      {{ $beats := $s.beats }}
+      {{ if $beats }}
+      <dl class="readout-beats">
+        {{ range $lens := slice "ai" "money" "mental-health" }}
+          {{ with index $beats $lens }}
+          <dt>{{ replace $lens "-" " " }}</dt>
+          <dd>{{ . }}</dd>
+          {{ end }}
+        {{ end }}
+      </dl>
+      {{ end }}
+
+      {{ with $s.watch }}
+      <p class="readout-watch"><span class="readout-emoji" aria-hidden="true">👀</span> {{ . }}</p>
+      {{ end }}
+    {{ else }}
+      {{/* v1 store: summary was a bare prose string. Republishing from a
+           v2 store removes this branch's reason to exist. */}}
+      <p class="readout-prose">{{ $s }}</p>
+    {{ end }}
   </div>
   {{ end }}
 
