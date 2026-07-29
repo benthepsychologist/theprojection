@@ -3,7 +3,7 @@ title: Grok Harm
 lens: mental-health
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 2
 entities:
 - spacex
@@ -20,6 +20,13 @@ blurb: 'CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct: (A
   thread''s core) from being swallowed by strand B (CSAM, the regulatory driver).
   Cross-refs ai-therapy-regulatory-reckoning.'
 ---
+
+## 2026-07-29 — Minnesota clock: a filed suit, not a stay
+
+- **xAI's challenge to Minnesota's HF1606 "nudify" ban is a filed suit,
+  not a stay** — the statute takes effect Saturday 08-01 unless xAI
+  secures injunctive relief first.
+  ([CNBC](https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html)) ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 — A lab sues a state AG; the UK case asks for technical remedies
 

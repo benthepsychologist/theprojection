@@ -3,7 +3,7 @@ title: Hyperscaler Capex
 lens: ai
 status: open
 opened: 2026-07-23
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 3
 entities:
 - google

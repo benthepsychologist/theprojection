@@ -3,7 +3,7 @@ title: TSMC Capacity Race
 lens: ai
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 3
 entities:
 - tsmc
@@ -17,6 +17,16 @@ blurb: 'The chokepoint is cashing in: capex raised 15% to $60-64B + another $100
   ban, 07-21). "Nvidia overtook Apple as top customer" is contested, not settled.
   Our ~90% advanced-node anchor is carried, not re-verified. Next: Q3 earnings.'
 ---
+
+## 2026-07-29 — Kumamoto restoration in stages; the bigger exposure is Tokyo Electron's, not TSMC's
+
+- **TSMC's Kumamoto fab is structurally intact, with employees safe and
+  operations being restored in stages after Tuesday's M7.1 quake** — no
+  resumption date was given.
+  ([Taipei Times](https://www.taipeitimes.com/News/taiwan/archives/2026/07/29/2003861588)) ⟨daily 2026-07-29⟩
+- **The site is under 3% of TSMC's total capacity**; the larger
+  supply-chain exposure flagged is Tokyo Electron Kyushu's share of some
+  equipment categories, not TSMC output. ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 — 7.1 earthquake hits TSMC's Kumamoto plant
 

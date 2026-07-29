@@ -3,7 +3,7 @@ title: CHIPS Equity Pivot
 lens: money
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 2
 entities:
 - intel
@@ -15,6 +15,16 @@ blurb: 'Grants→stakes as policy: the state converting subsidy into ownership. 
   which awards convert, the legal instrument used, and whether equity terms start
   steering corporate behavior (links intel-rescue).'
 ---
+
+## 2026-07-29 — A private-market echo of the same pivot: analysts call it an explicit allocation rotation
+
+- **Analysts are framing the selloff as a rotation from chipmakers to
+  hyperscalers**, on fear that AI infrastructure capex is peaking faster
+  than expected — Morgan Stanley, UBS and Forrester; BofA dissents and
+  calls it mid-innings.
+  ([Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/ai-investors-may-pivot-hyperscalers-133026207.html)) ⟨daily 2026-07-29⟩
+- **This is the first time the thread's thesis has been stated as an
+  explicit allocation call rather than inferred from price.** ⟨daily 2026-07-29⟩
 
 ## 2026-07-26 — The portfolio nobody can size
 

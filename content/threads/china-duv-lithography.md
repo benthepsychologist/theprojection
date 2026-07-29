@@ -3,7 +3,7 @@ title: Homegrown DUV
 lens: ai
 status: open
 opened: 2026-07-29
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 3
 entities:
 - cxmt
@@ -21,11 +21,21 @@ blurb: 'Whether China''s first mass-produced immersion DUV tool is real at manuf
   the whole chokepoint picture. ⟨ben-steer 2026-07-29⟩'
 ---
 
-## 2026-07-29 — Opened
+## 2026-07-29 — Split out on Ben's steer; Shanghai Aishengna named as the maker
 
 - **Split out of `china-stack-independence` on Ben's steer** — "Sure, add
   it. its interesting. Probably a sub-thread of china-stack-independence."
   The parent was promoted `story` → `meta` to take the pointer. ⟨steer 2026-07-29⟩
+- **Shanghai Aishengna was named as the maker** — founded August 2023,
+  backed by Shanghai Electric Holding and Shanghai International Trust,
+  staffed from SMEE and Yuliangsheng.
+  ([Seoul Economic Daily](https://en.sedaily.com/international/2026/07/29/aishengna-revealed-as-chinese-duv-maker-behind-chip-stocks)) ⟨daily 2026-07-29⟩
+- **JPMorgan's caveat:** "producing a small quantity of DUV equipment and
+  building a mass-production system are entirely different matters." ⟨daily 2026-07-29⟩
+- **No delivery to any named fab has been confirmed** — coverage still
+  says "expected this year" for SMIC, Hua Hong and CXMT. ⟨daily 2026-07-29⟩
+- **The thread's test is delivery, not announcement, and it has not
+  fired.** ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 — China starts mass-producing its own immersion DUV
 

@@ -3,7 +3,7 @@ title: Circular Financing
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 3
 entities:
 - nvidia
@@ -16,6 +16,24 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
   A correction here hits everything in radar Q1/Q2.'
 ---
+
+## 2026-07-29 — Oracle takes the widest spread; the worry shifts, doesn't shrink
+
+- **Nvidia's 5-year CDS eased to roughly 78bp from Monday's record 82bp,
+  and Oracle overtook it as the widest-trading hyperscaler credit** —
+  figure lower-confidence (the source article was paywalled; read from
+  headline and metadata only).
+  ([Seeking Alpha](https://seekingalpha.com/news/4620575-oracle-leads-record-widening-in-hyperscaler-cds-spreads)) ⟨daily 2026-07-29⟩
+- **A separate ~$350B Nvidia-to-OpenAI chip-financing negotiation sits
+  alongside the $250B lease-and-construction guarantee** — two distinct
+  instruments that together are what could carry the Ohio project past
+  $500B.
+  ([Tom's Hardware](https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus)) ⟨daily 2026-07-29⟩
+- **No company has confirmed the $250B guarantee**; terms remain
+  explicitly unfinalized and "could fall apart" — the figure is press
+  consensus across WSJ, Bloomberg and Reuters, not a signed deal. ⟨daily 2026-07-29⟩
+- **The worry migrating from the lender to the largest lessee is a
+  change in where the risk is being priced, not a reduction in it.** ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 — The lender backs a company with no product
 

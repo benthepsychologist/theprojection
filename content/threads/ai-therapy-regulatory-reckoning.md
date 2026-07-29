@@ -3,7 +3,7 @@ title: The Reckoning
 lens: mental-health
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 3
 entities:
 - character-ai
@@ -17,6 +17,21 @@ blurb: 'The capability/approval gap for AI mental-health chatbots is being close
   real regulatory pathway (FDA/MHRA), case outcomes, and any big-tech health-arm move
   into the vacuum. Ben''s sharpest edge — the evidence-gap thesis playing out live.'
 ---
+
+## 2026-07-29 — Two new studies name the failure modes; Maine gives the strand its first live statute
+
+- **A Northeastern preprint tested 8 chatbots across 16 psychiatric
+  conditions and found suicide and self-harm safeguards improved while
+  other sensitive mental-health questions failed at about 81% for
+  ChatGPT, Gemini and DeepSeek; Claude performed best.**
+  ([Medical Xpress](https://medicalxpress.com/news/2026-07-mental-health-conditions-ai-liability.html)) ⟨daily 2026-07-29⟩
+- **A Journal of Psychopathology and Clinical Science paper named five
+  risky interaction patterns:** delayed care, reinforced compulsions,
+  social withdrawal, reinforced delusions, and loss of independent
+  judgment.
+  ([Medical Xpress](https://medicalxpress.com/news/2026-07-ai-chatbots-mental-health-worse.html)) ⟨daily 2026-07-29⟩
+- **Maine's ban took effect today**, giving the regulatory strand its
+  first statute actually in force. ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 — The liability question goes mainstream
 

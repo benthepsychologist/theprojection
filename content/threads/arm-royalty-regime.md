@@ -3,7 +3,7 @@ title: Arm Royalty Regime
 lens: ai
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 2
 entities:
 - arm

@@ -3,7 +3,7 @@ title: AI Bear Turn
 lens: money
 status: open
 opened: 2026-07-27
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 2
 entities: []
 thread_kind: story
@@ -14,6 +14,24 @@ blurb: 'Is the tape turning against the AI trade as a whole? Distinct from the c
   breadth (is it AI-specific or macro), the earnings verdicts, and whether the drawdown
   changes actual capex behavior.'
 ---
+
+## 2026-07-29 — FOMC holds 9-3, dissents replace unanimity, credit leg eases
+
+- **The Fed held at 3.50%-3.75% on a 9-3 vote, with three dissents for a
+  quarter-point hike — Hammack, Kashkari and Logan** — six weeks after a
+  unanimous 12-0 decision.
+  ([Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm)) ⟨daily 2026-07-29⟩
+- **The statement's language barely moved from June; the committee did.**
+  The descriptive text is essentially unchanged — the split is in the
+  votes, not the prose. ⟨daily 2026-07-29⟩
+- **The Dow fell roughly 800 points into the close**, ahead of the
+  decision and four major earnings prints.
+  ([TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-29-2026stock-market-today-july-29-2026)) ⟨daily 2026-07-29⟩
+- **Nvidia fell about 2.1% intraday on the standing $250B guarantee
+  reports**, not any new disclosure — old news repricing again. ⟨daily 2026-07-29⟩
+- **The bear turn's credit leg eased today rather than extended** — the
+  pressure rotated to Oracle instead of Nvidia — and tonight's four
+  prints are the real test of whether this was a pause or a turn. ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 (overnight) — Korea rallies on the print, then breaks again ⟨daily 2026-07-28⟩
 

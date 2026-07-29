@@ -3,7 +3,7 @@ title: Chatbot Bans
 lens: mental-health
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 2
 entities:
 - character-ai
@@ -16,6 +16,16 @@ blurb: 'The wave is ~10+ enacted instruments in two species (crawl 2026-07-22 co
   these laws (so far only xAI v. Colorado''s discrimination law); Colorado-mandate
   copycats.'
 ---
+
+## 2026-07-29 — Maine in force; SB 903's Appropriations clock still unresolved
+
+- **Maine's LD 2082 barring AI-delivered therapy took effect today** —
+  the first US state statute of its kind actually in force. ⟨daily 2026-07-29⟩
+- **California SB 903's Appropriations timing is unresolved:** the
+  bill's last recorded action is 07-02, no Assembly Appropriations
+  calendar entry names it, and sources place the committee deadline at
+  both 08-14 and 08-29.
+  ([CalMatters](https://calmatters.digitaldemocracy.org/bills/ca_202520260sb903)) ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 — Maine's ban becomes the first one actually in force
 

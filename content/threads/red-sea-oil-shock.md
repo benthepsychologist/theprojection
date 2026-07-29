@@ -3,7 +3,7 @@ title: Red Sea Shock
 lens: money
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 3
 entities: []
 thread_kind: story

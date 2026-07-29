@@ -3,7 +3,7 @@ title: Kaiser vs. AI
 lens: mental-health
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-24
+last_seen: 2026-07-29
 weight: 2
 entities:
 - kaiser-permanente
@@ -16,6 +16,17 @@ blurb: 'A two-year escalation over two specific systems (the E-Visit auto-triage
   question); second-strike risk; whether other systems face the same (Kaiser Hawaii
   shows the template).'
 ---
+
+## 2026-07-29 — DMHC confirms it's investigating the algorithm-triage complaint
+
+- **The National Union of Healthcare Workers filed a complaint with
+  California's Department of Managed Health Care alleging Kaiser used an
+  algorithm, not clinicians, to triage mental-health e-visit patients,
+  and the department confirmed it is investigating.**
+  ([Almanac News / CalMatters](https://www.almanacnews.com/calmatters/2026/07/29/kaiser-used-an-algorithm-not-clinicians-to-triage-mental-health-patients-a-union-alleges/)) ⟨daily 2026-07-29⟩
+- **This is the first formal regulatory complaint on this specific
+  practice**, and it moves the question from what a chatbot tells a
+  consumer to what an algorithm does inside a licensed care system. ⟨daily 2026-07-29⟩
 
 ## 2026-07-23 — "Unacceptable": the hearing gets a second wave
 

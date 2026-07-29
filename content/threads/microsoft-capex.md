@@ -3,7 +3,7 @@ title: Microsoft Capex
 lens: ai
 status: developing
 opened: 2026-07-23
-last_seen: 2026-07-27
+last_seen: 2026-07-29
 weight: 2
 entities:
 - microsoft
@@ -18,6 +18,17 @@ blurb: 'Earnings 07-29 is the near-term test — the "$97B TTM" figure is OUR ar
   OpenAI-vs-own split. Watch Wednesday: FY26 full-year capex, FY27 guide, any split
   disclosure.'
 ---
+
+## 2026-07-29 — Earnings today after the close; the ledger was the wrong authority on the date
+
+- **Microsoft reports FY26 Q4 after today's close**, confirmed against
+  two Microsoft primary sources; the watch items are the FY27 capex
+  guide and any OpenAI-vs-own split disclosure.
+  ([Microsoft](https://news.microsoft.com/source/2026/07/08/microsoft-announces-quarterly-earnings-release-date-68/)) ⟨daily 2026-07-29⟩
+- **Record the date churn plainly:** this thread's prose said 07-29, the
+  expectations ledger said 07-30, the ledger was trusted and the prose
+  "corrected" — then Microsoft's own IR settled it at 07-29. The ledger
+  was the wrong authority. ⟨daily 2026-07-29⟩
 
 ## 2026-07-23 — Thread opened, quiet
 

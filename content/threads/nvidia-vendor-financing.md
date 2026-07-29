@@ -3,7 +3,7 @@ title: Nvidia as Lender
 lens: money
 status: open
 opened: 2026-07-27
-last_seen: 2026-07-28
+last_seen: 2026-07-29
 weight: 3
 entities:
 - nvidia
@@ -17,6 +17,20 @@ blurb: 'Nvidia''s turn from chip vendor to the buildout''s lender of last resort
   and each new customer-equity position. Sits inside the circular-financing story
   but is its own actor-move.'
 ---
+
+## 2026-07-29 — CDS eases from the record; the record's date gets corrected
+
+- **The $250B guarantee remains unconfirmed by any company, with terms
+  unfinalized.**
+  ([Tom's Hardware](https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus)) ⟨daily 2026-07-29⟩
+- **The separate ~$350B chip-financing negotiation is a distinct
+  instrument from the guarantee.** ⟨daily 2026-07-29⟩
+- **Nvidia's CDS eased to ~78bp from Monday's 82bp record.**
+  ([Seeking Alpha](https://seekingalpha.com/news/4620575-oracle-leads-record-widening-in-hyperscaler-cds-spreads)) ⟨daily 2026-07-29⟩
+- **Correction, stated plainly: the record CDS widening was Monday
+  2026-07-27 (Bloomberg), not 07-28 as this repo's 07-28 digest recorded
+  it** — an aggregator re-indexing error.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-27/nvidia-credit-risk-jumps-in-swaps-market-on-ai-deal-talk-reports)) ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 — Record CDS day ⟨daily 2026-07-28⟩
 
