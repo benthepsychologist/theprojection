@@ -15,6 +15,45 @@ blurb: 'Is the tape turning against the AI trade as a whole? Distinct from the c
   changes actual capex behavior.'
 ---
 
+## 2026-07-28 (overnight) — Korea rallies on the print, then breaks again ⟨daily 2026-07-28⟩
+
+- **The second circuit breaker in two sessions — this time after good
+  news.** The 07-29 KST session opened **+1.1%**, ran to **+2.76%
+  (6,190.04)** on SK Hynix earnings relief, then reversed the whole way
+  to an intraday **−12.63% (5,262.77)**, tripping a Level-1 breaker at
+  **12:32pm KST**, and closed **5,663.24, ~−6%**. SK Hynix itself:
+  **+3.74% → −9.61% (1,401,000 won)**; Samsung **+4.55% → −5.23%**.
+  ([Korea Herald](https://www.koreaherald.com/article/10824514)) ⟨daily 2026-07-28⟩
+- **That is the sharper version of this thread's thesis.** A market that
+  cannot hold a bid for three hours on the best operating quarter in its
+  lead company's history is not repricing earnings — it is repricing the
+  *durability* of the earnings. The bear turn's Asia leg no longer needs
+  bad news to fire. ⟨daily 2026-07-28⟩
+- **The divergence says it is a chip event, not regional risk-off:**
+  Nikkei **−1.49% (61,434.19)** but Hang Seng **+1.8% (25,762.80)**.
+  US tape the same day: AMD ~−10%, Micron **−8.85% ($820.53)**, SOX −6%
+  in a **fourth straight losing session**, Nasdaq-100 **9.7% off its
+  record**. ⟨daily 2026-07-28⟩
+- **⚠ NVDA date corrected:** the **−5% was 07-27**, not 07-28 (07-28
+  closed **+0.25%, $197.01**, after a ~2% intraday dip). The
+  US leg of this thread is a **credit/equity divergence**, not a
+  synchronized break — see `nvidia-vendor-financing`.
+  ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/history/)) ⟨daily 2026-07-28⟩
+- **Counterpoint kept on the record:** Q3 DRAM contracts reportedly
+  settling **20-30% higher** this month, and analyst framing that "the
+  panic appears to be indiscriminate." The tape and the contracts are
+  pointing opposite ways. ⟨daily 2026-07-28⟩
+
+## 2026-07-28 (close) — the loud-no faded by the bell ⟨daily 2026-07-28⟩
+
+- **NVDA closed +0.3% ($197.01)** — the −5% morning move on the record
+  CDS widening fully reversed intraday. The day's bear signal was a
+  *credit*-market event (CDS record hold); the equity leg didn't ratify
+  it. Divergence worth watching into tomorrow's FOMC + four prints.
+  Elsewhere at the close: INTC −5.9% ($86.30) · MU −8.9% (CXMT
+  read-through day 2) · CRWV −4.9% · SPCX +2.6% ($116.41). (Yahoo chart
+  data, 16:00 ET)
+
 ## 2026-07-28 — FOMC eve: mixed tape, rate odds still elevated
 
 - **Going into tomorrow's 2pm ET decision, the tape is mixed rather than

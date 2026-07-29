@@ -21,7 +21,7 @@ blurb: 'The data-center buildout is diverting wafer capacity to HBM — a report
   and who blinks first on capex.'
 ---
 
-## 2026-07-28 — Demand side widens: Anthropic joins, talent war escalates
+## 2026-07-28 — The best print in the cycle's history couldn't hold a bid
 
 - **Anthropic asked SK Hynix for chip supply to build its own custom AI
   silicon, and separately struck supply agreements with both Samsung and
@@ -42,6 +42,28 @@ blurb: 'The data-center buildout is diverting wafer capacity to HBM — a report
   labor-market echo of the same squeeze — the profit differential is now
   visibly reallocating headcount, not just capital.
   ([MIT Technology Review](https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/)) ⟨daily 2026-07-28⟩
+- **Then the quarter itself landed. SK Hynix Q2, primary-sourced:** revenue **79.3187T won**, operating
+  profit **60.5426T won** (**+557% YoY**, 76% margin), net profit
+  **93.9226T won**. A record in absolute terms — and a **miss** against
+  the 63.7-64.1T consensus this thread's ledger entry tracked as
+  "~$43.7B." Revenue missed too (~83.6-83.9T expected). The net-profit
+  beat is **non-operating gains**, not operations.
+  ([SK hynix](https://news.skhynix.com/en/q2-2026-business-results/)) ⟨daily 2026-07-28⟩
+- **HBM4 mass shipments began in Q2**, "full ramp" guided for 2H26;
+  **~10 customers** signed to long-term supply agreements. Management
+  called **Blackwell/HBM3E demand still strong** and said **Rubin —
+  which needs HBM4 — is running later than expected**. The shortage
+  thesis survives the miss; the timing shifts right. ⟨daily 2026-07-28⟩
+- **⚠ A capex claim this thread is NOT adopting:** secondary outlets
+  reported capex raised to the **~40T-won high end (~45T/$31B)**. The
+  release itself says "capital expenditure discipline," phased "based on
+  customer demand and investment efficiency." Primary and secondary
+  disagree in direction, not just degree — flagged pending the 07-30
+  Samsung breakdown. ⟨daily 2026-07-28⟩
+- **The market's answer (07-29 KST session):** SK Hynix opened up, ran
+  **+3.74%**, then closed **−9.61% at 1,401,000 won**. Samsung **+4.55%
+  → −5.23%**. Micron had already fallen **8.85% to $820.53** in the US
+  session. ⟨daily 2026-07-28⟩
 
 ## 2026-07-28 — Capacity-race backstory: the trio, plus a same-day shock
 

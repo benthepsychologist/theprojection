@@ -21,9 +21,18 @@ blurb: 'Nvidia''s turn from chip vendor to the buildout''s lender of last resort
 ## 2026-07-28 — Record CDS day ⟨daily 2026-07-28⟩
 
 - **The guarantee firmed to $250B** (WSJ tier-1; the $500B print didn't
-  verify) — NVDA −5%, CDS record single-day widening. **+ $5B into
+  verify) — CDS record single-day widening. **+ $5B into
   pre-product SSI** the same day: the lender now backs companies with no
   product at all.
+- **⚠ Date corrected (cross-sweep catch, 5am close 07-29):** this entry
+  originally read "NVDA −5%" as a 07-28 move. It was **07-27** — close
+  **$196.51, −4.99%**. **07-28** dipped ~2% intraday (low $192.74) and
+  closed **+0.25% at $197.01**. The correction sharpens the thread rather
+  than weakening it: credit and equity broke together on 07-27, then on
+  07-28 **equity refused to follow while the CDS stayed wide**. A
+  divergence between what the lender's debt costs and what its equity
+  says is more informative than a one-day round trip.
+  ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/history/)) ⟨daily 2026-07-28⟩
 - **Figure resolved, not contradicted:** NYT/Forbes's "$500 billion"
   headlines (07-27/28) refer to the **total project cost** of the Piketon,
   Ohio site (a former uranium-enrichment plant SoftBank is redeveloping

@@ -17,6 +17,33 @@ blurb: 'The wave is ~10+ enacted instruments in two species (crawl 2026-07-22 co
   copycats.'
 ---
 
+## 2026-07-28 — Maine's ban becomes the first one actually in force
+
+- **At midnight, Maine LD 2082 took effect** — the first US statute
+  barring AI-delivered therapy to actually bind, as opposed to being
+  signed or pending. Enacted as **Public Law Chapter 687**, signed
+  **04-13-2026**. It bars offering "therapy or psychotherapy services,
+  including through the use of Internet-based artificial intelligence"
+  to the public unless delivered by a licensed professional; licensees
+  may use AI only for "administrative support or supplementary support,"
+  retaining "full responsibility for all interactions, outputs and data
+  use."
+  ([Maine Legislature](https://legislature.maine.gov/legis/bills/display_ps.asp?LD=2082&snum=132)) ⟨daily 2026-07-28⟩
+- **Provenance note, stated plainly:** the chapter number and signing
+  date are **primary-confirmed** from the legislature's own status page.
+  The **07-29 effective date is not printed in the act** — it follows
+  Maine's default 90-days-after-adjournment rule and is corroborated
+  across legal trackers. Reported as strong-secondary, not
+  primary-document confirmed. ⟨daily 2026-07-28⟩
+- **This was a map gap, not a new event.** Maine appears nowhere in this
+  thread's prior timeline or backstory despite being signed in April —
+  the thread had Colorado, Hawaii, NY and California but not the one that
+  would bind first. Caught by the overnight lens sweep. ⟨daily 2026-07-28⟩
+- **The clock board now reads:** Maine **in force**; Colorado HB 26-1195
+  effective **08-12**; CA SB 903 at Appropriations, fiscal deadline
+  **08-14**; Minnesota's nudify ban effective August but **now under
+  federal challenge by xAI**. ⟨daily 2026-07-28⟩
+
 ## 2026-07-22 — Hawaii turns out to already be resolved; NY's real deadline found
 
 - **Correction: Hawaii's SB 3001 was already signed** — Gov. Green signed

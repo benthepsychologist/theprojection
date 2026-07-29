@@ -17,6 +17,28 @@ blurb: Where the capex lands in CONCRETE — the specific gigawatt campuses. Sta
   the specific-sites worklist lives here.
 ---
 
+## 2026-07-28 (overnight) — Datacentres get a threat model ⟨daily 2026-07-28⟩
+
+- **Satellite imagery corroborated Iranian strikes on two Amazon data
+  centres in Bahrain** — Zallaq and Askar — supporting IRGC claims
+  released via Tasnim. Bloomberg reports significant damage at both.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-28/amazon-data-centers-hit-in-iran-strikes-satellite-images-show)) ⟨daily 2026-07-28⟩
+- **⚠ Date discipline: the imagery is the 07-28 development, not the
+  attack.** The strikes were claimed around **07-21**; the campaign runs
+  back to Shahed drone attacks on AWS sites in the **UAE on 03-01** and a
+  further Bahrain strike on **04-01**. Iranian state media named
+  Microsoft, Google, Apple, Meta, Oracle, Intel and Nvidia as targets on
+  **03-31**. Reported here as corroboration of an older event. ⟨daily 2026-07-28⟩
+- **Why it belongs on this thread and not just the war thread:** this
+  timeline tracks where the capex physically lands — and siting has now
+  acquired a variable it did not have. Commercial datacentres have been
+  deliberately struck in wartime, with published damage assessment. Every
+  megasite entry above (Portsmouth, Camellia, El Paso, the Gulf builds)
+  carries an unpriced sovereign-risk term as a result. ⟨daily 2026-07-28⟩
+- **Caught by the collectors, not the cluster agents** — the tier-2 sweeps
+  were pointed at memory, macro and mental health, and missed it entirely.
+  Logged as a recall note. ⟨daily 2026-07-28⟩
+
 ## 2026-07-28 — A fifth megasite enters the map: Ohio's 10GW Portsmouth campus
 
 - **OpenAI/SB Energy's planned 10GW Piketon, OH campus (the former

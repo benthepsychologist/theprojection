@@ -3,7 +3,7 @@ title: OpenAI Health
 lens: mental-health
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-24
+last_seen: 2026-07-28
 weight: 2
 entities:
 - openai
@@ -16,6 +16,20 @@ blurb: 'OpenAI formalizing consumer health (ChatGPT Health went GA to all US 18+
   model keeps causing harm? Its own numbers — >1M/week showing suicidal-planning signals
   — are the liability.'
 ---
+
+## 2026-07-28 — The first hospital-wide deployment, with a suit pending
+
+- **Israel's Sheba Medical Center is rolling out ChatGPT for Healthcare
+  across the whole institution** — billed as the first global deployment
+  at that scale — with citation-backed clinical reasoning and
+  zero-data-retention terms.
+  ([HIT Consultant](https://hitconsultant.net/2026/07/28/sheba-medical-center-openai-chatgpt-for-healthcare-deployment/)) ⟨daily 2026-07-28⟩
+- **The timing is the thread's whole tension in one week:** ChatGPT
+  Health went GA to all US adults on **07-23**; a suit seeking to pull
+  GPT-4o and halt Health pending an independent safety review was filed
+  **07-22**; and six days later the product lands its first
+  institution-wide clinical deployment. Adoption is outrunning the
+  liability question rather than waiting on it. ⟨daily 2026-07-28⟩
 
 ## 2026-07-24 — Opened + crawled
 

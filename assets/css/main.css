@@ -195,6 +195,39 @@ a.chip{ text-decoration:none; }
 }
 .verdict p{ margin:0; font-size:.9rem; color:var(--ink-body); }
 
+/* Flash rail — critical general news, on every page (Ben, 2026-07-29).
+   Loud through INK WEIGHT, not a new hue: the identity is a committed
+   paper-and-ink world, --live (#E01279) is reserved for selection /
+   "changed this week", and --lens-mh red belongs to the lens. A solid ink
+   field is the strongest thing available that still reads as this site. */
+.flash{
+  background:var(--ink); color:var(--paper);
+  margin:1.6rem 0 0; padding:1.15rem 1.5rem;
+}
+.flash-inner{ max-width:var(--max-width); margin:0 auto; }
+.flash-kicker{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.66rem;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.72; margin:0 0 .3rem;
+}
+.flash-head{
+  font-family:var(--serif); font-size:1.28rem; line-height:1.3;
+  margin:0 0 .4rem; text-wrap:balance;
+}
+.flash-body{ font-size:.9rem; line-height:1.55; margin:0; opacity:.9; }
+.flash-src{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.68rem;
+  margin:.5rem 0 0; opacity:.8;
+}
+.flash a{ color:var(--paper); text-decoration:underline; text-underline-offset:2px; }
+@media (max-width:640px){
+  .flash{ padding:.95rem 1.1rem; }
+  .flash-head{ font-size:1.1rem; }
+}
+
+/* Executive summary — the cross-lens roll-up above the per-lens ones. */
+.verdict.exec{ border-left-width:5px; background:var(--paper); }
+.verdict.exec p{ font-size:.95rem; color:var(--ink); }
+
 .tcard{
   background:var(--paper); border:1px solid var(--rule); border-radius:7px;
   padding:0 1.3rem 1.3rem; margin-bottom:1.3rem; cursor:pointer; overflow:hidden;

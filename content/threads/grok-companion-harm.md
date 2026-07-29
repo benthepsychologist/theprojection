@@ -3,7 +3,7 @@ title: Grok Harm
 lens: mental-health
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-25
+last_seen: 2026-07-28
 weight: 2
 entities:
 - spacex
@@ -20,6 +20,31 @@ blurb: 'CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct: (A
   thread''s core) from being swallowed by strand B (CSAM, the regulatory driver).
   Cross-refs ai-therapy-regulatory-reckoning.'
 ---
+
+## 2026-07-28 — A lab sues a state AG; the UK case asks for technical remedies
+
+- **xAI sued Minnesota attorney general Keith Ellison in federal court**
+  to block the state's "nudify" ban (effective August 2026), calling it
+  an "overbroad, content-based ban on free speech" and putting its own
+  statutory exposure at **"$50 billion."** Ellison answered publicly the
+  same day: "AI nudification robs the target of their dignity and could
+  cause them immense harm on many levels." Notable for this thread's
+  arc: it is the **first time a frontier lab has gone to federal court to
+  stop an AI-harm statute** rather than lobby against it.
+  ([CNBC](https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html)
+  · [KTTC](https://www.kttc.com/2026/07/28/xai-sues-stop-minnesota-nudification-bill-taking-effect/)) ⟨daily 2026-07-28⟩
+- **The UK case moved from damages to engineering.** Labour MP Jess
+  Asato, who filed in the High Court in June over non-consensual
+  sexualised Grok deepfakes of herself, sought an order requiring xAI to
+  "implement effective and permanent technical measures" to stop Grok
+  generating manipulated images of her — a remedy aimed at the model
+  rather than the plaintiff's loss.
+  ([Computer Weekly](https://www.computerweekly.com/news/366644374/Labour-MP-Jess-Asato-launches-legal-action-over-Grok-deepfakes)) ⟨daily 2026-07-28⟩
+- **Scope note:** both items are image-abuse harms rather than the
+  clinical companion-harm this thread was opened on. Kept here because
+  the defendant, the product and the liability theory are the same — but
+  flagged, since a separate deepfake/image-abuse thread may be the better
+  home if this strand keeps growing. ⟨daily 2026-07-28⟩
 
 ## 2026-07-25 — Arkansas suit ⟨daily 2026-07-25⟩
 

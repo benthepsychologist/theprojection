@@ -14,6 +14,30 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
 
+## 2026-07-28 (overnight) — A second probe effort, and a lithography read-through ⟨daily 2026-07-28⟩
+
+- **A prospective bipartisan letter campaign** — at least half a dozen
+  members plan to write the administration "in the coming days" seeking a
+  national-security probe, calling CXMT part of "the Chinese industrial
+  military complex."
+  ([AOL/wire](https://www.aol.com/articles/us-lawmakers-seek-national-security-141013000.html)) ⟨daily 2026-07-28⟩
+- **⚠ Logged rumored, deliberately.** The coverage carrying this recycles
+  the exact "debut triggered a Capitol Hill probe" framing this thread
+  killed earlier the same day — the Moolenaar/Whitesides letter is dated
+  **07-16** and never mentions the IPO. What would confirm a *second*
+  action is a letter with signatories, not another restatement of the
+  first. Ledger entry written with that test. ⟨daily 2026-07-28⟩
+- **CXMT named as a first recipient of China's homegrown DUV tools** —
+  Reuters reports Shanghai Aishengna has begun mass production of
+  immersion DUV lithography, ~5 units in 2026 and ~20 in 2027, with SMIC,
+  Hua Hong and CXMT expected to take delivery this year. If it holds, the
+  domestic-substitution story this thread tracks gains a tool layer it
+  did not have.
+  ([Reuters](https://www.globalbankingandfinance.com/exclusive-china-starts-production-home-grown-immersion-duv/)) ⟨daily 2026-07-28⟩
+- **Day-2 price action could not be sourced.** No dated figures for
+  CXMT's 07-28 session were found; only the 07-27 debut (+466%) is
+  verified. Recorded as a gap rather than guessed. ⟨daily 2026-07-28⟩
+
 ## 2026-07-28 — Washington reacts, a DeepSeek-linked fund profits ⟨daily 2026-07-28⟩
 
 - **A "senior federal official" told the New York Post there's "a real

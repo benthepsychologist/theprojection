@@ -163,8 +163,20 @@
   function render() {
     root.textContent = "";
 
-    // today orientation strip — one card per lens with a throughline
+    // Executive summary — the cross-lens roll-up, above the per-lens ones
+    // (Ben, 2026-07-29). Written at curation in the digests' neutral
+    // register; mechanised later (ROADMAP §Salience, stages 2-3). Only
+    // shown unfiltered — filtering to a lens means you want that lens's
+    // roll-up, which renders directly below.
     var th = (P.throughlines || {})[P.today] || {};
+    if (th.front && lensFilter === "all") {
+      var ex = e("div", "verdict exec");
+      ex.appendChild(e("div", "kicker", "Executive summary · " + P.today));
+      ex.appendChild(e("p", "", th.front));
+      root.appendChild(ex);
+    }
+
+    // today orientation strip — one card per lens with a throughline
     var any = false;
     LENSES.filter(lensOk).forEach(function (l) {
       if (!th[l]) return;

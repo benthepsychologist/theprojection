@@ -3,20 +3,38 @@ title: China's Stack
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-26
+last_seen: 2026-07-28
 weight: 3
 entities:
 - zhipu-ai
 - moonshot-ai
 - alibaba-qwen
 - deepseek
-thread_kind: story
+thread_kind: meta
 blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3 /
   Qwen3.8-Max, Alibaba open-sourcing the Zhenwu stack, Moonshot''s HKEX plan — and
   Washington''s response (Commerce retreating from a model ban toward procurement/hosting
   rules; September US-China talks) plus Beijing''s own proposed export controls on
   its models/chips. US chip-equity reaction is the measure.'
 ---
+
+## 2026-07-28 — China starts mass-producing its own immersion DUV
+
+- **Reuters names the maker: Shanghai Aishengna Electronic Technology
+  Group**, state-owned, assembled by absorbing lithography-startup teams —
+  China's first *mass-produced* immersion DUV tool. **~5 units targeted
+  for 2026, ~20 for 2027**, with **SMIC, Hua Hong and CXMT** the expected
+  first recipients this year.
+  ([Reuters](https://www.globalbankingandfinance.com/exclusive-china-starts-production-home-grown-immersion-duv/)) ⟨daily 2026-07-28⟩
+- **The caveat is the story's other half** — the tools are "far from
+  matching" ASML's competing models and are unproven at high-volume
+  manufacturing. This is a first rung, not parity. What makes it thread
+  news anyway: the chokepoint assumption is now testable against a
+  shipping product with named recipients and a unit count, rather than
+  against a prototype demo. Ledger entry opened on the 2026 unit target. ⟨daily 2026-07-28⟩
+- **It priced immediately** — cited across the tape as a catalyst for the
+  fourth straight losing session in the chip complex, and for Korea's
+  second circuit breaker in two days. ⟨daily 2026-07-28⟩
 
 ## 2026-07-23 — The White House names a name
 

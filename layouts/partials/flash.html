@@ -1,0 +1,33 @@
+{{/* Flash rail — general-news events that land regardless of lens.
+     Ben, 2026-07-29: "big world news always lands. 9/11? front-page."
+     Rendered on EVERY page (included from masthead.html) because a flash
+     that only appears on the homepage isn't a flash.
+
+     `critical` ONLY. `major` severities travel in the payload for the
+     executive summary to fold in, and must never render here — the rail
+     stops meaning anything if it fires often. Normally at most one.
+
+     Server-rendered from data/payload.json, deliberately: no JS, nothing
+     to fail, present in the HTML source.
+
+     Brand: this uses INK, not a new hue. --live (#E01279) is reserved for
+     selection / "changed this week" and is NOT available here; --lens-mh
+     red is the mental-health lens colour. The rail is loud through weight
+     and a solid ink field, which keeps it inside the paper-and-ink world
+     rather than importing an alert palette that would fight the mark. */}}
+{{ with .Site.Data.payload }}
+  {{ range where .flash "severity" "critical" }}
+  <aside class="flash" role="alert" aria-label="Breaking">
+    <div class="flash-inner">
+      <p class="flash-kicker">Flash · {{ .date }}</p>
+      <p class="flash-head">{{ .headline }}</p>
+      {{ with .body }}<p class="flash-body">{{ . }}</p>{{ end }}
+      {{ with .sources }}
+      <p class="flash-src">
+        {{ range $i, $s := . }}{{ if $i }} · {{ end }}<a href="{{ $s.url }}" rel="noopener">{{ $s.label }}</a>{{ end }}
+      </p>
+      {{ end }}
+    </div>
+  </aside>
+  {{ end }}
+{{ end }}

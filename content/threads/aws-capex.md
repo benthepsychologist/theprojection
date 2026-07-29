@@ -3,7 +3,7 @@ title: AWS Capex
 lens: ai
 status: developing
 opened: 2026-07-23
-last_seen: 2026-07-27
+last_seen: 2026-07-28
 weight: 2
 entities:
 - amazon-aws
@@ -18,6 +18,24 @@ blurb: 'Earnings 07-30 (corrected from ~07-31). Crawl 07-27: the AGI-cuts vs $20
   + X-Energy 5GW-by-2039. Watch 07-30: capex guide, backlog, FCF (reportedly borrowing
   $25B).'
 ---
+
+## 2026-07-28 — Two AWS sites in Bahrain confirmed damaged by satellite imagery
+
+- **Bloomberg reports satellite imagery showing significant damage to two
+  Amazon data centres in Bahrain** (Zallaq and Askar), corroborating IRGC
+  claims made via Tasnim. The first war in which commercial datacentres
+  have been deliberately targeted, with published damage assessment.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-28/amazon-data-centers-hit-in-iran-strikes-satellite-images-show)
+  · [Tom's Hardware](https://www.tomshardware.com/tech-industry/data-centers/amazon-data-center-in-bahrain-struck-and-destroyed-by-iranian-cruise-missiles-state-media-claims-attacks-launched-against-aws-site-in-response-to-alleged-us-strikes-on-an-under-construction-nuclear-plant)) ⟨daily 2026-07-28⟩
+- **⚠ The imagery is new; the strikes are not.** Claimed ~**07-21**, after
+  Shahed drone attacks on AWS sites in the **UAE (03-01)** and a further
+  Bahrain strike (**04-01**). Recorded as corroboration, not a fresh
+  attack. ⟨daily 2026-07-28⟩
+- **The capex read:** Amazon has committed ~$200B to the 2026 buildout and
+  just sold **$25B of bonds** to finance it. Physical loss of regional
+  capacity — and the insurance/siting repricing behind it — is a cost line
+  this thread has never had to model. Watch whether the 07-30 print or
+  call mentions it at all. ⟨daily 2026-07-28⟩
 
 ## 2026-07-23 — Thread opened; first signal is a headcount cut, not capex
 
