@@ -3,7 +3,7 @@ title: Red Sea Shock
 lens: money
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-29
+last_seen: 2026-07-30
 weight: 3
 entities: []
 thread_kind: story
@@ -14,6 +14,39 @@ blurb: 'Houthi (Iran-backed) forces struck two Saudi oil tankers and declared a 
   day since April 2025). Watch: further strikes/blockade enforcement, Trump''s response,
   oil''s path, and how far it feeds into the FOMC''s 07-29 decision.'
 ---
+
+## 2026-07-29/30 — The war widened past the triggering strike
+
+- **The US struck targets inside Iran directly** — Bandar Abbas, Kish
+  Island, and sites across Khuzestan's oil belt — killing civilians on
+  Qeshm Island in a residential building hit.
+  ([NPR](https://www.npr.org/2026/07/30/nx-s1-5913077)) ⟨daily 2026-07-29⟩
+- **Saudi Arabia joined US airstrikes against Iran-backed militias in
+  Iraq** — its first direct military action of this kind, reported
+  ~20 PMF fighters killed (one source adds 6 Iranian advisers), 32
+  wounded; stated cause was 30+ drone attacks on US/Saudi positions over
+  the prior 72 hours.
+  ([Al Jazeera](https://www.aljazeera.com/where/iraq/)) ⟨daily 2026-07-29⟩
+- **Two new countries were hit — Kuwait and Egypt.** An Iranian strike
+  killed a worker at a Chinese-run site in northern Kuwait; a drone hit
+  two vessels (Gaslog Salem, Energos Winter) at Egypt's Damietta port,
+  reported as the first attack on Egyptian soil in this war.
+  ([Kuwait Times](https://www.kuwaittimes.com/) · [Al Jazeera](https://www.aljazeera.com/)) ⟨daily 2026-07-29⟩
+- **US Treasury sanctioned 10 firms and 8 tankers**, including Persian
+  Gulf Marine Insurance Co. and HormuzSafe Marine Services, over an
+  Iranian scheme extorting insurance payments for Strait of Hormuz
+  passage — the underwriting layer directly, not oil as its proxy.
+  ([Bloomberg — headline/date confirmed via search, not directly
+  fetched](https://www.bloomberg.com/)) ⟨daily 2026-07-29⟩
+- **Brent reached ~$92.10 and WTI ~$85.23** this morning, continuing
+  rather than reversing Tuesday's surge; Houthis are reportedly weighing
+  a Red Sea transit toll near Bab-el-Mandeb, a second supply-risk vector
+  distinct from Hormuz. ⟨daily 2026-07-29⟩
+- **The one stale item worth flagging:** a widely-circulated "US
+  Government's Energy Arm assumes Hormuz stays shut through late May"
+  headline is a re-indexed story from **2026-05-12** — roughly 2.5 months
+  old, no new EIA assessment behind it. Same aggregator-re-indexing
+  pattern already caught twice on other threads. ⟨daily 2026-07-29⟩
 
 ## 2026-07-28 — Brent craters as the war "pauses," then the pause breaks
 
