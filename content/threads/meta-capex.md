@@ -19,6 +19,28 @@ blurb: 'The week''s reversal: Meta QUIT RE100 amid a 7.5GW gas buildout (07-23/2
   $145B guidance figures that actually recur — resolve at earnings Wednesday 07-29.'
 ---
 
+## 2026-07-29 — Capex raised again, but free cash flow nearly vanished
+
+- **Q2 revenue $60.8B (+28%) beat, but EPS $6.18 missed consensus by
+  roughly 14-15%, and free cash flow was $784M** — near zero against an
+  ~$12B/quarter trailing average. Total expenses rose 55% YoY on legal
+  costs and severance. Stock fell 8-11% after-hours, -8.5% premarket.
+  ([StockTitan](https://www.stocktitan.net/news/META/meta-reports-second-quarter-2026-hkjfhayj8l0v.html)) ⟨daily 2026-07-29⟩
+- **2026 capex guidance was raised again, to $130-145B** — the floor up
+  from $125-145B, the second raise this year. Capex is not peaking here;
+  it is still rising.
+  ([Benzinga](https://www.benzinga.com/markets/earnings/26/07/60781217/meta-reports-mixed-q2-results-raises-low-end-of-capex-guidance-range-shares-move-lower)) ⟨daily 2026-07-29⟩
+- **The AMD 6GW commitment was not addressed on the call** — checked the
+  transcript directly, no mention found. The only new infrastructure item
+  was a BlackRock partnership for a 1GW Texas data center.
+  ([transcript via Investing.com](https://www.investing.com/news/transcripts/earnings-call-transcript-meta-misses-eps-in-q2-2026-as-stock-sinks-after-hours-93CH-4821910)) ⟨daily 2026-07-29⟩
+- **This is the thread's most important wrinkle so far:** a hyperscaler
+  took a hit as hard as the chip names that fell the same night, on
+  capex-outrunning-monetization optics rather than the capex figure
+  itself. The dividing line the market drew tonight looks less like
+  hyperscaler-vs-chipmaker and more like proven-monetization-vs-unproven.
+  ⟨daily 2026-07-29⟩
+
 ## 2026-07-28 — El Paso's financing structure completes, one day before earnings
 
 - **Meta and BlackRock formalized a $14B El Paso, TX data-center joint

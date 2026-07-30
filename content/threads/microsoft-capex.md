@@ -19,7 +19,7 @@ blurb: 'Earnings 07-29 is the near-term test — the "$97B TTM" figure is OUR ar
   disclosure.'
 ---
 
-## 2026-07-29 — Earnings today after the close; the ledger was the wrong authority on the date
+## 2026-07-29 — Earnings beat, Azure accelerates, the named split still didn't happen
 
 - **Microsoft reports FY26 Q4 after today's close**, confirmed against
   two Microsoft primary sources; the watch items are the FY27 capex
@@ -29,6 +29,23 @@ blurb: 'Earnings 07-29 is the near-term test — the "$97B TTM" figure is OUR ar
   expectations ledger said 07-30, the ledger was trusted and the prose
   "corrected" — then Microsoft's own IR settled it at 07-29. The ledger
   was the wrong authority. ⟨daily 2026-07-29⟩
+- **Revenue $90.0B (+18%) and EPS $4.81 (+32%) both beat, and Azure grew
+  43% constant-currency** — well above the 39-40% guide, and an
+  acceleration from the prior quarter. Stock +8-9% after-hours.
+  ([Microsoft IR](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast)) ⟨daily 2026-07-29⟩
+- **⚠ Quality-of-beat flag:** the EPS figure includes a ~$3.2B unrealized
+  mark-to-market gain on Microsoft's Anthropic stake. The operating beat
+  is real but smaller than the headline number.
+  ([Benzinga](https://www.benzinga.com/markets/earnings/26/07/60786971/microsoft-stock-ai-capex-amy-hood-gpu-spending-surges-after-hours)) ⟨daily 2026-07-29⟩
+- **The named "first" — an OpenAI-vs-own capex split — did NOT happen.**
+  Checked the call transcript directly: the only OpenAI-adjacent
+  disclosure was commercial RPO growing 25% excluding OpenAI, plus a
+  reiteration of OpenAI's $250B Azure spend commitment. Neither is a
+  split. FY27 capex guidance stayed qualitative — "will grow
+  year-over-year," next quarter guided "over $50B" — and the ~$255-260B
+  full-year figure circulating in preview coverage was NOT stated on the
+  call; treat it as analyst preview, not company guidance.
+  ([transcript via Investing.com](https://www.investing.com/news/transcripts/earnings-call-transcript-microsoft-q4-2026-beats-forecasts-stock-jumps-8-93CH-4822020)) ⟨daily 2026-07-29⟩
 
 ## 2026-07-23 — Thread opened, quiet
 

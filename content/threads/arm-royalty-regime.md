@@ -19,6 +19,28 @@ blurb: 'The ~$800B-gravity ISA chokepoint: SoftBank''s 87.1% leaned on as LOAN C
   earnings 07-29 — the live test.'
 ---
 
+## 2026-07-29 — A clean beat-and-raise, and the stock fell anyway
+
+- **Q1 FY2027: revenue $1.289B (+22%), royalty $715M (a Q1 record),
+  licensing $574M (a Q1 record), non-GAAP EPS $0.45** — all above
+  consensus, with Q2 guidance ($1.38B / $0.47) also above estimates.
+  ([Arm Newsroom](https://newsroom.arm.com/news/arm-q1-fye27-results)) ⟨daily 2026-07-29⟩
+- **AGI-CPU demand now exceeds $2B across FY27-FY28, double the initial
+  forecast**, with capacity already sold out and data-center royalty
+  revenue more than doubling year-over-year — the AI-specific story
+  genuinely strengthened.
+  ([Arm Newsroom](https://newsroom.arm.com/news/arm-q1-fye27-results)) ⟨daily 2026-07-29⟩
+- **What actually moved the stock: full-year royalty growth guidance was
+  cut to "high teens" from roughly 20%**, on expected double-digit
+  smartphone-market weakness. The stock fell further after-hours (-7 to
+  -8%) and stayed down premarket (-4.95%), extending the pre-earnings
+  -28% run rather than reversing it.
+  ([MarketScreener](https://www.marketscreener.com/news/arm-shares-dive-after-hours-despite-forecasts-above-estimates-ce7f51d3dc81f726)) ⟨daily 2026-07-29⟩
+- **This is the sharpest rotation-away-from-chips signal of the four
+  prints tonight** — a genuinely good AI-specific number was not enough
+  to buy relief once a legacy-business guidance cut sat next to it.
+  ⟨daily 2026-07-29⟩
+
 ## ← Backstory (crawl 2026-07-28 → artifacts/findings/arm-royalty-regime-2026-07-28.md)
 
 - **Qualcomm wins the trial, Arm appeals** — a Delaware judge rejected

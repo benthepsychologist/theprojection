@@ -31,6 +31,21 @@ blurb: 'Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit alloca
   ([Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/ai-investors-may-pivot-hyperscalers-133026207.html)) ⟨daily 2026-07-29⟩
 - **This is the first time the thesis has been stated as an explicit
   allocation call rather than inferred from price.** ⟨daily 2026-07-29⟩
+- **The four prints answered, and split the thesis in two.** "Capex is
+  peaking" is undercut — both hyperscalers that disclosed guidance moved
+  it up: Meta's floor rose to $130-145B (its second raise this year),
+  Microsoft guided FY27 to "grow year-over-year" plus $50B+/quarter.
+  Neither showed a peak. ⟨daily 2026-07-29⟩
+- **"Rotation to hyperscalers" is real but was the wrong axis.** Arm and
+  Qualcomm both fell on genuinely strong AI-specific numbers — Arm's
+  AGI-CPU bookings doubled to $2B+, Qualcomm's FY2029 data-center target
+  nearly doubled to $40B — capital left them regardless of the
+  fundamentals. But Meta, a hyperscaler, was hit as hard as the chip
+  names, on an EPS miss and near-zero free cash flow. The line the market
+  actually drew tonight was **monetization-proven vs.
+  monetization-unproven spend**, not hyperscaler vs. chipmaker: Microsoft
+  bought tolerance for its capex with 43% Azure growth; Meta did not.
+  ⟨daily 2026-07-29⟩
 
 ## ← Backstory
 
