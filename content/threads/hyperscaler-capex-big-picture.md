@@ -22,6 +22,14 @@ blurb: 'The combined 2026 plan is now ~$610-650B across the four (Google $195-20
   threads). Earnings Wed/Thu (Meta+MSFT 07-29, AMZN 07-30) are the live test.'
 ---
 
+## 2026-07-30 (later) — Three of four now in: Amazon's the cleanest beat of the week
+
+- **Amazon reported: AWS +37% YoY (fastest in 18 quarters), net sales
+  +20%, property/equipment purchases up $66.1B** — completes the
+  three-of-four-hyperscalers-report picture for this week (Meta,
+  Microsoft, Amazon; Alphabet's own capex context still tracked via
+  `google-capex`). Full detail: `aws-capex`. ⟨daily 2026-07-30⟩
+
 ## 2026-07-30 — Two of four report: capex still climbing, the market draws the monetization line
 
 - **Meta and Microsoft both reported 07-29: neither shows a capex peak** —

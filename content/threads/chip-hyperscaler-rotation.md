@@ -27,9 +27,13 @@ blurb: 'Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit alloca
   Reinforces this thread's monetization-proven-vs-unproven reframe rather
   than breaking it: Samsung's profit is realized, Arm's was bookings.
   ([Reuters]) ⟨daily 2026-07-30⟩
-- **Amazon, the other half of the watch question, hasn't reported yet** —
-  no result in today's buffer as of this run; see `aws-capex`.
-  ⟨daily 2026-07-30⟩
+- **Amazon answered the other half: AWS grew 37% YoY, the fastest in 18
+  quarters** — a clean beat against the ~31-33% consensus, completing
+  this thread's own watch question. Full detail on `aws-capex`. The
+  monetization-proven-vs-unproven line now holds across all five prints
+  checked this week (Microsoft, Samsung, Amazon rewarded on visible
+  revenue conversion; Meta, Arm, Qualcomm sold on bookings/legacy
+  exposure without it). ⟨daily 2026-07-30⟩
 - **Restating the four-print verdict with today's fuller detail:**
   Microsoft (+8-9%, Azure $100B annualized, cloud growth fastest since
   2022) was rewarded for capex with visible revenue conversion; Meta

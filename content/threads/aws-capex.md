@@ -19,6 +19,24 @@ blurb: 'Earnings 07-30 (corrected from ~07-31). Crawl 07-27: the AGI-cuts vs $20
   $25B).'
 ---
 
+## 2026-07-30 — The test fires: AWS grows 37%, fastest in 18 quarters
+
+- **Amazon's Q2 print is this thread's clean answer.** Net sales $200.6B
+  (+20% YoY, beat ~$196-197B consensus); **AWS revenue $42.2B (+37% YoY —
+  "fastest growth in 18 quarters"),** a significant beat against the
+  ~31-33% consensus growth rate. AWS operating margin 39.4%, operating
+  income $16.6B (+64% YoY). Property/equipment purchases up **$66.1B**
+  YoY, funding the AI infrastructure buildout this thread tracks.
+  (8-K filed same day, items 2.02/9.01.)
+  ([SEC EDGAR](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm)) ⟨daily 2026-07-30⟩
+- **Net income ($62.6B, $5.75 EPS) is not the organic story** — $53.4B of
+  it is a non-operating gain from Amazon's Anthropic investment, not
+  operating performance. Cross-reference `ai-circular-financing-risk`
+  (Microsoft's own Anthropic stake gained $3.2B the same reporting
+  season — a much smaller mark, different scale entirely). ⟨daily 2026-07-30⟩
+- **Q3 guidance: net sales $197.0-202.0B (9-12% growth), operating income
+  $22.5-26.5B.** ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 — Two AWS sites in Bahrain confirmed damaged by satellite imagery
 
 - **Bloomberg reports satellite imagery showing significant damage to two
