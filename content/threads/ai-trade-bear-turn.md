@@ -15,6 +15,34 @@ blurb: 'Is the tape turning against the AI trade as a whole? Distinct from the c
   changes actual capex behavior.'
 ---
 
+## 2026-07-30 (overnight) — The four prints landed: rewarded for returns, punished for the bet
+
+- **Microsoft: broad beat, stock +8-9%** — FY2026 revenue tops $331B,
+  Azure crosses $100B annualized, cloud growth accelerated to its
+  fastest since 2022, Copilot paid seats hit 30M; Q4 AI-infra capex hit
+  ~$41B, full-year capex guidance held steady. Rewarded for capex with
+  visible cloud-revenue conversion. ⟨daily 2026-07-30⟩
+- **Meta: revenue +28% to $60.8B, but free cash flow collapsed 91% to
+  $784M**, stock fell ~10% — Q2 AI capex alone was $31.1B, and Meta
+  raised the LOW end of full-year capex guidance. Punished for capex
+  without a near-term return story. ⟨daily 2026-07-30⟩
+- **Qualcomm: EPS missed by $0.02 despite a revenue beat**, guided to a
+  faster Apple-modem revenue decline, announced a Sept-1 price hike tied
+  to memory-cost inflation. Grouped by outlets with Arm as the two
+  "outlooks rattle markets" prints of the night (Arm's own result:
+  beat-and-raise, stock fell further on the smartphone-royalty guidance
+  cut — full detail in `arm-royalty-regime`). ⟨daily 2026-07-30⟩
+- **The verdict, stated plainly:** hyperscaler capex with visible
+  cloud-revenue conversion (Microsoft) got bought; capex framed as a bet
+  without near-term return (Meta) and legacy/smartphone-exposed chip
+  revenue (Qualcomm, Arm) got sold. The bifurcation this thread's
+  "AI-specific vs. macro" watch predicted — not a clean turn, not a clean
+  relief rally. ⟨daily 2026-07-30⟩
+- **Macro crosscurrent stacked on top:** Fed Chair Kevin Warsh's
+  credibility was publicly questioned after Tuesday's 9-3 split vote; oil
+  back above $90 on the widening Iran conflict — both pulling on the same
+  tape as the earnings verdicts. ⟨daily 2026-07-30⟩
+
 ## 2026-07-29 — FOMC holds 9-3, dissents replace unanimity, credit leg eases
 
 - **The Fed held at 3.50%-3.75% on a 9-3 vote, with three dissents for a

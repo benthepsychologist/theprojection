@@ -17,6 +17,16 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   A correction here hits everything in radar Q1/Q2.'
 ---
 
+## 2026-07-30 — Microsoft's earnings put a number on the divergence
+
+- **Microsoft's Q4 FY26 earnings marked its OpenAI stake down ~$600M this
+  quarter, while its Anthropic stake gained $3.2B** — Microsoft's ~27%
+  OpenAI position lost value the same quarter its $5B Anthropic stake
+  (Nov-25, tied to a $30B Azure commitment) generated nearly as much gain
+  in one quarter as OpenAI produced across the whole fiscal year ($5B /
+  $0.67 EPS FY26 total).
+  ([TechCrunch](https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/)) ⟨daily 2026-07-30⟩
+
 ## 2026-07-29 — Oracle takes the widest spread; the worry shifts, doesn't shrink
 
 - **Nvidia's 5-year CDS eased to roughly 78bp from Monday's record 82bp,

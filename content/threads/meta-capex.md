@@ -19,6 +19,14 @@ blurb: 'The week''s reversal: Meta QUIT RE100 amid a 7.5GW gas buildout (07-23/2
   $145B guidance figures that actually recur — resolve at earnings Wednesday 07-29.'
 ---
 
+## 2026-07-30 — El Paso pushback gains an elected voice
+
+- **A Texas state representative is calling for a new review of El Paso's
+  Meta tax incentives**, citing the BlackRock JV announced 07-28 — the
+  local pushback (council ending tax breaks 07-21, the "Block Party"
+  protest 07-25) now has an elected official attached, not just
+  residents. ([KFOX/KVIA/KDBC]) ⟨daily 2026-07-30⟩
+
 ## 2026-07-29 — Capex raised again, but free cash flow nearly vanished
 
 - **Q2 revenue $60.8B (+28%) beat, but EPS $6.18 missed consensus by

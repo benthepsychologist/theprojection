@@ -21,6 +21,33 @@ blurb: 'The data-center buildout is diverting wafer capacity to HBM — a report
   and who blinks first on capex.'
 ---
 
+## 2026-07-30 — Samsung's Q2 answers the pending flag: chip profit ~250x, phones eat the squeeze, shortage guided to 2028
+
+- **Samsung's DS (chip) division posted ~₩89.2-89.5T (~$62B) operating
+  profit, a ~250-fold YoY jump** — while the **Mobile/MX division posted
+  its first-ever operating loss** (~₩0.7T on ₩33.2T revenue), citing
+  "elevated component cost pressures across the industry." Samsung's own
+  phone business is now eating the DRAM/NAND squeeze its chip arm profits
+  from — the consumer-price-echo thesis, inside one company's P&L.
+  ([Korea Herald] / AP) ⟨daily 2026-07-30⟩
+- **Samsung locked ~70% of memory output into long-term agreements with
+  five major customers** (reported names include AWS, Microsoft, Google)
+  and guided the shortage to extend through 2028 — widened past the
+  "three-year deficit" figure traced to SK Hynix's Q1 call. ⚠ Provenance
+  split: "through 2028" is the figure carried near-uniformly across
+  Reuters/Bloomberg/WSJ/Yonhap, almost certainly earnings-call
+  commentary rather than release text — strong-secondary, not
+  primary-document-confirmed. ⟨daily 2026-07-30⟩
+- **Bipartisan senators (Banks, Schumer, others) sent Apple a letter
+  demanding it not buy CXMT/YMTC memory chips, with an August 21
+  deadline** — warning that once a China-market part clears Apple's
+  qualification, "extending it worldwide is a single procurement decision
+  away." Apple has reportedly already requested to buy from CXMT and
+  purchased (unused) YMTC chips. Converges this thread's China-capacity
+  strand with the Apple consumer-price echo into one live political
+  fight. ([AppleInsider], corroborated Bloomberg/The Information/
+  9to5Mac/Business Standard) ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 — The best print in the cycle's history couldn't hold a bid
 
 - **Anthropic asked SK Hynix for chip supply to build its own custom AI

@@ -17,6 +17,17 @@ blurb: Where the capex lands in CONCRETE — the specific gigawatt campuses. Sta
   the specific-sites worklist lives here.
 ---
 
+## 2026-07-30 — Catch-up: Paducah, KY joins the megasite map (event 07-28/29)
+
+- **A second former DOE Cold War nuclear site converts to an AI campus** —
+  Paducah, KY, $100B, NextEra + Brookfield, 4.6GW dedicated power — same
+  pattern as Portsmouth/Piketon, OH (10GW, OpenAI/SB Energy, flagged
+  07-28), a second instance inside one week. No tenant named yet.
+  ([WSJ]) ⟨daily 2026-07-30⟩
+- **Missed at the time** — broke 07-28 (HPCwire), went wide 07-29 (DOE PR
+  Newswire, Reuters, Bloomberg, FT, WSJ); this thread's last entry (07-28)
+  doesn't have it. Backfill, not new-today. ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 (overnight) — Datacentres get a threat model ⟨daily 2026-07-28⟩
 
 - **Satellite imagery corroborated Iranian strikes on two Amazon data

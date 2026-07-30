@@ -20,6 +20,18 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   Anthropic lease-back is real revenue or circular financing. Q7 material.'
 ---
 
+## 2026-07-30 — Stock slides through a $1.6B government win
+
+- **SpaceX won a $1.6B US Space Force order for 18 Falcon 9 launches**
+  (targeting/sensing satellites) — well-corroborated (Reuters, SpaceNews,
+  Breaking Defense, Aviation Week), but SPCX still fell ~3.3% on the day,
+  underscoring Morgan Stanley's "AI business priced at zero" read from
+  07-28: government launch revenue isn't moving the stock either.
+  ⟨daily 2026-07-30⟩
+- **Earnings-preview coverage frames the Aug-6 lock-up (911.5M shares)
+  and imminent Q2 report as the next real test** — no report yet as of
+  this window. ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 — Congress buys the dip as Morgan Stanley prices the AI unit at zero
 
 - **SPCX touched $110.85, ~50% off its post-IPO peak** — Morgan Stanley's

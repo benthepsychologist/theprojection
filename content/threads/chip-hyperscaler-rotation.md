@@ -18,6 +18,35 @@ blurb: 'Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit alloca
   specifically the reallocation call between the two cohorts.'
 ---
 
+## 2026-07-30 — Samsung answers half the watch question; the four prints show a bifurcated verdict, not a clean turn
+
+- **Samsung posted a blowout Q2** (chip-division profit ~250x YoY per
+  multiple outlets, AI-driven memory/HBM shortage pricing) and its stock
+  rose ~6-8% — the opposite reaction to Arm/Qualcomm's post-earnings
+  selloff two nights earlier, despite all three being "chipmakers."
+  Reinforces this thread's monetization-proven-vs-unproven reframe rather
+  than breaking it: Samsung's profit is realized, Arm's was bookings.
+  ([Reuters]) ⟨daily 2026-07-30⟩
+- **Amazon, the other half of the watch question, hasn't reported yet** —
+  no result in today's buffer as of this run; see `aws-capex`.
+  ⟨daily 2026-07-30⟩
+- **Restating the four-print verdict with today's fuller detail:**
+  Microsoft (+8-9%, Azure $100B annualized, cloud growth fastest since
+  2022) was rewarded for capex with visible revenue conversion; Meta
+  (-10%, FCF collapsed 91% to $784M despite +28% revenue, raised the LOW
+  end of its capex guide) was punished for capex framed as a bet without
+  near-term return; Qualcomm (EPS missed by $0.02 despite a revenue beat,
+  guided to a faster Apple-modem decline) and Arm (beat-and-raise, fell
+  anyway on a smartphone-royalty cut) both sold off on
+  legacy/smartphone-exposed revenue. The dividing line is
+  monetization-proven vs. monetization-unproven, confirmed again by
+  Samsung's opposite reaction. ⟨daily 2026-07-30⟩
+- **Macro crosscurrent stacked on the same tape:** Fed Chair Kevin
+  Warsh's credibility was publicly questioned after Tuesday's 9-3 split
+  vote; the Iran conflict widened further overnight with oil back above
+  $90 — both pulling on the same market as the earnings verdicts.
+  ⟨daily 2026-07-30⟩
+
 ## 2026-07-29 — Opened: analysts call the rotation explicitly ⟨steer 2026-07-29⟩
 
 - **Split from `chips-equity-pivot`** (ben-steer) — that thread is CHIPS

@@ -16,6 +16,23 @@ blurb: Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (S
   battles. Category meta under where-the-capex-lands.
 ---
 
+## 2026-07-30 — Catch-up: a second Cold War DOE site becomes a $100B AI power build (event 07-28/29, missed at the time)
+
+- **NextEra and Brookfield will develop a $100B AI data-center campus at
+  DOE's Paducah, KY site** — a former Cold War uranium-enrichment plant —
+  paired with 4.6GW of dedicated power generation. Announced via DOE's
+  own release 07-29, corroborated same-day by Reuters/WSJ/FT/Bloomberg;
+  this thread's most recent entry (07-27 crawl) doesn't have it.
+  ([POWER Magazine]) ⟨daily 2026-07-30⟩
+- **No hyperscaler/lab tenant named** — unlike Stargate/Portsmouth
+  (OpenAI), every account frames this as a NextEra/Brookfield-led
+  speculative build. Open gap. ⟨daily 2026-07-30⟩
+- 💡 **Worth the curator's own eyes:** this is a *second* former-DOE-
+  nuclear-site-to-AI-campus conversion inside one week (after
+  Portsmouth/Piketon, 10GW/OpenAI, flagged 07-28) — a possible pattern,
+  not tagged `sev=` per the rarity discipline but flagged plainly.
+  ⟨daily 2026-07-30⟩
+
 ## 2026-07-27 — The power book, four actors ⟨crawl 2026-07-27⟩
 
 - **Google:** solar-dominant (TotalEnergies 1GW/28TWh · Clearway 1.17GW) +

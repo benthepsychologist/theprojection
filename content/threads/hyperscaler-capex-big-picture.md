@@ -22,6 +22,18 @@ blurb: 'The combined 2026 plan is now ~$610-650B across the four (Google $195-20
   threads). Earnings Wed/Thu (Meta+MSFT 07-29, AMZN 07-30) are the live test.'
 ---
 
+## 2026-07-30 — Two of four report: capex still climbing, the market draws the monetization line
+
+- **Meta and Microsoft both reported 07-29: neither shows a capex peak** —
+  Meta raised its 2026 floor to $130-145B (second raise this year);
+  Microsoft's FY27 guide stayed "grow year-over-year" plus $50B+/quarter
+  next quarter. Amazon reports later today (07-30) — no result in hand as
+  of this run. ([Microsoft IR](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast)) ⟨daily 2026-07-30⟩
+- **The market drew a monetization line, not hyperscaler-vs-chipmaker** —
+  Microsoft (Azure +43%) bought tolerance for its capex; Meta (EPS miss,
+  near-zero FCF) did not, despite raising its own guide. Full cross-name
+  read in `chip-hyperscaler-rotation`. ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 — Eve of Meta/Microsoft earnings: financing keeps migrating off-balance-sheet, Nvidia becomes financier-of-last-resort
 
 - **Two same-day instances of the off-balance-sheet pattern**: Meta

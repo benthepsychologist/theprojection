@@ -14,6 +14,20 @@ blurb: 'The $5B+ cross-agency AI overlay (DOE-led; spans NSF/NIH/DoD/NASA — $5
   and whether it becomes the umbrella for nuclear-for-AI money.'
 ---
 
+## 2026-07-30 — Fact-check: a circulating "$5B total" figure doesn't hold up
+
+- **Today's heavy recirculation is all downstream "University X wins a
+  Genesis Mission award" coverage of the same already-logged 278-award
+  announcement** — no new tranche. One secondary aggregator claimed DOE
+  "commits $5 billion," with nuclear getting the "largest individual
+  award." Re-checked against the primary DOE release (already this
+  thread's own citation): it does **not** state an overall $5B total; it
+  confirms *"the largest is a three-year, $60 million investment in
+  nuclear energy"* — almost certainly the same Microsoft $60M commitment
+  already logged below, not a separate figure. The $5B headline is
+  unconfirmed against primary source — flagged, not propagated.
+  ⟨daily 2026-07-30⟩
+
 ## 2026-07-22 — Primary source pinned: DOE names the first 278 awards
 
 - **Energy Secretary Chris Wright announced the first Genesis Mission

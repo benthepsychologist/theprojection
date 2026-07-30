@@ -18,6 +18,17 @@ blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3
   its models/chips. US chip-equity reaction is the measure.'
 ---
 
+## 2026-07-30 — Moonshot's raise closes smaller than reported; DeepSeek pauses its own
+
+- **Moonshot's Series F closed at $35B, not the $50B target** flagged
+  07-22 — $3.5B raised. Confirmed via Bloomberg + 10 outlets; some
+  aggregators still repeat the stale $50B figure. ⟨daily 2026-07-30⟩
+- **DeepSeek separately paused its own ~$74B second raise**, after
+  founder Liang Wenfeng's May-20 closed-door remarks (leaked via GitHub
+  07-22, Bloomberg reported 07-25) describing obtaining "noncompliant"
+  (smuggled) Nvidia chips and ~20,000 H-series-equivalent compute —
+  echoing the export-evasion angle already open on Moonshot. ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 — China starts mass-producing its own immersion DUV
 
 - **Reuters names the maker: Shanghai Aishengna Electronic Technology

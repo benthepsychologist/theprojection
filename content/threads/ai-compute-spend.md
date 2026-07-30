@@ -17,6 +17,17 @@ blurb: Where the capex lands in SILICON — the $ flowing to Nvidia/AMD/TSMC/ Br
   to stop renting from Nvidia. Category meta under where-the-capex-lands.
 ---
 
+## 2026-07-30 — Samsung's earnings put a number on the memory side of the silicon spend
+
+- **Samsung posted record Q2 chip-division profit** (~250x YoY per
+  multiple outlets), driven by AI-linked HBM/DRAM shortage pricing — the
+  clearest fresh data point on where AI silicon dollars land outside the
+  GPU line itself. ([CNBC] · [WSJ]) ⟨daily 2026-07-30⟩
+- **Samsung locked ~70% of memory output into long-term deals with "5
+  major Big Tech firms"** (unnamed) and sees the shortage extending to
+  2028 — direct evidence of hyperscalers contracting AI memory supply
+  years out. ([finance.biggo.com]) ⟨daily 2026-07-30⟩
+
 ## 2026-07-27 — The silicon split: undisclosed at all four ⟨crawl 2026-07-27⟩
 
 - **The industry's common non-disclosure:** none of Google / Microsoft /

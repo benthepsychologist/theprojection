@@ -21,6 +21,17 @@ blurb: 'Whether China''s first mass-produced immersion DUV tool is real at manuf
   the whole chokepoint picture. ⟨ben-steer 2026-07-29⟩'
 ---
 
+## 2026-07-30 — ASML's slide gets a number; delivery still hasn't fired
+
+- **ASML's slide is now quantified: -7%**, building into a "~€60B
+  wipeout" framing across outlets — pricing the same 07-28 announcement,
+  not a new fact. SMIC and smaller China-chip names also down.
+  ([Seoul Economic Daily]) ⟨daily 2026-07-30⟩
+- **The thread's own test — delivery, not announcement — still has not
+  fired.** No named fab confirmed receiving a tool. ⟨daily 2026-07-30⟩
+- ⚠️ **Unconfirmed, not used:** a Digitimes claim of "$1B state backing"
+  for Aishengna is paywalled with no independent corroboration. ⟨daily 2026-07-30⟩
+
 ## 2026-07-29 — Split out on Ben's steer; Shanghai Aishengna named as the maker
 
 - **Split out of `china-stack-independence` on Ben's steer** — "Sure, add

@@ -21,6 +21,17 @@ blurb: 'CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct: (A
   Cross-refs ai-therapy-regulatory-reckoning.'
 ---
 
+## 2026-07-30 — A second Tennessee filing, now naming Stability AI too
+
+- **A new federal class action (filed 07-27) names both xAI and
+  Stability AI** — 5 anonymous minor plaintiffs (3 Tennessee), alleging
+  Grok/Stability tools generated CSAM from their photos; invokes
+  Tennessee's 2025 AI-CSAM criminal statute plus federal class claims,
+  specifically citing Grok's "Spicy Mode." Distinct from the March-2026
+  TN class action already on file — new filing, new co-defendant.
+  Verified via direct fetch (not headline-only).
+  ([Bakersfield Now](https://bakersfieldnow.com/news/nation-world/tennessee-girls-take-grok-stability-ai-to-court-over-explicit-ai-deepfakes-tennessee-attorney-general-jonathan-skrmetti-sen-ken-yager-elon-musk-twitter-social-media-grimes)) ⟨daily 2026-07-30⟩
+
 ## 2026-07-29 — Minnesota clock: a filed suit, not a stay
 
 - **xAI's challenge to Minnesota's HF1606 "nudify" ban is a filed suit,

@@ -18,6 +18,29 @@ blurb: The wave of the AI giants moving into health/MH — the cross-actor narra
   MH specifically shows up.
 ---
 
+## 2026-07-28/29 — OpenAI's health push goes institutional; a HIPAA gap flagged
+
+- **Sheba Medical Center (Israel) partnered with OpenAI on what multiple
+  outlets independently headline as the first international
+  ChatGPT-for-healthcare deployment** — the first global, hospital-wide
+  rollout of ChatGPT for Healthcare, giving physicians, nurses,
+  researchers and operational staff access to models that synthesize
+  peer-reviewed literature, clinical guidelines and internal protocols
+  with verifiable citations. Moves the 07-23 GA consumer launch into
+  actual institutional/enterprise healthcare delivery — the concrete "is
+  this push real" answer this thread has been watching for. Confirmed via
+  direct fetch of HIT Consultant + corroborated by MobiHealthNews and a
+  press release. ([HIT Consultant](https://hitconsultant.net/)) ⟨daily 2026-07-30⟩
+- **A single, lower-reliability outlet claims ChatGPT Health carries no
+  HIPAA coverage as of 2026** — consistent with this thread's own
+  evidence-gap framing (a health layer that walls off liability rather
+  than becoming a regulated clinical product), but single-sourced — flag,
+  not confirmed. ⟨daily 2026-07-30⟩
+- **One low-confidence report of a second entrant** — Perplexity launching
+  a health platform with Apple Health integration — single non-major
+  outlet, worth a follow-up crawl before adding a sixth entity to this
+  meta-thread's tracked list. ⟨daily 2026-07-30⟩
+
 ## 2026-07-23 — First real entry: OpenAI's health layer goes live, MH still absent
 
 - **OpenAI's ChatGPT Health went GA to all US users 18+** (07-23),

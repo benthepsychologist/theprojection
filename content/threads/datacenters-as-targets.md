@@ -3,7 +3,7 @@ title: Targets
 lens: ai
 status: open
 opened: 2026-07-29
-last_seen: 2026-07-28
+last_seen: 2026-07-30
 weight: 3
 entities:
 - amazon-aws

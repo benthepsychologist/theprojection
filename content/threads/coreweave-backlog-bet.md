@@ -19,6 +19,24 @@ blurb: 'The neocloud wager, quantified: $99.4B backlog (Q1-26; OpenAI $18.4B + M
   08-11.'
 ---
 
+## 2026-07-30 — A rejected suitor's rebound, and a sweetened loan
+
+- **AMD signed a $14B infrastructure deal with Core Scientific** — up to
+  2.5GW of AI data-center capacity (530MW initial phase, 15-year term,
+  warrants for 30M CORZ shares) — the same company CoreWeave's $9B
+  all-stock bid was rejected by in Oct-2025. Core Scientific shares rose
+  on the news even as its Q2 print showed a wider-than-expected loss.
+  Directly on this thread's "plan B is thin" watch line: the rejected
+  target is thriving without CoreWeave. (Reuters + Core Scientific's own
+  release, event dated 07-28) ⟨daily 2026-07-30⟩
+- **CoreWeave sweetened terms on its $2.6B loan tied to Anthropic** amid
+  investor caution over its debt load — a concrete instance of the
+  9.75%-coupon, GPU-collateralized AI-credit repricing this thread
+  already tracks (Bloomberg-sourced via multiple outlets; exact new
+  yield not independently confirmed, event dated 07-29). ⟨daily 2026-07-30⟩
+- **Stock extended its slide** — ~26% over the past 5 sessions (Trefis),
+  continuing the pattern already on file. ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 — Stock slides further despite one new logo
 
 - **Shares down ~30% in a month, ~43% over the past year** — the

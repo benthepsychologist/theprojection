@@ -3,7 +3,7 @@ title: AI vs Care
 lens: mental-health
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-28
+last_seen: 2026-07-30
 weight: 3
 entities: []
 thread_kind: story

@@ -3,7 +3,7 @@ title: Chatbot Bans
 lens: mental-health
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-29
+last_seen: 2026-07-30
 weight: 2
 entities:
 - character-ai

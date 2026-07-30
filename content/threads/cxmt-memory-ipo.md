@@ -14,6 +14,22 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
 
+## 2026-07-30 — Alibaba's pre-IPO stake is up ~20x
+
+- **Alibaba's pre-IPO stake in CXMT is up roughly 20x, near $20.9B** —
+  well-corroborated (finance.biggo.com, Seoul Economic Daily, FourWeekMBA).
+  A new concrete figure, joining DeepSeek/High-Flyer as a confirmed debut
+  winner. ⟨daily 2026-07-30⟩
+- **SK Hynix/Micron read-through fallout continues into a third day**;
+  CXMT's own day-2/3 share-price gap (flagged 07-28) is still open — no
+  figures found yet. ⟨daily 2026-07-30⟩
+- **A Global Times rebuttal of "reported" US Senate warnings** on
+  Apple/CXMT-YMTC sourcing reads as continued circulation of the same
+  pressure this thread already discounted (Moolenaar/Whitesides letter,
+  07-16) — noted, not treated as new. See `ai-memory-shortage` for the
+  fresher, dated version of this (a bipartisan senator letter to Apple,
+  Aug-21 deadline). ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 (overnight) — A second probe effort, and a lithography read-through ⟨daily 2026-07-28⟩
 
 - **A prospective bipartisan letter campaign** — at least half a dozen

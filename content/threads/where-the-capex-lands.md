@@ -3,6 +3,7 @@ title: Where the Capex Lands
 lens: ai
 status: open
 opened: 2026-07-24
+last_seen: 2026-07-30
 weight: 3
 entities:
 - nvidia

@@ -17,6 +17,17 @@ blurb: 'OpenAI-direct build (Octans GA LLC/Butler Snow — no named GC or Starga
   petition), generation-mix disclosure, and whether a GC/financing partner surfaces.'
 ---
 
+## 2026-07-30 — Local press keeps digging into process and disclosure
+
+- **Effingham Herald: "How OpenAI's Effingham Data Center Moved Forward
+  Without Public Input"** — a process/accountability angle distinct from
+  the secrecy-backlash coverage already on file. ⟨daily 2026-07-30⟩
+- **WTOC flagged a "water warning gap"** raising fresh transparency
+  questions, and separately reported on the deal's tax/financial
+  "discount" terms — both go directly to this thread's blank
+  generation-mix/disclosure watch item; headline-level only, body text
+  not independently fetched. ⟨daily 2026-07-30⟩
+
 ## 2026-07-28 — Rincon meets on the plan ⟨daily 2026-07-28⟩
 
 - **The local-opposition track went live in person** — WTOC: "Coffee,

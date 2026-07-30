@@ -18,6 +18,19 @@ blurb: 'The chokepoint is cashing in: capex raised 15% to $60-64B + another $100
   Our ~90% advanced-node anchor is carried, not re-verified. Next: Q3 earnings.'
 ---
 
+## 2026-07-30 — "Limited impact" verdict lands, not unanimous; Tokyo Electron's exposure gets a number; 1.4nm pulls ahead
+
+- **A "limited impact" verdict on the Kumamoto quake lands** (Focus
+  Taiwan, GuruFocus) — JASM utilities back to normal, construction
+  resumed (Digitimes, 07-29) — but not unanimous: Korea JoongAng Daily
+  still frames full-normal-production as delayed. ⟨daily 2026-07-30⟩
+- **Tokyo Electron's Kyushu exposure now has a number: ~91% global
+  share** of an equipment category (XenoSpectrum) — sharper than the
+  07-29 entry's vague "some equipment categories." ⟨daily 2026-07-30⟩
+- **Separately, not quake-related: TSMC's 1.4nm (A14) fab is ahead of
+  schedule** — first building before April 2027, mass production mid-2028
+  (TrendForce/Wccftech) — a real roadmap acceleration. ⟨daily 2026-07-30⟩
+
 ## 2026-07-29 — Kumamoto restoration in stages; the bigger exposure is Tokyo Electron's, not TSMC's
 
 - **TSMC's Kumamoto fab is structurally intact, with employees safe and

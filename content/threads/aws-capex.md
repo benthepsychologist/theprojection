@@ -3,7 +3,7 @@ title: AWS Capex
 lens: ai
 status: developing
 opened: 2026-07-23
-last_seen: 2026-07-28
+last_seen: 2026-07-30
 weight: 2
 entities:
 - amazon-aws

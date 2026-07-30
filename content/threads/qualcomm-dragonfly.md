@@ -19,6 +19,19 @@ blurb: 'Qualcomm''s datacenter re-entry, eight years after Centriq died: Dragonf
   test: Q3 FY26 earnings 07-29 (tomorrow) — does Dragonfly move guidance?'
 ---
 
+## 2026-07-30 — Modular acquisition officially closed
+
+- **The Modular acquisition officially closed 07-29** — resolves the
+  thread's tracked "close expected H2-26" line. Confirmed via Qualcomm's
+  own newsroom + 15 outlets + an SEC 8-K/10-Q filed same day. **Chris
+  Lattner** (LLVM/Swift/Mojo creator) named to lead the combined "Advanced
+  AI Software" effort. ([Qualcomm newsroom]) ⟨daily 2026-07-30⟩
+- **Same day, a separate 10-year BMW automotive-compute deal** — auto, not
+  datacenter; adjacent to but not core to Dragonfly's own watch.
+  ⟨daily 2026-07-30⟩
+- Analyst price-target cuts (Baird/Bernstein/Morgan Stanley/Wells Fargo)
+  are continued reaction to 07-29's Q3 miss, not new facts. ⟨daily 2026-07-30⟩
+
 ## 2026-07-29 — The guide missed, but not because of Dragonfly
 
 - **Q3 FY26: revenue $9.9B beat; EPS $2.21 roughly in-line.** The Q4 FY26
