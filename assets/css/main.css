@@ -396,7 +396,10 @@ a.chip{ text-decoration:none; }
   font-weight:600; margin:0 0 .5rem; padding-bottom:.5rem;
   border-bottom:2px solid var(--ink);
 }
-.briefing-stamp{ display:none; }
+.briefing-stamp{
+  display:inline-block; text-transform:none; letter-spacing:normal;
+  font-weight:400; color:var(--ink-faint); margin-left:.6em;
+}
 .briefing-gist{
   margin:0 0 .9rem; font-size:1.2rem; line-height:1.35; font-weight:500;
   color:var(--ink); max-width:56ch;
