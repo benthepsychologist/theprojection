@@ -1,0 +1,37 @@
+{{/* World News — a quiet, cross-spectrum attention signal.
+     Ben, 2026-07-30: "'World News' is what global journalism is talking
+     about today... it should be on the radar but not drown out my real
+     targets." Distinct from flash.html: flash is EDITORIAL (Ben's own
+     "would this lead a front page" judgment, rare, loud by design); this
+     is a computed FACT (N distinct outlets covered this today), produced
+     by tools/world_news.py, never a model or a curator.
+
+     Deliberately the OPPOSITE of the flash rail's visual treatment: no
+     color, no card, small type, homepage only (flash is on every page
+     because a flash that only shows on the homepage isn't a flash; this
+     strip is exactly the kind of thing that SHOULD stay off leaf pages).
+
+     A `thread` pointer means the item corroborates something already on
+     the map -- link to it, so the strip reads as "proof this thread
+     matters broadly," not a redundant duplicate blurb. Its absence means
+     a genuine candidate with nothing tracked yet -- rendered as plain
+     text, no invented link.
+
+     Server-rendered from data/payload.json's `world_news` key, same
+     pattern as flash.html. */}}
+{{ with .Site.Data.payload }}
+{{ with .world_news }}
+<div class="world-news">
+  <p class="world-news-kicker">World news · what's widely covered today</p>
+  {{ range . }}
+  <div class="world-news-row">
+    <span class="world-news-n">{{ .distinct_outlets }} outlets</span>
+    <span class="world-news-h">
+      {{ if .thread }}<a href="/threads/{{ .thread }}/">{{ .headline }}</a>
+      {{ else }}{{ .headline }}{{ end }}
+    </span>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

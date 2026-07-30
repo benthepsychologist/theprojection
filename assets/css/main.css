@@ -231,6 +231,28 @@ a.chip{ text-decoration:none; }
   .flash-head{ font-size:1.1rem; }
 }
 
+/* World News (2026-07-30) — deliberately the OPPOSITE of .flash above: no
+   color, no card, small type. A mechanical cross-spectrum volume fact,
+   not an alert — "on the radar, not drowning out my real targets." */
+.world-news{
+  max-width:var(--max-width); margin:1.1rem auto 0; padding:0 1.5rem;
+  font-size:.82rem; line-height:1.6;
+}
+.world-news-kicker{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.64rem;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--ink-faint);
+  margin:0 0 .35rem; padding-bottom:.35rem; border-bottom:1px dotted var(--rule);
+}
+.world-news-row{ display:flex; gap:.55rem; align-items:baseline; padding:.12rem 0; }
+.world-news-n{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.7rem;
+  color:var(--ink-faint); flex:none; min-width:4.2em;
+}
+.world-news-h{ color:var(--ink-body); }
+.world-news-h a{ color:inherit; text-decoration:none; border-bottom:1px solid transparent; }
+.world-news-h a:hover{ border-bottom-color:currentColor; }
+@media (max-width:640px){ .world-news{ padding:0 1.1rem; font-size:.78rem; } }
+
 /* Executive summary — the cross-lens roll-up above the per-lens ones. */
 .verdict.exec{ border-left-width:5px; background:var(--paper); }
 .verdict.exec p{ font-size:.95rem; color:var(--ink); }
