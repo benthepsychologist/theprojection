@@ -1,6 +1,6 @@
 ---
 title: Nvidia as Lender
-lens: money
+lens: global-capital
 status: open
 opened: 2026-07-27
 last_seen: 2026-07-30

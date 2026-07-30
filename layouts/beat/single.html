@@ -42,6 +42,13 @@
   <ul class="items-list">
     {{ range $items }}
     <li><span class="item-day">{{ .day }}</span> {{ .html | safeHTML }}</li>
+    {{ if .interpretation }}
+    <li class="interp-band">
+      <span class="interp-kicker">→ WHAT THIS COULD MEAN <span class="interp-confidence">{{ .interpretation.confidence }}</span></span>
+      <p class="interp-mechanism">{{ .interpretation.mechanism }}</p>
+      <a class="interp-more" href="/interpretation/{{ .interpretation_id }}/">full reasoning →</a>
+    </li>
+    {{ end }}
     {{ end }}
   </ul>
   {{ else }}

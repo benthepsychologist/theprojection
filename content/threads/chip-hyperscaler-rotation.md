@@ -1,6 +1,6 @@
 ---
 title: The Great Rotation
-lens: money
+lens: global-capital
 status: open
 opened: 2026-07-29
 last_seen: 2026-07-30

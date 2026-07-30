@@ -25,7 +25,7 @@
        gist     one lead sentence — the whole scope in one line
        bullets  3-5 × {emoji, text, url}, each a full sentence, ranked by
                 SALIENCE with no lens quota
-       beats    FRONT ONLY — one sentence per lens (ai / money /
+       beats    FRONT ONLY — one sentence per lens (ai / global-capital /
                 mental-health). This is the cross-lens balance floor: the
                 bullets above are ranked purely on salience and are NOT
                 padded to give each lens a turn, so the beats are what
@@ -102,7 +102,7 @@
       {{ $beats := $s.beats }}
       {{ if $beats }}
       <dl class="readout-beats">
-        {{ range $lens := slice "ai" "money" "mental-health" }}
+        {{ range $lens := slice "ai" "global-capital" "mental-health" }}
           {{ with index $beats $lens }}
           <dt>{{ replace $lens "-" " " }}</dt>
           <dd>{{ . }}</dd>

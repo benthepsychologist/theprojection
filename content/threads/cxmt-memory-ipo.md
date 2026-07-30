@@ -1,6 +1,6 @@
 ---
 title: CXMT IPO
-lens: money
+lens: global-capital
 status: open
 opened: 2026-07-22
 last_seen: 2026-07-28

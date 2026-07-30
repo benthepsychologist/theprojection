@@ -1,6 +1,6 @@
 ---
 title: Red Sea Shock
-lens: money
+lens: global-capital
 status: open
 opened: 2026-07-24
 last_seen: 2026-07-30

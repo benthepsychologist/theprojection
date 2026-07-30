@@ -43,7 +43,7 @@ bullets and their source links are the record.
 
 Above all of that, rarely, a **flash** — a single banner carrying
 something that would lead a general news front page whether or not it
-touches AI, money, or mental health. The bar is deliberately high: most
+touches AI, global capital, or mental health. The bar is deliberately high: most
 days there is none, and if you start seeing them often, that's a bug
 rather than a busy week. A flash can be dismissed; it returns on reload.
 

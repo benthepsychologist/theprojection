@@ -35,7 +35,7 @@
 :root{
   --paper:#FEFEFC; --paper-dim:#F7F5EF; --rule:#E7E3DA;
   --ink:#171410; --ink-body:#3A352E; --ink-faint:#7A7469;
-  --lens-ai:#0070E0; --lens-money:#A86302; --lens-mh:#E50B1E;
+  --lens-ai:#0070E0; --lens-global-capital:#A86302; --lens-mh:#E50B1E;
   --max-width:960px;
 
   /* ---- board design-token system (2026-07-27) -------------------------
@@ -48,6 +48,13 @@
   --live:#E01279; /* RESERVED for selection state / "changed this week" markers — do not repurpose */
   --live-tint:#FCE7F2;
   --fill-a:.24;
+  /* Global Capital's interpretation band (DESIGN.md Part 2 §9, 2026-07-30):
+     must read as generated reasoning, not sourced fact, at a glance — its
+     own accent, chosen distinct from every existing token above (not
+     --power's plum, not any lens color) and from --live's reservation. A
+     muted indigo-violet: outside this palette's blue/amber/red/teal/olive
+     hues entirely, in the same desaturated register as the rest. */
+  --interp:#5A4B8C; --interp-tint:#EEEAF7;
 
   /* ---- type roles (2026-07-27) ----------------------------------------- */
   --serif:"Piazzolla","Palatino Linotype","Book Antiqua",Palatino,"Iowan Old Style",Georgia,serif;
@@ -116,7 +123,7 @@ nav.primary a:hover{ text-decoration:underline; }
   letter-spacing:.08em; text-transform:uppercase; padding:.2rem .55rem; border-radius:2px;
 }
 .tag.ai{ color:var(--lens-ai); background:color-mix(in srgb, var(--lens-ai) 10%, transparent); }
-.tag.money{ color:var(--lens-money); background:color-mix(in srgb, var(--lens-money) 10%, transparent); }
+.tag.global-capital{ color:var(--lens-global-capital); background:color-mix(in srgb, var(--lens-global-capital) 10%, transparent); }
 .tag.mental-health{ color:var(--lens-mh); background:color-mix(in srgb, var(--lens-mh) 10%, transparent); }
 
 .card h3{
@@ -256,6 +263,32 @@ a.chip{ text-decoration:none; }
 /* Executive summary — the cross-lens roll-up above the per-lens ones. */
 .verdict.exec{ border-left-width:5px; background:var(--paper); }
 .verdict.exec p{ font-size:.95rem; color:var(--ink); }
+
+/* Global Capital's interpretation band (DESIGN.md Part 2 §9, 2026-07-30) —
+   must read as generated reasoning, not sourced fact, at a glance: same
+   mono-caps kicker convention as .verdict/.readout-label, but its own
+   accent (--interp) and a tinted background instead of --paper-dim, so it
+   is visually unmistakable from a sourced bullet even at a skim. Never
+   the only place a fact lives — it sits ALONGSIDE the sourced bullet,
+   never replacing it (rendered directly under the bullet it belongs to). */
+.interp-band{
+  background:var(--interp-tint); border:1px solid var(--interp);
+  border-left:3px solid var(--interp); border-radius:3px;
+  padding:.7rem .9rem; margin:.4rem 0 .9rem;
+}
+.interp-kicker{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.64rem;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--interp);
+  margin:0 0 .3rem; display:flex; align-items:baseline; gap:.5rem;
+}
+.interp-confidence{
+  font-weight:600; opacity:.85;
+}
+.interp-mechanism{ margin:0 0 .3rem; font-size:.88rem; color:var(--ink-body); }
+.interp-more{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.7rem;
+  color:var(--interp);
+}
 
 /* ── Executive readout ────────────────────────────────────────────────
    BREAKING / NEWS / SUMMARY at the top of every page (Ben, 2026-07-29).

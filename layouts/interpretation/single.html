@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+<style>
+/* ==== interpretation receipt (DESIGN.md Part 2 §10, 2026-07-30) ====
+   Same "teaser on the surface, full reasoning one click away" move as
+   /claim/<id>/, using main.css's --interp accent throughout so this page
+   reads as one continuous piece with the band that links to it. */
+.interp-receipt{
+  background:var(--interp-tint); border:1px solid var(--interp);
+  border-radius:8px; padding:1.4rem 1.5rem 1.6rem; margin:0 0 1.4rem;
+}
+.interp-receipt .interp-head{ border-bottom:1px solid var(--interp); padding-bottom:.9rem; margin-bottom:1rem; }
+.interp-receipt .interp-eyebrow{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.68rem;
+  text-transform:uppercase; letter-spacing:.1em; color:var(--interp); font-weight:600;
+}
+.interp-receipt h1{ font-family:var(--serif); font-size:1.4rem; line-height:1.3; margin:.4rem 0 .5rem; }
+.interp-receipt .interp-meta{ font-size:.85rem; color:var(--ink-faint); margin:0; }
+.interp-receipt .interp-meta a{ color:var(--interp); }
+.interp-mechanism-full{ font-family:var(--serif); font-size:1.05rem; line-height:1.5; color:var(--ink); margin:.9rem 0 0; }
+
+.interp-section{ margin:1.5rem 0 0; }
+.interp-section h2{ font-family:var(--sans,system-ui); font-size:.78rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-faint); border-bottom:1px dotted var(--rule); padding-bottom:.35rem; }
+.scenario-card{
+  border:1px solid var(--rule); border-left:3px solid var(--interp); border-radius:4px;
+  padding:.8rem 1rem; margin:.7rem 0; background:var(--paper-dim);
+}
+.scenario-card .scenario-direction{ font-weight:600; color:var(--ink); margin:0 0 .3rem; }
+.scenario-card .scenario-why{ color:var(--ink-body); font-size:.9rem; margin:0 0 .3rem; }
+.scenario-card .scenario-precedent{ font-size:.85rem; color:var(--ink-faint); margin:0; }
+.scenario-card .scenario-precedent .lbl{ font-weight:600; color:var(--interp); }
+.interp-context-note{ font-style:italic; color:var(--ink-body); font-size:.92rem; }
+.interp-none{ color:var(--ink-faint); font-style:italic; font-size:.88rem; }
+</style>
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+{{ $iid := .Params.interp_id }}
+{{ $payload := .Site.Data.payload }}
+
+<main class="wrap">
+{{ range $i := .Site.Data.interpretations }}{{ if eq $i.id $iid }}
+
+  {{ $threads := where $payload.threads "slug" "in" $i.threads }}
+
+  <p class="crumb"><a href="/beat/global-capital/">← Global Capital</a></p>
+
+  <section class="interp-receipt">
+    <div class="interp-head">
+      <span class="interp-eyebrow">→ what this could mean</span>
+      <h1>{{ $i.item_title }}</h1>
+      <p class="interp-meta">
+        <span class="interp-confidence-badge">{{ $i.confidence }} confidence</span> ·
+        {{ $i.day }}
+        {{ if $i.item_url }} · <a href="{{ $i.item_url }}" rel="nofollow noopener" target="_blank">source</a>{{ end }}
+      </p>
+      <p class="interp-mechanism-full">{{ $i.mechanism }}</p>
+    </div>
+
+    <div class="interp-section">
+      <h2>Scenarios <span class="n">{{ len $i.scenarios }}</span></h2>
+      {{ range $i.scenarios }}
+      <div class="scenario-card">
+        <p class="scenario-direction">{{ .direction }}</p>
+        <p class="scenario-why">{{ .why }}</p>
+        {{ if .precedent }}<p class="scenario-precedent"><span class="lbl">Precedent —</span> {{ .precedent }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="interp-section">
+      <h2>Context</h2>
+      <p class="interp-context-note">{{ $i.context_note }}</p>
+    </div>
+
+    <div class="interp-section">
+      <h2>Threads <span class="n">{{ len $threads }}</span></h2>
+      {{ if $threads }}
+      <ul class="cites">{{ range $threads }}<li><a href="/threads/{{ .slug }}/">{{ .title }}</a></li>{{ end }}</ul>
+      {{ else }}<p class="interp-none">No thread tagged to this item.</p>{{ end }}
+    </div>
+  </section>
+
+  <p class="muted small">This is generated reasoning, not a sourced fact —
+    the mechanism and scenarios above are the model's read on what this item
+    could mean for capital flows, tagged with its own confidence rather
+    than stated as settled. <a href="/beat/global-capital/">Back to Global Capital</a>.</p>
+
+{{ end }}{{ end }}
+</main>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

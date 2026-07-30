@@ -1,6 +1,6 @@
 ---
 title: Asset Managers Build
-lens: money
+lens: global-capital
 status: open
 opened: 2026-07-28
 last_seen: 2026-07-27

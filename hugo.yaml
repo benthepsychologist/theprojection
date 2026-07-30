@@ -28,8 +28,8 @@ params:
     ai:
       label: "AI"
       color: "#0070E0"
-    money:
-      label: "Money"
+    global-capital:   # renamed from "money" 2026-07-30 (Ben, full rename)
+      label: "Global Capital"
       color: "#A86302"
     mental-health:
       label: "Mental Health"
@@ -42,8 +42,8 @@ menus:
     - name: "AI"
       url: "/beat/ai/"
       weight: 1
-    - name: "Money"
-      url: "/beat/money/"
+    - name: "Global Capital"
+      url: "/beat/global-capital/"
       weight: 2
     - name: "Mental Health"
       url: "/beat/mental-health/"
