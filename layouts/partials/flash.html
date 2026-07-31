@@ -26,6 +26,17 @@
      id list — at "normally at most one, two is exceptional" flashes
      ever, it will never grow large enough to matter.
 
+     SCOPE, CONFIRMED (Ben, 2026-07-31): localStorage is per-browser,
+     per-device — dismissing on one machine does NOT dismiss it for any
+     other visitor or device. Asked directly whether that's the intended
+     scope or a gap; Ben's answer: "the failure would be anybody seeing
+     it taking it down for everyone. current behavior confirmed
+     correct." Do NOT build a shared/global dismiss (would need real
+     backend state — an API + a datastore — that this static site
+     doesn't have and isn't getting for this). One visitor's click must
+     never suppress real news for anyone else; per-browser is the
+     feature, not a limitation to fix.
+
      Brand: this uses INK, not a new hue. --live (#E01279) is reserved for
      selection / "changed this week" and is NOT available here; --lens-mh
      red is the mental-health lens colour. The rail is loud through weight
