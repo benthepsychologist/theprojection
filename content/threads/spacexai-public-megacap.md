@@ -3,7 +3,7 @@ title: Musk Megacap
 lens: global-capital
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-28
+last_seen: 2026-07-31
 weight: 1
 entities:
 - spacex
@@ -19,6 +19,18 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   Watch: the Aug-6 lock-up (911.5M shares); Musk''s ~82% voting control; whether the
   Anthropic lease-back is real revenue or circular financing. Q7 material.'
 ---
+
+## 2026-07-31 — WSJ: Tesla weighing a China-business sale ahead of a possible Tesla-SpaceX merger; Musk denies it
+
+- **WSJ reported Tesla executives were told to prepare options
+  (spinoff/sale/closure) for Gigafactory Shanghai ahead of a possible
+  Tesla-SpaceX merger**, citing a person familiar with the talks — a new
+  structural narrative for this thread that wasn't previously on the
+  board. **Musk publicly denied it same day** ("fake news... never even
+  come up in a discussion ever"), though he has separately declined to
+  rule out a Tesla-SpaceX merger earlier this month. Treat as
+  reported-but-denied, not confirmed.
+  ([Bloomberg pickup of WSJ](https://www.bloomberg.com/news/articles/2026-07-31/tesla-weighs-china-unit-sale-ahead-of-spacex-deal-wsj-says), [Electrek](https://electrek.co/2026/07/30/tesla-weighs-selling-china-business-spacex-merger/)) ⟨daily 2026-07-31⟩ — confidence: low, single-sourced and denied by the principal.
 
 ## 2026-07-30 — Stock slides through a $1.6B government win
 

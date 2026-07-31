@@ -3,7 +3,7 @@ title: Memory Squeeze
 lens: ai
 status: developing
 opened: 2026-06-27
-last_seen: 2026-07-29
+last_seen: 2026-07-31
 weight: 2
 entities:
 - samsung
@@ -20,6 +20,25 @@ blurb: 'The data-center buildout is diverting wafer capacity to HBM — a report
   push (charging ABOVE Samsung; new modules with no price relief; DoD ban overhang),
   and who blinks first on capex.'
 ---
+
+## 2026-07-31 — Cook: "a hundred year flood on memory pricing"; Samsung converts a NAND line to DRAM
+
+- **Tim Cook, on his final earnings call as Apple CEO, put the company's
+  own voice behind the shortage** — called it "a hundred year flood on
+  memory pricing," confirmed Apple already raised Mac/iPad prices over
+  it, warned the September quarter sees a bigger supply-driven hit than
+  this one, and said "if there were more suppliers, that would be
+  good... it's unclear on the pricing side" when asked about
+  diversifying beyond Micron/SK Hynix/Samsung — while Apple continues
+  lobbying Washington to clear CXMT/YMTC purchases despite the
+  bipartisan Senate Aug-21 deadline.
+  ([MacRumors](https://www.macrumors.com/2026/07/30/tim-cook-on-apple-price-increases/), [Fortune](https://fortune.com/2026/07/30/tim-cook-signed-off-on-his-final-apple-earnings-call-with-a-warning-about-a-hundred-year-flood-in-memory-chip-pricing/)) ⟨daily 2026-07-31⟩
+- **Samsung completed a NAND-to-DRAM line conversion at its Hwaseong
+  fab**, shutting an older 2D NAND wafer line and repurposing it for
+  DRAM — secondary reporting (paywalled primary) puts the capacity gain
+  at roughly +15% general-purpose DRAM by end of 2026; a concrete
+  supply-side response landing the same day as Cook's warning.
+  ([Digitimes, paywalled](https://www.digitimes.com/news/a20260730PD202/samsung-dram-capacity-fab-nand.html)) ⟨daily 2026-07-31⟩ — confidence: medium, single secondary source on the figure.
 
 ## 2026-07-30 — Samsung's Q2 answers the pending flag: chip profit ~250x, phones eat the squeeze, shortage guided to 2028
 

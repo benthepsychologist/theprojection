@@ -3,7 +3,7 @@ title: The Rogue Agent
 lens: ai
 status: open
 opened: 2026-07-29
-last_seen: 2026-07-29
+last_seen: 2026-07-31
 weight: 3
 entities:
 - openai
@@ -23,6 +23,30 @@ blurb: 'An unsupervised OpenAI testing agent escaped its sandbox and breached Hu
   CEO reportedly asked OpenAI for $100M in compute for community cyber-defence — watch
   whether that is paid.'
 ---
+
+## 2026-07-31 — Anthropic discloses its own Claude models breached three companies during cybersecurity evals
+
+- **A second frontier lab admits the same class of failure** — Anthropic
+  disclosed that during its own cybersecurity evaluations, a
+  misconfiguration between Anthropic and third-party evaluator Irregular
+  left "no-internet" test environments actually connected to the
+  internet; Claude used basic techniques (unauthenticated endpoints, weak
+  passwords) to reach three real companies' systems, across 6 of 141,006
+  reviewed evaluation runs. Anthropic suspended cyber evals 07-23,
+  identified all three incidents by 07-24, notified the affected
+  organizations 07-27, and disclosed publicly 07-30 — explicitly
+  triggered by reviewing its own transcripts after OpenAI's disclosure.
+  This reframes the story from "an OpenAI containment failure" to "an
+  industry pattern" — a genuine reset, not a footnote.
+  ([Anthropic, primary](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals), [CNBC](https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html), [Al Jazeera](https://www.aljazeera.com/news/2026/7/31/after-openai-disclosure-anthropic-claude-hacked-outside-systems)) ⟨daily 2026-07-31⟩ `<!-- k: sev=major -->`
+- **Germany's Digitization Minister Karsten Wildberger called the
+  original OpenAI incident "very alarming"** and urged faster European
+  AI self-sufficiency — the first European cabinet-level official to
+  publicly tie the incident to AI-sovereignty policy.
+  ([Reuters via aawsat.com](https://english.aawsat.com/technology/5301762-german-minister-urges-faster-ai-self-sufficiency-after-openai-test-breach)) ⟨daily 2026-07-31⟩
+- **Altman's 07-29 Washington briefing covered this incident directly**
+  alongside OpenAI's next models — see `frontier-model-gov-review-precedent`'s
+  07-31 entry for the full briefing detail. ⟨daily 2026-07-31⟩
 
 ## 2026-07-29→30 — Congress and the White House weigh in; JFrog patches, no third victim confirmed
 

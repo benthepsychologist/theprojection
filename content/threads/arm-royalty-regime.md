@@ -3,7 +3,7 @@ title: Arm Royalty Regime
 lens: ai
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-30
+last_seen: 2026-07-31
 weight: 2
 entities:
 - arm
@@ -18,6 +18,16 @@ blurb: 'The ~$800B-gravity ISA chokepoint: SoftBank''s 87.1% leaned on as LOAN C
   own licensees. Royalties real (4 straight >$1B quarters, v9+CSS). Stock -28% into
   earnings 07-29 — the live test.'
 ---
+
+## 2026-07-31 — A one-day snapback: Arm +9% on the broad Tokyo chip rally
+
+- **Arm rose 9% overnight** as part of a broad Tokyo AI/semiconductor
+  rally (Nikkei 225 +4.37%) triggered by strong US tech earnings —
+  reversing, at least for one session, the guidance-cut selloff that
+  closed out 07-29's beat-and-raise coverage. See `softbank-all-in` for
+  the fuller Tokyo-session read (SoftBank itself hit limit-up the same
+  day, still ahead of its own 08-06 earnings).
+  ([Bloomberg Japan](https://www.bloomberg.com/jp/news/articles/2026-07-31/TJ0K57KJH6V400)) ⟨daily 2026-07-31⟩
 
 ## 2026-07-29 — A clean beat-and-raise, and the stock fell anyway
 

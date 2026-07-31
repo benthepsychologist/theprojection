@@ -3,7 +3,7 @@ title: Iran's Widening War
 lens: world-news
 status: open
 opened: 2026-07-23
-last_seen: 2026-07-30
+last_seen: 2026-07-31
 weight: 3
 entities: []
 thread_kind: story
@@ -19,6 +19,33 @@ blurb: 'What began as Houthi tanker strikes and a Red Sea blockade (07-23) widen
   Do not add Israel as a combatant without a dedicated primary-source check — several
   aggregators frame this as a "US-Israel-Iran war" with nothing found to confirm it.'
 ---
+
+## 2026-07-31 — Saudi Arabia launches a 14-nation Maritime Defense Alliance; no material escalation otherwise
+
+- **Saudi Arabia formally launched its Maritime Defense Alliance** —
+  its Defense Ministry hosted a Riyadh meeting (07-30) with
+  representatives from 43 countries and the EU on Red Sea/Bab
+  el-Mandeb/Gulf of Aden maritime security; 14 signed a joint statement:
+  Saudi Arabia, Kuwait, Bahrain, Qatar, Pakistan, Türkiye, Egypt, Jordan,
+  Yemen, Bangladesh, Nigeria, Sudan, Djibouti, Somalia. This is the
+  coalition-building question this thread flagged 07-30 crystallizing
+  into an actual signed declaration.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/7/30/saudi-arabia-announces-maritime-defence-alliance-to-secure-vital-waterways), [The National](https://www.thenationalnews.com/news/mena/2026/07/30/saudi-arabia-proposes-43-nation-maritime-defence-coalition-in-red-sea/)) ⟨daily 2026-07-31⟩
+- **No ceasefire, no new combatant, no confirmed direct Israel-Iran
+  strikes** — checked directly against the disqualifying conditions;
+  reports that read like fresh IRGC strikes on Bahrain/Jordan/Kuwait
+  traced back to a recurring pattern dating to at least 07-13, not new
+  escalation. The active flash (`iran-strikes-us-base-jordan`) does not
+  need another in-place update today. ⟨daily 2026-07-31⟩
+- **NB: a separate, much larger conflict has ZERO thread coverage here** —
+  the Russia-Ukraine war (315 outlets on 07-30, still the single largest
+  world-news signal). It was offered as a thread candidate 07-30 and went
+  unanswered; not re-offered today per the world-news restraint rule
+  ("don't re-offer a second time"). Today's Poland/NATO-airspace incident
+  is a discrete escalation within that same untracked war and earned its
+  own flash regardless (`russia-missile-poland-nato-airspace`) — flash
+  and thread-candidacy are independent mechanisms. Kept fully separate
+  from this thread either way (different theater, different actors).
 
 ## 2026-07-30 — Diplomacy fragments; no ceasefire, no new combatant confirmed
 

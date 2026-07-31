@@ -3,7 +3,7 @@ title: Grok Harm
 lens: mental-health
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-29
+last_seen: 2026-07-31
 weight: 2
 entities:
 - spacex
@@ -20,6 +20,25 @@ blurb: 'CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct: (A
   thread''s core) from being swallowed by strand B (CSAM, the regulatory driver).
   Cross-refs ai-therapy-regulatory-reckoning.'
 ---
+
+## 2026-07-31 — Court keeps the Jane Doe deepfake plaintiffs pseudonymous; a federal companion-chatbot bill surfaces
+
+- **A federal judge denied xAI's bid to unmask the Jane Doe plaintiffs**
+  in the Grok deepfake suit (N.D. Cal., Judge P. Casey Pitts) — the court
+  found their fear of retaliation "reasonable" and let the case proceed
+  pseudonymously. Incremental, not a reset.
+  ([Law360](https://www.law360.com/articles/2507907)) ⟨daily 2026-07-31⟩
+- **A federal bipartisan companion-chatbot bill for minors was introduced
+  2026-07-28** (Sens. Andy Kim D-NJ and Jon Husted R-OH, S.5154,
+  "Children Harmed by AI Technology Act 2.0") — a tiered risk-based
+  framework barring AI companion chatbots from encouraging self-harm,
+  generating sexual content, impersonating humans, or emotionally
+  manipulative/romantic interaction with minors, plus parental-
+  involvement and disclosure mandates. A map gap: introduced 07-28, never
+  logged until this sweep caught wire pickup dated 07-30. First FEDERAL
+  instrument in a space that's been entirely state-law so far — see also
+  `state-therapy-chatbot-bans`'s preemption watch line.
+  ([congress.gov S.5154](https://www.congress.gov/bill/119th-congress/senate-bill/5154)) ⟨daily 2026-07-31⟩
 
 ## 2026-07-30 — A second Tennessee filing, now naming Stability AI too
 

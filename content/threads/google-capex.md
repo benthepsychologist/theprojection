@@ -3,7 +3,7 @@ title: Google Capex
 lens: ai
 status: developing
 opened: 2026-07-23
-last_seen: 2026-07-27
+last_seen: 2026-07-31
 weight: 2
 entities:
 - google
@@ -17,6 +17,21 @@ blurb: '$195-205B guided for 2026 (07-22), destination traced by crawl 07-27: a 
   primary filing unreached. Watch: Q3 guidance, the FCF-negative reaction, TPU externalization
   (Meta eval).'
 ---
+
+## 2026-07-31 — Google guarantees a $15B bank loan backing Anthropic's own data-center buildout
+
+- **Google is guaranteeing billions of dollars of Anthropic's lease and
+  power-payment obligations** on a ~$15B financing package (a Morgan
+  Stanley-led bank consortium: a $14B bridge loan plus a revolving credit
+  facility) lending to Nexus Data Centers, a Texas developer building a
+  campus in Hubbard, TX with a dedicated 1.6GW gas power plant and four
+  data-center leases for Anthropic — Google takes roughly 20% equity in
+  the project in exchange for the guarantee. Reported via sourcing
+  ("people familiar"), not yet an official Google/Anthropic announcement.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-30/banks-line-up-15-billion-of-debt-for-anthropic-with-google-aid)) ⟨daily 2026-07-31⟩
+- **Same off-balance-sheet-backstop pattern as Meta/BlackRock's El Paso JV
+  and Nvidia/OpenAI** — deepens Google's capital entanglement with
+  Anthropic beyond compute credits into direct credit exposure. ⟨daily 2026-07-31⟩
 
 ## 2026-07-23 — Thread opened; the full Q2 picture lands
 

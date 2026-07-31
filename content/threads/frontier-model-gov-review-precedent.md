@@ -3,7 +3,7 @@ title: Frontier Gatekeeping
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-30
+last_seen: 2026-07-31
 weight: 3
 entities:
 - openai
@@ -19,6 +19,23 @@ blurb: 'The gpt-5.6 gating dynamic made permanent — and it''s all one buildout
   is named (SRO?); Meta''s exclusion made official; CAISI leadership (3 directors
   in a year — can it run classified review?); the first model actually gated.'
 ---
+
+## 2026-07-31 — Altman's Washington briefing confirmed; EO 14409 deliverables still due tomorrow
+
+- **Confirmed: Altman briefed Congress and the administration on OpenAI's
+  next models — and on the rogue-agent breach, in the same meetings**
+  (2026-07-29). Senate side: Ted Cruz (Commerce chair), Bernie Moreno, Jon
+  Husted, Raphael Warnock, with Mark Warner (Senate Intelligence)
+  scheduled. Administration side: Altman said he'd spoken with White
+  House officials about "pacing" AI development, reviewed the EO 14409
+  framework, and had a meeting scheduled with Chief of Staff Susie
+  Wiles. `upcoming.yaml`'s `altman-washington-briefing` flips pending→hit.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-29/openai-ceo-sam-altman-discusses-next-ai-model-with-us-lawmakers)) ⟨daily 2026-07-31⟩
+- **Nothing new on the framework itself** — checked directly: no
+  permanent CAISI director named yet (Arvind Raman still acting), and no
+  sign the §3(b) 30-day voluntary-access framework or the classified
+  NSA-led threshold has been announced. Both remain due tomorrow, 08-01,
+  unchanged. ⟨daily 2026-07-31⟩
 
 ## 2026-07-28 — Labs push back on the Kill Switch Act
 

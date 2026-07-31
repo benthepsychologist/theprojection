@@ -3,7 +3,7 @@ title: Son All-In
 lens: global-capital
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-28
+last_seen: 2026-07-31
 weight: 2
 entities:
 - softbank
@@ -17,6 +17,23 @@ blurb: 'The empire''s concentration play, assembled from pieces other threads ca
   everything else. Track: the loan stack''s health vs the AI-credit repricing, any
   forced Arm monetization, Stargate milestones.'
 ---
+
+## 2026-07-31 — Q1 earnings date was wrong (real date 08-06); stock hits limit-up on the Tokyo AI rally
+
+- **The ledger's SoftBank Q1 FY26 earnings date was wrong, not slipped** —
+  SoftBank's own IR page shows the Q1 FY2026 briefing scheduled for
+  **2026-08-06** (report disclosed 3:30pm JST, briefing 4:30pm JST); all
+  Q1 materials still show placeholders as of this check. The prior
+  07-30 date traced to a single uncorroborated secondary source.
+  ([SoftBank Group IR](https://group.softbank/en/event/earnings_2026q1)) ⟨daily 2026-07-31⟩
+- **SoftBank shares hit the exchange's daily limit-up (+12-15%, to
+  ~5,322 yen) and Arm rose 9% overnight**, part of a broad Tokyo
+  AI/semiconductor rally (Nikkei 225 +4.37%, Advantest and Tokyo
+  Electron also limit-up) triggered by strong US tech earnings —
+  reversing the "rotation away from chips" framing that closed out
+  07-29's Arm earnings coverage one trading day later, independent of
+  SoftBank's own still-unreported results.
+  ([Bloomberg Japan](https://www.bloomberg.com/jp/news/articles/2026-07-31/TJ0K57KJH6V400), [Nikkei](https://www.nikkei.com/article/DGXZQOFL3119J0R30C26A7000000/)) ⟨daily 2026-07-31⟩
 
 ## 2026-07-28 — The bridge widens, and gets a maturity date
 

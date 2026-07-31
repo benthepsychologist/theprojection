@@ -3,7 +3,7 @@ title: China's Stack
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-28
+last_seen: 2026-07-31
 weight: 3
 entities:
 - zhipu-ai
@@ -17,6 +17,16 @@ blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3
   rules; September US-China talks) plus Beijing''s own proposed export controls on
   its models/chips. US chip-equity reaction is the measure.'
 ---
+
+## 2026-07-31 — OpenAI cuts GPT-5.6 pricing 80%, read by the press as a China-pressure response
+
+- **OpenAI cut GPT-5.6 Luna pricing 80% (Terra 20%)** — press coverage
+  frames it as a response to cheap Chinese open-weight competition
+  (DeepSeek, Kimi K3, MiniMax) undercutting on price, though OpenAI's own
+  stated rationale was infrastructure efficiency (GPU utilization,
+  speculative decoding) — the China-competition read is press inference,
+  not a company statement.
+  ([the-decoder](https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model/), [CNBC](https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html)) ⟨daily 2026-07-31⟩ — confidence: medium on the causal framing specifically.
 
 ## 2026-07-30 — Moonshot's raise closes smaller than reported; DeepSeek pauses its own
 
