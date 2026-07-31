@@ -10,11 +10,21 @@
      Server-rendered from data/payload.json, deliberately: no JS needed to
      see it, nothing to fail, present in the HTML source.
 
-     DISMISSAL (Ben, 2026-07-29): "click to close... stays closed.
-     reappears on reload." So it is deliberately IN-MEMORY ONLY — no
-     cookie, no sessionStorage, no query param. Closing removes the node
-     for this view; a reload brings it back. That is the whole spec, and
-     it is the reason there is no persistence code here to go wrong.
+     DISMISSAL (Ben, 2026-07-29; REVERSED 2026-07-31 — "once I click it
+     away it needs to stay gone. They are even accumulating over time!
+     And they respawn on every page load."): the original spec was
+     deliberately in-memory-only, on the theory that a rare single flash
+     reappearing once per session was fine. It stopped being fine the
+     moment a second concurrent flash landed (both AGENTS.md's own bar
+     and STATUS.md call two "exceptional," not impossible) — two
+     un-dismissable banners stacking on every reload is what actually
+     prompted the reversal. Dismissal is now keyed by the flash's own
+     `id` in localStorage, so it survives reloads; a flash a viewer
+     already dismissed will not come back unless flash.yaml assigns a
+     genuinely NEW id (a new event never reappears as "already seen" by
+     accident, since ids are per-event). No expiry/pruning on the stored
+     id list — at "normally at most one, two is exceptional" flashes
+     ever, it will never grow large enough to matter.
 
      Brand: this uses INK, not a new hue. --live (#E01279) is reserved for
      selection / "changed this week" and is NOT available here; --lens-mh
@@ -23,7 +33,7 @@
      rather than importing an alert palette that would fight the mark. */}}
 {{ with .Site.Data.payload }}
   {{ range where .flash "severity" "critical" }}
-  <aside class="flash" role="alert" aria-label="Breaking">
+  <aside class="flash" role="alert" aria-label="Breaking" data-flash-id="{{ .id }}">
     <div class="flash-inner">
       <button type="button" class="flash-close" aria-label="Dismiss this flash">&times;</button>
       <p class="flash-kicker">Flash · {{ .date }}</p>
@@ -39,13 +49,38 @@
   {{ end }}
 {{ end }}
 <script>
-/* In-memory only, by design (see comment above): no storage, so a reload
-   restores the rail. Delegated so it costs one listener regardless of how
-   many rails render. */
-document.addEventListener("click", function (ev) {
-  var b = ev.target.closest && ev.target.closest(".flash-close");
-  if (!b) return;
-  var rail = b.closest(".flash");
-  if (rail) rail.remove();
-});
+/* Persisted via localStorage, keyed by the flash's own id (see comment
+   above — reversed 2026-07-31 from the original in-memory-only spec).
+   Still server-rendered with no JS required to see a flash; JS only
+   ever HIDES one already on the page, never shows one. */
+(function () {
+  var KEY = "kestrel-dismissed-flashes";
+  function readDismissed() {
+    try { return JSON.parse(localStorage.getItem(KEY) || "[]"); }
+    catch (e) { return []; }
+  }
+  function hideDismissed() {
+    var dismissed = readDismissed();
+    if (!dismissed.length) return;
+    document.querySelectorAll(".flash[data-flash-id]").forEach(function (rail) {
+      if (dismissed.indexOf(rail.getAttribute("data-flash-id")) !== -1) rail.remove();
+    });
+  }
+  hideDismissed();
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest(".flash-close");
+    if (!b) return;
+    var rail = b.closest(".flash");
+    if (!rail) return;
+    var id = rail.getAttribute("data-flash-id");
+    if (id) {
+      var dismissed = readDismissed();
+      if (dismissed.indexOf(id) === -1) {
+        dismissed.push(id);
+        try { localStorage.setItem(KEY, JSON.stringify(dismissed)); } catch (e) {}
+      }
+    }
+    rail.remove();
+  });
+})();
 </script>
