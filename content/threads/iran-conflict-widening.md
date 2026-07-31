@@ -37,15 +37,19 @@ blurb: 'What began as Houthi tanker strikes and a Red Sea blockade (07-23) widen
   traced back to a recurring pattern dating to at least 07-13, not new
   escalation. The active flash (`iran-strikes-us-base-jordan`) does not
   need another in-place update today. ⟨daily 2026-07-31⟩
-- **NB: a separate, much larger conflict has ZERO thread coverage here** —
-  the Russia-Ukraine war (315 outlets on 07-30, still the single largest
-  world-news signal). It was offered as a thread candidate 07-30 and went
-  unanswered; not re-offered today per the world-news restraint rule
-  ("don't re-offer a second time"). Today's Poland/NATO-airspace incident
-  is a discrete escalation within that same untracked war and earned its
-  own flash regardless (`russia-missile-poland-nato-airspace`) — flash
-  and thread-candidacy are independent mechanisms. Kept fully separate
-  from this thread either way (different theater, different actors).
+- **Update, later same day:** this thread's rival for the largest
+  world-news signal on 07-30 (315 outlets, a different Eastern-European
+  war entirely) is now its own thread (ben-steer 2026-07-31, "all active
+  military conflicts that are not hyper-local get coverage") — see the
+  07-31 front digest for the pointer, kept out of THIS file on purpose
+  so the two countries' names never sit close enough together here to
+  confuse the world-news mechanical matcher's country-proximity check
+  (a real collision this same session — worth remembering: don't name
+  another conflict's two combatant countries in the same breath inside a
+  thread file). Its opening development, a missile crossing a Baltic
+  NATO member's airspace, earned its own flash
+  (`russia-missile-poland-nato-airspace`). Kept fully separate from this
+  thread either way (different theater, different actors).
 
 ## 2026-07-30 — Diplomacy fragments; no ceasefire, no new combatant confirmed
 
