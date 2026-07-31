@@ -28,7 +28,7 @@ sweeping public sources, curating each day, tracking threads over time —
 happens in kestrel, a private tool that never publishes anything itself.
 What you're reading is generated from kestrel's tracked state and pushed
 here: Hugo renders it, Cloudflare serves it, nothing runs server-side. The
-site's own code is public and [MIT-licensed](https://github.com/benthepsychologist/theprojection)
+site's own code is public and [MIT-licensed](https://github.com/benthepsychologist/theprojection-site)
 if you want to see exactly how a thread becomes a page.
 
 **What's at the top of every page.** Each page opens with a readout in
@@ -56,4 +56,4 @@ tracked timeline for pasting into whatever AI chat you already use — that's
 how I actually interrogate one when something looks off.
 
 Questions, corrections, or something worth tracking that isn't here yet:
-open an issue on [the site's repo](https://github.com/benthepsychologist/theprojection).
+open an issue on [the site's repo](https://github.com/benthepsychologist/theprojection-site).
