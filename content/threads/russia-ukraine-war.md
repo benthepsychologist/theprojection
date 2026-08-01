@@ -21,6 +21,30 @@ blurb: 'The single largest signal in kestrel''s own mechanical world-news sweep,
   if and when that read becomes substantial enough to carry on its own.'
 ---
 
+## 2026-07-31 (later) — Russia strikes Kyiv directly: 9+ killed, and Poland pointedly does not invoke Article 4
+
+- **Russia struck Kyiv overnight 07-31→08-01 with 35 missiles and 185
+  drones, killing at least 9 and wounding 28, four of them children**; a
+  residential building in the Shevchenkivskyi district partially
+  collapsed. The deadliest single event in this war during the window,
+  and materially bloodier than the NATO-airspace incursion that opened
+  this thread two days earlier — the incursion was the diplomatic event,
+  this was the human one.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/1/russian-missile-attack-kills-three-in-ukraines-kyiv) ·
+  [AP via KSAT](https://www.ksat.com/news/world/2026/08/01/russia-hits-ukrainian-capital-with-ballistic-missiles-and-drones-killing-at-least-9/)) ⟨daily 2026-07-31⟩
+- **Poland did NOT invoke NATO Article 4** over the Kh-101 incursion — a
+  deliberate contrast with its own September 2025 response to a drone
+  incursion, when it did. Tusk convened an emergency coordination group
+  and took bilateral solidarity pledges instead. A negative finding worth
+  keeping: the alliance's formal consultation machinery was specifically
+  not triggered, which bounds how far this escalated institutionally and
+  is the thing to watch if a second incursion follows. ⟨daily 2026-07-31⟩
+- **Zelenskyy is pressing Washington for a licence to manufacture Patriot
+  missiles domestically; Trump has declined so far** — "we have not
+  agreed to that... it's a hard thing to give away that kind of
+  technology." The first Western-aid decision point this thread has
+  logged. ⟨daily 2026-07-31⟩
+
 ## 2026-07-31 — Thread opened; a NATO-airspace incident is the opening development
 
 - **Ben, on the standing coverage question: "track Russia-Ukraine. All

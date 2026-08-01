@@ -3,7 +3,7 @@ title: ASIC Tolls
 lens: ai
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-28
+last_seen: 2026-07-31
 weight: 2
 entities:
 - broadcom
@@ -19,15 +19,36 @@ blurb: 'Broadcom''s two tolls. ①The custom-ASIC co-design book — FIVE majors
   earnings (~early Sept, unconfirmed).'
 ---
 
-## 2026-07-30 — A new toll layer: Broadcom and Samsung sign a $200B partnership through 2030
+## 2026-07-31 — MediaTek buys into the toll layer with a $5B financing budget
 
-- **Broadcom and Samsung signed a ~$200B partnership through 2030** (broke
-  07-28, still developing) — two parts: Samsung supplies Broadcom **HBM
-  memory** (the primary driver — HBM costs up ~20% in Q1), and **Samsung
-  Foundry manufactures some Broadcom chips** (sub-2nm "next-gen
-  communications/wireless chips"); an advanced-packaging piece is only
-  "expected to extend," not finalized. ([HPCwire](https://www.hpcwire.com/) ·
-  [MarketBeat](https://www.marketbeat.com/)) ⟨daily 2026-07-30⟩
+- **MediaTek's board approved a $5B discretionary financing budget for AI
+  data-center ASICs**, disclosed on its Q2 earnings call — CEO Rick Tsai
+  sized the custom-AI-chip market at **$80B by 2027** (raised from a prior
+  $70-80B range) and set a **15-20% share** target, against smartphone
+  chip revenue down 20% in the quarter. A second serious bidder for the
+  toll position this thread tracks, funding it explicitly rather than
+  opportunistically.
+  ([The Star](https://www.thestar.com.my/tech/tech-news/2026/07/31/mediatek-plans-5-billion-financing-for-ai-data-center-chips)) ⟨daily 2026-07-31⟩
+
+## 2026-07-25 — A new toll layer: Broadcom and Samsung sign a >$200B MOU through 2030
+
+<!-- DATE CORRECTED ⟨finalize 2026-08-01⟩: this block was previously dated
+     2026-07-30 and its text said the story "broke 07-28". Both were wrong.
+     Verified against Samsung's own newsroom release, datelined July 25 and
+     using "today announced" language; CNBC, Fortune and US News published
+     the same day, and no Broadcom 8-K exists. The thread had accumulated
+     three different dates for one event (07-25 actual, 07-28 claimed,
+     07-30 filed) — the classic aggregation re-index. -->
+
+- **Broadcom and Samsung signed a memorandum of understanding worth more
+  than $200B through 2030** — announced 2026-07-25 at an event in San
+  Francisco. Note the instrument: an **MOU, not a definitive contract**,
+  which is why no 8-K accompanies it. Three parts: Samsung supplies
+  Broadcom **HBM4/HBM4E memory** (the primary driver — HBM costs up ~20%
+  in Q1), **Samsung Foundry** runs 2nm-and-below wafer manufacturing for
+  Broadcom, and **advanced packaging** (2.3D/2.5D) is included rather than
+  merely "expected to extend."
+  ([Samsung Global Newsroom, primary](https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies)) ⟨daily 2026-07-30, corrected 2026-08-01⟩
 - **A genuinely new toll layer**, distinct from the co-design customer
   book (Google/Meta/OpenAI/Apple/ByteDance): memory-supply lock-in plus a
   foundry hedge beyond TSMC-exclusivity. Cross-references

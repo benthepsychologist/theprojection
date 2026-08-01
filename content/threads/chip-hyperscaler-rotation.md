@@ -3,7 +3,7 @@ title: The Great Rotation
 lens: global-capital
 status: open
 opened: 2026-07-29
-last_seen: 2026-07-30
+last_seen: 2026-07-31
 weight: 2
 entities: []
 thread_kind: story

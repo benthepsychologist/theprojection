@@ -20,6 +20,38 @@ blurb: 'What began as Houthi tanker strikes and a Red Sea blockade (07-23) widen
   aggregators frame this as a "US-Israel-Iran war" with nothing found to confirm it.'
 ---
 
+## 2026-07-31 (later) — Trump orders weekend strikes; the IRGC hits tankers in Hormuz and claims a Kuwait airbase strike
+
+<!-- The block below concluded "no material escalation" as of 09:15 ET.
+     That was accurate at 09:15 and was overtaken within hours; this block
+     supersedes that reading for the rest of the day. -->
+
+- **Trump ordered new strikes on Iran "as soon as this weekend"** — said
+  at a Friday Cabinet meeting at Camp David, that the US "will be hitting
+  them very hard," with reported targets including missile sites, energy
+  infrastructure and possibly nuclear-linked sites, framed as a two-week
+  bombardment plan. ⚠ **Not executed as of this digest-day's close** — an
+  announced intention, and logged as one.
+  ([Bloomberg, citing WSJ](https://www.bloomberg.com/news/articles/2026-07-31/trump-orders-attacks-on-iran-as-soon-as-this-weekend-wsj-says) ·
+  [Axios](https://www.axios.com/2026/07/31/trump-iran-strikes-energy-infrastructure-war)) ⟨daily 2026-07-31⟩
+- **The IRGC struck two tankers in the Strait of Hormuz**, saying it
+  disabled vessels transiting under unauthorised routes with US military
+  escort — the first time the blockade has moved from threat and
+  underwriting pressure to a direct strike on transiting vessels. This,
+  not the Saudi alliance, is what moved Brent on Friday; the capital read
+  is on `red-sea-oil-shock`.
+  ([Washington Times](https://www.washingtontimes.com/news/2026/jul/31/irgc-says-struck-two-tankers-strait-hormuz-escorted-us-military/)) ⟨daily 2026-07-31⟩
+- **Iran claimed a drone strike on US assets at Kuwait's Ahmad Al-Jaber
+  airbase**, framed as retaliation for US strikes on Iranian targets the
+  previous day. An Iranian military claim, reported via Al Jazeera —
+  treat the claim as sourced, the damage as unverified.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/7/31/irgc-strikes-us-targets-in-kuwait-a-day-after-us-hits-iran-latest-events)) ⟨daily 2026-07-31⟩
+- **Saudi Arabia is reportedly preparing a ground and naval offensive
+  against the Houthis**, redeploying troops toward al-Bayda governorate.
+  If it happens, it moves Saudi Arabia from air participant and coalition
+  convener to ground combatant in Yemen — a threshold this thread should
+  watch for explicitly. Reported, not confirmed. ⟨daily 2026-07-31⟩
+
 ## 2026-07-31 — Saudi Arabia launches a 14-nation Maritime Defense Alliance; no material escalation otherwise
 
 - **Saudi Arabia formally launched its Maritime Defense Alliance** —

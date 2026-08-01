@@ -3,7 +3,7 @@ title: Circular Financing
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-29
+last_seen: 2026-07-31
 weight: 3
 entities:
 - nvidia
@@ -16,6 +16,39 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
   A correction here hits everything in radar Q1/Q2.'
 ---
+
+## 2026-07-30 (later) — The first AI-thesis fund broken by the AI trade: Situational Awareness force-sold to Citadel
+
+<!-- Added at finalize ⟨2026-08-01⟩. Missed on the day; caught by the
+     coverage critic — Money Stuff led with it and six-plus outlets
+     carried it. The single biggest miss of 07-30. -->
+
+- **Leopold Aschenbrenner's Situational Awareness fund was forced to sell
+  its entire public-equity book to Citadel after margin calls.** Up
+  roughly **439% through June** on concentrated, leveraged
+  AI-infrastructure positions, it fell about **67% in July**; at roughly
+  **4x leverage** that triggered margin calls from **Goldman Sachs,
+  JPMorgan and Bank of America**. Rather than raise fresh capital it sold
+  the public book to Ken Griffin's Citadel at distressed prices, down
+  from a peak NAV near **$45B**, while retaining its private positions
+  including its Anthropic stake.
+  ([CNBC](https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html) ·
+  [Money Stuff, 07-30](https://www.bloomberg.com/opinion/newsletters/2026-07-30/the-situation-deteriorated)) ⟨daily 2026-07-30, added 2026-08-01⟩
+- **Why it belongs to this thread specifically:** the failure mode is the
+  one this thread exists to watch — leverage stacked on AI-infrastructure
+  proxies, with the private leg (an Anthropic stake) surviving precisely
+  because it is not marked daily. The public book was the liquid,
+  marginable expression of a thesis whose illiquid expression is still
+  carried at par. That asymmetry is the circularity risk in miniature.
+  ⟨daily 2026-07-30, added 2026-08-01⟩
+- ⚠ **Position list and stake valuation unconfirmed.** Two independent
+  sweeps returned *different* holdings (one naming SK Hynix, SanDisk,
+  Nebius, CoreWeave and Micron; the other Riot, CleanSpark and Bloom
+  Energy) and different Anthropic-stake figures. The forced sale, the
+  three lenders, the leverage ratio and Citadel as buyer are corroborated
+  across six-plus outlets; the specific holdings are not. Do not cite a
+  position list from this entry without re-verifying it.
+  ⟨daily 2026-07-30, added 2026-08-01⟩
 
 ## 2026-07-30 — Microsoft's earnings put a number on the divergence
 

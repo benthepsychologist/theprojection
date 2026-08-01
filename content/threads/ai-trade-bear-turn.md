@@ -3,7 +3,7 @@ title: AI Bear Turn
 lens: global-capital
 status: open
 opened: 2026-07-27
-last_seen: 2026-07-30
+last_seen: 2026-07-31
 weight: 2
 entities: []
 thread_kind: story
@@ -14,6 +14,29 @@ blurb: 'Is the tape turning against the AI trade as a whole? Distinct from the c
   breadth (is it AI-specific or macro), the earnings verdicts, and whether the drawdown
   changes actual capex behavior.'
 ---
+
+## 2026-07-31 — July closes with the AI complex carrying the month's losses almost alone
+
+- **July finished with the Nasdaq down 3.2%, the S&P 500 roughly flat at
+  -0.1%, and the Dow up 0.32%** — a fourth straight monthly gain for the
+  Dow. The spread between a flat S&P and a -3.2% Nasdaq is the single
+  cleanest number on what the month did: the damage was concentrated in
+  the AI complex rather than distributed across the market, which is this
+  thread's whole question stated as one figure. Deltas computed from index
+  levels directly and cross-checked against independently stated monthly
+  percentages. ⟨daily 2026-07-31⟩
+- **Friday itself closed higher — S&P 7,489.72 (+0.70%), Nasdaq
+  25,373.85 (+1.00%), Dow 52,485.03 (+0.53%)** — but on single-name
+  earnings (Amazon +15.3%, Apple -7.4%) rather than a chip-led bid; the
+  AI/semi complex was mixed, not uniformly rallying. A strong last
+  session only partly repaired the month.
+  ([Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html)) ⟨daily 2026-07-31⟩
+- **Micron fell 4.3-6.0%**, tied to forced-liquidation selling out of the
+  Situational Awareness unwind (see `ai-circular-financing-risk`) and
+  Michael Burry adding to a short — a direct, traceable line from one
+  leveraged fund's failure into a specific name's tape. ⚠ Friday closes
+  for Nvidia, AMD and TSMC could not be verified and are deliberately
+  omitted rather than approximated. ⟨daily 2026-07-31⟩
 
 ## 2026-07-30 (overnight) — The four prints landed: rewarded for returns, punished for the bet
 

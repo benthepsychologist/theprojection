@@ -18,6 +18,22 @@ blurb: 'Houthi (Iran-backed) forces struck two Saudi oil tankers and declared a 
   layer, and how far it feeds into Fed policy.'
 ---
 
+## 2026-07-31 — The blockade produces its first direct strike on transiting tankers
+
+- **Iran's IRGC struck two tankers in the Strait of Hormuz**, saying it
+  disabled vessels transiting under unauthorised routes with US military
+  escort. This is the threshold this thread has been watching for: the
+  pressure has been exercised through underwriting, insurance extortion
+  and threat up to now — this is the first direct action against ships
+  actually moving through.
+  ([Washington Times](https://www.washingtontimes.com/news/2026/jul/31/irgc-says-struck-two-tankers-strait-hormuz-escorted-us-military/)) ⟨daily 2026-07-31⟩
+- **Brent closed around $88-90/bbl, up roughly 1.1-1.2%** — and the
+  attribution matters: the move tracked the tanker strikes, not the
+  43-nation Saudi maritime coalition announced the day before. A
+  coalition announcement did not move the price; a strike did. ⚠ Sources
+  spread across the range ($90.12 in two recaps against ~$88 in a direct
+  fetch), so this is a range, not a print. ⟨daily 2026-07-31⟩
+
 ## 2026-07-29/30 — The underwriting layer gets sanctioned directly
 
 - **US Treasury sanctioned 10 firms and 8 tankers**, including Persian

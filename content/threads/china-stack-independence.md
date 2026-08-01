@@ -18,6 +18,39 @@ blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3
   its models/chips. US chip-equity reaction is the measure.'
 ---
 
+## 2026-07-31 (later) — DeepSeek ships V4-Flash, and it beats DeepSeek's own flagship
+
+- **DeepSeek put `V4-Flash-0731` into public API beta, claiming it beats
+  its own V4-Pro-Preview flagship on all nine published agent and coding
+  benchmarks.** A cheaper model outscoring the vendor's own top-line
+  model — from the lab whose price pressure the OpenAI Luna cut below is
+  read as a response to. The sequencing matters for this thread: the US
+  price cut came first, this shipped hours later.
+  ([TechNode](https://technode.com/2026/07/31/deepseek-puts-v4-flash-api-into-public-beta/)) ⟨daily 2026-07-31⟩
+- **Correction to the day's framing:** the 07-31 digest recorded "nothing
+  shipped today," which was true of the four US labs it checked and wrong
+  as a statement about the day. Logged so the pattern is visible — the
+  release-watch question this thread carries is not a US-only question.
+  ⟨daily 2026-07-31, corrected 2026-08-01⟩
+
+## 2026-07-30 (later) — DeepSeek is building a 1GW campus in Inner Mongolia and may file to IPO this year
+
+<!-- Added at finalize ⟨2026-08-01⟩; Bloomberg's tech-capital lead for
+     07-30, missed on the day and caught by the coverage critic. -->
+
+- **DeepSeek is developing a roughly 1GW AI data-center campus in
+  Ulanqab, Inner Mongolia**, targeting partial capacity late 2027/early
+  2028, building some itself and leasing the rest, with the chip vendor
+  (Nvidia vs. Huawei) still undecided — that last point being the part
+  this thread cares about most.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-30/deepseek-is-developing-massive-ai-data-center-in-inner-mongolia)) ⟨daily 2026-07-30, added 2026-08-01⟩
+- **Separately, DeepSeek could file for an IPO as soon as this year**,
+  following a reported $7B raise at roughly a $50B valuation. Read
+  alongside the 07-30 note that DeepSeek had *paused* a larger ~$74B
+  raise: the pause was of one round, not of the capital programme.
+  Chinese labs are now raising infrastructure financing at US scale.
+  ⟨daily 2026-07-30, added 2026-08-01⟩
+
 ## 2026-07-31 — OpenAI cuts GPT-5.6 pricing 80%, read by the press as a China-pressure response
 
 - **OpenAI cut GPT-5.6 Luna pricing 80% (Terra 20%)** — press coverage

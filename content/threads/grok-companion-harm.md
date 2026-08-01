@@ -21,6 +21,30 @@ blurb: 'CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct: (A
   Cross-refs ai-therapy-regulatory-reckoning.'
 ---
 
+## 2026-07-31 (later) — xAI loses a second ruling the same day; Minnesota's nudify ban takes effect
+
+- **A federal judge in Minnesota denied xAI's bid to block HF1606, and
+  the statute took effect 2026-08-01 as scheduled.** Judge Donovan W.
+  Frank held that xAI's near-three-month delay between the law's signing
+  and its 07-27 suit "suggests that harm is not immediate" — the
+  filed-is-not-a-stay distinction the ledger entry was written to test,
+  resolving exactly as written. The law bars "nudifying" images or video
+  of real people, with civil penalties up to $500,000 per violation and a
+  private right of action.
+  ([Minnesota Legislature, primary](https://www.house.mn.gov/NewLaws/story/2026/5741) ·
+  [NBC News](https://www.nbcnews.com/tech/elon-musk/judge-denies-request-elon-musks-xai-block-mn-nudification-ban-rcna589993)) ⟨daily 2026-07-31⟩
+- **Not adjudicated on the merits — the real test is 08-19.** Frank will
+  treat the TRO motion as a request for a preliminary injunction, with a
+  hearing in St. Paul on 2026-08-19, the state's opposition due 08-12 and
+  xAI's reply due 08-17. Logged as `xai-mn-preliminary-injunction`; a slip
+  will show in the briefing dates before it shows in the hearing date.
+  (No. 0:26-cv-03425, D. Minn.) ⟨daily 2026-07-31⟩
+- **Two adverse rulings against xAI, in two different federal courts, in
+  two unrelated cases, on one day** — this one (D. Minn., a First
+  Amendment challenge to a state statute) and the Jane Doe pseudonymity
+  ruling below (N.D. Cal., the deepfake suit). Worth not conflating: they
+  share a defendant and a date and nothing else. ⟨daily 2026-07-31⟩
+
 ## 2026-07-31 — Court keeps the Jane Doe deepfake plaintiffs pseudonymous; a federal companion-chatbot bill surfaces
 
 - **A federal judge denied xAI's bid to unmask the Jane Doe plaintiffs**
