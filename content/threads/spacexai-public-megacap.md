@@ -20,6 +20,32 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   Anthropic lease-back is real revenue or circular financing. Q7 material.'
 ---
 
+## 2026-08-01 — SPCX trades ~20% below issue into an unconditional unlock
+
+- **SPCX closed 2026-08-01 at $108.37 against a $135.00 IPO price set
+  2026-06-11 and a $225.64 all-time high on 2026-06-16** — roughly 20%
+  below issue, not above it. ⚠ Price is single-source (Investing.com),
+  internally consistent with the reported 52-week range but not pulled
+  from exchange or SEC tick data.
+  ([Investing.com](https://www.investing.com/news/stock-market-news/spacex-ipo-lockup-expiry-123b-in-shares-set-to-unlock-in-early-august-2026-93CH-4796311)) ⟨daily 2026-08-01⟩
+- **Consensus for the 08-04 Q2 report is roughly $6.9B revenue with EPS
+  estimates spanning −$1.26 to +$0.33, the spread driven by AI-segment
+  losses** — Starlink/Connectivity is the only profitable segment, at
+  $1.19B operating profit on $3.26B revenue in the most recent quarter
+  cited, against a $2.47B AI-segment operating loss.
+  ([CNBC](https://www.cnbc.com/2026/07/21/spacex-spcx-earnings-lock-up-expiration.html)) ⟨daily 2026-08-01⟩
+- **The 08-04 earnings date triggers an unconditional unlock of up to
+  911.5M shares — about 20% of restricted holdings, roughly $123B at the
+  price cited in reporting — opening 08-06, with further ~7% tranches
+  around 08-21 and 09-10.**
+  ([CNBC](https://www.cnbc.com/2026/07/21/spacex-spcx-earnings-lock-up-expiration.html)) ⟨daily 2026-08-01⟩
+- **A separate conditional 10% tranche requires the stock to trade 30%
+  above IPO, at $175 or better** — at roughly $108 that trigger is
+  nowhere close, so only the unconditional tranche is realistically in
+  play. ⟨daily 2026-08-01⟩
+- **Morgan Stanley's Adam Jonas reiterated Overweight with a $300 price
+  target; consensus is Moderate Buy at 23 Buy / 6 Hold / 1 Sell.** ⟨daily 2026-08-01⟩
+
 ## 2026-07-31 — WSJ: Tesla weighing a China-business sale ahead of a possible Tesla-SpaceX merger; Musk denies it
 
 - **WSJ reported Tesla executives were told to prepare options

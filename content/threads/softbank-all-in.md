@@ -18,6 +18,28 @@ blurb: 'The empire''s concentration play, assembled from pieces other threads ca
   forced Arm monetization, Stargate milestones.'
 ---
 
+## 2026-08-01 — The $40B OpenAI bridge loan's full structure, ahead of the 08-06 print
+
+- **The $40B bridge loan splits $30B flowing to OpenAI via Vision Fund 2
+  and $10B for general corporate use, drawn in $10B tranches on
+  2026-04-01, 2026-07-01 and a scheduled 2026-10-01.**
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-27/softbank-s-40-billion-loan-for-openai-stake-gets-21-new-lenders)) ⟨daily 2026-08-01⟩
+- **Lead arrangers are JPMorgan, Goldman Sachs, Mizuho, SMBC and MUFG;
+  the 07-27 syndication allocated roughly $7B across 21 new lenders,
+  with First Abu Dhabi Bank, GIC and Standard Chartered each taking about
+  $1B.**
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-27/softbank-s-40-billion-loan-for-openai-stake-gets-21-new-lenders)) ⟨daily 2026-08-01⟩
+- **Effective interest cost is reported at approximately 6.14% (SOFR plus
+  roughly 250bps), with the loan maturing 2027-03-25** — the maturity
+  date matches what this thread already had on record; the interest cost
+  is new.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-27/softbank-s-40-billion-loan-for-openai-stake-gets-21-new-lenders)) ⟨daily 2026-08-01⟩
+- **Arm's most recent quarterly print — record revenue of $1.289B, +22%
+  — was followed by shares falling about 7% after hours to $209 on GAAP
+  operating margin compression to 7.1% from 10.8%; SoftBank fell 3.2% to
+  ¥6,367 in the following session, compounded by an HSBC downgrade.** ⚠
+  These price moves are secondary-sourced and not exchange-verified. ⟨daily 2026-08-01⟩
+
 ## 2026-07-31 — Q1 earnings date was wrong (real date 08-06); stock hits limit-up on the Tokyo AI rally
 
 - **The ledger's SoftBank Q1 FY26 earnings date was wrong, not slipped** —

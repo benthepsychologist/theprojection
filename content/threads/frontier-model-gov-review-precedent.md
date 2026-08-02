@@ -20,6 +20,44 @@ blurb: 'The gpt-5.6 gating dynamic made permanent — and it''s all one buildout
   in a year — can it run classified review?); the first model actually gated.'
 ---
 
+## 2026-08-02 — The EU AI Act becomes enforceable while Washington's own deadline stays silent
+
+- **From 08-02 the EU AI Office and member-state authorities begin
+  actively enforcing the AI Act against general-purpose AI providers**,
+  with power to request technical documentation, evaluate models, require
+  corrective measures and fine up to €15M or 3% of global turnover.
+  ([European Commission](https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august)) ⟨daily 2026-08-02⟩
+- **Article 50 transparency rules take effect the same day** across a much
+  broader set of systems than the GPAI chapter: chatbots must disclose
+  they are AI, deepfakes must be labelled, and AI-generated or altered
+  content must carry machine-readable marks.
+  ([European Commission](https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august)) ⟨daily 2026-08-02⟩
+- **The underlying GPAI obligations (Art. 53/55) and the GPAI Code of
+  Practice as their voluntary compliance route have applied since
+  2025-08-02** — the Code was finalised 2025-07-10 and Commission-endorsed
+  2025-08-01; today is when the obligations became enforceable, not when
+  they arrived.
+  ([European Commission](https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august)) ⟨daily 2026-08-02⟩
+- **Meta reversed its July 2025 refusal and signed the Code of Practice on
+  Transparency of AI-Generated Content** — the Article 50 code, a
+  different instrument from the Art. 53/55 GPAI Code that trade press
+  routinely conflates — in late July 2026, days before it bound; Google
+  signed the same code on 2026-07-24 while warning added complexity cuts
+  against EU competitiveness goals.
+  ([Meta](https://about.fb.com/news/2026/07/meta-is-signing-the-eu-ai-act-code-of-practice-on-transparency-of-ai-generated-content/)) ⟨daily 2026-08-02⟩
+- **The Digital Omnibus on AI deferred the high-risk obligations that
+  would otherwise also have landed on 2026-08-02**: Annex III standalone
+  systems to 2027-12-02 and Annex I embedded-product systems to
+  2028-08-02, with Article 6(1) classification rules to 2027-08-02; GPAI
+  enforcement and Article 50 dates were explicitly left untouched.
+  ([Gibson Dunn](https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/)) ⟨daily 2026-08-02⟩
+- **No enforcement action, fine or named-company penalty has been
+  announced** — 08-02 is the activation date, not an enforcement event.
+  ⟨daily 2026-08-02⟩
+- **Re-checked on 08-02: still no Federal Register notice, NIST or CISA
+  publication, or Treasury/OSTP statement** on either EO 14409 Section 3
+  deliverable, dated 08-01 or 08-02. ⟨daily 2026-08-02⟩
+
 ## 2026-07-31 — Altman's Washington briefing confirmed; EO 14409 deliverables still due tomorrow
 
 - **Confirmed: Altman briefed Congress and the administration on OpenAI's

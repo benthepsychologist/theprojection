@@ -3,22 +3,110 @@ title: Iran's Widening War
 lens: world-news
 status: open
 opened: 2026-07-23
-last_seen: 2026-07-31
+last_seen: 2026-08-02
 weight: 3
 entities: []
 thread_kind: story
-blurb: 'What began as Houthi tanker strikes and a Red Sea blockade (07-23) widened
-  past the 07-28 Iranian missile attack on a US base in Jordan into direct US strikes
-  inside Iran, Saudi Arabia joining as a combatant in Iraq, and strikes reaching Kuwait
-  and Egypt for the first time. Diplomacy is now fragmenting rather than converging
-  — Saudi Arabia building an international protection coalition, China running its
-  own separate track with the Houthis — with no ceasefire and no further confirmed
-  combatant as of 07-30. This is the conflict for its own sake — who''s fighting whom,
+blurb: '⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spent its first
+  ten days framing the war as beginning 07-23/07-28. That was wrong by five months.
+  The war began 2026-02-28, when a US-Israeli opening strike wave killed Iran''s Supreme
+  Leader ALI KHAMENEI at his office in Tehran. His son MOJTABA KHAMENEI was named
+  third Supreme Leader by the Assembly of Experts and took office 2026-03-08; he has
+  been strikingly little-seen since (a written "sacred unity" statement mid-July,
+  read out by an anchor rather than delivered). Confirmed by Iran''s OWN state media
+  (Press TV, Tasnim, Mehr; a 40-day mourning period was declared) plus Al Jazeera,
+  NBC and Britannica — a hostile power''s state media confirming the killing of its
+  own head of state is close to unfalsifiable. Found twice independently on 2026-08-02,
+  by two sweeps that did not share sources (a world-news check and a shipping/CRS-sourced
+  capital check) — cross-sweep agreement is why it is being treated as established
+  rather than as one agent''s claim. The 07-23 Houthi tanker strikes and the 07-28
+  Iranian missile attack on the US base in Jordan are PHASE BOUNDARIES inside a five-month
+  war, not its origin; 07-28 is specifically the resumption of Iranian strikes on
+  US bases after a brief Trump-ordered pause. EVERYTHING BEFORE 2026-07-23 IS A GAP
+  — a `/crawl` backfill of 02-28 → 07-23 is the single biggest hole in this map. Correspondingly,
+  the caution this thread used to carry — that aggregators calling this a "US-Israel-Iran
+  war" were unconfirmed — was itself the error. They were right and this thread''s
+  scepticism was aimed the wrong way. ISRAEL IS A CO-BELLIGERENT and has been since
+  the opening wave; treat that as established, not as a claim needing a further check.
+  CURRENT STATE: after 07-28 the conflict widened into direct US strikes inside Iran,
+  Saudi Arabia joining as a combatant in Iraq, and strikes reaching Kuwait and Egypt
+  for the first time. On 07-31 Trump ordered fresh strikes "as soon as this weekend";
+  late on 08-01 he announced he was CANCELLING them, saying parameters of a deal had
+  been agreed requiring the complete reopening of the Strait of Hormuz and an end
+  to Iran''s nuclear threat, and that Israel joined the commitment. Iran, via Mehr,
+  called the deal claim "simply a new lie." The de-escalation is asserted by one side
+  and denied by the other — do NOT record it as a ceasefire, and do not let the cancellation
+  read as resolution. This is the conflict for its own sake — who''s fighting whom,
   where it''s widening, what diplomacy is doing about it. Its capital-markets and
-  underwriting read is a separate, deliberately distinct thread: `red-sea-oil-shock`.
-  Do not add Israel as a combatant without a dedicated primary-source check — several
-  aggregators frame this as a "US-Israel-Iran war" with nothing found to confirm it.'
+  underwriting read is a separate, deliberately distinct thread: `red-sea-oil-shock`.'
 ---
+
+## 2026-08-02 — ⚠️ ORIGIN CORRECTED: this war began 2026-02-28, and Iran's Supreme Leader was killed in its opening strike
+
+- **The war did not begin on 07-23 or 07-28. It began 2026-02-28**, when
+  a US-Israeli opening strike wave killed Supreme Leader **Ali Khamenei**
+  at his office in Tehran. Iran's own state media — Press TV, Tasnim,
+  Mehr — confirmed the death and a 40-day mourning period was declared.
+  ([Al Jazeera, 2026-02-28](https://www.aljazeera.com/news/2026/2/28/irans-supreme-leader-ali-khamenei-killed-in-us-israeli-attacks-reports)) ⟨daily 2026-08-02⟩
+- **Mojtaba Khamenei has been Supreme Leader since 2026-03-08**, named by
+  the Assembly of Experts, and has been strikingly little-seen in public
+  since — a written "sacred unity" statement in mid-July was read out by
+  an anchor rather than delivered by him.
+  ([Al Jazeera, 2026-03-08](https://www.aljazeera.com/news/2026/3/8/iran-names-khameneis-son-as-new-supreme-leader-after-fathers-killing-2) ·
+  [NBC News](https://www.nbcnews.com/world/iran/iran-supreme-leader-mojtaba-khamenei-rcna261645)) ⟨daily 2026-08-02⟩
+- **07-23 and 07-28 are phase boundaries, not origins** — 07-28
+  specifically is the resumption of Iranian strikes on US bases after a
+  brief Trump-ordered pause, not a first strike. Everything in this file
+  before 07-23 is missing and wants a `/crawl` backfill of 02-28 → 07-23,
+  the largest single gap in this map. ⟨daily 2026-08-02⟩
+- **This thread's own caution was aimed the wrong way.** Its watch text
+  warned against naming Israel a combatant "without a dedicated
+  primary-source check," treating aggregator framing of a
+  "US-Israel-Iran war" as unconfirmed. The aggregators were right; Israel
+  has been a co-belligerent since the opening wave, and Trump's 08-01
+  statement that "The Country of Israel joins me in this commitment" says
+  so publicly. ⟨daily 2026-08-02⟩
+- **How the error happened, which matters more than the error.** This
+  thread was split out of `red-sea-oil-shock` on 07-30 and inherited its
+  origin date — but that thread was opened 07-24 off a Brent spike. A
+  market reaction's date became a war's start date, and nothing ever
+  re-derived the conflict's timeline from a primary source. Worth checking
+  wherever else a thread was split from a parent. ⟨daily 2026-08-02⟩
+
+## 2026-08-02 — Iran denies the deal Trump says he cancelled strikes for; Saudi Arabia works the pause
+
+- **Iran rejected the deal claim outright**, with Mehr citing military
+  officials calling it "simply a new lie" and restating that the nuclear
+  programme is "purely peaceful"; Foreign Minister Abbas Araghchi warned
+  of a "decisive response" to any US or Israeli aggression. The
+  de-escalation is asserted by one party and denied by the other, and is
+  not recorded here as a ceasefire.
+  ([NPR](https://www.npr.org/2026/08/02/nx-s1-5917113/trump-says-hes-cancelling-iran-strikes-deal-pending)) ⟨daily 2026-08-02⟩
+- **Saudi Arabia moved to hold the pause open** — Crown Prince Mohammed
+  bin Salman called Trump, per Saudi state media, stressing "the need to
+  prioritize dialogue to reduce escalation," while Qatar and Pakistan are
+  reported working the Islamabad Memorandum framework alongside US envoy
+  Steve Witkoff toward an Iran-Oman arrangement to reopen Hormuz
+  commercial traffic.
+  ([Al Jazeera](https://www.aljazeera.com/news/liveblog/2026/8/2/iran-war-live-tehran-warns-of-decisive-response-to-any-us-aggression)) ⟨daily 2026-08-02⟩
+
+## 2026-08-01 — Trump cancels the strikes he ordered, claiming a Hormuz deal
+
+- **Trump cancelled the strikes on Iran he had ordered a day earlier**,
+  posting late on 08-01 that the US was "locked and loaded and ready to
+  go" but that Iran and other regional states had asked him to hold off
+  because "the perimeters of a deal has been agreed to," and that he
+  would cancel "subject to being able to rapidly make a DEAL."
+  ([NPR](https://www.npr.org/2026/08/02/nx-s1-5917113/trump-says-hes-cancelling-iran-strikes-deal-pending)) ⟨daily 2026-08-01⟩
+- **The terms he named were maximal** — the "Immediate, Complete, and
+  Total OPENING OF THE HORMUZ STRAIT" and an end to Iran's nuclear
+  threat — and he stated "The Country of Israel joins me in this
+  commitment," the clearest public confirmation of Israeli co-belligerence
+  to date. ⟨daily 2026-08-01⟩
+- **No strike was carried out on 08-01 or 08-02.** The Times of Israel's
+  08-01 liveblog records alert posture only, with Ben Gurion operating
+  normally, before the cancellation superseded the plan. The
+  ordered-but-unexecuted strike stayed unexecuted. ⟨daily 2026-08-01⟩
 
 ## 2026-07-31 (later) — Trump orders weekend strikes; the IRGC hits tankers in Hormuz and claims a Kuwait airbase strike
 

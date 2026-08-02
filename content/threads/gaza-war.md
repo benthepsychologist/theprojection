@@ -38,6 +38,24 @@ blurb: 'Opened on Ben''s steer 2026-08-01, after a disarmament framework announc
   still circulate; report both, resolve neither.'
 ---
 
+## 2026-08-02 — The deadliest day since the thread opened; Israel says there is no deal to halt attacks
+
+- **At least 13 Palestinians were killed on 08-02** in strikes on Gaza
+  City, Deir al-Balah, Khan Younis, Mawasi and Jabalia — the largest
+  single-day toll in weeks and a second consecutive day of strikes.
+  ([NBC News](https://www.nbcnews.com/world/gaza/israeli-strikes-kill-nine-gaza-israeli-minister-no-deal-rcna590436)) ⟨daily 2026-08-02⟩
+- **Israeli Energy Minister Eli Cohen said there is "no deal to halt
+  attacks on Gaza,"** that Hamas "must be dismantled" under the
+  US-brokered agreement, and floated Israel taking "full control" of the
+  enclave — which it already holds roughly 70% of — if Hamas does not
+  disarm.
+  ([NBC News](https://www.nbcnews.com/world/gaza/israeli-strikes-kill-nine-gaza-israeli-minister-no-deal-rcna590436)) ⟨daily 2026-08-02⟩
+- **Cumulative deaths since the 2025-10-10 ceasefire are cited at roughly
+  1,230 Palestinians and 4 Israeli soldiers** — figures vary between about
+  992 and 1,230 depending on cutoff date across trackers; recorded here as
+  a range, not a flat number.
+  ([NBC News](https://www.nbcnews.com/world/gaza/israeli-strikes-kill-nine-gaza-israeli-minister-no-deal-rcna590436)) ⟨daily 2026-08-02⟩
+
 ## 2026-08-01 — Thread opened; a disarmament framework is the opening development
 
 - **Opened on Ben's steer** — *"yes to gaza"*, answering the candidate

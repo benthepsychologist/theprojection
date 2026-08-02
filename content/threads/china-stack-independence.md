@@ -18,6 +18,32 @@ blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3
   its models/chips. US chip-equity reaction is the measure.'
 ---
 
+## 2026-08-02 — DeepSeek used for an autonomous attack campaign after Claude and Codex refused
+
+- **A Zhuhai-based threat actor using the aliases *knaithe* and *KnYuan*
+  wired DeepSeek into the open-source Hermes Agent framework**, drove it
+  from a single Telegram command, and ran an autonomous
+  scan-research-exploit pipeline against more than 460 internet-facing
+  targets, staging or exploiting 7 CVEs across Langflow, n8n and Citrix
+  NetScaler among others. Unit 42 report published 2026-07-30.
+  ([Unit 42](https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/)) ⟨daily 2026-08-02⟩
+- **The actor tried Claude Code and OpenAI's Codex first and both
+  platforms' safety controls blocked the offensive use**; the switch to
+  DeepSeek, reached directly by API with no equivalent guardrail, is what
+  made the campaign viable. The actor also tested Qwen, GLM, Kimi and
+  MiniMax.
+  ([Unit 42](https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/)) ⟨daily 2026-08-02⟩
+- **Unit 42 calls this the first confirmed real-world evidence** both that
+  autonomous AI-driven attack cycles are operationally viable and that
+  provider-side safety controls have measurable defensive value.
+  ([Unit 42](https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/)) ⟨daily 2026-08-02⟩
+- **The campaign was discovered only because Hermes accidentally exposed a
+  web server from its own home directory**, leaking API keys, exploit
+  scripts and attack logs.
+  ([Unit 42](https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/)) ⟨daily 2026-08-02⟩
+- **This was caught two days late** — the Unit 42 report is dated 07-30,
+  and today's entry is the first record of it here. ⟨daily 2026-08-02⟩
+
 ## 2026-07-31 (later) — DeepSeek ships V4-Flash, and it beats DeepSeek's own flagship
 
 - **DeepSeek put `V4-Flash-0731` into public API beta, claiming it beats

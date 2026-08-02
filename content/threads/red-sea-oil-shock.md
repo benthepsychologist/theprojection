@@ -3,20 +3,72 @@ title: Red Sea Shock
 lens: global-capital
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-31
+last_seen: 2026-08-02
 weight: 3
 entities: []
 thread_kind: story
-blurb: 'Houthi (Iran-backed) forces struck two Saudi oil tankers and declared a naval
-  blockade of Saudi ports (07-23) — Brent spiked +7% to ~$100.69, Goldman flagged
-  a path to $120+. Now the proximate driver of oil, Treasury yields, Fed-hike odds,
-  and equity-selloff spillover (compounded the Alphabet-led Mag7 rout into its worst
-  day since April 2025), plus the underwriting layer directly (Treasury vs. Hormuz
-  insurance-extortion firms). This is the capital-markets and risk-underwriting read
-  of the war, deliberately distinct from the conflict itself — see `iran-conflict-widening`
-  (world-news) for who''s fighting whom. Watch: oil/shipping premiums, the underwriting
-  layer, and how far it feeds into Fed policy.'
+blurb: '⚠️ SCALE CORRECTED 2026-08-02 — this thread was reading a five-month structural
+  closure as a one-week price spike. The Strait of Hormuz has been effectively closed
+  since 2026-02-28, the opening day of the Iran war (see `iran-conflict-widening`,
+  whose origin was corrected the same day): transits are running roughly 10 ships/day
+  against a 60-140/day norm, and Maersk, MSC, CMA CGM and Hapag-Lloyd have ALL suspended
+  Hormuz transits, rerouting via the Cape of Good Hope. War-risk insurance is the
+  sharpest number on this thread: 3-10% of hull value versus ~0.25% pre-war, so insuring
+  a $100M tanker for one transit went from ~$250K to $3-10M. VLCC Gulf-to-China freight
+  +24% to ~$1.67/bbl. Sourced to Lloyd''s List, a Congressional Research Service product,
+  and GulfNews. The 07-23 Houthi strikes on two Saudi tankers and the Brent spike
+  to ~$100.69 were therefore an ESCALATION INSIDE an existing blockade, not its start
+  — this thread inherited a start date from the day the price moved, which is exactly
+  the failure mode of reading a market reaction as an origin. CURRENT LEVELS (07-31
+  close, the last tradeable print — futures shut over the weekend): Brent $90.12,
+  WTI $84.67, both up on the 07-31 IRGC strike on two tankers transiting under US
+  escort, with four more turning back. Brent''s July gain was its biggest monthly
+  move since March. Note the standing level is now BELOW the ~$100.69 spike this thread
+  was opened on. Watch: oil/shipping premiums, the underwriting layer, whether the
+  08-01 Trump "deal" claim (which demands the complete reopening of Hormuz, and which
+  Iran denies) actually moves transit volumes, and how far any of it feeds into Fed
+  policy. This is the capital-markets and risk-underwriting read of the war, deliberately
+  distinct from the conflict itself.'
 ---
+
+## 2026-08-02 — ⚠️ SCALE CORRECTED: the strait has been shut for five months, not one week
+
+- **The Strait of Hormuz has been effectively closed since 2026-02-28**,
+  the opening day of the Iran war — not since the 07-23 Houthi strikes
+  this thread was opened around. Transits are running roughly **10
+  ships/day against a 60-140/day norm**.
+  ([Lloyd's List](https://www.lloydslist.com/LL1157327/Hormuz-crisis-side-effect-a-sharp-rise-in-container-shipping-rates)) ⟨daily 2026-08-02⟩
+- **Maersk, MSC, CMA CGM and Hapag-Lloyd have all suspended Hormuz
+  transits**, rerouting via the Cape of Good Hope — the four largest
+  container lines out, which is a structural fact this thread never
+  carried. ⟨daily 2026-08-02⟩
+- **War-risk insurance is the sharpest number here: 3-10% of hull value
+  against ~0.25% pre-war**, taking a single transit for a $100M tanker
+  from roughly $250K to $3-10M. VLCC Gulf-to-China freight is +24% to
+  ~$1.67/bbl. ⟨daily 2026-08-02⟩
+- **This thread was reading a price without the volumes underneath it.**
+  It was opened 07-24 on the day Brent spiked to ~$100.69 — a market
+  reaction — and took that as the shock's origin. The 07-23 strikes and
+  the 07-31 tanker attacks are escalations inside an existing blockade.
+  Note the standing level is now **below** the spike the thread was opened
+  on. ⟨daily 2026-08-02⟩
+- **Reopening the strait is now an explicit term of Trump's claimed
+  deal**, which Iran denies. The test is transit volumes, not
+  communiqués — this thread should watch ship counts. ⟨daily 2026-08-02⟩
+
+## 2026-08-01 — An LNG tanker is struck and disabled; Brent settles at $90.12 into a closed weekend
+
+- **The LNG tanker *Gaslog Shanghai* was struck transiting Hormuz** —
+  Bermuda-flagged, carrying Qatari cargo, hit while running with its
+  transponder dark and left unable to manoeuvre with engine-room damage.
+  Casualty reporting conflicts and is unsettled: some outlets describe
+  injured crew evacuated, Bloomberg reports none. Four further vessels
+  turned back after warnings.
+  ([Bloomberg via Yahoo Finance](https://finance.yahoo.com/energy/articles/tanker-carrying-qatari-lng-struck-102523607.html)) ⟨daily 2026-08-01⟩
+- **Brent settled Friday at $90.12 and WTI at $84.67**, both up about 1%,
+  with July Brent's biggest monthly gain since March. Futures are shut
+  over the weekend, so this is the last tradeable print into Monday.
+  ([CNBC](https://www.cnbc.com/2026/07/31/oil-prices-today-brent-wti-hormuz-trump-iran-.html)) ⟨daily 2026-08-01⟩
 
 ## 2026-07-31 — The blockade produces its first direct strike on transiting tankers
 

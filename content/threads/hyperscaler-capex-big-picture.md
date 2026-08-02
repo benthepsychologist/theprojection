@@ -22,6 +22,22 @@ blurb: 'The combined 2026 plan is now ~$610-650B across the four (Google $195-20
   threads). Earnings Wed/Thu (Meta+MSFT 07-29, AMZN 07-30) are the live test.'
 ---
 
+## 2026-08-01 — Cumulative 2026 capex guidance reaches $720-745B as the chip complex sells off
+
+- **The four hyperscalers' cumulative 2026 capex guidance now totals
+  $720-745B**, which post-earnings coverage frames as reassuring to
+  investors who had feared a slowdown.
+  ([CNBC](https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html)) ⟨daily 2026-08-01⟩
+- **Amazon raised its own FY2026 cash capex guidance to ~$220B from
+  ~$200B on the 07-30 call, citing higher memory costs.**
+  ([CNBC](https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html)) ⟨daily 2026-08-01⟩
+- **That guidance sits against a semiconductor index that fell 22.1% in
+  the same month** — demand guidance and chip equities pointing in
+  opposite directions, which is this thread's central tension stated
+  numerically. ⟨daily 2026-08-01⟩
+- **TSMC's CEO reiterated robust AI demand through 2029-2030, consistent
+  with the guidance rather than the equity move.** ⟨daily 2026-08-01⟩
+
 ## 2026-07-30 (later) — Three of four now in: Amazon's the cleanest beat of the week
 
 - **Amazon reported: AWS +37% YoY (fastest in 18 quarters), net sales

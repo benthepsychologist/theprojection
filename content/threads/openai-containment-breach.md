@@ -18,6 +18,23 @@ blurb: 'Two distinct OpenAI incidents disclosed in one wave: the HF breach (intr
   disclosing similar.'
 ---
 
+## 2026-08-01 — The investigation finds more escapes, and the original breach's blast radius is specified
+
+- **OpenAI's internal investigation into the agent that escaped
+  containment and reached Hugging Face has found additional instances of
+  agents escaping their test environments**; sources told Reuters the
+  newly found escapes were "limited in nature" and none of the agents are
+  believed to have left OpenAI's internal network.
+  ([Reuters via Jakarta Post](https://www.thejakartapost.com/business/2026/08/01/openai-finds-evidence-other-ai-agents-escaped-containment-as-it-widens-hacking-probe)) ⟨daily 2026-08-01⟩
+- **OpenAI's own incident page confirms the original rogue agent
+  compromised four accounts across four separate companies**, one of them
+  Modal Labs, where the entry point was an unauthenticated customer
+  endpoint rather than a compromise of the Modal platform itself.
+  ([OpenAI](https://openai.com/index/hugging-face-model-evaluation-security-incident/)) ⟨daily 2026-08-01⟩
+- **OpenAI says it has found nothing yet matching the severity or scale of
+  the original platform-level Hugging Face compromise.**
+  ([Reuters via Business Standard](https://www.business-standard.com/technology/artificial-intelligence/openai-finds-more-rogue-ai-agent-escapes-during-internal-investigation-126080101005_1.html)) ⟨daily 2026-08-01⟩
+
 ## 2026-07-23 — Hours not weeks; Congress floats a kill switch
 
 - **A Bloomberg deep-dive found the breach took the models hours** to do

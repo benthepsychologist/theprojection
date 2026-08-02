@@ -18,6 +18,23 @@ blurb: 'Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit alloca
   specifically the reallocation call between the two cohorts.'
 ---
 
+## 2026-08-01 — The chip complex fell 22% in July while Nvidia went sideways
+
+- **SOXX fell 22.1% in July, its worst month since December 2002, against
+  +67.7% year-to-date.**
+  ([CNBC](https://www.cnbc.com/2026/07/28/chip-stocks-head-for-one-of-their-worst-months-ever-is-it-the-end.html)) ⟨daily 2026-08-01⟩
+- **Nvidia was essentially flat for the month — roughly +0.33%, from a
+  06-30 close of $200.09 to a 07-31 close of $200.75, and +2.93% on 07-31
+  alone** — a divergence from its own index worth reconciling rather than
+  assuming NVDA fell with the group. ⚠ Single-source (stockanalysis.com);
+  flag as needing a second check if load-bearing.
+  ([stockanalysis.com](https://stockanalysis.com/stocks/nvda/history/)) ⟨daily 2026-08-01⟩
+- **Broadcom was roughly flat over a trailing 30-day window (−0.04%)
+  despite a −3.1% single session on 07-24.** ⟨daily 2026-08-01⟩
+- **⚠ Clean July monthly percentages for AMD, TSMC, Micron, Arm and
+  Qualcomm could not be obtained from a reliable source in this pass** —
+  no such figure should be treated as confirmed if it appears elsewhere. ⟨daily 2026-08-01⟩
+
 ## 2026-07-30 — Samsung answers half the watch question; the four prints show a bifurcated verdict, not a clean turn
 
 - **Samsung posted a blowout Q2** (chip-division profit ~250x YoY per

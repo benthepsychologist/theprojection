@@ -21,6 +21,17 @@ blurb: 'The data-center buildout is diverting wafer capacity to HBM — a report
   and who blinks first on capex.'
 ---
 
+## 2026-08-01 — Memory prices become large enough to move a hyperscaler's capex line
+
+- **Amazon raised FY2026 cash capex guidance to ~$220B from ~$200B on
+  07-30, explicitly citing higher memory costs** — the first instance in
+  this map of memory-price inflation moving a hyperscaler's own capex
+  number rather than only its cost line.
+  ([CNBC](https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html)) ⟨daily 2026-08-01⟩
+- **Management said even $220B would not buy enough capacity to meet 2026
+  demand, and expected the same into 2027-28.**
+  ([CNBC](https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html)) ⟨daily 2026-08-01⟩
+
 ## 2026-07-31 — Cook: "a hundred year flood on memory pricing"; Samsung converts a NAND line to DRAM
 
 - **Tim Cook, on his final earnings call as Apple CEO, put the company's

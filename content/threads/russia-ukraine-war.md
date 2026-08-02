@@ -21,6 +21,49 @@ blurb: 'The single largest signal in kestrel''s own mechanical world-news sweep,
   if and when that read becomes substantial enough to carry on its own.'
 ---
 
+## 2026-08-02 — Kharkiv postal terminal hit; NATO confirms no Article 4 response
+
+- **A Russian strike hit a postal terminal in Kharkiv's suburbs on 08-02**,
+  killing one person and setting a large fire among cargo trucks.
+  ([Kyiv Post](https://www.kyivpost.com/post/81583)) ⟨daily 2026-08-02⟩
+- **A senior NATO military official said there are "no current plans" to
+  invoke Article 4** over the Kh-101 cruise missile that landed at
+  Tarnawa-Kolonia, Poland on 07-30 (~10m crater, no casualties, no
+  residential damage) — a more restrained response than Poland's September
+  2025 Article 4 invocation over a drone incursion. No new airspace
+  violation and no force-posture change since.
+  ([Newsweek](https://www.newsweek.com/poland-hit-by-unidentified-object-after-major-russian-strikes-ukraine-nato-12263217)) ⟨daily 2026-08-02⟩
+
+## 2026-08-01 — Ukraine reaches the Engels-2 bomber base; Russia sends 133 drones back
+
+- **Ukraine's General Staff confirmed strikes on Russia's Engels-2
+  strategic air base** in Saratov Oblast (home to Tu-95MS and Tu-160
+  bombers), the Saratov oil refinery (ELOU-AVT-6 crude unit, ~6-7M
+  tonnes/year), the Lyudinovskaya oil depot in Kaluga Oblast, a
+  drone-launch site near Navlya in Bryansk Oblast, and a warehouse in
+  Samara Oblast; Saratov Oblast Governor Roman Busargin said two people
+  were killed. Overnight 08-01→08-02.
+  ([Ukrainska Pravda](https://www.pravda.com.ua/eng/news/2026/08/02/8046896/)) ⟨daily 2026-08-01⟩
+- **Russia launched 133 Shahed-type drones at Ukraine overnight**;
+  Ukraine's air force downed 109, and 24 struck 19 locations. Drone
+  strikes on Kharkiv's Industrial District and the village of Lohachivka
+  injured five including two children and a rescue worker; a FAB-250
+  guided bomb hit Sloviansk in Donetsk, destroying about a dozen homes.
+  ([Kyiv Post](https://www.kyivpost.com/post/81583)) ⟨daily 2026-08-01⟩
+- **The 07-31→08-01 Kyiv barrage toll settled at 9 dead** (one outlet,
+  CNBC, reported 10) and 30+ injured with 17 hospitalised, across five
+  districts — Darnytskyi worst hit with 7 dead and 14 injured,
+  Solomianskyi with 2 dead, 8 injured and 35 evacuated from a five-storey
+  building. No outlet reported a higher figure or used final-count
+  language.
+  ([NPR](https://www.npr.org/2026/08/01/nx-s1-5916393/overnight-russia-kyiv-ukraine-strikes)) ⟨daily 2026-08-01⟩
+- **Trump elaborated on declining Ukraine's request to license domestic
+  Patriot missile manufacturing**, saying the US "has not agreed," calling
+  the technology "a hard thing to give away" and warning a recipient
+  country could "someday turn on you," while saying the two sides are
+  still "talking about it." Said at the 07-31 Camp David Cabinet meeting.
+  ([CNBC](https://www.cnbc.com/2026/07/31/trump-ukraine-patriot-missile-license-russia.html)) ⟨daily 2026-08-01⟩
+
 ## 2026-07-31 (later) — Russia strikes Kyiv directly: 9+ killed, and Poland pointedly does not invoke Article 4
 
 - **Russia struck Kyiv overnight 07-31→08-01 with 35 missiles and 185

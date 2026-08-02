@@ -19,6 +19,20 @@ blurb: 'Earnings 07-30 (corrected from ~07-31). Crawl 07-27: the AGI-cuts vs $20
   $25B).'
 ---
 
+## 2026-08-01 — Late catch: Amazon raised FY2026 capex to ~$220B on memory costs
+
+- **On its 07-30 earnings call Amazon raised FY2026 cash capex guidance
+  to approximately $220B from approximately $200B, explicitly citing
+  higher memory costs** — management said even $220B will not buy enough
+  capacity to meet 2026 demand and expects the same into 2027-28.
+  ([CNBC](https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html)) ⟨daily 2026-08-01⟩
+- **This map recorded the quarter's revenue, AWS growth and the Anthropic
+  investment gain but never the capex raise** — on a thread whose subject
+  is where the capex lands. ⟨daily 2026-08-01⟩
+- **An AWS backlog figure of $496B circulated but is single-source
+  (Techtimes) and was not confirmed against Amazon's own release** —
+  recorded as unverified. ⟨daily 2026-08-01⟩
+
 ## 2026-07-30 — The test fires: AWS grows 37%, fastest in 18 quarters
 
 - **Amazon's Q2 print is this thread's clean answer.** Net sales $200.6B
