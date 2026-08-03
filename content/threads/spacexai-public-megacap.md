@@ -3,7 +3,7 @@ title: Musk Megacap
 lens: global-capital
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-31
+last_seen: 2026-08-03
 weight: 1
 entities:
 - spacex
@@ -19,6 +19,16 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   Watch: the Aug-6 lock-up (911.5M shares); Musk''s ~82% voting control; whether the
   Anthropic lease-back is real revenue or circular financing. Q7 material.'
 ---
+
+## 2026-08-03 — First public earnings land tomorrow, two days before a historic insider unlock
+
+- **SpaceX reports its first post-IPO earnings 08-04** — consensus
+  revenue ~$6.75–6.9B on an EPS loss (−$0.23 to −$0.35 range), with the
+  investor question whether Starlink cash flow (10.3M subs, targeting
+  18M) can fund the xAI/Starship burn; SPCX closed $114.53 (+5.68%),
+  still ~15% below the $135 IPO issue, and the ~$116–123B insider lockup
+  opens 08-06.
+  (TipRanks/Moomoo/stockanalysis.com, 08-03) ⟨daily 2026-08-03⟩
 
 ## 2026-08-01 — SPCX trades ~20% below issue into an unconditional unlock
 

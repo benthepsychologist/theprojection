@@ -3,7 +3,7 @@ title: Iran's Widening War
 lens: world-news
 status: open
 opened: 2026-07-23
-last_seen: 2026-08-02
+last_seen: 2026-08-03
 weight: 3
 entities: []
 thread_kind: story
@@ -40,6 +40,25 @@ blurb: '⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spen
   where it''s widening, what diplomacy is doing about it. Its capital-markets and
   underwriting read is a separate, deliberately distinct thread: `red-sea-oil-shock`.'
 ---
+
+## 2026-08-03 — Trump claims a deal, Iran denies it, and a second LNG tanker is hit in Hormuz
+
+- **Iran flatly denies the US talks Trump announced** — Tehran's Foreign
+  Ministry said "at present, we are not having any negotiations with the
+  US," and that the only channel open is with Oman on Strait shipping
+  passage, as Trump called Iran's leadership "unbelievably duplicitous."
+  (NBC/BBC/FT via RSS, 08-03) ⟨daily 2026-08-03⟩
+- **A second Qatari LNG tanker was struck transiting Hormuz** — the
+  Greek-operated GasLog Shanghai was hit by a projectile ("stable," no
+  casualties, but damaged and escorted), the second Qatari-linked LNG
+  carrier hit in roughly a month; UKMTO reported another explosion near a
+  tanker off Oman the same day. Attribution to Iran is single-source-thin.
+  (Reuters/gCaptain via RSS, 08-02/03) ⟨daily 2026-08-03⟩
+- **The strike cancellation holds only conditionally** — Trump's weekend
+  order stays called off, conditioned on "rapid" progress, and Israeli and
+  US officials reportedly learned of the cancellation from his
+  social-media post rather than official channels.
+  (NYT via RSS, 08-03) ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — ⚠️ ORIGIN CORRECTED: this war began 2026-02-28, and Iran's Supreme Leader was killed in its opening strike
 

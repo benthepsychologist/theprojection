@@ -3,7 +3,7 @@ title: Gaza War
 lens: world-news
 status: open
 opened: 2026-08-01
-last_seen: 2026-08-01
+last_seen: 2026-08-03
 weight: 3
 entities: []
 thread_kind: story
@@ -37,6 +37,15 @@ blurb: 'Opened on Ben''s steer 2026-08-01, after a disarmament framework announc
   Ministry range as broadly accurate. Both the inflation and the undercount framings
   still circulate; report both, resolve neither.'
 ---
+
+## 2026-08-03 — Strikes continue through the peace-plan rollout; regional condemnation
+
+- **Israel kept striking Gaza as Trump touted his peace plan** — after
+  08-02's deadliest day in weeks, strikes continued into 08-03; a "Board
+  of Peace" envoy met Netanyahu and explicitly urged a halt while pressing
+  the Hamas-disarmament track, and Qatar, Egypt and Turkey condemned the
+  IDF action as undermining Trump's own plan.
+  (Al Jazeera/Reuters/CNN, 08-03) ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — The deadliest day since the thread opened; Israel says there is no deal to halt attacks
 

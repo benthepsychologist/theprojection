@@ -3,7 +3,7 @@ title: Frontier Gatekeeping
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-31
+last_seen: 2026-08-03
 weight: 3
 entities:
 - openai
@@ -19,6 +19,16 @@ blurb: 'The gpt-5.6 gating dynamic made permanent — and it''s all one buildout
   is named (SRO?); Meta''s exclusion made official; CAISI leadership (3 directors
   in a year — can it run classified review?); the first model actually gated.'
 ---
+
+## 2026-08-03 — The EO 14409 framework gets a date without getting published
+
+- **The White House will present the "finalized" framework to the labs
+  08-04** — the Office of the National Cyber Director (Sean Cairncross)
+  hosts staff-level reps from OpenAI, Google and Anthropic on Tuesday to
+  discuss the Sec. 3(b) pre-release framework, the last day of the grace
+  window, even as a fresh check confirms nothing has published (no
+  Federal Register notice, no NIST/CISA/OSTP statement).
+  ([NY Post](https://nypost.com/2026/08/03/business/ai-giants-anthropic-google-and-openai-to-meet-with-white-house-to-talk-regs-tuesday/)) ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — The EU AI Act becomes enforceable while Washington's own deadline stays silent
 

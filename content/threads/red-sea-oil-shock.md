@@ -3,7 +3,7 @@ title: Red Sea Shock
 lens: global-capital
 status: open
 opened: 2026-07-24
-last_seen: 2026-08-02
+last_seen: 2026-08-03
 weight: 3
 entities: []
 thread_kind: story
@@ -30,6 +30,15 @@ blurb: '⚠️ SCALE CORRECTED 2026-08-02 — this thread was reading a five-mon
   policy. This is the capital-markets and risk-underwriting read of the war, deliberately
   distinct from the conflict itself.'
 ---
+
+## 2026-08-03 — Oil craters ~5% on the de-escalation claim after touching $90 intraday
+
+- **Oil fell to a three-week low on Iran relief hope** — Brent settled
+  ~$83.5–83.9 (−4.5–5.0%) and WTI ~$80–81 (−4.6–5.5%), down ~7% from
+  Friday's $90.12 settle, after Brent touched $90 intraday on the second
+  Hormuz tanker strike; the catalyst is the claimed Hormuz-reopening deal
+  that Iran denies.
+  (TradingEconomics/USA Today/Guardian, 08-03) ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — ⚠️ SCALE CORRECTED: the strait has been shut for five months, not one week
 

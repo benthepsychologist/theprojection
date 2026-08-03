@@ -3,7 +3,7 @@ title: The Great Rotation
 lens: global-capital
 status: open
 opened: 2026-07-29
-last_seen: 2026-07-31
+last_seen: 2026-08-03
 weight: 2
 entities: []
 thread_kind: story
@@ -17,6 +17,15 @@ blurb: 'Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit alloca
   policy) and from `ai-trade-bear-turn` (the broader AI-stock drawdown) — this is
   specifically the reallocation call between the two cohorts.'
 ---
+
+## 2026-08-03 — Megacap chip names bounce, but SOXX breadth lags its own leaders
+
+- **The AI-megacap chips rallied while the chip index lagged** — on
+  Monday's risk-on tape NVDA rose +2.93%, QCOM +2.68% and AMD +1.78%, but
+  SOXX gained only +0.55% (ARM −0.26%), so July's rotation-away stabilized
+  at the megacap-leader level without breadth across the broader complex
+  recovering.
+  (Yahoo/Google Finance, stockanalysis.com, 08-03) ⟨daily 2026-08-03⟩
 
 ## 2026-08-01 — The chip complex fell 22% in July while Nvidia went sideways
 

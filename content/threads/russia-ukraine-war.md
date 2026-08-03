@@ -3,7 +3,7 @@ title: Russia-Ukraine War
 lens: world-news
 status: open
 opened: 2026-07-31
-last_seen: 2026-07-31
+last_seen: 2026-08-03
 weight: 3
 entities: []
 thread_kind: story
@@ -20,6 +20,22 @@ blurb: 'The single largest signal in kestrel''s own mechanical world-news sweep,
   sibling thread the same way `iran-conflict-widening` / `red-sea-oil-shock` did,
   if and when that read becomes substantial enough to carry on its own.'
 ---
+
+## 2026-08-03 — Record strikes both ways; an unconfirmed claim a Russian missile crossed into NATO airspace
+
+- **Russia and Ukraine traded heavy strikes overnight** — Russia hit
+  Zaporizhzhia with ~8 glide bombs in 90 minutes (1 killed, 31 injured per
+  Ukrinform), while Ukraine struck a Russian Black Sea resort area
+  (5–12 killed across outlets), disabled ~two-thirds of Wildberries'
+  largest logistics warehouses, and used Magura naval drones to hit radar
+  in occupied Crimea for the first time.
+  (AP/PBS/Ukrinform via RSS, 08-02/03) ⟨daily 2026-08-03⟩
+- **Ukraine claims a Russian missile — not a drone — violated Polish NATO
+  airspace** — a step up from the recorded 07-30 drone incursion, but the
+  missile claim is a single-source Ukrainian government assertion that
+  Poland says only that it is "examining"; separately Polish F-16s
+  intercepted a Russian IL-20 ~60km off the Baltic coast.
+  (AOL/Reuters wire, 08-02) ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — Kharkiv postal terminal hit; NATO confirms no Article 4 response
 

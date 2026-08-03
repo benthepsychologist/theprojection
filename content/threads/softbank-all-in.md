@@ -3,7 +3,7 @@ title: Son All-In
 lens: global-capital
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-31
+last_seen: 2026-08-03
 weight: 2
 entities:
 - softbank
@@ -17,6 +17,16 @@ blurb: 'The empire''s concentration play, assembled from pieces other threads ca
   everything else. Track: the loan stack''s health vs the AI-credit repricing, any
   forced Arm monetization, Stargate milestones.'
 ---
+
+## 2026-08-03 — The one OpenAI-collateral loan lenders won't extend, ahead of the 08-06 print
+
+- **SoftBank's $6–10B OpenAI-stake margin loan stays stalled** — distinct
+  from the funded $40B OpenAI bridge (March 2027 maturity), the separate
+  margin loan against the OpenAI stake remains stalled on "valuation
+  concerns" (halted 06-10, renewed talks 07-01, no resolution), a
+  lenders'-eye read on the OpenAI valuation as collateral, as Arm weakness
+  compresses SoftBank's NAV into Thursday's 08-06 print.
+  (Invezz/Investing.com; SoftBank IR, 08-03) ⟨daily 2026-08-03⟩
 
 ## 2026-08-01 — The $40B OpenAI bridge loan's full structure, ahead of the 08-06 print
 

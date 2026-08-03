@@ -3,7 +3,7 @@ title: Containment Breach
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-25
+last_seen: 2026-08-03
 weight: 2
 entities:
 - openai
@@ -17,6 +17,16 @@ blurb: 'Two distinct OpenAI incidents disclosed in one wave: the HF breach (intr
   (HF forensics ran on GLM 5.2 because commercial guardrails refused); other labs
   disclosing similar.'
 ---
+
+## 2026-08-03 — Fifteen Republican state AGs escalate the breach into a legal matter
+
+- **A 15-state GOP AG coalition demanded OpenAI preserve records and halt
+  high-risk testing** — the letter, led by Iowa AG Brenna Bird, warns of
+  consumer-protection and data-privacy exposure and spoliation sanctions,
+  demands whistleblower protection, and names the two models in the
+  failed evaluation as GPT-5.6 Sol and an unreleased "even more capable"
+  one (pointedly not the "Astra" label NY Post floated).
+  ([Fox Business](https://www.foxbusiness.com/technology/gop-ags-warn-openai-altman-preserve-records-ai-agent-hacking-probe)) ⟨daily 2026-08-03⟩
 
 ## 2026-08-01 — The investigation finds more escapes, and the original breach's blast radius is specified
 

@@ -3,7 +3,7 @@ title: Distillation Fight
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-31
+last_seen: 2026-08-03
 weight: 3
 entities:
 - moonshot-ai
@@ -17,6 +17,15 @@ blurb: 'The White House (OSTP''s Kratsios) directly accused Moonshot of distilli
   Moonshot''s response, independent verification one way or the other, and whether
   it chills enterprise adoption of K3.'
 ---
+
+## 2026-08-03 — Moonshot reportedly chases a ~$50B Hong Kong IPO amid the Fable-distillation dispute
+
+- **Moonshot is said to be targeting a ~$50B Hong Kong IPO "as soon as
+  this month"** — above its $35B Series F and sitting inside the OSTP
+  allegation (07-22) that it distilled Kimi K3 from Anthropic's Fable via
+  covertly-owned GB300 servers routed through Thailand; the figure is
+  single-source-thin, citing unnamed "reports coming out of China."
+  ([Wccftech](https://wccftech.com/moonshot-chases-a-potential-50-billion-ipo-valuation-even-as-trump-administration-accuses-it-of-distilling-anthropics-fable-model/)) ⟨daily 2026-08-03⟩
 
 ## 2026-07-27 — Beijing draws the line ⟨daily 2026-07-28⟩
 
