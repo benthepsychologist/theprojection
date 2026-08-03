@@ -34,10 +34,11 @@ and should not be hand-edited — edits belong upstream.
 | `hugo.yaml` | site config — lens labels/colors, menus, tagline |
 | `data/payload.json`, `data/board.json`, `data/claims.json` | feed + board-node + claim data — **generated** (published from kestrel), do not hand-edit |
 | `content/threads/*.md`, `content/entities/*.md`, `content/map/*`, `content/claim/*` | one page per thread/entity/node/claim — **generated**, do not hand-edit |
-| `content/about.md`, `content/metric/*.md` | the hand-authored pages — about, plus one methodology page per board metric |
-| `layouts/` | homepage, thread page, map/claim/metric pages, shared partials |
+| `content/about.md`, `content/news/_index.md`, `content/research/`, `content/metric/*.md` | the hand-authored pages — about, the /news/ dashboard shell, the /research/ stub, plus one methodology page per board metric |
+| `content/news/{ai,global-capital,mental-health}.md` | the three lens beats, **generated** (published from kestrel) — nested under /news/ since 2026-08-03 (were /beat/) |
+| `layouts/` | projects hub (home), /news/ dashboard + beats, thread page, map/claim/metric/research pages, shared partials |
 | `assets/css/main.css` | the whole brand system — palette sampled from the mark, light-only on purpose; board tokens scoped via `.board-paper`; `#E01279` reserved for selection/"new" |
-| `static/js/dashboard.js` | homepage renderer — highlights strip, ranked/collapsible thread cards |
+| `static/js/dashboard.js` | the /news/ feed renderer — highlights strip, ranked/collapsible thread cards |
 | `static/js/board-plate.js` | the `/map/` plate — thrust × gravity bubble chart (size = weight, fill = optionality, ring = sector), data injected from `board.json` |
 | `static/js/copy-chat.js` | "copy for AI chat" — packages a thread (or the whole week) to the clipboard, no backend |
 | `static/images/mark.png` | the logo (background already transparent) |
