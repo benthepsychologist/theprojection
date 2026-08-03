@@ -72,7 +72,10 @@
     {{ range .Params.entities }}
       {{ $eslug := . }}{{ $ename := $eslug }}
       {{ $m := where $p.entities "slug" $eslug }}{{ if $m }}{{ $ename = (index $m 0).name }}{{ end }}
-      <a class="chip ent" href="/entities/{{ $eslug }}/">{{ $ename }}</a>
+      {{/* link only if the entity actually publishes a page — a thread can
+           name an entity that isn't watchlist-derived (no page). Guard so a
+           chip never 404s. */}}
+      {{ if (site.GetPage (printf "/entities/%s" $eslug)) }}<a class="chip ent" href="/entities/{{ $eslug }}/">{{ $ename }}</a>{{ else }}<span class="chip ent">{{ $ename }}</span>{{ end }}
     {{ end }}
   </div>
   {{ end }}

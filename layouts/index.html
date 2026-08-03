@@ -6,41 +6,64 @@
 <body>
 {{ partial "masthead.html" . }}
 
-{{ $p := .Site.Data.payload }}
-{{ if $p }}
-<p class="dateline" style="text-align:center;">Week of {{ $p.week_start }} · centered on {{ $p.today }}
-  · generated {{ $p.generated }} · {{ len $p.days }}/7 days in</p>
-{{ partial "world-news.html" . }}
-{{/* The briefing leads, per AGENTS.md discipline 10's fixed page order:
-     flash rail -> executive summary -> today's calendar -> ranked content.
-     The compact front readout still renders below the dashboard. */}}
-{{ partial "briefing.html" (dict "ctx" . "scope" "front") }}
-<div class="chip-row" role="group" aria-label="Filter by lens">
-  <span class="chip on" data-lens="all">all lenses</span>
-  {{/* these stay JS filters, not links — the beat PAGES are in the nav.
-       Wrapping the label in an anchor here would navigate on click and
-       kill the in-page filter these chips exist to drive. */}}
-  <span class="chip" data-lens="ai">AI</span>
-  <span class="chip" data-lens="global-capital">Global Capital</span>
-  <span class="chip" data-lens="mental-health">Mental Health</span>
-</div>
-<div style="text-align:center; margin-top:.9rem;">
-  <button class="copy-chat-btn" id="copy-chat-week">💬 Copy this week for AI chat</button>
-</div>
-<div id="dashboard" class="section" style="margin-top:1.6rem;"></div>
-{{ partial "readout.html" (dict "ctx" . "scope" "front") }}
-{{/* jsonify alone would get quoted-as-a-JS-string-literal by Go's
-     html/template script-context auto-escaper (double-encoding — the bug
-     that shipped). safeJS stops that, but it also opts out of the
-     escaper's own </script>-breaking protection, so that guard has to be
-     applied by hand here instead, same fix render_read.py already uses
-     for the internal page's payload. */}}
-<script id="tp-payload" type="application/json">{{ (replace ($p | jsonify) "</" "<\\/") | safeJS }}</script>
-<script src="/js/copy-chat.js" defer></script>
-<script src="/js/dashboard.js" defer></script>
-{{ else }}
-<div class="feed"><p style="grid-column:1/-1; color:var(--ink-faint);">No published week yet — check back soon.</p></div>
-{{ end }}
+<section class="projects" aria-label="Projects">
+  <p class="projects-dek">Things I'm working on here.</p>
+  <div class="projects-grid">
+
+    <a class="project-card pc-news" href="/news/">
+      <span class="project-emblem" aria-hidden="true">
+        <svg viewBox="0 0 120 120" role="img" aria-label="">
+          <circle class="pe-wash" cx="60" cy="60" r="46"/>
+          <g class="pe-line">
+            <path d="M32 44 h44 M32 58 h56 M32 72 h40"/>
+            <circle cx="90" cy="44" r="6" class="pe-dot"/>
+            <path d="M78 88 q12 -6 24 0" class="pe-pulse"/>
+          </g>
+        </svg>
+      </span>
+      <h2 class="project-name">News</h2>
+      <p class="project-blurb">The rolling weekly read — AI, Global Capital, Mental Health — with a flash rail for anything that would lead a front page.</p>
+      <span class="project-go">Open the feed →</span>
+    </a>
+
+    <a class="project-card pc-map" href="/map/">
+      <span class="project-emblem" aria-hidden="true">
+        <svg viewBox="0 0 120 120" role="img" aria-label="">
+          <circle class="pe-wash" cx="60" cy="60" r="46"/>
+          <g class="pe-line">
+            <path class="pe-edge" d="M42 40 L72 34 M42 40 L38 74 M72 34 L86 62 M38 74 L70 84 M86 62 L70 84 M72 34 L38 74"/>
+            <circle cx="42" cy="40" r="6" class="pe-node"/>
+            <circle cx="72" cy="34" r="7" class="pe-node"/>
+            <circle cx="86" cy="62" r="5" class="pe-node"/>
+            <circle cx="38" cy="74" r="5" class="pe-node"/>
+            <circle cx="70" cy="84" r="6" class="pe-node"/>
+          </g>
+        </svg>
+      </span>
+      <h2 class="project-name">The Map</h2>
+      <p class="project-blurb">The power-structure layer — every major actor as a node on four measured axes, every metric a cited receipt.</p>
+      <span class="project-go">Open the board →</span>
+    </a>
+
+    <a class="project-card pc-research" href="/research/">
+      <span class="project-emblem" aria-hidden="true">
+        <svg viewBox="0 0 120 120" role="img" aria-label="">
+          <circle class="pe-wash" cx="60" cy="60" r="46"/>
+          <g class="pe-line">
+            <circle cx="54" cy="52" r="18" class="pe-lens"/>
+            <path d="M67 65 L86 84" class="pe-handle"/>
+            <path d="M49 50 q0 -8 8 -8 q6 0 6 6 q0 5 -6 7 v3" class="pe-q"/>
+            <circle cx="57" cy="64" r="1.6" class="pe-qdot"/>
+          </g>
+        </svg>
+      </span>
+      <h2 class="project-name">Research</h2>
+      <p class="project-blurb">Long-form investigations into the AI buildout — where the money goes, who buys the compute, where the capacity sits, and how the firms are run.</p>
+      <span class="project-go">See the questions →</span>
+    </a>
+
+  </div>
+</section>
 
 {{ partial "footer.html" . }}
 </body>

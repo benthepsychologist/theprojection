@@ -7,6 +7,8 @@
 {{ partial "masthead.html" . }}
 
 {{/* the flash rail is already rendered by masthead.html */}}
+<p class="crumb" style="max-width:var(--max-width);margin:1.2rem auto 0;padding:0 1.5rem;">
+  <a href="/news/">← News</a></p>
 {{ $lens := .Params.lens }}
 {{ partial "briefing.html" (dict "ctx" . "scope" (printf "lens:%s" $lens)) }}
 {{ partial "readout.html" (dict "ctx" . "scope" (printf "lens:%s" $lens)) }}

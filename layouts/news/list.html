@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+<p class="crumb" style="max-width:var(--max-width);margin:1.2rem auto 0;padding:0 1.5rem;">
+  <a href="{{ .Site.Home.RelPermalink }}">← Projects</a></p>
+
+{{ $p := .Site.Data.payload }}
+{{ if $p }}
+<div class="thread-header" style="padding-bottom:.6rem;">
+  <h1>News</h1>
+  <p class="dek">The rolling weekly read — three lenses, one flash rail.</p>
+</div>
+<p class="dateline" style="text-align:center;">Week of {{ $p.week_start }} · centered on {{ $p.today }}
+  · generated {{ $p.generated }} · {{ len $p.days }}/7 days in</p>
+{{ partial "world-news.html" . }}
+{{/* The briefing leads, per AGENTS.md discipline 10's fixed page order:
+     flash rail -> executive summary -> today's calendar -> ranked content.
+     The compact front readout still renders below the dashboard. */}}
+{{ partial "briefing.html" (dict "ctx" . "scope" "front") }}
+<div class="chip-row" role="group" aria-label="Filter by lens">
+  <span class="chip on" data-lens="all">all lenses</span>
+  {{/* these stay JS filters, not links — the beat PAGES are under /news/.
+       Wrapping the label in an anchor here would navigate on click and
+       kill the in-page filter these chips exist to drive. */}}
+  <span class="chip" data-lens="ai">AI</span>
+  <span class="chip" data-lens="global-capital">Global Capital</span>
+  <span class="chip" data-lens="mental-health">Mental Health</span>
+</div>
+<p style="text-align:center;margin:.5rem 0 0;font-size:.8rem;color:var(--ink-faint);">
+  Or open a beat: <a href="/news/ai/">AI</a> ·
+  <a href="/news/global-capital/">Global Capital</a> ·
+  <a href="/news/mental-health/">Mental Health</a></p>
+<div style="text-align:center; margin-top:.9rem;">
+  <button class="copy-chat-btn" id="copy-chat-week">💬 Copy this week for AI chat</button>
+</div>
+<div id="dashboard" class="section" style="margin-top:1.6rem;"></div>
+{{ partial "readout.html" (dict "ctx" . "scope" "front") }}
+{{/* jsonify alone would get quoted-as-a-JS-string-literal by Go's
+     html/template script-context auto-escaper (double-encoding — the bug
+     that shipped). safeJS stops that, but it also opts out of the
+     escaper's own </script>-breaking protection, so that guard has to be
+     applied by hand here instead, same fix render_read.py already uses
+     for the internal page's payload. */}}
+<script id="tp-payload" type="application/json">{{ (replace ($p | jsonify) "</" "<\\/") | safeJS }}</script>
+<script src="/js/copy-chat.js" defer></script>
+<script src="/js/dashboard.js" defer></script>
+{{ else }}
+<div class="feed"><p style="grid-column:1/-1; color:var(--ink-faint);">No published week yet — check back soon.</p></div>
+{{ end }}
+
+{{ partial "footer.html" . }}
+</body>
+</html>

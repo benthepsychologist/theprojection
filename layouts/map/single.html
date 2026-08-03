@@ -41,7 +41,7 @@
     <div class="node-line">
       {{ with $o.kind }}<span class="badge kind k-{{ . }}">{{ . }}</span>{{ end }}
       {{ with $o.level }}<span class="lvl">{{ . }}</span>{{ end }}
-      {{ with $o.pocket }}{{ $pl := index $proj.pockets . }}<a class="badge pocket p-{{ . }}" href="/map/{{ . }}/" data-lk="pocket:{{ . }}">{{ if $pl }}{{ $pl.label }}{{ else }}{{ humanize . }}{{ end }}</a>{{ end }}
+      {{ with $o.pocket }}{{ $pl := index $proj.pockets . }}{{ $plabel := cond (ne $pl nil) (string (index (or $pl (dict)) "label")) (humanize .) }}{{/* a pocket like gov-pool is a layer label, not always a published group page — link only when the page exists, else render the badge unlinked so it never 404s. */}}{{ if (site.GetPage (printf "/map/%s" .)) }}<a class="badge pocket p-{{ . }}" href="/map/{{ . }}/" data-lk="pocket:{{ . }}">{{ $plabel }}</a>{{ else }}<span class="badge pocket p-{{ . }}" data-lk="pocket:{{ . }}">{{ $plabel }}</span>{{ end }}{{ end }}
       {{ if $o.posture }}<span class="badge posture posture-lg" data-lk="posture:{{ $o.posture }}">{{ (index $proj.postures $o.posture).label }}</span>{{ end }}
       {{ range $c := $o.condition }}<span class="badge cond" data-lk="condition:{{ $c }}">{{ (index $proj.conditions $c).label }}</span>{{ end }}
     </div>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "masthead.html" . }}
+
+<p class="crumb" style="max-width:var(--max-width);margin:1.2rem auto 0;padding:0 1.5rem;">
+  <a href="{{ .Site.Home.RelPermalink }}">← Projects</a></p>
+
+<div class="thread-header">
+  <h1>Research</h1>
+  <p class="dek">The AI buildout is the largest raw mobilization of resources in
+    human history. These are the questions I'm trying to answer about it —
+    slowly, with receipts, as an anthropological problem rather than a news beat.</p>
+</div>
+
+<section class="research-stub wrap">
+  <p class="rs-note">Four questions. Nothing published under them yet — this is
+    where the long-form work will land as it's built.</p>
+
+  <ol class="rs-questions">
+    <li class="rs-q">
+      <span class="rs-num">Q1</span>
+      <div>
+        <h2>Where is the money going?</h2>
+        <p>The hyperscalers and frontier labs are spending on the order of
+          three-quarters of a trillion dollars a year. What does that actually
+          buy — chips, land, power, cooling, networking, labor — and how much of
+          it is the industry paying itself?</p>
+      </div>
+    </li>
+    <li class="rs-q">
+      <span class="rs-num">Q2</span>
+      <div>
+        <h2>Who is buying the inference, and how much?</h2>
+        <p>Behind the buildout sits demand. Who actually pays for AI —
+          consumers, enterprises, governments — how much is real recognized
+          revenue versus a claimed run-rate, and what are the committed capacity
+          contracts genuinely worth?</p>
+      </div>
+    </li>
+    <li class="rs-q">
+      <span class="rs-num">Q3</span>
+      <div>
+        <h2>Where is all the capacity?</h2>
+        <p>Every datacenter on earth owned by, operated by, or dedicated to the
+          top players — and how much power each one draws. A census of the
+          physical stock the money builds.</p>
+      </div>
+    </li>
+    <li class="rs-q">
+      <span class="rs-num">Q4</span>
+      <div>
+        <h2>How are these companies run on the inside?</h2>
+        <p>The governance and management layer — how the firms behind the
+          buildout are actually structured, controlled, and run internally.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+{{ partial "footer.html" . }}
+</body>
+</html>
