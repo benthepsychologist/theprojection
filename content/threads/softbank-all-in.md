@@ -3,7 +3,7 @@ title: Son All-In
 lens: global-capital
 status: open
 opened: 2026-07-28
-last_seen: 2026-08-03
+last_seen: 2026-08-04
 weight: 2
 entities:
 - softbank
@@ -14,9 +14,79 @@ blurb: 'The empire''s concentration play, assembled from pieces other threads ca
   one Nvidia may guarantee $250-500B against), Arm''s 87.1% pledged as loan collateral
   ($5B sought + a $20B margin loan with an unresolved Dec-25 deadline), the $2B Intel
   stake, a renewed $10B OpenAI-collateral loan. Everything Son owns now collateralizes
-  everything else. Track: the loan stack''s health vs the AI-credit repricing, any
-  forced Arm monetization, Stargate milestones.'
+  everything else. A fourth front, found by the 2026-08-04 crawl: SoftBank is SELF-FUNDING
+  the bet by selling down other holdings (its entire $5.83B Nvidia stake, $9.17B of
+  T-Mobile), while Vision Fund''s ~$46B FY2025 gain is confirmed to trace almost entirely
+  to the OpenAI markup — a concentrated bet wearing a diversified-fund wrapper, not
+  a real hedge — against Coupang/DiDi/ Klarna/ByteDance losses in the same period.
+  A new lever entirely: a $5.375B ABB Robotics acquisition feeding a planned ~$100B
+  "Roze" physical-AI/data-center-robotics IPO targeted H2 2026. CreditSights sizes
+  a $32B two-year funding gap; rating agencies diverge (Moody''s stable Sep-25, S&P
+  negative Mar-26 over buybacks-while-borrowing); stock down ~50% since June on a
+  beat-and-drop earnings pattern. Track: the loan stack''s health vs the AI-credit
+  repricing, any forced Arm monetization, Stargate milestones, the funding-gap figure,
+  and whether Roze/ABB actually reaches IPO.'
 ---
+
+## 2026-08-04 — How the bet is funded, the "Physical AI" fourth lever, and Vision Fund's real concentration ⟨crawl 2026-08-04⟩
+
+- **SoftBank sold its entire Nvidia stake — 32.1M shares, $5.83B —
+  disclosed 2025-11-11 (shares sold Oct 2025), proceeds earmarked toward
+  the OpenAI investment; it also sold part of its T-Mobile stake for
+  $9.17B in the same round.** This is the funding side of the loan stack
+  the thread already tracks — SoftBank isn't only pledging assets as
+  collateral, it's actively liquidating legacy holdings.
+  ([CNBC](https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html)) ⟨crawl 2026-08-04⟩
+- **A self-imposed 25% loan-to-value limit is constraining further
+  margin borrowing**, and independent credit research (CreditSights)
+  sizes a **$32B funding gap over the next two years**, combining bond
+  maturities with signed obligations including the ABB Robotics deal
+  below; **$30B specifically falls due in H2 2026.**
+  ([ad-hoc-news.de](https://www.ad-hoc-news.de/boerse/news/ueberblick/softbank-s-infrastructure-bet-creates-a-32-billion-funding-gap/69276518)) ⟨crawl 2026-08-04⟩
+- **A fourth lever alongside OpenAI/Arm/Stargate: SoftBank is acquiring
+  ABB's robotics division for $5.375B** (board-approved 2025-09-22,
+  signed 2025-10-08, closing mid-to-late 2026), folding it into a new
+  US-listed spinout called **Roze** — autonomous robots building AI data
+  centers — targeting an IPO **as early as H2 2026 at up to a $100B
+  valuation** (KPMG engaged; analyst day held July 2026).
+  ([SoftBank Group](https://group.softbank/en/news/press/20251008), [Yahoo Finance](https://finance.yahoo.com/sectors/technology/articles/softbank-plans-100b-u-ipo-115700056.html)) ⟨crawl 2026-08-04⟩
+- **Vision Fund's FY2025 (year to March 2026) ~$46B gain and the
+  Q4/Q3 gains before it were "nearly all driven by OpenAI"** — SoftBank
+  took losses in the same periods on Coupang, DiDi Global, Klarna and a
+  ByteDance markdown. CFO Yoshimitsu Goto: **~60% of SoftBank's total
+  assets are now "ASI-oriented investments."** Answers this thread's open
+  question on whether Vision Fund is a real hedge: it functions as a
+  single concentrated position wearing a diversified-fund wrapper.
+  ([CNBC](https://www.cnbc.com/2026/05/13/softbank-earnings-fy-2025-vision-fund-openai-stake.html)) ⟨crawl 2026-08-04⟩
+- **Credit ratings are diverging, not moving together**: Moody's upgraded
+  SoftBank Group to Ba2/stable on 2025-09-17 (leverage reduction,
+  transparency); **S&P instead revised its outlook to negative in March
+  2026**, explicitly over running a ~¥2.5T ($24B) buyback alongside ~$41B
+  of asset-sale fundraising.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2025-09-17/moody-s-upgrades-softbank-s-debt-rating-on-credit-fundamentals), S&P Global Ratings) ⟨crawl 2026-08-04⟩
+- **Market is pricing real stress ahead of the 08-06 print**: stock down
+  ~50% since early June 2026 despite three straight quarters of large EPS
+  beats each followed by a stock decline ("beat-and-drop"); Deutsche Bank
+  downgraded to Hold; CDS costs on SoftBank debt have risen; a technical
+  "dead cross" formed 2026-07-28 ahead of the 2.6% Arm-sympathy drop
+  already on this thread's 07-30/08-01 entries.
+  ([Investing.com](https://www.investing.com/news/stock-market-news/softbank-q1-earnings-preview-low-bar-arm-risk-and-the-beatanddrop-pattern-93CH-4832632)) ⟨crawl 2026-08-04⟩
+- **Confirmed: the 08-06 Group print has not happened yet** as of
+  2026-08-04 (3-day GDELT sweep found no contradicting report); the
+  SoftBank Corp/SoftBank Group entity-guard trap this thread flagged
+  08-03 is still live in the wires today. Arm ownership, primary-sourced:
+  **Arm's own SEC 6-K filing puts SoftBank's beneficial stake at ~86.4%
+  as of 2026-05-21** — close to, but below, the 87.1% currently on the
+  board.
+  ([SEC EDGAR](https://www.sec.gov/Archives/edgar/data/0001973239/000197323926000114/arm-20260630.htm)) ⟨crawl 2026-08-04⟩
+- **Son's own framing treats the concentration as deliberate, not
+  incidental**: the strategy is branded internally as "Izanagi" (single-
+  source, unconfirmed) and at a shareholder meeting Son said "SoftBank's
+  mission is to drive human evolution and realize ASI," predicting ASI
+  "10,000 times smarter than humans within a decade." ⟨crawl 2026-08-04⟩
+
+Full sourcing and confidence levels: `artifacts/findings/softbank-2026-08-04.md`
+and `artifacts/bundles/softbank-2026-08-04/provenance.yaml`.
 
 ## 2026-08-03 — The one OpenAI-collateral loan lenders won't extend, ahead of the 08-06 print
 
