@@ -7,6 +7,7 @@ last_seen: 2026-07-27
 weight: 2
 entities:
 - microsoft
+- microsoft-mai
 - openai
 - anthropic
 thread_kind: story

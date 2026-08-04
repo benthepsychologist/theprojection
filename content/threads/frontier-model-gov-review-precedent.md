@@ -9,6 +9,7 @@ entities:
 - openai
 - anthropic
 - google
+- deepmind
 - demis-hassabis
 thread_kind: story
 blurb: 'The gpt-5.6 gating dynamic made permanent — and it''s all one buildout under
