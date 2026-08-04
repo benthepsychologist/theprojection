@@ -3,7 +3,7 @@ title: Datacenter Sites
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-31
+last_seen: 2026-08-03
 weight: 3
 entities:
 - openai
@@ -16,6 +16,21 @@ blurb: Where the capex lands in CONCRETE — the specific gigawatt campuses. Sta
   Colossus, Camellia + the 100s of sites. Category meta under where-the-capex-lands;
   the specific-sites worklist lives here.
 ---
+
+## 2026-08-03 — Texas puts the whole site pipeline behind an audit gate (caught 08-04, missed on the day)
+
+- **Texas halted new data-centre grid connections pending a PUCT/ERCOT
+  audit of every project in the queue** — tax breaks, power, water,
+  community impact and ownership all in scope, with non-compliant projects
+  to be denied connection outright.
+  ([Texas Tribune](https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/)) ⟨daily 2026-08-03⟩
+- **335 operating and 248 planned Texas facilities sit behind this gate**,
+  inside an ERCOT queue of 1,800+ projects and 474+ GW. ⟨daily 2026-08-03⟩
+- 💡 **The siting question changes shape:** this thread has tracked *where*
+  capacity gets sited. Texas has just made the answer contingent on
+  disclosure a developer may not want to give — ownership and tax-incentive
+  transparency are now preconditions of energising, which is a different
+  filter than land, water or fibre. ⟨daily 2026-08-03⟩
 
 ## 2026-07-30 — Catch-up: Paducah, KY joins the megasite map (event 07-28/29)
 

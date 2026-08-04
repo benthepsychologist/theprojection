@@ -39,6 +39,15 @@ blurb: '⚠️ SCALE CORRECTED 2026-08-02 — this thread was reading a five-mon
   Hormuz tanker strike; the catalyst is the claimed Hormuz-reopening deal
   that Iran denies.
   (TradingEconomics/USA Today/Guardian, 08-03) ⟨daily 2026-08-03⟩
+- **The de-escalation trade did not survive the night** — Brent recovered
+  to **$84.75 (+$0.98)** and WTI to **$80.49 (+$0.15)** in Asian hours,
+  after a third vessel was struck in the strait.
+  ([AP](https://www.wsls.com/business/2026/08/04/asian-shares-mostly-dip-after-us-stocks-rally/)) ⟨daily 2026-08-03⟩
+- **Reported deal terms would keep a risk premium in the price rather than
+  remove it** — the Iran–Oman arrangement described by NYT routes inbound
+  traffic through an Iran-controlled corridor with fees split between Tehran
+  and Muscat, which prices passage rather than restoring free transit.
+  ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — ⚠️ SCALE CORRECTED: the strait has been shut for five months, not one week
 

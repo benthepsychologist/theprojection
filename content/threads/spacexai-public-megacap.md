@@ -29,6 +29,21 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   still ~15% below the $135 IPO issue, and the ~$116–123B insider lockup
   opens 08-06.
   (TipRanks/Moomoo/stockanalysis.com, 08-03) ⟨daily 2026-08-03⟩
+- **Report time pinned: after the close 08-04, audio-only webcast 4:30pm
+  ET**, with the first insider-lockup tranche — up to 20% of ~911.5M
+  restricted shares — becoming eligible 08-06, two trading days later.
+  (CNBC 07-21; CNN preview 08-04) ⟨daily 2026-08-03⟩
+- **⚠ The EPS consensus does not agree with itself** — against the
+  −$0.23/−$0.35 band recorded above, a Visible Alpha compilation spans
+  **−$1.26 to +$0.33**. A range that wide is not a forecast; it is analysts
+  conceding they cannot yet model a ~$40B/yr AI-infrastructure programme
+  inside this company. ⟨daily 2026-08-03⟩
+- **A supplier's numbers show SpaceX paying in equity rather than cash** —
+  UK RF maker Filtronic reported FY2026 revenue £55.50m (from £56.3m) with
+  operating profit down to £4m from £13.4m, attributing "£2.2 million" of
+  the decline to "a higher amortization charge related to the SpaceX share
+  warrant agreement."
+  (Investing.com, 08-04) ⟨daily 2026-08-03⟩
 
 ## 2026-08-01 — SPCX trades ~20% below issue into an unconditional unlock
 

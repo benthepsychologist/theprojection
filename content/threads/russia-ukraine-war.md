@@ -36,6 +36,24 @@ blurb: 'The single largest signal in kestrel''s own mechanical world-news sweep,
   Poland says only that it is "examining"; separately Polish F-16s
   intercepted a Russian IL-20 ~60km off the Baltic coast.
   (AOL/Reuters wire, 08-02) ⟨daily 2026-08-03⟩
+- **A second Wildberries wave overnight, plus a refinery fire** — Ukrainian
+  drones hit the warehouse at **Chekhov**, ~65km south of the Kremlin (5
+  killed, 6 injured, per Moscow Oblast Governor Vorobyov) and a second at
+  **Krasny Bor** near St Petersburg (confirmed by the Leningrad governor and
+  Wildberries' own press service), while the **Syzran oil refinery** in
+  Samara Oblast caught fire; Kyiv Independent states it cannot verify the
+  reports and Ukraine's military did not comment.
+  ([Kyiv Independent](https://kyivindependent.com/russian-oil-refinery/)) ⟨daily 2026-08-03⟩
+- **The night's incoming: one Iskander-M and 136 drones, 117 neutralised**
+  between 18:00 08-03 and 08:00 08-04 Kyiv time, per Ukraine's Air Force —
+  consistent with the nightly tempo, single-sourced.
+  (UNN, 08-04) ⟨daily 2026-08-03⟩
+- 💡 **The target set is narrowing onto commercial logistics.** Two
+  successive nights of strikes on the same e-commerce operator's warehouses,
+  now reaching both Moscow's and St Petersburg's hinterlands, alongside the
+  long-running refinery campaign — this is attrition of civilian
+  distribution capacity, and it is a different campaign from the front-line
+  and energy-grid strikes this thread has mostly tracked. ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — Kharkiv postal terminal hit; NATO confirms no Article 4 response
 

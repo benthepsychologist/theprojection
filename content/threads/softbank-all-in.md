@@ -27,6 +27,18 @@ blurb: 'The empire''s concentration play, assembled from pieces other threads ca
   lenders'-eye read on the OpenAI valuation as collateral, as Arm weakness
   compresses SoftBank's NAV into Thursday's 08-06 print.
   (Invezz/Investing.com; SoftBank IR, 08-03) ⟨daily 2026-08-03⟩
+- **⚠ Entity guard: the "record SoftBank Q1" on the overnight wires is
+  SoftBank *Corp* (9434), not SoftBank *Group* (9984)** — the domestic
+  telecom carrier reported revenue ¥1,814.7B (+9% YoY) and operating income
+  ¥302.3B on AI/cloud/financial-services strength. That is a different
+  listed company from the Vision Fund/Arm/OpenAI holding vehicle this thread
+  tracks, which reported nothing overnight and still prints **08-06**.
+  Moderate-confidence sourcing (wire pickups of an earnings-call
+  transcript). ⟨daily 2026-08-03⟩
+- 💡 **Worth writing down as a standing trap:** the two entities share a
+  brand, a founder and a reporting season, and only one of them is the
+  AI-financing story. Any "SoftBank beats" headline needs its ticker checked
+  before it touches this thread. ⟨daily 2026-08-03⟩
 
 ## 2026-08-01 — The $40B OpenAI bridge loan's full structure, ahead of the 08-06 print
 

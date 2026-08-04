@@ -3,6 +3,7 @@ title: Power Buildout
 lens: ai
 status: open
 opened: 2026-07-24
+last_seen: 2026-08-03
 weight: 3
 entities:
 - spacex
@@ -15,6 +16,33 @@ blurb: Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (S
   Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting
   battles. Category meta under where-the-capex-lands.
 ---
+
+## 2026-08-03 — Texas freezes new AI-datacenter grid connections pending an audit (caught 08-04, missed on the day)
+
+- **Governor Abbott ordered the Public Utility Commission of Texas and
+  ERCOT to audit every data centre seeking a grid connection before it can
+  energise** — covering tax incentives, power consumption, water use,
+  community-impact mitigation and ownership — with the directive that "any
+  project that fails to comply... must be denied connection to the Texas
+  grid."
+  ([Texas Tribune](https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/)) ⟨daily 2026-08-03⟩
+- **ERCOT paused its "Batch Zero" transmission planning study in response**
+  — the first cohort already moving through its revised approval process,
+  now halted mid-review. ⟨daily 2026-08-03⟩
+- **The queue this lands on: 1,800+ projects requesting 474+ GW, ~90% of it
+  data centres — more than five times the grid's all-time peak-demand
+  record**, against 335 operating and 248 planned facilities statewide.
+  ⟨daily 2026-08-03⟩
+- 💡 **Why this thread should treat it as a step-change, not another
+  permitting fight:** every prior entry here tracked power being *procured*
+  — nuclear PPAs, gas turbines, DOE site conversions. This is the first
+  time the *interconnection itself* has been withheld as policy, by the
+  state hosting the largest share of the queue. The binding constraint
+  moved from generation to permission. ⟨daily 2026-08-03⟩
+- ⚠️ **Process note, kept deliberately:** this published 08-03 13:12 CT and
+  **12 items on it sat in that day's own collector buffer routed to no
+  thread**. Curation missed it; the overnight extension pass caught it. A
+  detection failure, not a sourcing one. ⟨daily 2026-08-03⟩
 
 ## 2026-07-30 — Catch-up: a second Cold War DOE site becomes a $100B AI power build (event 07-28/29, missed at the time)
 

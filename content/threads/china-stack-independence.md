@@ -27,6 +27,19 @@ blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3
   93, the first Chinese lab explicitly benchmarking at this scale against
   a US frontier model.
   ([the-decoder](https://the-decoder.com/alibabas-open-weight-qwen3-8-max-takes-on-long-horizon-ai-tasks-with-2-4-trillion-parameters/)) ⟨daily 2026-08-03⟩
+- **Huawei's chief semiconductor scientist declares Nvidia's scale-up path
+  finite** — Liao Heng: "there has to be a limit in how they scale up with
+  ever-increasing compute die and more HBM. Once they cross that physical
+  limit, there will be an avalanche," promising Huawei's alternative (a "Tau
+  Scaling Law" using "LogicFolding") "later this year" alongside a
+  smartphone chip built on it.
+  ([The Star](https://www.thestar.com.my/tech/tech-news/2026/08/04/huaweis-top-scientist-warns-of-chip-limit-nvidia-will-soon-face)) ⟨daily 2026-08-03⟩
+- 💡 **Read it as positioning with a deferred proof.** A supply-constrained
+  competitor announcing that the leader's roadmap terminates, with evidence
+  postponed to an unshipped product, is an argument about which axis the
+  race runs on — not yet a demonstration. What makes it thread-relevant is
+  that Huawei is now committing publicly to a *different* architecture
+  rather than claiming parity on Nvidia's. ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — DeepSeek used for an autonomous attack campaign after Claude and Codex refused
 

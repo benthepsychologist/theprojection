@@ -29,6 +29,22 @@ blurb: 'The gpt-5.6 gating dynamic made permanent — and it''s all one buildout
   window, even as a fresh check confirms nothing has published (no
   Federal Register notice, no NIST/CISA/OSTP statement).
   ([NY Post](https://nypost.com/2026/08/03/business/ai-giants-anthropic-google-and-openai-to-meet-with-white-house-to-talk-regs-tuesday/)) ⟨daily 2026-08-03⟩
+- **✏️ Correction: Meta is among the invitees, not excluded** — SiliconANGLE
+  names "Anthropic, OpenAI, Google LLC and Meta Platforms Inc.", overturning
+  the "(Meta excluded)" premise this thread and its ledger entry had carried
+  from a 07-21 source; the ledger claim text has been rewritten.
+  ([SiliconANGLE](https://siliconangle.com/2026/08/03/white-house-invites-ai-companies-review-new-ai-safety-framework/)) ⟨daily 2026-08-03⟩
+- **What the labs get is a draft to "review," not final terms** — the same
+  reporting describes the framework as still in draft with no public
+  specifics on submission mechanics, testing metrics or disclosure, and
+  treats the 30-day pre-release term as "previously reported" rather than
+  newly confirmed. ⟨daily 2026-08-03⟩
+- 💡 **The exclusion story was the more interesting claim, and it was
+  wrong.** A framework that excluded Meta implied a government willing to
+  pick winners among frontier labs; a framework that includes all four is
+  an industry-wide voluntary standard, which is a materially weaker
+  instrument. This thread should stop treating selective participation as
+  the precedent being set. ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — The EU AI Act becomes enforceable while Washington's own deadline stays silent
 

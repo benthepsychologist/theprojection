@@ -59,6 +59,24 @@ blurb: '⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spen
   US officials reportedly learned of the cancellation from his
   social-media post rather than official channels.
   (NYT via RSS, 08-03) ⟨daily 2026-08-03⟩
+- **A third vessel was struck overnight — a cargo ship hit by a projectile
+  ~37km NE of Al Khasab, Oman, bridge damaged, no casualties**, confirmed
+  by UKMTO and Ambrey and carried by two independent wires; distinct from
+  the GasLog Shanghai above, making three vessels in roughly a month.
+  ([AP](https://www.clickorlando.com/news/world/2026/08/04/cargo-ship-reports-being-struck-in-strait-of-hormuz-as-us-iran-claims-about-talks-diverge/)) ⟨daily 2026-08-03⟩
+- **The reported Iran–Oman terms describe a toll booth, not a reopening** —
+  NYT reports inbound ships would transit a corridor close to Iran's coast
+  under Iranian control, outbound ships an Oman-side route, with "service
+  fees" split evenly between the two states; a US official countered that
+  temporary routes would need neither Iranian approval nor tolls. Single-
+  primary, read via relay.
+  ([ToI relay](https://www.timesofisrael.com/liveblog_entry/iran-oman-said-nearing-deal-splitting-hormuz-control-and-revenue-from-fees-between-them/)) ⟨daily 2026-08-03⟩
+- 💡 **The claim/denial gap now has a shape:** Tehran denies talking to
+  Washington while reportedly negotiating with Muscat over who collects
+  money for passage. Those are consistent, not contradictory — and they
+  describe an Iran monetising the chokepoint rather than relinquishing it.
+  Watch whether any published text of a deal ever names the US as a party.
+  ⟨daily 2026-08-03⟩
 
 ## 2026-08-02 — ⚠️ ORIGIN CORRECTED: this war began 2026-02-28, and Iran's Supreme Leader was killed in its opening strike
 
