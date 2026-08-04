@@ -18,6 +18,40 @@ blurb: 'The chokepoint is cashing in: capex raised 15% to $60-64B + another $100
   Our ~90% advanced-node anchor is carried, not re-verified. Next: Q3 earnings.'
 ---
 
+## 2026-08-04 — the human toll, missing from this record for a week
+
+The 07-28 quake below was tracked in this thread only through TSMC's fab
+status and Tokyo Electron's supply exposure. The disaster itself was
+absent from the map entirely — flagged by the `/week` world-news digest
+(2026-08-02) as a real gap, and by Ben as a lens-boundary question worth
+a direct call rather than a silent add: does a natural disaster belong
+in the `world-news` lens (scoped to conflict/geopolitical narratives —
+AGENTS.md discipline 13's own coverage bar is "all active military
+conflicts," not disasters generally), or does it stay narrowly scoped to
+conflict as designed? **Ruling: it stays out of world-news** — a natural
+disaster isn't a conflict/geopolitical narrative, and stretching the
+lens's definition to fit it would be scope creep beyond what the lens
+was built for. It's also not a flash-rail candidate a week on: the event
+was never hidden, only narrowly framed, and the flash rail's late-catch
+allowance exists for stories genuinely missed, not for widening an
+existing story's frame after the fact. **The actual fix, and the real
+gap:** the human toll belongs in the record somewhere, so it lands here,
+where the event is already tracked — not as a new thread, just an honest
+account. Verified fresh against primary/consolidated sources (figures
+below are the FINAL tallies, updated from the developing-disaster numbers
+first reported 07-28, which undercounted as rescue efforts continued):
+**38 dead, 127 injured.** The Aeon Mall in Kashima's second floor
+collapsed onto an estimated 3,000 shoppers, followed by a suspected gas-
+leak explosion — 7 of the 38 deaths and roughly 55 of the injuries were
+at this one site; two of the dead were store employees ordered back
+inside after evacuating, to retrieve cash. ~48,300 households lost power
+in Kumamoto Prefecture (restored by 07-31); up to 84,000 households lost
+water across Kumamoto and Nagasaki; ~15,000 people sheltered across 400
+evacuation centers.
+([Wikipedia, consolidated](https://en.wikipedia.org/wiki/2026_Kumamoto_earthquake) ·
+[Al Jazeera](https://www.aljazeera.com/news/2026/7/28/japan-kumamoto-earthquake-what-happened-damage-victims-latest-updates) ·
+[NPR](https://www.npr.org/2026/07/28/nx-s1-5910498/japan-earthquake)) ⟨steer 2026-08-04⟩
+
 ## 2026-07-30 — "Limited impact" verdict lands, not unanimous; Tokyo Electron's exposure gets a number; 1.4nm pulls ahead
 
 - **A "limited impact" verdict on the Kumamoto quake lands** (Focus
