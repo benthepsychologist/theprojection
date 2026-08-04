@@ -24,11 +24,19 @@ blurb: 'The wave is ~10+ enacted instruments in two species (crawl 2026-07-22 co
   chairing)**, listed verbatim as "S.B.No. 903 Padilla. Mental health
   professionals: artificial intelligence."
   ([Assembly Appropriations](https://apro.assembly.ca.gov/hearings)) ⟨daily 2026-08-04⟩
-- 💡 **The listing detail is the finding.** The bill sits under "BILLS HEARD
-  IN SIGN-IN ORDER" and the page does not label this a suspense-file
-  hearing — so the likeliest outcome is an up-or-down committee action
-  rather than the bill being parked on suspense, which is the path this
-  thread had been treating as the default. ⟨daily 2026-08-04⟩
+- **The listing detail:** the bill sits under "BILLS HEARD IN SIGN-IN ORDER"
+  and neither the committee page nor leginfo's bill history uses the word
+  "suspense" — the latest recorded action is 07/02/26 "Read second time and
+  amended. Re-referred to Com. on APPR." ⟨daily 2026-08-04⟩
+- ✏️ **Correction, same day — the prediction is withdrawn, the facts hold.**
+  An earlier version of this entry read the missing "suspense" label as
+  meaning an up-or-down committee action was the likeliest outcome. That
+  inference is withdrawn: the 08-05 calendar carries **360+ measures**, and
+  an August Appropriations hearing that size is the shape of a suspense
+  calendar in California practice whatever the page calls it. A separate
+  claim that SB 903 was placed on suspense around 07-01 surfaced from a
+  secondary document and is **not corroborated** by either primary source.
+  Net: all three outcomes stay open. ⟨daily 2026-08-04⟩
 
 ## 2026-08-03 — SB 903 is confirmed calendared — Assembly Appropriations, Wed Aug 5
 
