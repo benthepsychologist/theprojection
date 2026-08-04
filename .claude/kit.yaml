@@ -1,6 +1,6 @@
-library_version: 2026-07-31.3
+library_version: 2026-08-04.1
 kind: site
-installed_at: '2026-07-31T15:38:16Z'
-engine_commit: 3eb1166
+installed_at: '2026-08-04T10:59:41Z'
+engine_commit: db22ff0
 files:
   CLAUDE.md: a5ba689f1aa8a1fa6925a6a26e16416cddfd78104c4f4ead5bb3156399092985
