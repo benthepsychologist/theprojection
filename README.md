@@ -29,6 +29,24 @@ and should not be hand-edited — edits belong upstream.
 
 ## Layout
 
+⚠️ **`CLAUDE.md` in this repo is kit-rendered**, from the site-attention
+agentdoc template in `/workspace/kestrel/library/`, and tracked by hash in
+`.claude/kit.yaml`. Unlike the data repo's copy it carries **no warning
+inside the file itself**, so it is easy to edit without realising you are
+creating drift. You may edit it — this repo is in the write zone — but
+**kestrel is not** (Ben, 2026-08-04), so do not go there to reconcile the
+template: drop a brief into `/workspace/kestrel/INBOX/` instead. An edit
+here will show as `dirty` in `kit.py sync`, which is the intended signal,
+not a fault.
+
+📌 **Two known errors in that rendered `CLAUDE.md`, upstream to fix — do not
+patch them here:** it places the publish adapter at
+`/workspace/kestrel/tools/publish/` (it was relocated to
+`theprojection-data/publish/adapter.py` on 2026-07-31, and no per-site code
+lives in the engine repo), and its "data/instance repo" upstream pointer
+names *this* repo rather than `theprojection-data`. Both are template bugs,
+covered in the brief filed 2026-08-04.
+
 | path | what |
 | --- | --- |
 | `hugo.yaml` | site config — lens labels/colors, menus, tagline |
