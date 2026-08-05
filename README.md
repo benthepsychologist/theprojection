@@ -42,9 +42,12 @@ not a fault.
 📌 **Two known errors in that rendered `CLAUDE.md`, upstream to fix — do not
 patch them here:** it places the publish adapter at
 `/workspace/kestrel/tools/publish/` (it was relocated to
-`theprojection-data/publish/adapter.py` on 2026-07-31, and no per-site code
-lives in the engine repo), and its "data/instance repo" upstream pointer
-names *this* repo rather than `theprojection-data`. Both are template bugs,
+`theprojection-data/publish/adapter.py` on 2026-07-31 — the directory itself
+was not renamed in the 2026-08-05 repo rename, only the GitHub repo/display
+name changed to theprojection-corpus, so this path is still accurate — and
+no per-site code lives in the engine repo), and its "data/instance repo"
+upstream pointer names *this* repo rather than the data/instance repo
+(theprojection-corpus, formerly theprojection-data). Both are template bugs,
 covered in the brief filed 2026-08-04.
 
 | path | what |
