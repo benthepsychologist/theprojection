@@ -3,7 +3,7 @@ title: Circular Financing
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-07-31
+last_seen: 2026-08-04
 weight: 3
 entities:
 - nvidia
@@ -16,6 +16,18 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
   A correction here hits everything in radar Q1/Q2.'
 ---
+
+## 2026-08-04 — The loop's headline number jumps to $750B; Oracle's CDS stays at record
+
+- **Nvidia reportedly in talks for up to $750B in new financing deals**
+  ($500B+ SK Group, up to $250B in OpenAI lease guarantees) — see
+  `nvidia-vendor-financing` for full detail; a materially larger version
+  of the same circular-financing mechanism this thread tracks.
+  ([Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-750-billion-deals-revive-102003935.html)) ⟨daily 2026-08-04⟩
+- **Oracle's 5-year CDS remains near an 18-year/record high** (~2.03
+  percentage points, up from 144bp at year-start), unresolved into this
+  window — the standing proxy for AI-buildout credit risk this thread
+  tracks since 07-17. ⟨daily 2026-08-04⟩
 
 ## 2026-07-30 (later) — The first AI-thesis fund broken by the AI trade: Situational Awareness force-sold to Citadel
 

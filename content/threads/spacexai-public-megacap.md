@@ -3,7 +3,7 @@ title: Musk Megacap
 lens: global-capital
 status: open
 opened: 2026-07-24
-last_seen: 2026-08-03
+last_seen: 2026-08-04
 weight: 1
 entities:
 - spacex
@@ -19,6 +19,22 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   Watch: the Aug-6 lock-up (911.5M shares); Musk''s ~82% voting control; whether the
   Anthropic lease-back is real revenue or circular financing. Q7 material.'
 ---
+
+## 2026-08-04 — First post-IPO earnings beat cleanly; AI capex sinks the stock anyway
+
+- **Revenue $7.8B (+92% YoY), beat ~$6.75-6.9B consensus; EPS -$0.09, far
+  narrower than every tracked compiler's spread.** Adjusted EBITDA $3.5B
+  (+191% YoY). Starlink led at $4.3B (only profitable segment, 1.7M net
+  subscriber adds, ARPU down to $66 from $85 a year ago). The AI segment
+  nearly tripled revenue to $2.6B but posted a $1.3B operating loss.
+  **Capex hit $18.4B, up 6x YoY, with $15.8B specifically
+  AI-infrastructure** — that number, not the beat, drove shares from
+  +9.4% intraday to as much as -8.6% after-hours, directly validating
+  the "zero-AI-value" framing this thread already carries (Morgan
+  Stanley's 07-24 note). Management guided to a $100B annualized revenue
+  run-rate by end of 2026. First insider-lockup tranche (up to 20% of
+  ~911.5M restricted shares) remains on schedule 08-06.
+  ([CNBC](https://www.cnbc.com/2026/08/04/spacex-spcx-earnings-live-updates-q2-2026.html), [NPR](https://www.npr.org/2026/08/04/nx-s1-5918536/spacex-first-earnings-report-since-ipo)) ⟨daily 2026-08-04⟩
 
 ## 2026-08-03 — First public earnings land tomorrow, two days before a historic insider unlock
 

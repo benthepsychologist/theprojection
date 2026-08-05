@@ -3,7 +3,7 @@ title: Iran's Widening War
 lens: world-news
 status: open
 opened: 2026-07-23
-last_seen: 2026-08-03
+last_seen: 2026-08-04
 weight: 3
 entities: []
 thread_kind: story

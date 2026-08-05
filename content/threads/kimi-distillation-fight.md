@@ -3,7 +3,7 @@ title: Distillation Fight
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-08-03
+last_seen: 2026-08-04
 weight: 3
 entities:
 - moonshot-ai
@@ -17,6 +17,13 @@ blurb: 'The White House (OSTP''s Kratsios) directly accused Moonshot of distilli
   Moonshot''s response, independent verification one way or the other, and whether
   it chills enterprise adoption of K3.'
 ---
+
+## 2026-08-04 — Moonshot opens final pre-IPO talks
+
+- **Opened final pre-IPO funding talks**, targeting up to $50B pre-money
+  ahead of the ~6-month Hong Kong listing already tracked, riding
+  reported Kimi K3 benchmark strength against GPT-5.5/Claude Opus
+  4.8/GLM-5.2. ⚠ Loosely dated ("opening in August"). ⟨daily 2026-08-04⟩
 
 ## 2026-08-03 — Moonshot reportedly chases a ~$50B Hong Kong IPO amid the Fable-distillation dispute
 

@@ -3,7 +3,7 @@ title: CoreWeave Bet
 lens: global-capital
 status: open
 opened: 2026-07-28
-last_seen: 2026-07-28
+last_seen: 2026-08-04
 weight: 2
 entities:
 - coreweave
@@ -18,6 +18,13 @@ blurb: 'The neocloud wager, quantified: $99.4B backlog (Q1-26; OpenAI $18.4B + M
   rejection left a 4.5-month capacity gap; plan B is thin. Next print: Q2 earnings
   08-11.'
 ---
+
+## 2026-08-04 — +20% on new government and international demand
+
+- **A Leidos partnership to supply AI cloud infrastructure to US
+  defense/intelligence agencies, plus a first APAC expansion** (three
+  Indonesia data centers, 360MW) — sets up the 08-11 Q2 print.
+  ([FX Leaders](https://www.fxleaders.com/news/2026/08/04/coreweave-crwv-stock-jumps-20-as-us-government-ai-deal-sparks-massive-rally/)) ⟨daily 2026-08-04⟩
 
 ## 2026-07-30 — A rejected suitor's rebound, and a sweetened loan
 

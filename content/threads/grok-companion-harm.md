@@ -3,7 +3,7 @@ title: Grok Harm
 lens: mental-health
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-31
+last_seen: 2026-08-04
 weight: 2
 entities:
 - spacex
@@ -20,6 +20,16 @@ blurb: 'CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct: (A
   thread''s core) from being swallowed by strand B (CSAM, the regulatory driver).
   Cross-refs ai-therapy-regulatory-reckoning.'
 ---
+
+## 2026-08-04 — Five new suits filed as Minnesota's "nudify" ban stays in force
+
+- **A federal judge already denied xAI's bid to block HF 1606 (07-31);
+  with the ban in effect since 08-01, xAI now faces five additional
+  lawsuits.** The scheduled preliminary-injunction hearing (08-19, Judge
+  Donovan Frank) will be the first court test of the law's First
+  Amendment validity — AG Ellison's opposition brief due 08-12, xAI's
+  reply 08-17.
+  ([Tech Times](https://www.techtimes.com/articles/322899/20260804/grok-faces-five-new-lawsuits-minnesota-nudification-ban-takes-effect-after-court-defeat.htm)) ⟨daily 2026-08-04⟩
 
 ## 2026-07-31 (later) — xAI loses a second ruling the same day; Minnesota's nudify ban takes effect
 

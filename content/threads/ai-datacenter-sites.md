@@ -3,7 +3,7 @@ title: Datacenter Sites
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-08-03
+last_seen: 2026-08-04
 weight: 3
 entities:
 - openai
@@ -16,6 +16,14 @@ blurb: Where the capex lands in CONCRETE — the specific gigawatt campuses. Sta
   Colossus, Camellia + the 100s of sites. Category meta under where-the-capex-lands;
   the specific-sites worklist lives here.
 ---
+
+## 2026-08-04 — Datacenter operators tap banks for billions to unlock grid connections
+
+- **Letters-of-credit deals (~$10B currently in discussion)** to reassure
+  utilities that ratepayers won't absorb infrastructure costs if a
+  project fails — real financing stress underneath the site pipeline,
+  echoing the Texas PUCT/ERCOT audit gate below.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-04/ai-power-demands-spur-builders-to-seek-billions-in-bank-pledges)) ⟨daily 2026-08-04⟩
 
 ## 2026-08-03 — Texas puts the whole site pipeline behind an audit gate (caught 08-04, missed on the day)
 

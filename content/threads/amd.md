@@ -19,6 +19,20 @@ blurb: 'Whether the ~14GW of announced OpenAI/Meta/Anthropic compute deals actua
   status, and whether the Oracle 50,000-GPU Q3-2026 rollout starts on schedule.'
 ---
 
+## 2026-08-04 — Q2 beats and raises; the stock falls anyway
+
+- **Double beat, sold off ~8-9% after-hours on valuation/margin
+  concerns.** Revenue $11.536B (record, +50% YoY, above the $11.2B ±
+  $300M guide); Data Center $6.718B (+107% YoY, above the ~$6.5B
+  consensus); Q3 guide ~$13B. The Anthropic MI450/Helios partnership (up
+  to 2GW) reaffirmed, first gigawatt now slated H1 2027 (not H2 2026 as
+  earlier framed); Helios rack shipments named OpenAI, Meta, Microsoft,
+  Oracle and Anthropic among recipients, shipments beginning later in Q3
+  2026. Coverage attributes the sell-off to stretched valuation (above
+  Nvidia's own multiples) and flat 56% margin guidance — Wall Street
+  wanted a blowout Q3 forecast, not an in-line beat.
+  ([AMD IR](https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results)) ⟨daily 2026-08-04⟩
+
 ## ← Backstory
 
 <!-- /crawl appends below; finding pointer goes in the heading line -->

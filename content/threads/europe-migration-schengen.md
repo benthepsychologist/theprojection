@@ -37,6 +37,16 @@ blurb: 'The policy fight the Ceuta mass-crossing set off, offered as a thread ca
   migration and strengthening external borders — the Commission managing
   expectations downward before it started.
   ([RTÉ](https://www.rte.ie/news/europe/2026/0804/1586312-ceuta-crisis/)) ⟨daily 2026-08-03⟩
+- **The meeting was held — a solidarity statement, no binding decision.**
+  Migration Commissioner Magnus Brunner: the EU stands in "full
+  solidarity" with Spain, calling it "a test of our European resilience."
+  No Schengen-suspension decision came out of the Council (Italy's
+  unilateral suspension of free movement with Spain remains national,
+  not EU-level); no Morocco-returns agreement. Matches von der Leyen's
+  own pre-framing exactly — explicitly deferred to the October European
+  Council. Death toll held at 72; by 08-04 all but ~2,000 of the crossers
+  had already returned to Morocco on their own.
+  ([Euronews](https://www.euronews.com/my-europe/2026/08/04/full-solidarity-with-spain-after-ceuta-as-crisis-tests-eu-resilience-migration-commissione)) ⟨daily 2026-08-04⟩
 - **The suspension camp is Italy and Denmark**, pushing to suspend Spain
   from Schengen, which Madrid rejects. ✏️ Correction on open: the 08-03
   world-news digest recorded this as "Italy/Finland" — Finland is wrong and

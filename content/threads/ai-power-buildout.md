@@ -3,7 +3,7 @@ title: Power Buildout
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-08-03
+last_seen: 2026-08-04
 weight: 3
 entities:
 - spacex
@@ -16,6 +16,15 @@ blurb: Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (S
   Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting
   battles. Category meta under where-the-capex-lands.
 ---
+
+## 2026-08-04 — Datacenter operators tap banks for billions to unlock grid connections
+
+- **Letters-of-credit deals (~$10B currently in discussion)** meant to
+  reassure utilities that ratepayers won't be left holding
+  infrastructure costs if an AI-datacenter project fails — real
+  financing stress underneath the buildout, and a direct echo of the
+  Texas PUCT/ERCOT freeze below.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-04/ai-power-demands-spur-builders-to-seek-billions-in-bank-pledges)) ⟨daily 2026-08-04⟩
 
 ## 2026-08-03 — Texas freezes new AI-datacenter grid connections pending an audit (caught 08-04, missed on the day)
 

@@ -31,6 +31,11 @@ blurb: 'A Tigray-war reignition with cross-border spillover, offered as a thread
   hundreds fleeing across the border and regional analysts warning that a
   wider war could reignite. (BBC, Al Jazeera, RFI, Mada Masr, 08-01/03)
   ⟨daily 2026-08-03⟩
+- **Fighting continued 08-01→04** — Ethiopian forces and Tigray-aligned
+  fighters clashed further along the Sudan and Eritrea borders; Ethiopia
+  says it repelled a Sudan-originated incursion at Sherarina. No
+  step-change (Eritrea has not entered directly), but sustained rather
+  than episodic. ⟨daily 2026-08-04⟩
 - 💡 **Why it clears the bar without re-litigation.** AGENTS discipline 13
   states the coverage rule plainly: all active military conflicts that are
   not hyper-local get coverage. This one had zero dedicated coverage here
