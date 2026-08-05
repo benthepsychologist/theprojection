@@ -17,6 +17,37 @@ blurb: 'OpenAI-direct build (Octans GA LLC/Butler Snow — no named GC or Starga
   petition), generation-mix disclosure, and whether a GC/financing partner surfaces.'
 ---
 
+## 2026-08-05 — County government responds directly for the first time: no NDAs, staff threats, forum dates set
+
+- **Effingham commissioners denied signing any NDA with OpenAI** — at an
+  Aug 4 meeting, Chairman Damon Rahn stated: "None of my commissioners
+  signed any NDA's. We have no agreements with OpenAI," clarifying the
+  county's role was limited to the Industrial Development Authority
+  asking about water/sewer capacity before the project went public. The
+  first time county leadership has responded directly to the local
+  secrecy-backlash narrative this thread has tracked since 07-22.
+  ([WTOC](https://www.wtoc.com/2026/08/05/effingham-county-commissioners-address-data-center-plans/)) ⟨daily 2026-08-05⟩
+- **County staff have received threats since the July 22 announcement** —
+  Rahn confirmed it and said leadership issued a directive requiring
+  staff to report all verbal/written/social-media threats to supervisors,
+  HR and law enforcement — a new safety dimension not previously on file.
+  ([WTOC](https://www.wtoc.com/2026/08/05/effingham-county-commissioners-address-data-center-plans/)) ⟨daily 2026-08-05⟩
+- **Commissioners also passed a zoning-language standardization ordinance**
+  covering the industrial park where the data center will sit (Rahn's
+  example: a mechanic shop had been miscategorized as "tire sales").
+  ([WTOC](https://www.wtoc.com/2026/08/05/effingham-county-commissioners-address-data-center-plans/)) ⟨daily 2026-08-05⟩
+- **A dedicated public forum is now scheduled for late August** —
+  Commissioner Beth Helmly pushed for a full Saturday devoted solely to
+  Camellia, proposed for **Aug 22 or Aug 29** (venue/date still being
+  finalized) — and for the first time, county leadership itself (not just
+  petitioners) put a **moratorium on further data centers** on the
+  agenda for that forum's discussion. A separate Chamber of Commerce
+  panel is tentatively set for **Aug 26**, featuring OpenAI reps, the
+  Industrial Development Authority, Georgia Tech and independent experts.
+  No Coastal Regional Commission/DRI ruling yet — the ~30-day review
+  clock (started 07-24) runs to roughly 08-23.
+  ([Effingham Herald](https://www.effinghamherald.net/data-centers/project-camellia-effingham-plans-openai-data-center-forum/)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-30 — Local press keeps digging into process and disclosure
 
 - **Effingham Herald: "How OpenAI's Effingham Data Center Moved Forward

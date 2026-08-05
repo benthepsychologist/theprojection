@@ -31,6 +31,23 @@ blurb: '⚠️ SCALE CORRECTED 2026-08-02 — this thread was reading a five-mon
   distinct from the conflict itself.'
 ---
 
+## 2026-08-05 — Oil extends its slide to ~$78.5 as Hormuz-deal optimism builds again
+
+- **Brent fell to roughly $78.4–78.7/bbl (−0.8 to −1.2%)**, extending
+  its decline from the 08-03 close of $84.75 — a roughly 7% two-day
+  drop — as markets price in a reported 60-day US-Iran-Oman deal to
+  reopen the Strait of Hormuz (terms and status on
+  `iran-conflict-widening`). Gold, the mirror trade, gained for a third
+  straight day on the same easing-risk-premium logic, holding above
+  $4,100.
+  ([Trading Economics](https://tradingeconomics.com/commodity/brent-crude-oil), [NBC News](https://www.nbcnews.com/world/iran/trump-iran-war-deal-strait-hormuz-deal-oman-rcna590920)) ⟨daily 2026-08-05⟩
+- **The deal is still unsigned, and this thread has already watched one
+  de-escalation trade fail to survive a night** — the 08-03 rally
+  reversed within hours after a third vessel was struck in the strait.
+  This move is running on the same kind of anticipation; whether it
+  holds depends on an actual reopening materializing, not on the
+  announcement of one. ⟨daily 2026-08-05⟩
+
 ## 2026-08-03 — Oil craters ~5% on the de-escalation claim after touching $90 intraday
 
 - **Oil fell to a three-week low on Iran relief hope** — Brent settled

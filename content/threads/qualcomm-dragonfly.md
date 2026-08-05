@@ -19,6 +19,22 @@ blurb: 'Qualcomm''s datacenter re-entry, eight years after Centriq died: Dragonf
   test: Q3 FY26 earnings 07-29 (tomorrow) — does Dragonfly move guidance?'
 ---
 
+## 2026-08-05 — First named software partner for the Dragonfly accelerators
+
+- **Multiverse Computing and Qualcomm announced a partnership to optimize
+  Multiverse's compressed AI models for Qualcomm's Dragonfly AI200 and
+  AI250 accelerators** (with Cloud AI100 Ultra used in demos) — aimed at
+  letting data-center operators run more inference on existing hardware
+  at lower power. Multiverse's Chief Sales Officer Victor Gaspar: "By
+  combining Qualcomm's efficient AI accelerators with our model
+  compression technology, we can deliver breakthrough improvements in
+  performance, cost, and energy efficiency at scale." This is an
+  ecosystem/software partnership, not a new hardware customer or a
+  production-date update — a smaller item than the Meta/Microsoft
+  launch-customer news, but the first named software partner since the
+  Investor Day unveiling.
+  ([GlobeNewswire via The Globe and Mail](https://www.theglobeandmail.com/investing/markets/markets-news/GlobeNewswire/36869843/multiverse-computing-and-qualcomm-collaborate-to-bring-efficient-ai-models-to-data-centers/)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-30 — Modular acquisition officially closed
 
 - **The Modular acquisition officially closed 07-29** — resolves the

@@ -22,6 +22,18 @@ blurb: 'The combined 2026 plan is now ~$610-650B across the four (Google $195-20
   threads). Earnings Wed/Thu (Meta+MSFT 07-29, AMZN 07-30) are the live test.'
 ---
 
+## 2026-08-03 — BofA puts a number on the next leg up: $1.2T over the next 12 months (caught 08-05)
+
+- **Bank of America now sees hyperscaler capex reaching $1.2 trillion over
+  the next 12 months** — a step up from the ~$700B-for-calendar-2026
+  framing this thread has tracked, and a forward 12-month window rather
+  than a single fiscal year, so the two figures aren't directly
+  comparable but both are climbing. BofA analyst Vivek Arya named nine
+  semiconductor beneficiaries with 30%+ upside (Marvell, Micron, Intel,
+  Nvidia, Credo, KLA, Applied Materials, Broadcom, AMD) across compute,
+  memory, semicaps, power semis and optics.
+  ([Benzinga](https://www.benzinga.com/markets/tech/26/08/60886732/hyperscaler-capex-1-2-trillion-9-semiconductor-stocks-bofa)) ⟨daily 2026-08-05⟩
+
 ## 2026-08-03 — Oracle's stock jumps 9.2% while its credit still prices the same capex as distress
 
 - **Oracle rose 9.2% as equity and credit split on the same capex** —

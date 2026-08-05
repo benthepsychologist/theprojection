@@ -41,6 +41,38 @@ blurb: '⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spen
   underwriting read is a separate, deliberately distinct thread: `red-sea-oil-shock`.'
 ---
 
+## 2026-08-05 — A 60-day Hormuz deal is reportedly "close" but still unsigned; Trump pairs the optimism with a renewed strike threat
+
+- **US, Iran and Oman are reportedly close to a 60-day interim deal to
+  reopen the Strait of Hormuz** — no transit tolls during the initial
+  60 days (possible security/environmental fees after), inbound traffic
+  via a northern lane through Iranian territorial waters, outbound via a
+  southern lane through Omani waters, and mine-clearing of the strait's
+  median lane within 30 days ahead of a longer-term arrangement. **Not
+  signed or formally announced as of this writing** — reported as
+  under negotiation, terms not confirmed.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want)) ⟨daily 2026-08-05⟩
+- **Trump paired the deal talk with a revived strike threat** —
+  "We'll know in 48 hours. The strait is going to be open very soon,
+  or they're going to get hit very hard" — while separately telling
+  reporters "It could happen. Tomorrow or the next day. A lot of
+  progress has been made." Treasury Secretary Bessent: "a chance we
+  may have a deal today or tomorrow." Secretary of State Rubio, more
+  guarded: progress made but "not finality yet."
+  ([NBC News](https://www.nbcnews.com/world/iran/trump-iran-war-deal-strait-hormuz-deal-oman-rcna590920)) ⟨daily 2026-08-05⟩
+- **Iran's own position is unchanged from 08-03** — Tehran maintains it
+  is negotiating only with Oman, not the US directly; Foreign Ministry
+  spokesman Baghaei described the talks as being about "establishing
+  safe inbound and outbound shipping lanes," consistent with, not a
+  reversal of, its prior denial of direct US talks. ⟨daily 2026-08-05⟩
+- 💡 **Considered against the flash-rail bar and not filed.** An actually
+  *signed* reopening of a strait shut for five months, ending a
+  structural global-shipping crisis, would likely clear that bar; a
+  reported-close, unsigned negotiation paired with a strike threat does
+  not — it is the same claim/denial pattern this thread has tracked
+  since 08-01, one step further along. Worth re-checking the instant it
+  is actually signed. ⟨daily 2026-08-05⟩
+
 ## 2026-08-03 — Trump claims a deal, Iran denies it, and a second LNG tanker is hit in Hormuz
 
 - **Iran flatly denies the US talks Trump announced** — Tehran's Foreign

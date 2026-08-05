@@ -18,6 +18,23 @@ blurb: 'Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit alloca
   specifically the reallocation call between the two cohorts.'
 ---
 
+## 2026-08-05 — A named fund manager pushes back on "peaking": this is a reset, not a rotation
+
+- **Harvest ETFs co-CIO James Learmonth called last week's chip-stock
+  selloff (over $1 trillion in combined market cap lost, Nvidia, SK
+  Hynix, Samsung and Micron the biggest losers) a healthy reset within an
+  early-to-mid-cycle buildout, not evidence AI capex is peaking**: "the
+  expectation that spending is going to continue to increase is still
+  very much there... the AI infrastructure build out is likely still
+  relatively early, mid to early cycle" — while conceding "the likely
+  growth of this sector will not be as steep as it was before."
+  Semiconductor-tracking ETFs remain up ~80% YTD and over 100% on a
+  trailing 12-month basis despite the pullback. This is a fresh, named,
+  on-the-record voice landing on the "capex not peaking" side of the
+  split this thread already tracks, not a new data point from fund-flow
+  data itself.
+  ([Wealth Professional](https://www.wealthprofessional.ca/investments/equity-markets/does-the-correction-in-chip-stocks-represent-a-new-rotation-for-ai-investors/393183)) ⟨daily 2026-08-05⟩
+
 ## 2026-08-03 — Megacap chip names bounce, but SOXX breadth lags its own leaders
 
 - **The AI-megacap chips rallied while the chip index lagged** — on

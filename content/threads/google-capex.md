@@ -18,6 +18,23 @@ blurb: '$195-205B guided for 2026 (07-22), destination traced by crawl 07-27: a 
   (Meta eval).'
 ---
 
+## 2026-08-04 — A second, bigger debt package takes shape for Anthropic's Google-chip compute (caught 08-05)
+
+- **Blackstone has pitched a second mega debt package — an early proposal
+  of at least $36B — to fund more of Anthropic's lease of Google's custom
+  TPUs**, which would exceed the $35B Apollo/Blackstone package arranged
+  roughly two months ago for the same purpose (Anthropic's five-data-
+  center TPU lease). Size, structure and lead arranger are still being
+  discussed. The timing follows Anthropic's confidential US IPO filing —
+  a second record debt round stacked within 60 days of the first, even as
+  Anthropic also raises equity.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-04/blackstone-has-pitched-mega-debt-package-for-anthropic-chip-deal)) ⟨daily 2026-08-05⟩
+- **Same pattern this thread already tracks (07-31): Google's chip
+  business financed off Anthropic's own balance sheet, at growing scale**
+  — the 07-31 entry was a $15B loan guarantee for Anthropic's power/lease
+  obligations; this is a distinct, larger debt round specifically for the
+  TPU compute lease itself. ⟨daily 2026-08-05⟩
+
 ## 2026-07-31 — Google guarantees a $15B bank loan backing Anthropic's own data-center buildout
 
 - **Google is guaranteeing billions of dollars of Anthropic's lease and

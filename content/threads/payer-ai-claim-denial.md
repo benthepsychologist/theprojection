@@ -21,6 +21,24 @@ blurb: 'The concept lived in board glosses; now the evidence supports a thread: 
   nH Predict suit (quiet, distinct docket).'
 ---
 
+## 2026-08-05 — CVS Health's earnings call delivers exactly the AI commentary this thread was watching for
+
+- **CVS Health's Q2 2026 earnings (reported today) named two specific AI
+  deployments inside Aetna's claims pipeline** — a second-generation "Aetna
+  Claims Assist Manager" (CAM), described as an "AI-powered agentic claims
+  advisor platform" that cuts processing time by over 20% for complex claims
+  needing manual review, plus agentic AI simplifying call-center
+  interactions for Aetna/CVS Caremark members and providers. This is the
+  direct answer to what this thread flagged one day early: a second insurer
+  giving AI-in-claims commentary in the same operational-efficiency register
+  UHC's Hemsley used on 07-15.
+  ([CVS Health investor release](https://investors.cvshealth.com/news/news-details/2026/CVS-HEALTH-CORPORATION-REPORTS-STRONG-SECOND-QUARTER-2026-RESULTS-AND-RAISES-FULL-YEAR-2026-GUIDANCE/default.aspx)) ⟨daily 2026-08-05⟩
+- **CVS beat estimates and raised full-year guidance to $7.90–$8.10 adjusted
+  EPS** (from $7.30–$7.50), crediting Aetna's continued MLR recovery — the
+  release does not connect the AI tools to the guidance raise directly;
+  noted here as context, not claimed causation.
+  ([CVS Health investor release](https://investors.cvshealth.com/news/news-details/2026/CVS-HEALTH-CORPORATION-REPORTS-STRONG-SECOND-QUARTER-2026-RESULTS-AND-RAISES-FULL-YEAR-2026-GUIDANCE/default.aspx)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-15 — UnitedHealth self-reports the practice under discovery
 
 - **CEO Stephen Hemsley told Q2 2026 earnings-call investors "virtually

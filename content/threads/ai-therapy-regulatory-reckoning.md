@@ -18,6 +18,16 @@ blurb: 'The capability/approval gap for AI mental-health chatbots is being close
   into the vacuum. Ben''s sharpest edge — the evidence-gap thesis playing out live.'
 ---
 
+## 2026-08-05 — A new peer-reviewed study puts numbers on the evidence-gap thesis
+
+- **A Nature Human Behaviour study (Zhang et al.) found AI-companion effects on
+  well-being hinge on usage pattern and offline social context — and that
+  users with the thinnest social networks who lean on chatbots for emotional
+  support come out worse, not better.** Coverage frames it as evidence for
+  exactly the risk profile the reckoning has been arguing litigation is
+  outrunning: the heaviest use concentrating in the most vulnerable users.
+  ([Nature Human Behaviour](https://www.nature.com/articles/s41562-026-02516-2), [Stanford Report](https://news.stanford.edu/stories/2026/08/ai-companions-chatbots-loneliness-research)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-29 — Two new studies name the failure modes; Maine gives the strand its first live statute
 
 - **A Northeastern preprint tested 8 chatbots across 16 psychiatric

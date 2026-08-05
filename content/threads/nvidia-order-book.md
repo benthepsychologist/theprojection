@@ -17,6 +17,23 @@ blurb: The demand side of the chip spend — a ~$1T Blackwell+Rubin book (a mana
   stakes (Nvidia's 10-Q investments in its own buyers).
 ---
 
+## 2026-08-05 — A new demand category: SpaceX commits exclusively to Nvidia for AI compute in orbit
+
+- **SpaceX unveiled Starmind AI1, an exclusive deal to run Nvidia Rubin
+  GPUs and Vera CPUs as orbital AI compute** — each satellite carries a
+  full Rubin NVL72 rack (72 GPUs), stands ~20m tall with a 75m solar
+  wingspan, draws ~210kW average/~250kW peak power, targets a 2027
+  launch, and SpaceX has floated a constellation scaling toward 1M
+  satellites as a "distributed AI supercomputer in space." AMD shares
+  fell on the exclusivity news.
+  ([Interesting Engineering](https://interestingengineering.com/space/nvidia-spacex-starmind-ai1-satellite); multiple outlets 08-04/08-05) ⟨daily 2026-08-05⟩
+- 💡 **A genuinely new category on this thread's demand side** — every
+  prior entry here is terrestrial hyperscaler/lab demand; this is the
+  first orbital compute customer, at satellite counts that dwarf any
+  single datacenter campus if the constellation plan holds. Cost and
+  firm order size are not yet disclosed — treat the "1M satellites"
+  figure as a stated ambition, not a backlog number. ⟨daily 2026-08-05⟩
+
 ## 2026-07-24 — Opened + crawled
 
 - **Thread opened** (ben-steer). ⟨steer 2026-07-24⟩

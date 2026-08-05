@@ -20,6 +20,24 @@ blurb: The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE
   Watch whether displacement reaches frontier training.
 ---
 
+## 2026-08-05 — A fifth entrant: Anthropic starts building its own chip-design team
+
+- **Anthropic is assembling an internal AI chip-design team**, confirmed
+  by the company after Business Insider broke the story — recruiting
+  through a "custom silicon team" job listing, aiming to "co-design
+  hardware and models to help its technology run faster and more
+  efficiently." Anthropic currently relies entirely on external partners
+  (AWS, Google, Nvidia, AMD) for compute; The Information separately
+  reported it is evaluating Samsung as a manufacturing partner. This is
+  the customer side of the story, not another hyperscaler program — the
+  exact company this thread cites as the anchor case for
+  "inference-only, still mostly Nvidia plus Trainium+TPU" is now moving
+  toward designing silicon of its own rather than only consuming
+  hyperscaler chips. Coverage doesn't specify whether the target is
+  training or inference/serving — a genuine open question, not yet
+  resolved by any source.
+  ([TechCrunch](https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-27 — Four programs, one wall ⟨crawl 2026-07-27⟩
 
 - TPU v7 Ironwood (Broadcom/MediaTek/TSMC co-design) · Maia 200

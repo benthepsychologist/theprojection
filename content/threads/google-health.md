@@ -15,6 +15,25 @@ blurb: Google mid-pivot — Verily spun OUT to independence (not wound down); en
   suits); genuine behavioral-health capability is upstream in research, not shipped.
 ---
 
+## 2026-08-05 — First genuinely MH-native Google Health move: psychiatric relapse prediction
+
+- **Amae Health and Google Health Enterprise announced a collaboration
+  feeding wearable data (heart-rate variability, sleep, activity,
+  circadian-rhythm changes) from the Google Health app and Fitbit into
+  Amae's psychiatric care workflow**, aimed at earlier detection of
+  relapse in schizophrenia, bipolar disorder, major depressive disorder
+  and severe personality disorders — Amae also works with Cedars-Sinai,
+  Mass General Brigham and NewYork-Presbyterian, and the two are
+  developing a standardized composite relapse-risk score comparable to
+  cardiovascular risk tools. Amae's CMO: "Unlike other areas of medicine,
+  psychiatry has historically lacked objective tools for measuring
+  disease progression and treatment response." This is a real shift from
+  this thread's "mostly defensive" framing — an actual clinical MH
+  product partnership, not a safety patch. Verified directly (fetched
+  08-04) and independently corroborated via GlobeNewswire, Yahoo Finance,
+  Becker's Behavioral Health and MobiHealthNews.
+  ([HIT Consultant](https://hitconsultant.net/2026/08/04/amae-health-partners-google-health-enterprise-wearable-precision-psychiatry/)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-24 — Opened + crawled
 
 - **Thread opened** (ben-steer). ⟨steer 2026-07-24⟩

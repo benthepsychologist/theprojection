@@ -21,6 +21,38 @@ blurb: 'The data-center buildout is diverting wafer capacity to HBM — a report
   and who blinks first on capex.'
 ---
 
+## 2026-08-05 — The 2027 DRAM market closes with no room for a fourth supplier, and Apple's China hedge fails
+
+- **Apple gave up trying to qualify CXMT as a fourth DRAM supplier** —
+  months of talks collapsed because CXMT (a Pentagon-listed Chinese
+  military-linked entity) would not price below Samsung/SK Hynix, having
+  already committed its capacity to Huawei and Xiaomi at elevated rates,
+  while Senate pressure (Banks, Schumer) added regulatory-clearance risk;
+  Samsung, SK Hynix and Micron have now fully booked their 2027 output,
+  with existing customers getting only 60-70% of requested volume against
+  advance deposits.
+  ([Tech Times](https://www.techtimes.com/articles/323108/20260805/apple-failed-find-fourth-dram-supplier-2027-market-closes-completely.htm)) ⟨daily 2026-08-05⟩
+- **CXMT DRAM is already inside HP, Asus and Acer laptops sold outside the
+  US** — sold at prices matching Samsung's (adopted for supply, not
+  discount), and flagged as a fresh risk: Chinese law requires CXMT to
+  report chip vulnerabilities to Beijing's industry ministry within 48
+  hours, before notifying the PC makers using the chips.
+  ([Tech Times](https://www.techtimes.com/articles/323114/20260805/cxmt-dram-now-inside-laptops-china-learns-chip-flaws-before-pc-makers-can-patch-them.htm)) ⟨daily 2026-08-05⟩
+- **Samsung and SK Hynix are separately testing Chinese chipmaking
+  equipment (AMEC) for their own Chinese-based fabs**, hedging against a
+  further tightening of US export controls — testing reported to have
+  started roughly two years ago and now surfacing as the squeeze
+  intensifies.
+  ([Reuters](https://www.reuters.com/world/china/samsung-sk-hynix-test-chinese-chip-tools-hedge-against-us-risks-2026-08-05/)) ⟨daily 2026-08-05⟩
+- 💡 **The "who blinks first on capex" question this thread has been
+  tracking now has a concrete answer for Apple: it blinked and lost** —
+  it tried the CXMT hedge specifically to route around the Samsung/SK
+  Hynix/Micron oligopoly and couldn't get a price advantage even from the
+  sanctioned option. The 2027 sellout also sharpens the DoD-ban overhang
+  already on this thread's watch: CXMT is filling gaps for HP/Asus/Acer
+  and Huawei/Xiaomi while still being too expensive for Apple, not too
+  restricted. ⟨daily 2026-08-05⟩
+
 ## 2026-08-01 — Memory prices become large enough to move a hyperscaler's capex line
 
 - **Amazon raised FY2026 cash capex guidance to ~$220B from ~$200B on

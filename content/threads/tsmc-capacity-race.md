@@ -18,6 +18,21 @@ blurb: 'The chokepoint is cashing in: capex raised 15% to $60-64B + another $100
   Our ~90% advanced-node anchor is carried, not re-verified. Next: Q3 earnings.'
 ---
 
+## 2026-08-05 — The real constraint gets a number: TSMC pushes CoWoS front-end work out to OSATs
+
+- **TSMC is reportedly expanding outsourcing of the CoW (chip-on-wafer)
+  front-end bonding step within CoWoS packaging to OSAT partners** — ASE,
+  Amkor and SPIL are picking up the step, ordering their own
+  dicing/bonding equipment to build new lines, as Nvidia and ASIC demand
+  outstrips TSMC's own packaging capacity. This is the clearest evidence
+  yet for this thread's standing framing that the real constraint is
+  CoWoS packaging, not wafers: TrendForce puts Nvidia's 2026 wafer
+  reservation at ~800,000-850,000 wafers, **over half of total CoWoS
+  capacity**. Monthly CoWoS capacity is tracked growing from ~70,000
+  wafers/month (2025) to 130,000-140,000 by end-2026, but TrendForce
+  still projects a ~20% supply-demand gap persisting through the year.
+  ([TrendForce](https://www.trendforce.com/news/2026/08/05/news-tsmc-reportedly-expands-outsourcing-of-key-cowos-front-end-step-to-osats-amid-rising-nvidia-asic-demand/)) ⟨daily 2026-08-05⟩
+
 ## 2026-08-04 — the human toll, missing from this record for a week
 
 The 07-28 quake below was tracked in this thread only through TSMC's fab

@@ -18,6 +18,26 @@ blurb: The wave of the AI giants moving into health/MH — the cross-actor narra
   MH specifically shows up.
 ---
 
+## 2026-08-05 — A cross-actor data point: Gen Z/millennials now default to AI before a doctor
+
+- **Aflac's fourth annual Wellness Matters survey found 76% of Gen Z and
+  63% of millennials turn to AI first for health guidance, ahead of
+  seeing a professional** — versus just 3% of Gen X and 2% of boomers;
+  18% of Gen Z and 14% of millennials delay booking an appointment until
+  after exhausting AI/digital tools. This is the vendor-neutral,
+  demand-side evidence this meta-thread has been missing — the behavioral
+  shift pulling every giant into health, not any one company's product
+  move. Verified: Aflac's own survey, corroborated by the article's
+  cited figures (survey publish date 2026-08-05).
+  ([Business Journal Daily](https://businessjournaldaily.com/survey-gen-z-millennials-turn-to-ai-for-healthcare/)) ⟨daily 2026-08-05⟩
+- **The mental-health carve-out inside the same survey**: despite skipping
+  primary care (only 48% of Gen Z has a regular doctor), Gen Z is
+  comparatively more willing to see a mental-health therapist (25% have
+  engaged one) than older cohorts — the AI-first substitution effect is
+  uneven across care types, cutting deeper into primary/preventive care
+  than into therapy specifically.
+  ([Business Journal Daily](https://businessjournaldaily.com/survey-gen-z-millennials-turn-to-ai-for-healthcare/)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-28/29 — OpenAI's health push goes institutional; a HIPAA gap flagged
 
 - **Sheba Medical Center (Israel) partnered with OpenAI on what multiple

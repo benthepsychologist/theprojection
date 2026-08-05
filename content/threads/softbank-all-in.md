@@ -28,6 +28,24 @@ blurb: 'The empire''s concentration play, assembled from pieces other threads ca
   and whether Roze/ABB actually reaches IPO.'
 ---
 
+## 2026-08-05 — Arm's 17% US rally plus a SoftBank Corp beat send SoftBank Group up ~12%, one trading day ahead of the FY26 Q1 print
+
+- **SoftBank Group Corp (9984) shares jumped 11.7-13% to ¥5,840-5,841**,
+  driven by Arm surging over 17% overnight on US markets (optimism on
+  higher AI-datacenter royalties and new CPU plans) plus SoftBank Corp
+  (9434, the telecom subsidiary — a different entity from this thread's
+  Vision Fund/Arm/OpenAI holding company, per the 08-03 entity-guard
+  note) reporting Q1 operating profit of ¥302.3B, ~10% above the
+  ¥275.54B consensus, on 31% YoY AI/cloud-segment revenue growth and a
+  reaffirmed ~30% CAGR guide for AI/cloud through FY2027.
+  ([Investing.com](https://www.investing.com/news/stock-market-news/why-is-softbank-group-stock-surging-today-93CH-4836375), [TradingKey](https://www.tradingkey.com/analysis/stocks/more/262074932-softbank-openai-ipo-masayoshi-son-arm-tradingkey)) ⟨daily 2026-08-05⟩
+- **This is a pre-print sentiment rally, not the Group's own results** —
+  the SoftBank Group FY26 Q1 earnings this thread is tracking still
+  print tomorrow, 08-06, as already confirmed 08-04; today's move is
+  Arm-and-subsidiary-driven, one trading session ahead of the number
+  that actually resolves the loan-stack/AI-credit question this thread
+  watches. ⟨daily 2026-08-05⟩
+
 ## 2026-08-04 — How the bet is funded, the "Physical AI" fourth lever, and Vision Fund's real concentration ⟨crawl 2026-08-04⟩
 
 - **SoftBank sold its entire Nvidia stake — 32.1M shares, $5.83B —

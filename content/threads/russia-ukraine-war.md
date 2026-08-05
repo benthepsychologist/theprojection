@@ -21,6 +21,21 @@ blurb: 'The single largest signal in kestrel''s own mechanical world-news sweep,
   if and when that read becomes substantial enough to carry on its own.'
 ---
 
+## 2026-08-05 — Zelenskyy makes the interceptor shortage the story, not just the barrage
+
+- **The overnight barrage logged below (17 dead) is the same event —
+  new today is the framing.** Toll finalized at **17 killed, 44
+  wounded**; Russia fired 24 ballistic missiles, 4
+  hypersonic/supersonic missiles and 115 drones against Kyiv and its
+  region overnight. President Zelenskyy said directly: **"Ballistic
+  interceptors are what could have saved the lives of those killed
+  today,"** pointing at Ukraine's Patriot-interceptor shortage — not
+  just the raid itself — as the proximate cause of the toll, and
+  pressed partners for more anti-ballistic systems. This is a direct
+  hit on this thread's own watch item (Western military/financial aid
+  decisions), distinct from Monday's Patriot-licensing story.
+  ([NPR](https://www.npr.org/2026/08/05/nx-s1-5921194/russian-missile-drone-barrage)) ⟨daily 2026-08-05⟩
+
 ## 2026-08-04 — Kyiv's heaviest missile barrage in months; no interceptions reported
 
 - **24+ ballistic/anti-ship missiles plus over a hundred Shahed drones

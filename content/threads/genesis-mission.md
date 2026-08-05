@@ -14,6 +14,29 @@ blurb: 'The $5B+ cross-agency AI overlay (DOE-led; spans NSF/NIH/DoD/NASA — $5
   and whether it becomes the umbrella for nuclear-for-AI money.'
 ---
 
+## 2026-08-04 — NIST joins as a new agency; a second nuclear-AI awardee discloses its project
+
+- **NIST signed onto the Genesis Mission** — a memorandum of understanding
+  with DOE's Office of Science stands up two new AI centers under NIST's
+  "Centers for AI in Manufacturing and Critical Infrastructure"
+  (partnered with MITRE): one for manufacturing productivity (incl. a
+  two-year sprint to scale US drone production tenfold), one for
+  AI-based cyberthreat detection/remediation across power grids,
+  telecoms, water treatment, financial platforms and healthcare systems.
+  Extends the tracked agency roster beyond DOE/NSF/NIH/DoD/NASA to
+  Commerce-department NIST. Verified directly against NIST's own release.
+  ([NIST](https://www.nist.gov/news-events/news/2026/08/nist-joins-national-genesis-mission-accelerate-ai-innovation)) ⟨daily 2026-08-05⟩
+- **Fusion-energy company SHINE disclosed its own Genesis Mission
+  nuclear-AI award** — prime recipient for a Phase I project,
+  "AI-Guided Fuel Cycle Facility Optimization," with Argonne National
+  Laboratory, plus a supporting role in "Prometheus," a Phase II project
+  led by Idaho National Laboratory applying AI across the nuclear-energy
+  sector broadly. No company-specific dollar figure disclosed — this adds
+  a named private-sector nuclear-AI participant but does not resolve the
+  program's per-agency allocation question this thread is still tracking.
+  Verified directly against SHINE's release.
+  ([PR Newswire](https://www.prnewswire.com/news-releases/shine-selected-for-two-doe-genesis-mission-projects-advancing-ai-in-nuclear-fuel-recycling-302841934.html)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-30 — Fact-check: a circulating "$5B total" figure doesn't hold up
 
 - **Today's heavy recirculation is all downstream "University X wins a

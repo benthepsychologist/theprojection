@@ -17,6 +17,31 @@ blurb: Whether the Q1 2026 capex/depreciation near-parity (thrust flipping from 
   decline since the May Mubadala sale gets explained or reversed by the Q2 print.
 ---
 
+## 2026-08-05 — Q2 2026 print: the capex reversal widens further, stock falls on margin skepticism anyway
+
+- **GlobalFoundries beat its own Q2 guide** — revenue $1.786B (above the
+  $1.76B ± $25M guide, +9% sequentially, +6% YoY), non-IFRS EPS $0.46
+  (vs. ~$0.44-0.45 consensus), non-IFRS gross margin 29.9% (up from 25.2%
+  a year ago). Filed as an SEC 6-K same day; call held 8:30am ET.
+  ([SEC EDGAR 6-K](https://www.sec.gov/Archives/edgar/data/1709048/000170904826000218/globalfoundries2q2026earni.htm) ·
+  [GlobeNewswire via Manila Times](https://www.manilatimes.net/2026/08/05/tmt-newswire/globenewswire/globalfoundries-reports-second-quarter-2026-financial-results/2398805)) ⟨daily 2026-08-05⟩
+- **The capex/depreciation reversal this thread opened on is now wider,
+  not narrower**: capex $411M vs. $159M a year ago (+158% YoY), while
+  depreciation kept falling to $307M from $335M — a bigger gap than Q1's
+  already-flagged $312M-capex/$311M-D&A near-parity. Adjusted free cash
+  flow went negative (-$3M vs. +$277M a year ago). Communications
+  infrastructure & data-center revenue (silicon photonics, SiGe) rose 62%
+  YoY to $277M; management raised full-year guidance for that segment to
+  50-60% growth (from 30-40%). Q3 guide: $1.885B ± $25M revenue, $0.51 ±
+  $0.05 non-IFRS EPS. Despite the beat, shares fell ~4-5% at the open —
+  coverage attributes it to skepticism on the 30%-by-end-2026/40%-by-
+  end-2028 gross-margin targets and lingering smartphone-segment weakness
+  (smart mobile -6% YoY, automotive -10% YoY), not to anything in the
+  print itself.
+  ([TradingKey](https://www.tradingkey.com/news/earnings/262077851-tradingkey) ·
+  [Benzinga](https://www.benzinga.com/markets/earnings/26/08/60959178/globalfoundries-says-ai-data-center-business-is-still-in-the-early-innings) ·
+  [Investing.com](https://www.investing.com/news/earnings/globalfoundries-beats-revenue-estimates-but-shares-fall-4-93CH-4837259)) ⟨daily 2026-08-05⟩
+
 ## ← Backstory
 
 <!-- /crawl appends below; finding pointer goes in the heading line -->

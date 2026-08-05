@@ -26,6 +26,37 @@ blurb: 'Commercial datacentres are now deliberately struck in wartime, with publ
   ⟨ben-steer 2026-07-29⟩'
 ---
 
+## 2026-08-03 — Strike toll widens to "at least five"; first named underwriters go on record on war-risk pricing
+
+- **CNN reports the running toll has widened to "at least five" data
+  centers struck in the Gulf region**, framing it as *both* Iran and the
+  US hitting data centers in this war — not only Iran striking Western
+  hyperscalers — a wider framing than this thread has carried so far;
+  Amazon's Bahrain facility has now been hit twice (04-30 and 07-21). The
+  same report cites an IRGC target list of 29 regional tech sites naming
+  Amazon, Google, Microsoft, Nvidia **and Palantir** — Palantir wasn't in
+  this thread's recorded 03-31 name set, worth verifying against the
+  original Tasnim/Fars list rather than treating as confirmed-new (CNN's
+  citation may just be an abbreviated subset of the same 29).
+  ([CNN](https://www.cnn.com/2026/08/03/business/ai-data-centers-iran-war-oil)) ⟨daily 2026-08-05⟩
+- **First named underwriters on record about war-risk pricing** — the
+  exact effect this thread has been watching for: Marsh's US property
+  digital-infrastructure lead Joe Macejak said "some clients are looking
+  at recent events and they're thinking twice about whether they move
+  forward, and some insurers aren't comfortable taking on certain
+  risks"; MSIG USA's property head Philip Wray said data centers are
+  "giant warehouses with really expensive equipment inside" with limited
+  hardening options. First sourced confirmation of insurance-market
+  reaction, not yet a filed premium number.
+  ([CNN](https://www.cnn.com/2026/08/03/business/ai-data-centers-iran-war-oil)) ⟨daily 2026-08-05⟩
+- **Checked and ruled out: Amazon's Q2 earnings call (reported ~07-30)
+  did not address the Bahrain strikes.** CFO Brian Olsavsky's only
+  Middle East mention was generic ("heightened transportation costs
+  driven by fuel inflation from the conflict in the Middle East") — no
+  reference to AWS facilities, Bahrain or Iran by name. Closes this
+  thread's "first live disclosure test" watch item with a negative
+  finding, not a disclosure. ⟨daily 2026-08-05⟩
+
 ## 2026-07-29 — Opened
 
 - **Opened on Ben's steer** ("A. Yes. add it.") after the story surfaced

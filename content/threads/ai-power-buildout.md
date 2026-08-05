@@ -17,6 +17,22 @@ blurb: Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (S
   battles. Category meta under where-the-capex-lands.
 ---
 
+## 2026-08-05 — PJM's mirror to the Texas freeze: bring your own power, or the states cut you off
+
+- **PJM (the 13-state mid-Atlantic grid operator — separate from Texas's
+  ERCOT) rolled out an "Interim Resource Adequacy Service": data centers
+  of 50MW+ must line up their own power (bilateral deals with generators,
+  storage, demand-response) or face curtailment starting June 2027**,
+  with enforcement pushed onto individual states since PJM itself can't
+  mandate curtailment. Driven by capacity-auction costs hitting $16.4B in
+  June and 30-34GW of new data-center demand forecast by the early 2030s.
+  Full detail on the `datacenter-power-grid` child thread.
+  ([Canary Media](https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan)) ⟨daily 2026-08-05⟩
+- 💡 Same instinct as the Texas PUCT/ERCOT freeze below, independently
+  arrived at by a different grid operator in the same week — the buildout
+  is now hitting a self-supply-or-get-cut-off wall on two separate US
+  grids at once. ⟨daily 2026-08-05⟩
+
 ## 2026-08-04 — Datacenter operators tap banks for billions to unlock grid connections
 
 - **Letters-of-credit deals (~$10B currently in discussion)** meant to

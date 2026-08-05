@@ -14,6 +14,23 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
 
+## 2026-08-05 — CXMT reportedly refuses Apple's push for a lower DRAM price (moderate confidence)
+
+- **CXMT reportedly rejected an Apple approach seeking a lower supply
+  price on mobile DRAM (including LPDDR5X) for next-generation devices**,
+  insisting its quotes stay in line with — not below — Samsung and SK
+  Hynix. The framing: Chinese OEMs (Huawei, Xiaomi) have already locked
+  up CXMT capacity via premium long-term contracts, so CXMT doesn't need
+  Apple's volume, while Samsung/SK Hynix are simultaneously reallocating
+  fab capacity toward higher-margin AI memory (HBM4, LPCAMM2, enterprise
+  SSD), tightening standard-DRAM supply industry-wide — direct read-
+  through to `ai-memory-shortage`. **Confidence flag:** every path to
+  this story runs through PANews (a Chinese aggregator), attributing it
+  to Korean outlet Digital Daily via a second Chinese aggregator
+  (Gelunhui) — no tier-1 wire (Reuters/Bloomberg) pickup found. Real and
+  dated, not independently corroborated at primary-source level.
+  ([PANews](https://panews.io/articles/019fd122-b2c9-7349-af73-23014e4740b2)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-30 — Alibaba's pre-IPO stake is up ~20x
 
 - **Alibaba's pre-IPO stake in CXMT is up roughly 20x, near $20.9B** —

@@ -16,6 +16,33 @@ blurb: The grid is the binding constraint (not chips) — interconnection queues
   — the improvisation has outrun the regulatory system.
 ---
 
+## 2026-08-05 — PJM's answer to the same-week Texas freeze: bring your own power or get cut off
+
+- **PJM (the 13-state PA-to-Illinois grid operator) launched an "Interim
+  Resource Adequacy Service"**: large loads (50MW+, i.e. essentially all
+  data centers) must be registered, and must either secure their own
+  bilateral power contracts (generation, storage, demand-response) or
+  face curtailment ahead of other emergency measures once the rule bites
+  in June 2027. States/utilities enforce it — PJM itself has no authority
+  to curtail a customer directly — and can run their own "reliability
+  backstop procurement" auctions to help data centers avoid curtailment.
+  Trigger: capacity-auction costs hit $16.4B in the June auction, data
+  centers were 38% of that, and PJM projects 30-34GW of new data-center
+  demand by the early 2030s.
+  ([Canary Media](https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan)) ⟨daily 2026-08-05⟩
+- **Filed alongside a separate, more immediate fix: a one-time "backstop"
+  capacity auction**, submitted to FERC 2026-07-31, running 2026-09-30 to
+  2026-10-21, to plug a 6.8GW shortfall from PJM's last base auction —
+  can procure up to $20B in new generation capacity through 2027.
+  ([Utility Dive](https://www.utilitydive.com/news/pjm-backstop-capacity-auction-ferc-data-centers/826792/)) ⟨daily 2026-08-05⟩
+- 💡 **This thread went quiet 07-25 on the "equipment ceiling + DOJ
+  shield" verdict; the story has moved from equipment scarcity to grid
+  governance.** PJM is now doing structurally what Texas's PUCT/ERCOT
+  freeze did procedurally the same week (see `ai-power-buildout` and
+  `where-the-capex-lands`) — pushing the risk of an unbuilt or
+  under-powered site back onto the developer instead of the ratepayer.
+  ⟨daily 2026-08-05⟩
+
 ## 2026-07-24 — Opened + crawled
 
 - **Thread opened** (ben-steer). ⟨steer 2026-07-24⟩

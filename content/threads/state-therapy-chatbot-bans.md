@@ -17,6 +17,24 @@ blurb: 'The wave is ~10+ enacted instruments in two species (crawl 2026-07-22 co
   copycats.'
 ---
 
+## 2026-08-05 — The federal preemption vehicle clears its first committee test
+
+- **The CHATBOT Act (S.4407, Cruz/Schatz) advanced out of the Senate Commerce
+  Committee's kids'-online-safety markup today**, alongside the Kids Online
+  Safety Act (heading to the Senate floor after stalling in the last
+  Congress), the SCREEN Act, the Youth AI Privacy Act, and the Children's AI
+  Toy Safety Act — the concrete federal preemption vehicle this thread has
+  been watching (see the 07-31 companion-chatbot-bill entry) takes its first
+  procedural step out of committee.
+  ([Senate Commerce Executive Session 24](https://www.commerce.senate.gov/meetings/executive-session-24-08-05-2026/)) ⟨daily 2026-08-05⟩
+- **SB 903's own Assembly Appropriations hearing convened as calendared at
+  9am today, but no outcome (pass, hold-on-suspense, or fail) was confirmed
+  in this pass** — leginfo's bill-status page still showed the pre-hearing
+  07-02 action as the most recent recorded entry as of this check. A
+  dedicated pass is tracking this specifically; not calling a result here to
+  avoid a premature/conflicting entry.
+  ([California Legislature](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-05⟩
+
 ## 2026-08-04 — The SB 903 hearing is not a suspense hearing, which changes what tomorrow decides
 
 - **Re-verified on the committee's own hearings page: SB 903 is calendared

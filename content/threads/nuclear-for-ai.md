@@ -17,6 +17,38 @@ blurb: The nuclear-for-AI wave — but ~0 net-new MW power any AI datacenter bef
   2030s-weighted. Watch which actually clear licensing.
 ---
 
+## 2026-08-04 — A named hyperscaler retreats from a nuclear-adjacent site (caught 08-05)
+
+- **AWS formally withdrew its application for a ~500MW, 8-building data
+  center campus on ~2,000 acres of Constellation Energy land next to the
+  Calvert Cliffs nuclear plant in Lusby, MD** — filed 2026-05-04,
+  withdrawn 2026-08-04, no public reason given. Local reporting ties it
+  to a contentious approval fight (a commissioner's signed NDA, job
+  postings that leaked pre-announcement, and the county moving toward new
+  data-center zoning restrictions) rather than a stated power-supply
+  failure.
+  ([Southern Maryland Chronicle](https://southernmarylandchronicle.com/2026/08/04/amazon-pulls-plug-on-contentious-lusby-data-center/)) ⟨daily 2026-08-05⟩
+- 💡 **Directly on this thread's "announced-to-operational gap" watch
+  line** — this isn't a licensing failure like the thread's usual
+  SMR-timeline skepticism, but it's the same underlying pattern: a
+  nuclear-adjacent AI site that was announced and then didn't happen,
+  for reasons outside the nuclear technology itself. ⟨daily 2026-08-05⟩
+
+## 2026-08-03 — A Nvidia-linked nuclear startup raises $1B to go from prototype to production (caught 08-05)
+
+- **Valar Atomics closed a $1B Series B led by Sequoia Capital at a $6B
+  valuation**, three years after founding — money earmarked to move from
+  running a single test reactor in Utah to a production line building
+  small reactors, following a development deal signed with Nvidia in
+  June 2026.
+  ([TechCrunch](https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/)) ⟨daily 2026-08-05⟩
+- **A second, smaller nuclear-for-AI data point the same week:** Aalo
+  Atomics (already on this thread's radar via its 07-30 Crusoe tie-up)
+  reported reaching criticality in its own test reactor — a real
+  technical milestone, but still a prototype step, not new AI-serving
+  capacity. ⚠ single-source (American Nuclear Society), not
+  independently corroborated. ⟨daily 2026-08-05⟩
+
 ## 2026-07-27 — The nuclear book across the four ⟨crawl 2026-07-27⟩
 
 - Microsoft: TMI/Crane 2027 (DOE $1B, NRC draft + FERC cleared) ·

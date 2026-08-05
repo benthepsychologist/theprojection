@@ -19,6 +19,28 @@ blurb: 'Whether the ~14GW of announced OpenAI/Meta/Anthropic compute deals actua
   status, and whether the Oracle 50,000-GPU Q3-2026 rollout starts on schedule.'
 ---
 
+## 2026-08-05 — Musk declares SpaceX/xAI "exclusive to Nvidia"; Wall Street re-rates AMD upward anyway
+
+- **On SpaceX's own earnings call, Elon Musk said SpaceX and xAI are now
+  "exclusive to Nvidia"** for future AI infrastructure — "we've decided
+  to build exclusively on Nvidia because we think the Vera Rubin
+  architecture is the best architecture" — tied to a joint SpaceX/Nvidia
+  compute payload for the **Starmind AI1** orbital AI satellite. He
+  didn't name AMD, but coverage reads it as closing off SpaceX/xAI as a
+  future AMD customer, a competitive-narrative headwind landing the day
+  after AMD's Q2 beat. SpaceX itself reported $7.8B revenue (+92% YoY)
+  but a $541M loss, and fell over 7% after-hours.
+  ([BNN Bloomberg](https://www.bnnbloomberg.ca/video/shows/the-open/2026/08/05/musk-says-spacex-will-use-nvidias-chips-not-amds/) ·
+  [dnyuz](https://dnyuz.com/2026/08/05/spacex-and-nvidia-are-taking-their-relationship-exclusive-heres-what-musk-said-about-their-new-status/)) ⟨daily 2026-08-05⟩
+- **Wall Street re-rated AMD upward despite the ~9% post-earnings drop**,
+  reading it as a valuation reset rather than a fundamentals miss: Truist
+  raised its target from $478 to $594 (Buy), citing data-center revenue
+  expected to double by 2027; Bernstein raised $600 to $650 (Outperform),
+  citing the ~$13B Q3 guide beating consensus with data center projected
+  at $8.1B vs. Street's $7.7B; KeyBanc reaffirmed $725 (Overweight),
+  citing AI GPU revenue of ~$2.9B, +190% YoY.
+  ([Finbold](https://finbold.com/analysts-update-amd-stock-price-target-2/)) ⟨daily 2026-08-05⟩
+
 ## 2026-08-04 — Q2 beats and raises; the stock falls anyway
 
 - **Double beat, sold off ~8-9% after-hours on valuation/margin

@@ -17,6 +17,19 @@ blurb: Where the capex lands in CONCRETE — the specific gigawatt campuses. Sta
   the specific-sites worklist lives here.
 ---
 
+## 2026-08-04 — A named site drops out of the pipeline: AWS walks from its Maryland campus
+
+- **AWS formally withdrew its Conceptual Site Development Plan for an
+  8-building, ~2.46M sq ft, ~500MW campus in Lusby, MD** — filed
+  2026-05-04, withdrawn 2026-08-04, on ~2,000 acres of Constellation
+  Energy land next to the Calvert Cliffs nuclear plant. AWS gave no
+  public reason; local reporting points to a contentious approval fight
+  (a commissioner's signed NDA, job postings that leaked before the
+  official announcement, and county moves toward new data-center zoning
+  restrictions).
+  ([Southern Maryland Chronicle](https://southernmarylandchronicle.com/2026/08/04/amazon-pulls-plug-on-contentious-lusby-data-center/)) ⟨daily 2026-08-05⟩
+- Full nuclear-adjacency angle on the `nuclear-for-ai` thread. ⟨daily 2026-08-05⟩
+
 ## 2026-08-04 — Datacenter operators tap banks for billions to unlock grid connections
 
 - **Letters-of-credit deals (~$10B currently in discussion)** to reassure

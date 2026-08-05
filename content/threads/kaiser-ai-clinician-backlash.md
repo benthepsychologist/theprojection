@@ -18,6 +18,24 @@ blurb: 'A two-year escalation over two specific systems (the E-Visit auto-triage
   shows the template).'
 ---
 
+## 2026-08-05 — The mediation date the thread had been missing: August 11
+
+- **NUHW confirms mediation with Kaiser starts August 11** — resolving the
+  "no firm date yet" gap this timeline has carried since 07-23 (Kaiser's own
+  labor-relations page had only said NUHW wasn't available until August,
+  with no date attached). NUHW frames the deadlock around three demands:
+  AI-replacement language ("Kaiser wants to be able to replace therapists
+  with A.I."), layoff/outsourcing provisions, and a "sole discretion" clause
+  over BH clinical operating models. Kaiser's own account of its AI
+  proposal, by contrast, describes only a joint clinician/union/management
+  advisory committee on AI use — the framing gap between the two sides'
+  descriptions of the same proposal is itself part of the dispute.
+  ([NUHW, 07-27](https://home.nuhw.org/2026/07/27/san-francisco-supervisors-show-support-for-kaiser-therapists-at-special-hearing/); [Kaiser labor relations](https://about.kaiserpermanente.org/who-we-are/labor-relations/nuhw-bargaining/nuhw-messages-employees/kaiser-permanente-and-nuhw-move-to-mediation)) ⟨daily 2026-08-05⟩
+- **This is a gap catch, not a new event** — the NUHW source is dated 07-27
+  and slipped past prior passes (last_seen moved to 08-04 without an entry
+  capturing it); logged now because it directly resolves the thread's open
+  "no firm date" watch item. ⟨daily 2026-08-05⟩
+
 ## 2026-07-29 — DMHC confirms it's investigating the algorithm-triage complaint
 
 - **The National Union of Healthcare Workers filed a complaint with

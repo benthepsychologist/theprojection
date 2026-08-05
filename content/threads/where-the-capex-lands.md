@@ -21,6 +21,27 @@ blurb: 'The ~$750B question posed as a DESTINATION, not a spender: where does th
   yet — that''s the worklist.'
 ---
 
+## 2026-08-04 — The capex-to-capacity gap this thread flagged 08-03 gets its first concrete casualty (caught 08-05)
+
+- **AWS formally withdrew its application for a 2,000-acre, ~500MW data
+  center campus in Lusby, Maryland** (on Constellation Energy land next
+  to the Calvert Cliffs nuclear plant) after local opposition over
+  transparency and a commissioner's signed NDA — filed May, dead by
+  August, no reason given publicly.
+  ([Southern Maryland Chronicle](https://southernmarylandchronicle.com/2026/08/04/amazon-pulls-plug-on-contentious-lusby-data-center/)) ⟨daily 2026-08-05⟩
+- 💡 **This is the gap made concrete, not just structural:** the 08-03
+  entry below flagged that Texas's audit-and-freeze could make committed
+  capex and energised capacity diverge, with "no node for that gap yet."
+  Separately, PJM (the mid-Atlantic/13-state grid operator, unrelated to
+  Texas's ERCOT) rolled out its own version the same week — a
+  "bring-your-own-power-or-get-cut-off" rule pushing data centers to
+  self-supply or risk curtailment starting June 2027 (full detail on the
+  `datacenter-power-grid` child thread). Two different grids, same
+  instinct: hosts are now pricing in the possibility that a announced
+  site never energises. AWS's withdrawal is the first actual node for
+  that gap — a capex-committed site that didn't convert to capacity, for
+  reasons unrelated to power availability at all. ⟨daily 2026-08-05⟩
+
 ## 2026-08-03 — The destination tree acquires a gatekeeper (caught 08-04, missed on the day)
 
 - **Texas ordered an audit-and-freeze on new data-centre grid connections**,
