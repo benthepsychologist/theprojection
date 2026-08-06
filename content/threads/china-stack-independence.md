@@ -3,7 +3,7 @@ title: China's Stack
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-08-04
+last_seen: 2026-08-06
 weight: 3
 entities:
 - zhipu-ai
@@ -17,6 +17,42 @@ blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3
   rules; September US-China talks) plus Beijing''s own proposed export controls on
   its models/chips. US chip-equity reaction is the measure.'
 ---
+
+## 2026-08-04→05 — A domestic-toolmaker substitution story, a chip-stock rally, and a US import threat that boomerangs onto US suppliers
+
+- **Chinese tech firms are reportedly evaluating domestic toolmaker AMEC
+  (Advanced Micro-Fabrication Equipment) as a substitute for Applied
+  Materials' and Lam Research's etching tools** at Chinese fabs — a direct
+  substitution move against the two named US equipment makers, who are
+  themselves exposed to further export-restriction risk. ⚠ Outlet-named
+  but full article text/URL not yet retrieved (Reuters, via Bloomberg's
+  Points of Return newsletter, corroborated by China market wires);
+  flagged for a depth pass. ⟨daily 2026-08-06⟩
+- **China's AI/chip-linked stock indices rallied hard on 08-04** — CSI
+  Artificial Intelligence Index +5.9%, CSI Semiconductor +4.9%, ChiNext
+  +5.7%, STAR 50 +4.1%, CSI 300 +1.3% — on a new Artificial Analysis
+  benchmark finding that a version of DeepSeek's flagship model is "by far
+  the least expensive to run on benchmark tests among well-known models
+  globally"; JPMorgan called the prior selloff "a healthy rotation rather
+  than the end of the cycle" and expects "AI to reassert market leadership
+  into August." (Reuters wire, via Business Recorder/Free Malaysia Today,
+  08-04 17:33; full URL not yet retrieved) ⟨daily 2026-08-06⟩
+- **The FCC is reportedly weighing restrictions on Chinese-made optical
+  transceivers** — the devices linking AI servers to each other — a move
+  that would cut into the ~$31B market where China's Innolight and
+  Eoptolink hold 60%+ global share, but would also cut demand for the US
+  chips (Broadcom, Marvell digital signal processors, ~40% of
+  manufacturing cost) inside those same transceivers, extending exposure
+  to Nvidia and AMD by extension — a US policy lever that boomerangs onto
+  its own supply chain. (Benzinga, 08-05; full URL not yet retrieved)
+  ⟨daily 2026-08-06⟩
+- 💡 **Read together, these three are the same axis from three different
+  angles** — China substituting equipment, markets pricing Chinese AI cost
+  advantage, and a US policy tool that hits US firms as hard as Chinese
+  ones. None is independently a reset; the FCC transceiver angle is the
+  one worth a depth pass since it's a genuinely new mechanism, not a
+  repeat of the chip-export storyline already on this thread. ⟨daily
+  2026-08-06⟩
 
 ## 2026-08-03 — Alibaba ships Qwen3.8-Max, the first Chinese frontier-scale head-to-head vs a US model
 

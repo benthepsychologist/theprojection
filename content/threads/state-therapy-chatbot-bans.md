@@ -3,7 +3,7 @@ title: Chatbot Bans
 lens: mental-health
 status: open
 opened: 2026-07-22
-last_seen: 2026-08-04
+last_seen: 2026-08-06
 weight: 2
 entities:
 - character-ai
@@ -16,6 +16,23 @@ blurb: 'The wave is ~10+ enacted instruments in two species (crawl 2026-07-22 co
   these laws (so far only xAI v. Colorado''s discrimination law); Colorado-mandate
   copycats.'
 ---
+
+## 2026-08-06 — SB 903's August 5 hearing outcome confirmed: suspense file, not a kill
+
+- **Leginfo's own bill-history log resolves the open question left by yesterday's
+  entry: SB 903's August 5 Assembly Appropriations hearing outcome was recorded
+  as "August 5 set for first hearing. Placed on suspense file."** This is the
+  same phrasing leginfo used for the bill's earlier Senate Appropriations
+  hearing (05/04/26: "May 4 hearing: Placed on APPR. suspense file") — which was
+  followed by a second suspense-file hearing (05/14/26) where the committee
+  released the bill 7-0 to a floor vote. Read against that precedent, being
+  placed on suspense is procedural, not a fail signal: the bill is alive, with
+  its actual fate (release to the floor vs. held/died) decided at a later
+  suspense-file hearing — California's Assembly Appropriations suspense
+  hearings typically land mid-to-late August. Primary-source confirmed
+  (leginfo's own chronological bill-history record); no second outlet found
+  independently reporting the same line as of this check.
+  ([California Legislature — SB 903 bill history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-06⟩
 
 ## 2026-08-05 — The federal preemption vehicle clears its first committee test
 

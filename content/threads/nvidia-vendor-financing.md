@@ -3,7 +3,7 @@ title: Nvidia as Lender
 lens: global-capital
 status: open
 opened: 2026-07-27
-last_seen: 2026-08-04
+last_seen: 2026-08-06
 weight: 3
 entities:
 - nvidia

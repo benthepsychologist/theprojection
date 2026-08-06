@@ -3,7 +3,7 @@ title: Iran's Widening War
 lens: world-news
 status: open
 opened: 2026-07-23
-last_seen: 2026-08-04
+last_seen: 2026-08-06
 weight: 3
 entities: []
 thread_kind: story
@@ -40,6 +40,14 @@ blurb: '⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spen
   where it''s widening, what diplomacy is doing about it. Its capital-markets and
   underwriting read is a separate, deliberately distinct thread: `red-sea-oil-shock`.'
 ---
+
+## 2026-08-06 — "Agreed in principle" on the shipping-lane coordinates; still unsigned, and the real sticking point now has a name
+
+- **Iran says the Oman deal has moved from "close" to "agreed in principle"** — Foreign Ministry spokesman Baghaei said Tehran and Muscat have agreed the geographic coordinates of a navigable channel, with a joint statement "in the final stages," and state agency IRNA describing Iran and Oman as "putting the final touches on arrangements for jointly managing the passage." **Still not signed** — the statement also awaits sign-off from Iran's Supreme Leader.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-06/iran-says-deal-with-oman-on-strait-of-hormuz-agreed-in-principle) · [CBS News live updates](https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-deal/)) ⟨daily 2026-08-06⟩
+- **The gap that's kept this unsigned for four days now has a stated shape**: US officials say they "would not accept any arrangement on the waterway that would leave Iran in control" of it or collecting transit fees, while Iranian officials frame this explicitly as "a new security model," not a reopening in the traditional sense — one lawmaker said the talks "are in no way about" reopening the strait as such. Iran also continues to condition things on the US lifting its naval blockade of Iranian ports. This is the same claim/denial pattern the thread has tracked since 08-01, now with the actual disagreement named rather than just gestured at.
+  ([CBS News live updates](https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-deal/)) ⟨daily 2026-08-06⟩
+- 💡 **Still not a FLASH.** Trump's 08-05 "tomorrow or the next day" timeline has not been met as of this writing. "Agreed in principle, pending Supreme Leader approval, on a security-model arrangement that isn't a reopening" is a real step from 08-05's "close but unsigned," but it is not the signed, structural reopening that would clear the bar — and Iranian officials are now on record saying that even a signed version of this deal would not restore the strait to normal transit. Re-check the instant anything is actually signed, and re-read even a signature against what it actually restores. ⟨daily 2026-08-06⟩
 
 ## 2026-08-05 — A 60-day Hormuz deal is reportedly "close" but still unsigned; Trump pairs the optimism with a renewed strike threat
 

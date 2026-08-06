@@ -3,7 +3,7 @@ title: Russia-Ukraine War
 lens: world-news
 status: open
 opened: 2026-07-31
-last_seen: 2026-08-04
+last_seen: 2026-08-06
 weight: 3
 entities: []
 thread_kind: story
@@ -20,6 +20,41 @@ blurb: 'The single largest signal in kestrel''s own mechanical world-news sweep,
   sibling thread the same way `iran-conflict-widening` / `red-sea-oil-shock` did,
   if and when that read becomes substantial enough to carry on its own.'
 ---
+
+## 2026-08-06 — An explosive-laden drone found near a Ukrainian cargo plane on German soil
+
+- **A drone carrying explosives was found at Leipzig/Halle Airport,
+  positioned near a Ukrainian cargo aircraft reportedly carrying
+  ammunition.** German police used a disposal robot to defuse it; the
+  airport briefly halted operations. Officials described it as a possible
+  "hybrid attack" with suspected state-actor involvement — no formal
+  attribution yet. Independently corroborated by Al Jazeera, CNN, The
+  Guardian, Euronews, Reuters and DW, all dated 2026-08-06.
+  ([Al Jazeera](https://news.google.com/rss/search?q=Leipzig+Halle+airport+drone+Ukraine)) ⟨daily 2026-08-06⟩
+- 💡 **First reported direct-sabotage incident on NATO/German soil this
+  thread has tracked.** A genuine escalation in kind (covert sabotage
+  targeting war-materiel logistics inside a NATO member state), distinct
+  from the front-line combat and airspace-incursion developments this
+  thread otherwise watches. No confirmed state actor named — watch for
+  attribution. ⟨daily 2026-08-06⟩
+
+<!--
+  RULES (reframe Phase 0, 2026-07-22):
+  - Newest-first dated blocks. /daily REBUILDS today's block at the top
+    (rebuild-in-place; re-runs never duplicate). /crawl APPENDS backstory
+    at the bottom under the "## ← Backstory" divider. Two writers, two
+    zones, no collision.
+  - Every entry line ends with a provenance marker: ⟨daily YYYY-MM-DD⟩
+    (chain = that day's digest + sidecar) · ⟨crawl YYYY-MM-DD⟩ (chain =
+    finding + bundle) · ⟨seed YYYY-MM-DD⟩ (migration) · ⟨steer YYYY-MM-DD⟩
+    (Ben dictated). No entry without a marker.
+  - Entries are CURATED DEVELOPMENTS, not item mirrors — ambient matches
+    update last_seen in threads.yaml but don't earn an entry.
+  - Bullet format matches the digest rubric: bold lead phrase, one
+    sentence, one source link.
+  - Resolution closes the file with a "## YYYY-MM-DD — Resolved" entry;
+    the file is kept forever.
+-->
 
 ## 2026-08-05 — Zelenskyy makes the interceptor shortage the story, not just the barrage
 

@@ -3,7 +3,7 @@ title: Horn of Africa War
 lens: world-news
 status: open
 opened: 2026-08-04
-last_seen: 2026-08-04
+last_seen: 2026-08-06
 weight: 2
 entities: []
 thread_kind: story
@@ -19,6 +19,15 @@ blurb: 'A Tigray-war reignition with cross-border spillover, offered as a thread
   conflict above hyper-local scale is a yes, not a judgment call re-litigated per
   war.'
 ---
+
+## 2026-08-06 — The Sherarina clash ran about 11 hours and stopped; outside analysis, not confirmed reporting, names an Eritrea/Sudan angle behind it
+
+- **The fighting logged here 08-04 (Ethiopia "repelled a Sudan-originated incursion" at Sherarina) ran roughly 6am-5pm on 08-01 and had stopped by 08-02**, with no confirmed resumption through 08-06. Regional press describes the result as "calm remains fragile," not a resolution — a TPLF source said fighting was "slowing down" but gave no casualty figures.
+  ([Ethiopia Observer](https://www.ethiopiaobserver.com/2026/08/02/fighting-ends-between-federal-forces-and-tplf-but-calm-remains-fragile/)) ⟨daily 2026-08-06⟩
+- **A regional-security analysis (not primary reporting) argues the attacking TPLF-aligned unit ("Army 70," based across the border in Sudan) shows "a degree of planning, coordination, and logistical preparation inconsistent with a purely insurgent or fragmented force,"** and describes "a triangulation between TPLF hardliners, elements within the Sudanese Armed Forces (SAF), and Eritrean state actors" reflecting Eritrea's "longstanding adversarial posture toward the TPLF." **This is analytical framing, not a confirmed direct Eritrean military entry** — the thread's own stated step-change trigger — and is recorded here as such, not elevated to fact.
+  ([Horn Review](https://hornreview.org/2026/08/04/ethiopias-tigray-the-return-of-war-by-other-means/)) ⟨daily 2026-08-06⟩
+- **The EU and US urged both sides to avoid escalation and recommit to the 2022 Pretoria peace agreement.** No AU/UN mediation development beyond that general call found. ⟨daily 2026-08-06⟩
+- 💡 **No step-change on the bar this thread set at opening.** Eritrea has not directly entered as a confirmed combatant, and the fighting itself paused rather than sustained — the opposite of the "sustained rather than episodic" trajectory flagged 08-04. Worth re-checking rather than treating as resolved. ⟨daily 2026-08-06⟩
 
 ## 2026-08-04 — Opened (ben-steer)
 

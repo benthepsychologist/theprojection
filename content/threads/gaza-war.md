@@ -3,7 +3,7 @@ title: Gaza War
 lens: world-news
 status: open
 opened: 2026-08-01
-last_seen: 2026-08-03
+last_seen: 2026-08-06
 weight: 3
 entities: []
 thread_kind: story
@@ -37,6 +37,14 @@ blurb: 'Opened on Ben''s steer 2026-08-01, after a disarmament framework announc
   Ministry range as broadly accurate. Both the inflation and the undercount framings
   still circulate; report both, resolve neither.'
 ---
+
+## 2026-08-06 — IDF reports pulling back and tightening rules of engagement; eight Muslim-majority states accuse Israel of breaching international law
+
+- **A foreign official involved in implementing the disarmament roadmap said the IDF has shown restraint and pulled back operations** — "After a challenging start, we've seen some steps in the right direction," describing this as material to advancing the phased sequencing between disarmament and withdrawal. Reporting also indicates Israel has tightened its rules of engagement, now requiring approval from the IDF chief of staff before strikes proceed — a real change of posture from the near-daily strikes logged here 08-02/03.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-06-2026/)) ⟨daily 2026-08-06⟩
+- **Eight Muslim-majority nations — including the UAE, Turkey and Saudi Arabia — issued a joint statement accusing Israel's conduct of constituting "a clear breach of Israel's obligations under international law,"** saying it threatens to derail Trump's peace plan and worsens the humanitarian situation.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-06-2026/)) ⟨daily 2026-08-06⟩
+- **Netanyahu has still not accepted Hamas's disarmament proposal** — unchanged from his position recorded here 08-02, even as the operational picture above shows movement underneath the public non-acceptance. ⟨daily 2026-08-06⟩
 
 ## 2026-08-03 — Strikes continue through the peace-plan rollout; regional condemnation
 

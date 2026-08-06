@@ -3,7 +3,7 @@ title: Musk Megacap
 lens: global-capital
 status: open
 opened: 2026-07-24
-last_seen: 2026-08-04
+last_seen: 2026-08-06
 weight: 1
 entities:
 - spacex
@@ -19,6 +19,13 @@ blurb: 'SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl 2026-
   Watch: the Aug-6 lock-up (911.5M shares); Musk''s ~82% voting control; whether the
   Anthropic lease-back is real revenue or circular financing. Q7 material.'
 ---
+
+## 2026-08-06 — The lockup opens on schedule, but the largest tranche stays locked because the stock is underwater
+
+- **The insider lockup this thread has tracked since 07-23 opened as scheduled on 2026-08-06: up to 911.5M shares (~20% of restricted holdings, reported at ~$101-116B depending on the price used) became eligible for sale**, two trading days after the 08-04 earnings report as designed — SpaceX built a staggered nine-tranche unlock (rather than a single 180-day cliff) specifically to reduce the risk of a sudden selling flood. A second tranche of 319M shares is scheduled 08-12, with further tranches through year-end.
+  ([Yahoo Finance/AP](https://finance.yahoo.com/markets/stocks/articles/spacex-insider-lockup-expires-freeing-115102691.html), [Motley Fool](https://www.fool.com/investing/2026/08/05/spacexs-lockup-expires-on-aug-6-heres-why-9115-mil/)) ⟨daily 2026-08-06⟩
+- **No confirmed evidence of actual insider selling (no Form 4s or sale reports) turned up as of this check — only that the shares became eligible.** A separate, larger tranche of up to 455.8M shares stays locked entirely, because its release is conditioned on the stock trading above the $135 IPO price — SPCX closed $108.27 the day before (08-05), still ~20% under issue, so that larger block does not free up yet. A further conditional 10% tranche (already on this thread's record, requiring $175+) remains far out of reach too. ⟨daily 2026-08-06⟩
+- **Reading the two facts together tempers the "unlock wave" framing this thread flagged as the next event to watch:** the headline $101-123B eligible figure is a ceiling on what could be sold, not evidence of selling pressure realized — and the mechanism that would trigger the larger, more market-moving tranche (a price recovery above $135) is the opposite of what's happened since the 08-04 print. Musk's own shares, plus a further insider group, stay locked until mid-2027 regardless. ⟨daily 2026-08-06⟩
 
 ## 2026-08-04 — First post-IPO earnings beat cleanly; AI capex sinks the stock anyway
 

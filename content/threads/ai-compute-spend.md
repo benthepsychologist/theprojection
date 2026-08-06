@@ -3,7 +3,7 @@ title: Compute Spend
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-30
+last_seen: 2026-08-06
 weight: 3
 entities:
 - nvidia
@@ -17,6 +17,35 @@ blurb: Where the capex lands in SILICON — the $ flowing to Nvidia/AMD/TSMC/ Br
   plus the custom-silicon revolt (Jalapeño, Trainium, Maia, TPU) as the giants try
   to stop renting from Nvidia. Category meta under where-the-capex-lands.
 ---
+
+## 2026-08-04 — AMD's Q2 print: data-center revenue more than doubles, stock falls anyway
+
+- **AMD reported Q2 2026 revenue of $11.536B (record, ~+50% YoY); data-center
+  segment revenue $6.718B — up 107% YoY, now 58% of total revenue** — the
+  clearest fresh number this thread has on where AI silicon dollars land
+  outside Nvidia, directly on this thread's own watch line ("$ flowing to
+  Nvidia/AMD/TSMC/Broadcom"). Q3 guidance ~$13B (±$300M, ~41% YoY,
+  ~13% sequential). Stock fell ~7-9% after-hours despite the beat — a
+  sell-the-guide reaction, not a demand-miss one.
+  ([AMD IR](https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results)
+  · CNBC/Stock Titan corroborating) ⟨daily 2026-08-06⟩
+- **CEO Lisa Su: "Instinct deployments scale and Helios begins to ramp"** —
+  the call highlighted MI400-series launches (MI455X, MI430X) and MI350P,
+  and reiterated Anthropic's commitment to deploy up to 2GW of MI450-series
+  GPUs in AMD Helios racks. That Anthropic commitment itself reads as
+  restated on the call, not newly announced this quarter — its original
+  announcement date wasn't independently re-confirmed this pass, flagged
+  rather than dated as new. ([AMD IR](https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results)) ⟨daily 2026-08-06⟩
+- 💡 **Adjacent, not added to this thread's record:** multiple secondary
+  outlets (TechPowerUp, Tech Times, biggo.com) reported 2026-08-06 that
+  TSMC is sitting on roughly $1B / NT$32B+ of finished Apple 2nm iPhone-18
+  chips it cannot ship because of a DRAM shortage the same coverage frames
+  as AI-demand-driven — i.e. the AI memory crunch spilling into a
+  non-AI consumer supply chain. Could not confirm via a primary source or
+  a reputable direct fetch (TrendForce's own news page has no matching
+  item, direct fetches to the secondary outlets 403'd) — noted here as a
+  lead worth a primary-sourced check on a future pass, not logged as a
+  timeline fact. ⟨daily 2026-08-06⟩
 
 ## 2026-07-30 — Samsung's earnings put a number on the memory side of the silicon spend
 

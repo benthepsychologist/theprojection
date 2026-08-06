@@ -3,7 +3,7 @@ title: Son All-In
 lens: global-capital
 status: open
 opened: 2026-07-28
-last_seen: 2026-08-04
+last_seen: 2026-08-06
 weight: 2
 entities:
 - softbank
@@ -27,6 +27,17 @@ blurb: 'The empire''s concentration play, assembled from pieces other threads ca
   repricing, any forced Arm monetization, Stargate milestones, the funding-gap figure,
   and whether Roze/ABB actually reaches IPO.'
 ---
+
+## 2026-08-06 — The Q1 FY26 print lands: net profit down 18%, Arm's post-earnings slide erases ¥14T of pro-forma NAV, and the stalled $10B OpenAI-collateral loan gets signed
+
+- **SoftBank Group's Q1 FY2026 (quarter to 2026-06-30) results, released as scheduled 2026-08-06 JST: net income ¥347.3B, down 18% YoY** (from ¥421.8B) despite investment gains surging roughly 300% YoY to ¥1.86T — the gain was almost entirely ByteDance (¥2,221M of a ¥2,394M SVF1 quarterly gain) and Intel (¥1.33T of unrealized gains), not OpenAI, which recorded no valuation gain this quarter. SoftBank Group shares fell **4.41%** on the print itself, reversing the pre-print rally recorded here 08-05.
+  ([Investing.com](https://in.investing.com/news/company-news/softbank-q1-fy2026-slides-record-nav-amid-massive-ai-bets-93CH-5538941), [Daily Sabah](https://www.dailysabah.com/business/tech/softbanks-q1-profit-falls-18-as-tech-investor-gains-on-intel-stake)) ⟨daily 2026-08-06⟩
+- **This directly answers the "Arm's post-earnings slide" ledger question: quarter-end NAV hit a record ¥72.3T ($445.2B) as of 06-30, but a same-release pro-forma mark as of 08-05 shows NAV down to ¥58.3T — a ¥14T (~19%) reduction — driven specifically by Arm's own contribution to that NAV falling from ¥43.4T to ¥31.1T.** Arm's own Q1 print (07-29) beat on revenue ($1.29B, +22% YoY) and EPS ($0.45), but shares still fell ~8% same-day and continued sliding into August (−3.15% on 08-05) on a supply-demand mismatch (AGI CPU demand >$2B vs ~$1B secured supply) and smartphone-royalty softness — that slide is what shows up as the ¥14T NAV cut. ⚠ The pro-forma figure is single-sourced (Investing.com); treat as directionally confirmed, not exchange-verified.
+  ([Investing.com](https://in.investing.com/news/company-news/softbank-q1-fy2026-slides-record-nav-amid-massive-ai-bets-93CH-5538941), [TIKR](https://www.tikr.com/blog/arm-stock-fell-8-after-reporting-record-q1-earnings-revenue-of-1-29-billion-heres-the-bigger-picture)) ⟨daily 2026-08-06⟩
+- **The second ledger item resolves too: the OpenAI-stake margin loan that stayed "stalled on valuation concerns" as of 08-03 is now signed.** Bloomberg (08-06): SoftBank secured a **$10B, two-year margin loan against its OpenAI stake**, agreed 2026-08-05 with Goldman Sachs Bank USA, JPMorgan Chase Bank NA, Mizuho Securities USA, Apollo Global Funding and Sumitomo Mitsui Banking Corp, with drawdown planned this month. Combined with the $30B already funneled to OpenAI via Vision Fund 2 and the existing $40B bridge loan, **SoftBank's total OpenAI-linked commitments now exceed $60B** — cumulative OpenAI investment is reported at $32.4B as of 03-31-2026, projected to $64.6B by 10-01-2026 for roughly a 13% stake, consistent with the three $10B tranches (04-01, 07-01, planned 10-01) already on this thread's record.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-06/softbank-secures-10-billion-margin-loan-backed-by-openai-stake)) ⟨daily 2026-08-06⟩
+- **Balance-sheet detail: cash fell to ¥2.3T from ¥3.5T; loan-to-value stayed at 13%, well inside the self-imposed 25% cap** — the $30B H2-2026 obligation flagged 08-04 is still outstanding and unaddressed by this print. CFO Goto pushed back on bubble framing on the earnings call: *"There's clear demand and an overwhelming shortage of supply"* on AI datacenter buildout, *"I think we're in a very healthy state."*
+  ([Daily Sabah](https://www.dailysabah.com/business/tech/softbanks-q1-profit-falls-18-as-tech-investor-gains-on-intel-stake)) ⟨daily 2026-08-06⟩
 
 ## 2026-08-05 — Arm's 17% US rally plus a SoftBank Corp beat send SoftBank Group up ~12%, one trading day ahead of the FY26 Q1 print
 
