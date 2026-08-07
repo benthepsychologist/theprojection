@@ -3,7 +3,7 @@ title: CXMT IPO
 lens: global-capital
 status: open
 opened: 2026-07-22
-last_seen: 2026-07-28
+last_seen: 2026-08-07
 weight: 1
 entities:
 - cxmt
@@ -13,6 +13,23 @@ blurb: Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding Ch
   DRAM/HBM capacity into the global squeeze. Track first-day reception, capacity-buildout
   plans vs. the shortage, and read-through to ai-memory-shortage and china-stack-independence.
 ---
+
+## 2026-08-07 — The tracked "coming days" administration letter still hasn't landed; Congress's actual letter went to Apple instead, over a week ago
+
+- **The `cxmt-congress-letters` expectation (bipartisan letters to the
+  administration seeking a CXMT national-security probe, "coming days"
+  as of 07-28) is due this week and still hasn't produced a letter to
+  the administration.** The only bipartisan Senate letter that actually
+  materialized in this window went to a different target entirely: Sens.
+  Jim Banks (R-IN) and Chuck Schumer (D-NY), joined by Kim, Shaheen,
+  Crapo and Ricketts, wrote Apple CEO Tim Cook on 2026-07-29/30 demanding
+  Apple commit to never using CXMT or YMTC memory chips in any product
+  sold anywhere, citing both firms' place on an updated Pentagon list of
+  China-military-linked entities; reply due 08-21. Separately, the CXMT
+  Entity List addition itself remains the previously-logged June-2026
+  postponement tied to live trade talks — no new movement found this
+  check.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-29/senators-warn-apple-not-to-buy-memory-chips-from-chinese-firms), [Sen. Schumer](https://www.schumer.senate.gov/newsroom/press-releases/citing-core-national-security-and-economic-reasons-schumer-demands-apple-reject-chinese-military-linked-chips)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-05 — CXMT reportedly refuses Apple's push for a lower DRAM price (moderate confidence)
 

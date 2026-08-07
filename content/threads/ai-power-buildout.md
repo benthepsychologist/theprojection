@@ -3,7 +3,7 @@ title: Power Buildout
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-08-04
+last_seen: 2026-08-07
 weight: 3
 entities:
 - spacex

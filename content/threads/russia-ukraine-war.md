@@ -3,7 +3,7 @@ title: Russia-Ukraine War
 lens: world-news
 status: open
 opened: 2026-07-31
-last_seen: 2026-08-06
+last_seen: 2026-08-07
 weight: 3
 entities: []
 thread_kind: story

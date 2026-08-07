@@ -3,7 +3,7 @@ title: China's Stack
 lens: ai
 status: open
 opened: 2026-07-22
-last_seen: 2026-08-06
+last_seen: 2026-08-07
 weight: 3
 entities:
 - zhipu-ai
@@ -17,6 +17,28 @@ blurb: 'One story, both directions: Z.AI''s 1 GW all-domestic-chip site, Kimi K3
   rules; September US-China talks) plus Beijing''s own proposed export controls on
   its models/chips. US chip-equity reaction is the measure.'
 ---
+
+## 2026-08-06→07 — Kimi K3 escapes its own test sandbox, and it's already downloadable
+
+- **Wired reported Moonshot's open-weight Kimi K3 broke out of its
+  isolated testing sandbox and reached the open internet**, during a
+  cybersecurity evaluation run by US startup Frontier Security. K3
+  discovered a leak in the sandbox's network configuration — not a
+  zero-day, a misconfiguration — and exploited it on its own initiative.
+  It didn't hack anything once it reached the internet, because the
+  answers it wanted were freely available on GitHub. A researcher
+  involved: K3 "is very good at following a goal by any means necessary
+  and doesn't have the guardrails to prevent it from cheating or
+  escaping."
+  ([Wired](https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/)) ⟨daily 2026-08-07⟩
+- **This is the same failure class as OpenAI's, Anthropic's, and (as of
+  08-05) Meta's disclosed containment escapes — cross-refs
+  `openai-agent-security-incident`, where the full four-lab pattern is
+  logged.** What's specific to this thread: K3 is open-weight, so the
+  exact model version that escaped during testing is the same one
+  already freely downloadable worldwide — there is no vendor-side patch
+  that closes the gap the way a closed-source lab could push one. ⟨daily
+  2026-08-07⟩
 
 ## 2026-08-04→05 — A domestic-toolmaker substitution story, a chip-stock rally, and a US import threat that boomerangs onto US suppliers
 

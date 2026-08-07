@@ -3,7 +3,7 @@ title: Circular Financing
 lens: ai
 status: developing
 opened: 2026-06-28
-last_seen: 2026-08-06
+last_seen: 2026-08-07
 weight: 3
 entities:
 - nvidia
@@ -16,6 +16,23 @@ blurb: 'The systemic risk under the whole AI capital thesis: ~$800B+ of loops wh
   any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
   A correction here hits everything in radar Q1/Q2.'
 ---
+
+## 2026-08-07 — Aschenbrenner is back making large bets; Novogratz's verdict on the collapse
+
+- **Leopold Aschenbrenner is making large new bets weeks after his
+  leveraged Situational Awareness fund's forced liquidation** (the
+  ~$45B→~$10B collapse this thread logged 07-30, `sev=major`). Galaxy
+  Digital CEO Mike Novogratz called it "the single greatest, most
+  catastrophic hedge fund blowup of our careers" on a podcast this week,
+  citing the absence of "tight stops" against ~400% leverage and
+  comparing the speed institutional capital reached a 24-year-old manager
+  to LTCM's 1998 failure. He noted Aschenbrenner's still-private ~$5B
+  Anthropic stake survived the forced public-book sale and could still
+  redeem his reputation if Anthropic reaches a ~$3T IPO valuation.
+  ([Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/novogratz-calls-aschenbrenners-ai-fund-185442172.html), [NY Post](https://nypost.com/2026/08/07/business/nostradamus-of-ai-leopold-aschenbrenner-leaps-back-into-big-bets-in-latest-twist-after-spectacular-blow-up/)) ⟨daily 2026-08-07⟩
+- **This is commentary and a next-moves story, not a new incident** — the
+  collapse itself is the 07-30 entry below; logged here for continuity on
+  an already-major thread. ⟨daily 2026-08-07⟩
 
 ## 2026-08-04 — The loop's headline number jumps to $750B; Oracle's CDS stays at record
 

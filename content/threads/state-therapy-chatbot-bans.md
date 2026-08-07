@@ -3,7 +3,7 @@ title: Chatbot Bans
 lens: mental-health
 status: open
 opened: 2026-07-22
-last_seen: 2026-08-06
+last_seen: 2026-08-07
 weight: 2
 entities:
 - character-ai
@@ -16,6 +16,25 @@ blurb: 'The wave is ~10+ enacted instruments in two species (crawl 2026-07-22 co
   these laws (so far only xAI v. Colorado''s discrimination law); Colorado-mandate
   copycats.'
 ---
+
+## 2026-08-07 — SB 903 breaks into national press for the first time, framed alongside the Kaiser/NUHW fight
+
+- **An AP wire story ("As AI 'therapists' dish out advice, California
+  lawmakers try to set some limits") put SB 903 in front of a national
+  audience for the first time, syndicated to dozens of outlets (KPBS,
+  News From The States, Lost Coast Outpost, several regional papers) —
+  and it names the National Union of Healthcare Workers as one of the
+  bill's backers, explicitly tying this thread to the Kaiser labor fight
+  in the same story.** Coverage of SB 903 up to now has been
+  legislative-tracking-only (leginfo, trade press); this is the first
+  general-audience framing, and it arrives already linked to NUHW's
+  "unchecked AI in mental healthcare" campaign rather than as a standalone
+  bill story. No change to the bill's own procedural status — still on
+  the Assembly Appropriations suspense file (see 2026-08-06 entry below);
+  next action still estimated ~08-18. Wire story published evening of
+  2026-08-06 ET, ahead of the 2026-08-07 digest window; dated explicitly
+  rather than presented as breaking today.
+  ([News From The States, AP wire](https://www.newsfromthestates.com/article/ai-therapists-dish-out-advice-california-lawmakers-try-set-some-limits), [CalMatters, original](https://calmatters.org/health/mental-health/2026/08/at-therapists-chatbot-mental-health/)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-06 — SB 903's August 5 hearing outcome confirmed: suspense file, not a kill
 
