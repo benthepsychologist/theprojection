@@ -99,8 +99,11 @@
   // whole row (not just the tiny "Source" link buried in the sentence).
   function feedItem(it, showDay) {
     var row = e("div", "feed-item");
+    var threadSlug = (it.threads && it.threads.length) ? it.threads[0] : null;
+    var threadHref = threadSlug ? "/threads/" + threadSlug + "/" : null;
     var thumbLink = e("a", "feed-thumb-link");
-    if (it.url) { thumbLink.href = it.url; thumbLink.target = "_blank"; thumbLink.rel = "noopener"; }
+    if (threadHref) { thumbLink.href = threadHref; }
+    else if (it.url) { thumbLink.href = it.url; thumbLink.target = "_blank"; thumbLink.rel = "noopener"; }
     else thumbLink.href = "#";
     thumbLink.appendChild(feedThumb(it));
     row.appendChild(thumbLink);
@@ -123,10 +126,21 @@
     body.appendChild(meta);
     row.appendChild(body);
 
-    // whole-row click-through (Ben: "not enticed to click on anything") —
-    // real links/buttons inside (the source link in it.html, thread/entity
-    // chips) keep their own behavior; anywhere else opens the article.
-    if (it.url) {
+    // whole-row click-through: the primary click takes the reader to OUR
+    // thread page (same tab), where the story-by-story timeline lives —
+    // the external article stays reachable via the inline source link
+    // inside it.html. Unthreaded items have no thread page to send you to,
+    // so they fall back to the old behavior (Ben: "not enticed to click on
+    // anything") and open the external article directly. Either way, real
+    // links/buttons inside (the source link, thread/entity chips) keep
+    // their own behavior via the closest("a, button") guard.
+    if (threadHref) {
+      row.addEventListener("click", function (ev) {
+        if (ev.target.closest("a, button")) return;
+        ev.stopPropagation();
+        window.location.href = threadHref;
+      });
+    } else if (it.url) {
       row.addEventListener("click", function (ev) {
         if (ev.target.closest("a, button")) return;
         ev.stopPropagation();

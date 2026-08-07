@@ -174,7 +174,19 @@ a.tag:hover, a.tag:focus-visible{ text-decoration:underline; }
   text-transform:uppercase; color:var(--ink-faint); border-top:1px solid var(--rule);
   padding-top:1.6rem; margin:2rem 0 1rem;
 }
-.timeline h2:first-child{ border-top:none; margin-top:0; }
+.timeline h2:first-child{
+  border-top:none; margin-top:0; border-left:3px solid var(--live); padding-left:.9rem;
+}
+/* "Latest" kicker on the newest timeline entry (Ben, 2026-08-07 — thread
+   pages open story-first now) — --live is exactly what this is reserved
+   for ("changed this week" markers, see :root note), and this is that
+   marker. Understated on purpose: no box, no tint, just the kicker + the
+   left-border accent above, same restraint as .item-meta .new. */
+.timeline h2:first-child::before{
+  content:"Latest"; display:block; font-family:'IBM Plex Mono',ui-monospace,monospace;
+  font-size:.64rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--live); margin-bottom:.35rem;
+}
 .timeline strong{ color:var(--ink); }
 .timeline ul{ margin:.5rem 0 0; padding-left:1.2rem; }
 .timeline li{ margin-bottom:.4rem; }

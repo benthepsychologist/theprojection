@@ -87,6 +87,10 @@
 </div>
 
 <div id="chat-copy-root">
+<div class="timeline">
+  {{ .Content }}
+</div>
+
 {{ $evidence := slice }}
 {{ range $p.items }}{{ if in (.threads | default slice) $slug }}{{ $evidence = $evidence | append . }}{{ end }}{{ end }}
 {{ if $evidence }}
@@ -114,10 +118,6 @@
   </div>
 </div>
 {{ end }}
-
-<div class="timeline">
-  {{ .Content }}
-</div>
 </div>
 
 {{ $sibs := slice }}
