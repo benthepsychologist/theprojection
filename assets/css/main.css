@@ -195,7 +195,11 @@ a.tag:hover, a.tag:focus-visible{ text-decoration:underline; }
 /* ---------- weekly dashboard (homepage) ---------- */
 .dateline{
   font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.74rem; color:var(--ink-faint);
-  margin-top:.6rem;
+  /* Tightened 2026-08-07 (Ben: the feed on /news/ reads as below the fold)
+     — kills the <p> tag's default bottom margin outright rather than just
+     trimming it, since that default (not this rule) was the biggest single
+     gap between the dateline and the world-news strip below it. */
+  margin:.35rem 0 0;
 }
 .chip-row{ display:flex; gap:.5rem; flex-wrap:wrap; justify-content:center; margin:1.4rem 0 0; }
 .chip{
@@ -264,15 +268,18 @@ a.chip{ text-decoration:none; }
    color, no card, small type. A mechanical cross-spectrum volume fact,
    not an alert — "on the radar, not drowning out my real targets." */
 .world-news{
-  max-width:var(--max-width); margin:1.1rem auto 0; padding:0 1.5rem;
-  font-size:.82rem; line-height:1.6;
+  /* Tightened 2026-08-07 alongside .dateline above — same "above the feed"
+     rhythm pass, this strip's own margin/padding/row-spacing trimmed, font
+     size and letter-spacing left alone so it doesn't crowd. */
+  max-width:var(--max-width); margin:.6rem auto 0; padding:0 1.5rem;
+  font-size:.82rem; line-height:1.5;
 }
 .world-news-kicker{
   font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.64rem;
   letter-spacing:.13em; text-transform:uppercase; color:var(--ink-faint);
-  margin:0 0 .35rem; padding-bottom:.35rem; border-bottom:1px dotted var(--rule);
+  margin:0 0 .25rem; padding-bottom:.25rem; border-bottom:1px dotted var(--rule);
 }
-.world-news-row{ display:flex; gap:.55rem; align-items:baseline; padding:.12rem 0; }
+.world-news-row{ display:flex; gap:.55rem; align-items:baseline; padding:.08rem 0; }
 .world-news-n{
   font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.7rem;
   color:var(--ink-faint); flex:none; min-width:4.2em;
@@ -432,6 +439,22 @@ a.chip{ text-decoration:none; }
   border-bottom:1px solid transparent; }
 .briefing a:hover{ border-bottom-color:currentColor; }
 
+/* Source link (2026-08-07) — the small "↗" appended after a bullet whose
+   text now links to our own thread page instead of the article, so the
+   original source stays one click away. Deliberately quieter than a real
+   bullet link: muted, no underline, a hair of breathing room before it.
+   Selectors repeat `.briefing`/`.readout` so this beats the plain `.briefing
+   a` / `.readout li a` rules above on specificity (two classes beat one
+   class regardless of source order), not by relying on where in the file
+   it's declared. */
+.briefing a.src-link, .readout a.src-link, a.src-link{
+  color:var(--ink-faint); text-decoration:none; border-bottom:none;
+  padding-left:.35rem; font-size:.82em; opacity:.8;
+}
+.briefing a.src-link:hover, .readout a.src-link:hover, a.src-link:hover{
+  color:var(--ink); border-bottom:none; opacity:1;
+}
+
 /* The lead — salience-ranked, deliberately heavier than section bullets so
    the ranking reads as the ranking even when a fact repeats below. */
 .briefing-lead{ list-style:none; margin:0 0 1.1rem; padding:0; }
@@ -442,6 +465,22 @@ a.chip{ text-decoration:none; }
 }
 .briefing-lead li:last-child{ border-bottom:0; }
 
+/* The rest-of-briefing disclosure (2026-08-07) — same quiet mono-caps
+   kicker idiom as .legend-wrap summary / .other-actors > summary, so it
+   reads as this site's established "tap to expand" convention rather than
+   a new one. Native <details>, no JS: the marker stays the browser
+   default triangle, same choice already made for those two. */
+.briefing-more{ margin-top:1rem; }
+.briefing-more summary{
+  cursor:pointer; display:flex; align-items:center; gap:.4rem;
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.68rem;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--ink-faint);
+  padding:.5rem 0; border-top:1px solid var(--rule);
+}
+.briefing-more summary:hover{ color:var(--ink); }
+.briefing-more[open] summary{
+  margin-bottom:.9rem; border-bottom:1px solid var(--rule); padding-bottom:.6rem;
+}
 .briefing-sections{ display:grid; gap:1rem 2rem; }
 .briefing-section ul{ list-style:none; margin:0; padding:0; }
 .briefing-section li{
@@ -510,13 +549,27 @@ a.chip{ text-decoration:none; }
 /* ---------- feed cards (the item, not the thread) ---------- */
 .feed-list{ margin-top:.8rem; display:flex; flex-direction:column; gap:.9rem; }
 .feed-item{
-  display:flex; gap:.9rem; align-items:flex-start; padding:.6rem; margin:0 -.6rem;
-  border-radius:6px; transition:background .12s ease; cursor:pointer;
+  display:flex; gap:1.1rem; align-items:flex-start; padding:.7rem .8rem;
+  margin:0 -.6rem; border-radius:6px; border-left:3px solid transparent;
+  transition:background .12s ease, transform .12s ease, box-shadow .12s ease;
+  cursor:pointer;
 }
-.feed-item:hover{ background:var(--paper-dim); }
+/* Lens accent (2026-08-07) — a quiet left border reusing the same lens
+   tokens as .tag/.thread-art, so a card reads its beat before you read a
+   word of it. World News has no lens hex of its own by design (see
+   world-news.html: "deliberately the OPPOSITE of flash — no color"), so
+   its feed cards get the neutral ink-faint rule instead of an invented hue. */
+.feed-item.ai{ border-left-color:var(--lens-ai); }
+.feed-item.global-capital{ border-left-color:var(--lens-global-capital); }
+.feed-item.mental-health{ border-left-color:var(--lens-mh); }
+.feed-item.world-news{ border-left-color:var(--ink-faint); }
+.feed-item:hover{
+  background:var(--paper-dim); transform:translateY(-2px);
+  box-shadow:0 8px 22px -16px color-mix(in srgb, var(--ink) 45%, transparent);
+}
 .feed-thumb-link{ flex:none; display:block; }
 .feed-thumb, .feed-thumb-fallback{
-  width:clamp(76px,22vw,116px); height:clamp(76px,22vw,116px); border-radius:6px;
+  width:clamp(140px,34vw,208px); height:clamp(140px,34vw,208px); border-radius:8px;
   overflow:hidden; background:var(--paper-dim); display:flex; align-items:center; justify-content:center;
 }
 .feed-thumb{ position:relative; }
@@ -531,7 +584,7 @@ a.chip{ text-decoration:none; }
 }
 .favicon-lg{ width:34%; height:34%; border-radius:6px; filter:drop-shadow(0 1px 3px rgba(0,0,0,.35)); }
 .feed-body{ flex:1; min-width:0; padding-top:.1rem; }
-.feed-body strong{ font-size:1.06rem; }
+.feed-body strong{ font-size:1.24rem; font-weight:700; line-height:1.3; color:var(--ink); }
 .feed-body p, .feed-body{ font-size:1rem; line-height:1.55; }
 .feed-item .item-meta{ margin-top:.5rem; }
 

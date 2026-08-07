@@ -98,7 +98,8 @@
   // A feed-card, not a list row — real space, one click target for the
   // whole row (not just the tiny "Source" link buried in the sentence).
   function feedItem(it, showDay) {
-    var row = e("div", "feed-item");
+    // lens class (e.g. "feed-item ai") drives the CSS left-border accent — see main.css.
+    var row = e("div", "feed-item" + (it.lens ? " " + it.lens : ""));
     var threadSlug = (it.threads && it.threads.length) ? it.threads[0] : null;
     var threadHref = threadSlug ? "/threads/" + threadSlug + "/" : null;
     var thumbLink = e("a", "feed-thumb-link");

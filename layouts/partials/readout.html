@@ -15,8 +15,15 @@
      and only when a fingerprint over the underlying inputs changes.
 
      Bullets are links (Ben: "bullet points that encourage me to click") —
-     to the source where an item has a URL, otherwise to the thread page
-     that owns it, so a bullet is never a dead end.
+     PRIMARILY to the thread page that owns the item when it has one
+     (Ben, 2026-08-07: "clicking on those stories at the top doesn't take
+     us to the thread page"), falling back to the external source when
+     there's no thread yet, so a bullet is never a dead end. Breaking/News
+     (this file) can check `.threads` directly since readouts.py stamps it
+     on every dated record; the SUMMARY bullets below have no such field
+     and keep their own url-only behavior unchanged — see briefing.html
+     for the payload-lookup version used where a bullet needs the same
+     thread-first behavior without a `.threads` field to read.
 
      SUMMARY IS STRUCTURED (Ben, 2026-07-29: "I wanted bullets and emojis
      and delight. It's still just a paragraph."). It arrives as slots this
@@ -52,9 +59,21 @@
     <ul>
       {{ range . }}
       <li>
-        {{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
-        {{ else if .threads }}<a href="/threads/{{ index .threads 0 }}/">{{ .text }}</a>
-        {{ else }}{{ .text }}{{ end }}
+        {{/* Threads-first (2026-08-07, Ben: bullets that don't land on the
+             thread page): our own thread page is the primary destination
+             whenever this item is threaded; the external source, when
+             there is one, stays one click away via the trailing src-link
+             rather than taking the primary click. Wrapped in a span so the
+             link + src-link pair stays ONE flex child of the li — .readout
+             li is `justify-content:space-between`, and without this wrapper
+             a second <a> would become its own flex item and get shoved to
+             the far edge instead of sitting right after the text. */}}
+        <span class="readout-bullet-text">
+          {{ if .threads }}
+          <a href="/threads/{{ index .threads 0 }}/">{{ .text }}</a>{{ if and .url (not (hasPrefix .url "/")) }}<a class="src-link" href="{{ .url }}" target="_blank" rel="noopener" title="original source">↗</a>{{ end }}
+          {{ else if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
+          {{ else }}{{ .text }}{{ end }}
+        </span>
       </li>
       {{ end }}
     </ul>
@@ -67,9 +86,15 @@
     <ul>
       {{ range . }}
       <li>
-        {{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
-        {{ else if .threads }}<a href="/threads/{{ index .threads 0 }}/">{{ .text }}</a>
-        {{ else }}{{ .text }}{{ end }}
+        {{/* Same threads-first priority as Breaking above, same wrapper-span
+             reason (this li adds a second flex child, .readout-day, so the
+             text pair doubly needs to stay grouped as one item). */}}
+        <span class="readout-bullet-text">
+          {{ if .threads }}
+          <a href="/threads/{{ index .threads 0 }}/">{{ .text }}</a>{{ if and .url (not (hasPrefix .url "/")) }}<a class="src-link" href="{{ .url }}" target="_blank" rel="noopener" title="original source">↗</a>{{ end }}
+          {{ else if .url }}<a href="{{ .url }}" rel="noopener">{{ .text }}</a>
+          {{ else }}{{ .text }}{{ end }}
+        </span>
         <span class="readout-day">{{ .day }}</span>
       </li>
       {{ end }}
