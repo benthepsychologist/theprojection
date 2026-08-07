@@ -3,7 +3,7 @@ title: In-House Silicon
 lens: ai
 status: open
 opened: 2026-07-24
-last_seen: 2026-07-25
+last_seen: 2026-08-06
 weight: 2
 entities:
 - google
@@ -12,6 +12,7 @@ entities:
 - meta-ai
 - openai
 - broadcom
+- anthropic
 parent: ai-compute-spend
 thread_kind: story
 blurb: The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE- only,
@@ -19,6 +20,17 @@ blurb: The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE
   demand still grows; the clearest winners are the co- design houses (Broadcom, Marvell).
   Watch whether displacement reaches frontier training.
 ---
+
+## 2026-08-06 — Anthropic joins the in-house silicon story
+
+- **Anthropic confirmed it is building an in-house AI chip-design team,
+  targeting ~50% inference-cost cuts, with Samsung scouted as a fab
+  partner** (disclosed 08-05; caught by the 08-07 finalize's coverage
+  critic — 3 of 4 benchmark newsletters carried it while this thread's
+  terms only swept the hyperscalers' chips, which is exactly why the
+  thread had gone quiet). First frontier-lab entrant on a thread that
+  had been hyperscaler-only; term and entity added.
+  ([TechCrunch](https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-05 — A fifth entrant: Anthropic starts building its own chip-design team
 

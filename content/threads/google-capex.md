@@ -18,6 +18,19 @@ blurb: '$195-205B guided for 2026 (07-22), destination traced by crawl 07-27: a 
   (Meta eval).'
 ---
 
+## 2026-08-06 — The financing side surfaces: a jumbo bond met ~$115B of demand
+
+- **Alphabet's jumbo bond sale drew an order book of roughly $115B — read
+  by Bloomberg Technology as a market referendum on AI-capex appetite,
+  landing the day after the DeepMind leadership shock cut the stock
+  4-5%** (caught by the 08-07 finalize's coverage critic; the thread's
+  terms covered capex spend but not its financing). Axios Pro Rata
+  separately led with a new Google fund/venture to commercialize Google
+  X spinouts — the other half of an Alphabet capital-structure story
+  this map had no home for. Term added; an Alphabet-capital-structure
+  thread is offered as a candidate.
+  ([Bloomberg via critic](https://www.bloomberg.com/), [Axios Pro Rata](https://www.axios.com/newsletters/axios-pro-rata)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-04 — A second, bigger debt package takes shape for Anthropic's Google-chip compute (caught 08-05)
 
 - **Blackstone has pitched a second mega debt package — an early proposal
