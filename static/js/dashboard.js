@@ -6,8 +6,11 @@
 (function () {
   "use strict";
   var el = document.getElementById("tp-payload");
-  var root = document.getElementById("dashboard");
-  if (!el || !root) return;
+  // #dashboard was retired from /news/ (2026-08-07) but this script still
+  // computes the copy-week button's data inside render() — so with no
+  // container, render into a detached node instead of bailing out.
+  var root = document.getElementById("dashboard") || document.createElement("div");
+  if (!el) return;
   var P = JSON.parse(el.textContent);
 
   var LENSES = ["ai", "money", "mental-health"];

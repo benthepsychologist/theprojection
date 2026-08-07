@@ -31,20 +31,16 @@
      flash rail -> executive summary -> today's calendar -> ranked content.
      The compact front readout still renders below the dashboard. */}}
 {{ partial "briefing.html" (dict "ctx" . "scope" "front") }}
-<div class="chip-row" role="group" aria-label="Filter by lens">
-  <span class="chip on" data-lens="all">all lenses</span>
-  {{/* these stay JS filters, not links — the beat PAGES are linked from the
-       "Feeds" row above. Wrapping the label in an anchor here would
-       navigate on click and kill the in-page filter these chips drive. */}}
-  <span class="chip" data-lens="ai">AI</span>
-  <span class="chip" data-lens="global-capital">Global Capital</span>
-  <span class="chip" data-lens="mental-health">Mental Health</span>
-</div>
+{{/* The card feed, its lens filter chips, and the duplicate compact readout
+     were RETIRED here 2026-08-07 (Ben: "the cards... can be retired... we
+     want the STORIES of the day up top, linked to our summarized story
+     page, and that's all"). The brief above is the page; per-lens reading
+     surfaces live at /news/<lens>/ via the Feeds row. dashboard.js stays
+     loaded below because it also powers the copy-week button — it renders
+     into a detached node when #dashboard is absent. */}}
 <div style="text-align:center; margin-top:.9rem;">
   <button class="copy-chat-btn" id="copy-chat-week">💬 Copy this week for AI chat</button>
 </div>
-<div id="dashboard" class="section" style="margin-top:1.6rem;"></div>
-{{ partial "readout.html" (dict "ctx" . "scope" "front") }}
 {{/* jsonify alone would get quoted-as-a-JS-string-literal by Go's
      html/template script-context auto-escaper (double-encoding — the bug
      that shipped). safeJS stops that, but it also opts out of the

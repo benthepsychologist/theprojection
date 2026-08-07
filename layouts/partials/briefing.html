@@ -76,8 +76,10 @@
   {{ end }}
 
   {{ with $b.sections }}
-  <details class="briefing-more">
-  <summary>Full briefing</summary>
+  {{/* Sections render fully visible. A same-day collapse (2026-08-07,
+       "Full briefing" <details>) was reversed hours later when Ben retired
+       the /news/ card feed: with nothing below the brief, the brief IS the
+       page, and folding its sections hid the content. */}}
   <div class="briefing-sections">
     {{ range . }}
     <section class="briefing-section">
@@ -128,15 +130,6 @@
     </section>
     {{ end }}
   </div>
-  {{/* Sections collapsed by default (2026-08-07, Ben: cards below the fold
-       on /news/) to lift the ranked feed up — but the lead ladder above
-       stays fully visible, and doctrine (AGENTS.md discipline 10: flash ->
-       exec summary -> calendar -> ranked content) is untouched: this only
-       folds content, it never reorders the page. The watch block below
-       stays visible outside this <details> — it's structurally its own
-       block already and short (1-3 lines), so folding it too would save
-       almost no height for the cost of hiding "what to keep an eye on". */}}
-  </details>
   {{ end }}
 
   {{ with $b.watch }}

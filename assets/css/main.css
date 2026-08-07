@@ -465,23 +465,7 @@ a.chip{ text-decoration:none; }
 }
 .briefing-lead li:last-child{ border-bottom:0; }
 
-/* The rest-of-briefing disclosure (2026-08-07) — same quiet mono-caps
-   kicker idiom as .legend-wrap summary / .other-actors > summary, so it
-   reads as this site's established "tap to expand" convention rather than
-   a new one. Native <details>, no JS: the marker stays the browser
-   default triangle, same choice already made for those two. */
-.briefing-more{ margin-top:1rem; }
-.briefing-more summary{
-  cursor:pointer; display:flex; align-items:center; gap:.4rem;
-  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.68rem;
-  letter-spacing:.13em; text-transform:uppercase; color:var(--ink-faint);
-  padding:.5rem 0; border-top:1px solid var(--rule);
-}
-.briefing-more summary:hover{ color:var(--ink); }
-.briefing-more[open] summary{
-  margin-bottom:.9rem; border-bottom:1px solid var(--rule); padding-bottom:.6rem;
-}
-.briefing-sections{ display:grid; gap:1rem 2rem; }
+.briefing-sections{ display:grid; gap:1rem 2rem; margin-top:1rem; }
 .briefing-section ul{ list-style:none; margin:0; padding:0; }
 .briefing-section li{
   display:flex; gap:.5rem; align-items:baseline;
