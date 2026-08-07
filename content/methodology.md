@@ -564,3 +564,47 @@ underlying government and central-bank data itself updates.
   not manufactured to pad a quiet day — so today the interpretation
   layer is a highlight reel of the clearest cases, not a reading on
   every capital-flow story that runs.
+
+---
+
+## Appendix — coverage check against a working clinical team's source list
+
+In August 2026 this feed's mental-health coverage was checked against the
+actual source list of a practicing clinical team — the sources they
+confirmed using day to day, plus a longer suggested tier they hadn't yet
+vetted. The point of the exercise: does an automated feed with a
+curation-and-critic layer actually cover what a diligent human system
+covers, and what does each side miss? Every verdict below was verified by
+live-fetching the source, not assumed.
+
+**Their confirmed daily/weekly system, mapped:**
+
+| Their source | This feed's mechanism | Verdict |
+| --- | --- | --- |
+| Daily news reading (major outlets) | Google News term sweep across every watched entity, bill, and theme, daily | ✅ superset — targeted terms vs. "I'm only looking at a snippet" |
+| Google Scholar Alerts, weekly (~75% of results not worth the time, their own estimate) | OpenAlex + Semantic Scholar term sweeps, filtered through daily curation | ✅ the noise cost is exactly what the curation layer absorbs |
+| A news knowledge-graph tool discussed but never tried | GDELT — a live collector here since July | ✅ already running |
+| LinkedIn feed + listservs | No equivalent | ❌ honest gap — walled platforms, not sweepable |
+
+**Their suggested tier, verified item by item:**
+
+| Suggested source | Status here |
+| --- | --- |
+| JAMA Psychiatry · JMIR Mental Health · npj Digital Medicine · NIMH News · STAT health-tech | ✅ live feeds; JMIR MH and npj Digital Medicine are also the critic's academic recall benchmarks |
+| The Lancet Psychiatry · J. of Consulting and Clinical Psychology | ✅ verified and added during this check |
+| Psychiatric Times · MobiHealthNews | 🚧 in the feed list but bot-walled by their publishers — covered by search fallback, a documented degradation |
+| Psychological Medicine | ⛔ Cambridge's RSS path is bot-walled on both of its product IDs (the journal's pages load fine; the feed endpoint challenges bots) — not addable today |
+| Cochrane mental-health reviews | ❌ no such feed exists to add: Cochrane retired its Common Mental Disorders review group in 2023, and the successor group publishes no feed |
+| One Mind PsyberGuide | ❌ defunct — One Mind lists it as a past program, and the old domain now hosts an unrelated supplement-marketing site trading on the retired brand |
+| PubMed/PsycInfo alerts "with search terms to be defined" | ✅ the defined terms exist here — the watchlist's standing themes and trial-registry queries are exactly that list |
+| FDA digital-health clearances | ✅ Federal Register collector + a standing clearance theme |
+| Provincial regulatory bodies (jurisdiction unconfirmed on their side) | ⬜ open on both sides — addable once a jurisdiction is named |
+
+**What the feed adds that a source list can't:** threads that accumulate
+a story across weeks instead of re-encountering it; a nightly critic that
+logs what the benchmarks caught and this feed missed (misses become
+watchlist entries automatically); a dated-expectations ledger where a
+date passing silently is itself news; and timelines a reader can audit
+back to sources. A source list tells you where to look. The pipeline
+behind this page is what looking, every day, without fatigue, actually
+requires.
