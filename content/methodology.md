@@ -147,17 +147,21 @@ questions, in three clusters.
 - **Does the evidence machine itself hold?** Contested guidelines on both
   sides of the Atlantic, Cochrane's mental-health review group retired,
   and a US research-funding shock (NIMH lost more grants than any other
-  NIH institute in the 2025 termination wave; 383 trials terminated) —
-  who referees the evidence base, and can it keep producing?
+  NIH institute in the 2025 termination wave; 383 trials terminated —
+  though Congress rejected the proposed institute consolidation and
+  budget cut in February 2026, and the grant litigation is still in the
+  courts) — who referees the evidence base, and can it keep producing?
 
 **The technology — is the science catching the deployment:**
 
 - **Do AI-therapy efficacy claims survive independent replication?** The
   first generative-AI therapy RCT reported large symptom reductions —
   against a wait-list-only control, evaluated by the lab that built it,
-  with formal critique letters published in response. The field's
-  most-quoted independent evaluator maintains no replicated evidence yet
-  shows any chatbot improves clinical outcomes.
+  with formal critique letters published in response. As of this
+  snapshot no independent replication exists (both registered trials are
+  the developer's own), while the first independent active-comparator
+  designs — including a chatbot-versus-human-therapist trial — completed
+  in 2025 and await publication.
 - **Does safety evaluation mature faster than deployment?** Benchmarks
   for AI mental-health safety now exist (models handle extreme-risk
   crisis queries reasonably and falter on intermediate-risk ones), and
@@ -168,8 +172,12 @@ questions, in three clusters.
   Engagement (attrition runs 19–28% and no one has shown more engagement
   causes better outcomes) and the payment model (the sector's defining
   collapse happened *despite* best-in-class trial evidence — evidence was
-  never the bottleneck; payment design was, and Germany's
-  performance-linked pricing reform is the live test of the fix).
+  never the bottleneck; payment design was. Germany's performance-linked
+  pricing reform is the live test of the fix, and it cannot bite before
+  its first mandatory performance-data delivery in April 2027; Medicare's
+  new digital-mental-health billing codes are live but carry no national
+  rate, so the old reimbursement failure is replaying inside Medicare's
+  own plumbing).
 - **Does the screens-and-youth causality fight ever resolve?** The
   academic dispute generates fresh rebuttals yearly rather than settling,
   while policy runs the natural experiments: a national under-16
@@ -188,7 +196,11 @@ questions, in three clusters.
   therapy-chatbot bans, an emerging FDA device framework for generative
   AI, and the EU AI Act's high-risk classification are all moving — into
   either a coherent governance regime or a compliance patchwork vendors
-  design around.
+  design around. The current read is fragmentation: seven-plus ban
+  states with zero enforcement actions anywhere, three of four federal
+  completion tracks stalled, and the EU's high-risk obligations deferred
+  to late 2027 — the billing-code track is the one lane actually
+  advancing on schedule.
 
 ### Sources & method
 
