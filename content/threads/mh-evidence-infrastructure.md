@@ -23,6 +23,41 @@ blurb: 'The machinery that produces the evidence base is under strain from three
   from the EBP therapy-science research crawl. (EBP therapy-science
   crawl, 2026-08-07) ⟨steer 2026-08-07⟩
 
+## 2026-08-07 — PHTI has gone quiet on mental health specifically
+
+- **No 2026 follow-up to PHTI's May 2025 mental-health assessment has been
+  published; PHTI's most recent 2026 output is a cross-cutting payment
+  report, and its next named assessment targets GI conditions.** No
+  published horizon date exists anywhere for the Peterson Foundation's "$50
+  million" founding commitment either — every source, including PHTI's own
+  site, calls it "initial" or "seed" funding with no stated end date.
+  ([PHTI](https://phti.org/), [PHTI assessments](https://phti.org/assessments/))
+  (wave: mh-q04) ⟨daily 2026-08-07⟩
+
+## 2026-07-23 — CHAI answers the "will it credential?" question with a deliberate no
+
+- **CHAI's Mental Health Chatbot work group (Headspace, Mental Health
+  America, National Health Council, Stanford, others) published a Best
+  Practice Guide and a Testing & Evaluation Framework for generative-AI
+  wellness/mental-health apps — CHAI's first concrete 2026 mental-health
+  output — and it explicitly is not a certification or pass/fail
+  standard.** Evidence for a "capture deferred, not resolved" reading of
+  CHAI's 2025 pivot away from its failed Assurance Labs model.
+  ([CHAI](https://www.chai.org/blog/coalition-for-health-ai-chai-releases-new-best-practice-guide-and-testing))
+  (wave: mh-q04) ⟨daily 2026-08-07⟩
+
+## 2026-07-07 — Done Global's He and Brody get the first federal prison sentences for digital-MH executives
+
+- **Judge Charles Breyer sentenced Done Global founder/CEO Ruthia He to 72
+  months (6 years) plus a $1 million fine, and clinical president David
+  Brody to 24 months (2 years) plus a $1 million fine** — the first federal
+  criminal prison sentences ever imposed on digital mental-health-company
+  executives, closing the arc DOJ opened with the June 2024 arrests. The
+  date had itself been continued once already, from an earlier April 28,
+  2026 setting.
+  ([DOJ](https://www.justice.gov/opa/pr/founderceo-and-clinical-president-digital-health-company-sentenced-8-years-90-million-scheme))
+  (wave: mh-q04) ⟨daily 2026-08-07⟩
+
 ## 2026-03 — 70+ signatories demand NICE finally update its 2011 anxiety guideline
 
 - **A March 2026 stakeholder letter with more than 70 signatories calls
@@ -30,6 +65,29 @@ blurb: 'The machinery that produces the evidence base is under strain from three
   substantively unchanged since 2011 — a live campaign, distinct from the
   already-updated (and separately contested) depression guideline below.
   ([Psychotherapy.org.uk](https://www.psychotherapy.org.uk/policy-and-research/public-policy/nice-anxiety-guideline-campaign/)) ⟨steer 2026-08-07⟩
+
+## 2026-02-03 — Congress rejects the NIH funding cut and consolidation; grant-litigation stays open on a separate track
+
+- **The FY2026 appropriations law, signed February 3, 2026, rejected the
+  administration's proposed 27-institute-to-8 NIH consolidation and the
+  $47B→$29B budget cut outright** — the structural-collapse scenario didn't
+  happen at the budget level. The grant-by-grant litigation is a separate,
+  still-open track: the First Circuit heard the guidance-side appeal
+  January 6, 2026 (following the Supreme Court's August 2025 jurisdictional
+  ruling shunting grant-termination claims to the Court of Federal Claims,
+  which can pay damages but can't force reinstatement), with no ruling yet.
+  ([ACLU](https://www.aclu.org/press-releases/federal-appeals-court-hears-case-challenging-nih-grant-terminations))
+  (wave: mh-q04) ⟨daily 2026-08-07⟩
+
+## 2026-01-20 — BACP joins the NICE anxiety-guideline campaign; NICE still hasn't replied
+
+- **The British Association for Counselling and Psychotherapy formally
+  backed the campaign to update NICE's unchanged-since-2011 anxiety
+  guideline** — escalating professional-body pressure ahead of the March
+  2026 stakeholder letter above — with no NICE response found as of this
+  check.
+  ([Psychotherapy.org.uk](https://www.psychotherapy.org.uk/policy-and-research/public-policy/nice-anxiety-guideline-campaign/))
+  (wave: mh-q04) ⟨daily 2026-08-07⟩
 
 ## 2025 — The US federal funding shock: NIMH hit hardest of any NIH institute
 

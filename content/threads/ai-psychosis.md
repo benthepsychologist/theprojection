@@ -22,6 +22,30 @@ blurb: Chatbot-linked psychosis/delusion moving from case reports toward a clini
   separate `grok-companion-harm` thread — cross-reference, don't merge.
   (EBP digital/AI-science crawl, 2026-08-07) ⟨steer 2026-08-07⟩
 
+## 2026-06-04 — Vanderbilt study is the first attempt to estimate AI-psychosis prevalence within a clinical population
+
+- **A Vanderbilt University Medical Center retrospective chart review — the
+  first step past pure case reports** — reviewed records from December 2022
+  to April 2026, keyword-matched for AI-platform mentions, to estimate
+  prevalence among patients presenting for care and characterize
+  demographic/clinical features and vulnerability in early-phase psychosis.
+  Single-site and retrospective, not population-representative — a real
+  methodological step up from clinician tallies (n=12 in the case cluster
+  below), but still short of true epidemiology.
+  ([medRxiv](https://www.medrxiv.org/content/10.64898/2026.06.04.26354939v1.full))
+  (wave: mh-q06) ⟨daily 2026-08-07⟩
+
+## 2025-12-18 — Anthropic publishes the first quantified, cross-generation safety numbers from a frontier lab
+
+- **Anthropic's own safety report shows multi-turn self-harm handling
+  improved from 56% (Opus 4.1) to 86% (Opus 4.5) appropriate, and sycophancy
+  dropped 70-85% across the same comparison** — the first instance of a
+  frontier lab publishing comparable, quantified, generation-over-generation
+  delusion/sycophancy safety numbers. Real and measurable, but still
+  vendor-graded and self-reported, not independently audited.
+  ([Anthropic](https://www.anthropic.com/news/protecting-well-being-of-users))
+  (wave: mh-q06) ⟨daily 2026-08-07⟩
+
 ## 2025 — Sycophancy research gets formally connected to delusion-reinforcement risk
 
 - **General-AI sycophancy research is now being explicitly connected to

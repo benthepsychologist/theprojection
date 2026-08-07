@@ -22,6 +22,72 @@ blurb: 'The SCIENCE track of AI therapy (the courts/legislatures track is ai-the
   thread**, seeded from the EBP digital/AI-science research crawl. Parent:
   `mh-evidence-watch`. (EBP digital/AI-science crawl, 2026-08-07) ⟨steer 2026-08-07⟩
 
+## 2026-08-07 — Registry check: Therabot still has zero independent replication
+
+- **ClinicalTrials.gov lists exactly two Therabot-branded studies and both are
+  Dartmouth's own** — the original 210-person NEJM AI trial and a new
+  single-arm feasibility spinoff (Therabot-CALM, cannabis use plus
+  anxiety/depression, no control arm). No outside lab has registered a
+  Therabot trial as of this check.
+  ([ClinicalTrials.gov NCT06013137](https://clinicaltrials.gov/study/NCT06013137),
+  [NCT06920238](https://clinicaltrials.gov/study/NCT06920238))
+  (wave: mh-q05) ⟨daily 2026-08-07⟩
+
+## 2026 — Wysa's own chief scientist co-publishes a null result on Wysa's core clinical claim
+
+- **A mixed-methods RCT of Wysa as an NHS waitlist-bridge intervention,
+  co-authored by Wysa's own chief scientist Becky Inkster, concludes "there
+  is no evidence that Wysa treats depression in this study."** Heavily
+  underpowered (76 randomized of 99 consented, 30 lost to follow-up), but a
+  genuine negative finding published with the company's own scientist's name
+  on it, not extracted by a critic.
+  ([DOI: 10.1177/00207640251415507](https://doi.org/10.1177/00207640251415507))
+  (wave: mh-q05) ⟨daily 2026-08-07⟩
+
+## 2026-01-23 — Slingshot pulls Ash from the UK over unresolved medical-device classification
+
+- **Two months after its first outcome data — an uncontrolled,
+  non-peer-reviewed observational study STAT called a study that "lands with
+  a thud" (48% of users showing minimal or no improvement, no control
+  group) — Slingshot withdrew its Ash chatbot from the UK market**, citing
+  the absence of "a clear regulatory pathway for wellbeing products like
+  ours." Ash is marketed as non-medical wellbeing, and the withdrawal reads
+  as an attempt to avoid medical-device reclassification before it's forced.
+  Slingshot has separately complained to the FDA that press coverage
+  "skewed" public risk perception.
+  (STAT News, Nov 2025 and Jan 21 2026 — no direct URL in the underlying
+  research) (wave: mh-q05) ⟨daily 2026-08-07⟩
+
+## 2025-09 — Three non-Dartmouth generative-AI RCTs complete with active or human comparators, all unpublished
+
+- **The field's first registered head-to-head chatbot-vs-human-therapist
+  design completed enrollment**: a 222-person three-arm Chinese trial
+  pitting the chatbot "Emohaa" against individual human counseling and a
+  waitlist control finished September 2025 with results still unpublished.
+  A second, University of Pennsylvania crossover RCT of the Elomia chatbot
+  against an active (not waitlist) comparator completed May 2025, also
+  unpublished. Neither trial answers the Therabot critique directly — both
+  are independent of Dartmouth — but both are the first real empirical test
+  cases of the exact "active comparator" design the Therabot critics
+  demanded.
+  ([ClinicalTrials.gov NCT06992180](https://clinicaltrials.gov/study/NCT06992180),
+  [NCT06725147](https://clinicaltrials.gov/study/NCT06725147))
+  (wave: mh-q05) ⟨daily 2026-08-07⟩
+
+## 2025-06-30 — Woebot shuts its consumer app; its FDA-track trials had already been quietly wound down 2022-24
+
+- **Woebot retired its consumer app for roughly 1.5 million historical
+  users**, with founder Alison Darcy attributing the shutdown to the cost of
+  FDA marketing authorization — but ClinicalTrials.gov shows the company's
+  FDA-breakthrough-track postpartum-depression trial and an
+  adolescent-depression RCT were both terminated by "internal company
+  decision" or enrollment difficulty between 2022 and 2024, years before the
+  public announcement. Woebot had the deepest RCT evidence base of any
+  chatbot maker in the sector and still couldn't sustain the consumer
+  product built on it.
+  ([ClinicalTrials.gov NCT05551195](https://clinicaltrials.gov/study/NCT05551195))
+  (wave: mh-q05) ⟨daily 2026-08-07⟩
+
 ## 2026-02 — VERA-MH becomes the first clinician-validated automated safety benchmark
 
 - **VERA-MH (Validation of Ethical and Responsible AI in Mental Health)**

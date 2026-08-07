@@ -20,6 +20,43 @@ blurb: Evidence is not the DTx bottleneck — payment-model design is. Pear went
   from the EBP digital/AI-science research crawl. (EBP digital/AI-science
   crawl, 2026-08-07) ⟨steer 2026-08-07⟩
 
+## 2026-07-15 — PHTI generalizes its payment-model critique beyond mental health
+
+- **PHTI's newest report, "Payment for Clinical AI," extends the identical
+  argument it made about mental-health DTx in 2025 — fee-for-service and
+  capitation both misalign incentives, "autonomous clinical AI requires new
+  payment models, not incremental modifications" — to all of clinical AI,
+  using hypertension as the case study.** The diagnosis has spread past
+  mental health even though no commercial fix has emerged anywhere it's
+  been applied; PHTI's own scope just broadened from "the mental-health DTx
+  referee" to "the payment-model referee for all of digital/AI health."
+  ([PHTI](https://phti.org/)) (wave: mh-q07) ⟨daily 2026-08-07⟩
+
+## 2026-04 — Commercial results read as continuation, not resolution: Akili's thin revenue, Click's raise-and-cuts
+
+- **Akili's OTC pivot (EndeavorOTC) generated real early traction at
+  launch, but total company revenue was still only ~$1.94M
+  trailing-twelve-months as of April 2026** — three years post-launch and
+  two years into private ownership. **Click Therapeutics (Rejoyn's maker)
+  raised a reported $50M Series D around the same month alongside reported
+  workforce cuts** — capital-raising-plus-cutting is the same pattern that
+  preceded Pear's collapse, now visible again roughly two years after
+  Rejoyn's FDA clearance.
+  ([pharmaphorum](https://pharmaphorum.com/news/akili-says-otc-switch-adhd-dtx-leads-sales-rise),
+  [Behavioral Health Business](https://bhbusiness.com/2026/04/13/click-therapeutics-lands-50m-in-series-d/))
+  (wave: mh-q07) ⟨daily 2026-08-07⟩
+
+## 2026-01-01 — Germany's DiGA re-pricing formally goes live — but no product can be re-priced until 2027
+
+- **DiGA's ≥20% outcomes-linked pricing mandate became legally live January
+  1, 2026 — but the performance data that would actually drive any
+  re-pricing isn't due to the regulator (BfArM) until April 15, 2027.**
+  Mechanically, no DiGA product has been re-priced on performance yet;
+  quarterly real-world usage data collection (AbEM) doesn't even begin
+  until Q3 2026.
+  ([Inside EU Life Sciences](https://www.insideeulifesciences.com/2026/02/03/germany-changes-rules-for-digital-health-applications/))
+  (wave: mh-q07) ⟨daily 2026-08-07⟩
+
 ## 2026 — Germany's DiGA reform ties price to outcomes
 
 - **From 2026, Germany's DiGA digital-therapeutics reimbursement scheme
@@ -41,6 +78,23 @@ blurb: Evidence is not the DTx bottleneck — payment-model design is. Pear went
   prescription DTx (DaylightRx, Rejoyn) help mainly combined with other
   care. PHTI recommends outcomes-based payment instead.
   ([MedCity News](https://medcitynews.com/2025/05/digital-mental-health-solutions/)) ⟨steer 2026-08-07⟩
+
+## 2025 — CMS's Digital Mental Health Treatment codes go live — but claims volume stays low
+
+- **CMS's DMHT HCPCS codes (G0552 device/onboarding, contractor-priced;
+  G0553 $20.06 for the first 20 minutes/month of treatment management;
+  G0554 $19.73 per additional 20 minutes) have been live since the CY2025
+  Physician Fee Schedule, but CMS's own rulemaking record acknowledges
+  claims volume remains low.** Outside counsel attributes this partly to
+  CMS never setting a national payment rate for the device itself —
+  pricing is deferred to opaque, inconsistent Medicare Administrative
+  Contractor decisions, a bureaucratic replay of the reimbursement failure
+  that sank Pear Therapeutics, now built into Medicare's own architecture.
+  CMS's 2026 proposal would extend eligibility to FDA-special-controls
+  ADHD digital therapy devices.
+  ([Nixon Law Group](https://www.nixonlawgroup.com/resources/cms-proposes-expanded-coverage-for-digital-mental-health-devicesand-seeks-input-on-broader-digital-therapeutics-use-cases),
+  [AAPC](https://www.aapc.com/blog/93026-medicare-implements-digital-mental-health-treatment-codes/))
+  (wave: mh-q07) ⟨daily 2026-08-07⟩
 
 ## 2025 — Germany's DiGA approval studies: large effects, high risk of bias
 

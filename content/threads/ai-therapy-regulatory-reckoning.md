@@ -83,6 +83,22 @@ blurb: 'The capability/approval gap for AI mental-health chatbots is being close
   `openai-health` + `bigtech-into-health`.
   ([TechCrunch](https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/)) ⟨daily 2026-07-24⟩
 
+## 2026-07-24 — Raine v. OpenAI's chatbot-death suits become a coordinated multi-case proceeding
+
+- **Raine v. OpenAI was coordinated into JCCP No. 5431 alongside four
+  sibling wrongful-death suits** (Garcia v. Character.AI, Soelberg, Peralta,
+  Gavalas v. Google) under a single judge, effective 2026-02-03 — the
+  chatbot-harm litigation front is now one coordinated proceeding, not four
+  parallel single suits. A case-management conference was held 2026-07-24
+  (Case Management Order No. 1 issued 2026-08-04), with the next conference
+  set for 2026-09-23 — still zero rulings on the merits, but real, dated
+  docket movement, and per one legal tracker the emerging shared theory is
+  "engagement-maximization is the new defective-design theory" displacing
+  Section 230 as the central fight.
+  ([lawsuitinformer.com](https://lawsuitinformer.com/raine-v-openai-lawsuit),
+  [ailawsuittracker.com](https://ailawsuittracker.com/))
+  (wave: mh-q06) ⟨daily 2026-08-07⟩
+
 ## 2026-07-23 — An incumbent claims the "safe AI" ground
 
 - **Talkspace launched "Tee," a proprietary AI mental-health guide** —

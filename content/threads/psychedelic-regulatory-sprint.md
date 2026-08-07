@@ -43,6 +43,26 @@ blurb: 'Psilocybin racing toward first-ever US approval (Compass NDA targeted Q4
   to 1-2. Compass is targeting an NDA in Q4 2026, with FDA Commissioner
   Marty Makary publicly floating an approval decision by late 2026.
   ([Medical Daily](https://www.medicaldaily.com/psilocybin-fda-priority-review-2026-compass-pathways-depression-ptsd-approval-475666)) ⟨steer 2026-08-07⟩
+- **Transcend's actual Phase 3 trial didn't start enrolling until the same
+  month it received its voucher.** EMPOWER-1 (TSND-201/methylone for PTSD,
+  n=300) began enrolling April 2026 — the regulatory fast lane opened before
+  the trial meant to justify it produced a single result; primary
+  completion isn't expected until December 2027.
+  ([ClinicalTrials.gov NCT07456696](https://clinicaltrials.gov/study/NCT07456696))
+  (wave: mh-q03) ⟨daily 2026-08-07⟩
+
+## 2026 — Neuromodulation's SAINT/SNT gets a real confirmatory trial, four years after clearance
+
+- **A proper sham-controlled RCT (Kratter et al., *World Psychiatry*)
+  replicated SAINT/SNT's effect — 50.0% remission active vs. 20.8% sham
+  (p=0.035) — four years after the single 30-patient trial that underpinned
+  FDA 510(k) clearance and nationwide commercial rollout.** The effect is
+  far more modest than the "80-90%" figure that circulated off the original
+  small trial, but it's the one somatic bet in this set where evidence has
+  actually caught up to deployment — the counter-case to psilocybin's
+  chronology problem below.
+  ([PubMed PMID 41536095](https://pubmed.ncbi.nlm.nih.gov/41536095/))
+  (wave: mh-q03) ⟨daily 2026-08-07⟩
 
 ## 2026-02 — COMPASS Pathways' second Phase 3 trial (COMP006) hits its primary endpoint
 
@@ -74,6 +94,22 @@ blurb: 'Psilocybin racing toward first-ever US approval (Compass NDA targeted Q4
   it used the episode to eventually write the new trial-design rules
   logged above (July 2026).
   ([MAPS](https://maps.org/2025/09/04/fda-public-release-of-crl/)) ⟨steer 2026-08-07⟩
+
+## 2023-01 — Compass's two pivotal Phase 3 trials fully enroll before FDA's guidance fix even existed in draft
+
+- **COMP005 started dosing January 19, 2023, and COMP006 started February
+  14, 2023 — both months before FDA's first draft psychedelic-trial
+  guidance (June 2023), and years before the final version (July 2026)
+  requiring active-placebo/expectancy-questionnaire designs.** The trials
+  could not have built in a fix that didn't exist yet. Only COMP006's
+  low-dose 1mg arm partially matches the guidance's recommended
+  active-comparator design; Compass's own CMO, Guy Goodwin, says COMP005's
+  placebo-controlled arm exists mainly to characterize safety, not
+  efficacy — "the less we peek, the better." Neither trial registered a
+  formal blinding-integrity outcome measure.
+  ([ClinicalTrials.gov NCT05624268](https://clinicaltrials.gov/study/NCT05624268),
+  [NCT05711940](https://clinicaltrials.gov/study/NCT05711940))
+  (wave: mh-q03) ⟨daily 2026-08-07⟩
 
 ## ← Backstory
 

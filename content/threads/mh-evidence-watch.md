@@ -31,6 +31,33 @@ blurb: 'The EBP umbrella — what science says makes mental-health treatment wor
   cross-platform harm story rather than an evidence-strand child.
   (two EBP research crawls, 2026-08-07) ⟨steer 2026-08-07⟩
 
+## 2026-08-07 — Ten-memo research wave completed: the strand's current state-of-knowledge baseline
+
+- **All ten standing research questions for the mental-health
+  evidence-based-practice strand were run out to dated memos on
+  2026-08-07** (`artifacts/findings/mh-q01` through `mh-q10`), extending
+  the two source EBP crawls and, where relevant, the *Evidence Gap* book
+  manuscript with what's actually new in the primary record. One line per
+  cluster verdict: **evidence** (does treatment work, does the base hold)
+  reads **flat, not falling** — response rates and funding survived
+  intact, but nothing transformative landed either; **matching** (who gets
+  what treatment) reads **administration ≠ use** — programs exist on paper
+  well ahead of whether anyone's actually being routed into the right one;
+  **somatic bets** (psychedelics, ketamine, neuromodulation) read
+  **approval outrunning methodology**, except neuromodulation, which is
+  the one bet where a confirmatory trial actually landed; and the **tech
+  cluster** (AI therapy, AI psychosis, DTx payment, social-media
+  causality) reads **replication absent** (Therabot still unreplicated),
+  **safety vendor-graded** (Anthropic's own numbers, not independently
+  audited), **payment paradox relocated** (from "will anyone pay" to "does
+  the payment mechanism that exists on paper actually function"), and
+  **causality unresolved-but-null-on-policy** (the newest, best-designed
+  studies keep landing null even as the legal/policy track moves
+  regardless). This entry is the pointer; each child thread above carries
+  its own memo's dated findings folded in directly.
+  (wave: mh-q01, mh-q02, mh-q03, mh-q04, mh-q05, mh-q06, mh-q07, mh-q08,
+  mh-q09, mh-q10) ⟨daily 2026-08-07⟩
+
 ## 2026-02 — Cuijpers state-of-the-art review: progress is cumulative, not transformative
 
 - **Fewer than 40% of people with depression, anxiety, or substance-use

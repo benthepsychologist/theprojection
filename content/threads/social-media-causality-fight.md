@@ -25,6 +25,66 @@ blurb: 'The Haidt vs. Odgers/Przybylski causality fight is generating fresh rebu
   mental health, not a specific platform-liability incident.
   (EBP digital/AI-science crawl, 2026-08-07) ⟨steer 2026-08-07⟩
 
+## 2026-08-07 — Four months on, still no published reply to the Haidt-camp rebuttal
+
+- **Checked three separate ways — the SAGE journal page itself, a
+  Platformer piece on the Haidt/Odgers fight, and general search — Vuorre,
+  Przybylski, and Odgers have not published a reply to the April 11, 2026
+  rebuttal** (below). The fight is currently one-sided in publication
+  terms: Haidt's camp has thrown the most recent punch and it sits
+  unanswered.
+  ([SAGE](https://journals.sagepub.com/doi/10.1177/21677026261425910),
+  [Platformer](https://www.platformer.news/social-media-bans-candice-odgers-haidt/))
+  (wave: mh-q08) ⟨daily 2026-08-07⟩
+
+## 2026-08-03 — A new matched-comparison US study also lands null on school phone bans
+
+- **The first US study to test school phone bans' effect on youth mental
+  health with a causal matched-comparison design (states whose pre-ban
+  trends match the treated states) found no evidence bans reduced
+  screentime or improved any of eight psychological wellbeing measures.**
+  Preliminary — only three states have enough post-ban data yet — but a
+  genuine methodological upgrade that lands in the same place as the
+  existing null studies below.
+  ([ProMarket](https://www.promarket.org/2026/08/03/school-smartphone-bans-show-no-effect-on-youth-mental-health/))
+  (wave: mh-q08) ⟨daily 2026-08-07⟩
+
+## 2026-06 — US age-verification litigation becomes a genuine circuit split, trending toward the Supreme Court
+
+- **Appellate courts are increasingly letting state social-media
+  age-verification laws take effect pending appeal, reversing what had been
+  a clean string of NetChoice trial-court wins.** Ohio's under-16
+  parental-consent law was revived by a fractured Sixth Circuit panel in
+  June 2026; Mississippi's law is live in the real world after the Supreme
+  Court declined to block it at the emergency-relief stage (Justice
+  Kavanaugh nonetheless called it "likely unconstitutional"); Florida's
+  preliminary injunction was stayed by the Eleventh Circuit in November
+  2025, with March 2026 arguments pressing NetChoice on standing rather
+  than accepting a blanket First Amendment theory. Legal observers expect
+  the Supreme Court will ultimately have to set the boundary — a track
+  running only loosely coupled to the causality debate itself.
+  ([Bloomberg Law](https://news.bloomberglaw.com/litigation/state-age-verification-law-rulings-leave-trail-of-uncertainty),
+  [BiometricUpdate](https://www.biometricupdate.com/202603/court-signals-netchoice-faces-tougher-road-on-age-check-laws))
+  (wave: mh-q08) ⟨daily 2026-08-07⟩
+
+## 2026-06 — Australia doubles penalties and expands enforcement power; evasion holds near 85%
+
+- **Legislation introduced in June 2026 doubles the maximum penalty for
+  platform non-compliance from roughly $34M to roughly $68M USD, and would
+  give the eSafety Commissioner power to compel platforms' internal
+  documents.** The regulator opened investigations into five platforms
+  (Facebook, Instagram, Snapchat, TikTok, YouTube) in March 2026; a
+  compliance review found platforms letting minors retry failed age-checks
+  repeatedly. More than 5 million accounts have been deactivated or
+  restricted since the ban took effect, yet independent tracking still
+  found roughly 85% of under-16s accessing banned platforms three months
+  in — the government's answer to weak enforcement so far has been harder
+  penalties, not a reassessment, and still no wellbeing outcome data either
+  direction.
+  ([Fortune](https://fortune.com/2026/06/27/australia-enforcement-under-16-social-media-ban-fines-maximum-penalties/),
+  [JURIST](https://www.jurist.org/news/2026/06/australia-moves-to-strengthen-under-16-social-media-ban-amid-evidence-of-enforcement-concerns/))
+  (wave: mh-q08) ⟨daily 2026-08-07⟩
+
 ## 2026-06 — Australia's under-16 ban: ~80% still accessing banned platforms at 3 months
 
 - **About three months after Australia's under-16 social-media ban took
@@ -36,6 +96,20 @@ blurb: 'The Haidt vs. Odgers/Przybylski causality fight is generating fresh rebu
   early academic assessment (University of Newcastle) found "insufficient
   evidence of any substantive early effects."
   ([The National](https://www.thenationalnews.com/future/technology/2026/06/25/age-verification-flaws-undermine-australias-social-media-ban-for-under-16s/)) ⟨steer 2026-08-07⟩
+
+## 2026 — A large within-person UK panel study also lands null on social media and mental health
+
+- **A random-intercept cross-lagged panel study of 25,629 Greater
+  Manchester adolescents across three annual waves — a design built
+  specifically to separate stable between-person differences from actual
+  within-person change, the main methodological weakness skeptics point to
+  in most existing correlational work — found no evidence that social
+  media time or gaming frequency predicted later internalizing symptoms for
+  either sex.** The single strongest new causal design surfaced this pass,
+  and it reinforces the skeptic camp with better methodology than most of
+  the pro-causation literature currently has behind it.
+  ([Journal of Public Health / Oxford Academic](https://academic.oup.com/jpubhealth/article/48/1/59/8371934))
+  (wave: mh-q08) ⟨daily 2026-08-07⟩
 
 ## 2026 — A fresh rebuttal shows the fight is still live, not settling
 
@@ -53,6 +127,22 @@ blurb: 'The Haidt vs. Odgers/Przybylski causality fight is generating fresh rebu
   — the world's first national law of its kind, and the single most
   important live test of whether legislation can fix what the causality
   debate can't resolve. ⟨steer 2026-08-07⟩
+
+## 2025 — The youth mental-health trend line is more ambiguous than either camp's framing suggests
+
+- **CDC's own YRBS trend report shows "early signs that adolescent mental
+  health is getting better" from 2021 to 2023** — a tentative reversal, not
+  a continuation, of the decade-long worsening narrative (self-reported
+  major depressive episodes among 12-17-year-olds reportedly fell from a
+  2021 peak of 20.8% to 15.4% by 2024). **The UK tells the opposite story:
+  NHS England's 2025 Mental Health Survey found 25.8% of 16-24-year-olds
+  affected by a common mental disorder, up from 18.9% in 2014** (36.1%
+  among young women) — a real, sourced, ongoing worsening trend diverging
+  from the tentative US signal. Neither the pro- nor anti-causation camp's
+  public framing currently reflects this divergence; CDC's next YRBS wave
+  (2025 data) is the concrete milestone to watch.
+  ([CDC YRBS](https://www.cdc.gov/yrbs/dstr/index.html))
+  (wave: mh-q08) ⟨daily 2026-08-07⟩
 
 ## 2025-02 — School phone bans: real academic gains, null mental-health effects
 
