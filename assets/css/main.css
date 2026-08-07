@@ -125,6 +125,16 @@ nav.primary a:hover{ text-decoration:underline; }
 .tag.ai{ color:var(--lens-ai); background:color-mix(in srgb, var(--lens-ai) 10%, transparent); }
 .tag.global-capital{ color:var(--lens-global-capital); background:color-mix(in srgb, var(--lens-global-capital) 10%, transparent); }
 .tag.mental-health{ color:var(--lens-mh); background:color-mix(in srgb, var(--lens-mh) 10%, transparent); }
+a.tag{ text-decoration:none; }
+a.tag:hover, a.tag:focus-visible{ text-decoration:underline; }
+
+/* "Feeds" row (2026-08-07) — visible navigation from the dashboard to each
+   lens's own page, distinct from the chip-row filters below it. */
+.feeds-row{ display:flex; align-items:center; justify-content:center; gap:.5rem; flex-wrap:wrap; margin:1.1rem 0 0; }
+.feeds-label{
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:.66rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-faint); margin-right:.2rem;
+}
 
 .card h3{
   font-family:'Piazzolla',Georgia,serif; font-weight:700; font-size:1.28rem;

@@ -7,7 +7,7 @@
 {{ partial "masthead.html" . }}
 
 <p class="crumb" style="max-width:var(--max-width);margin:1.2rem auto 0;padding:0 1.5rem;">
-  <a href="{{ .Site.Home.RelPermalink }}">← Projects</a></p>
+  <a href="{{ .Site.Home.RelPermalink }}">← Projects</a> · <a href="/methodology/">Methodology</a></p>
 
 {{ $p := .Site.Data.payload }}
 {{ if $p }}
@@ -17,6 +17,15 @@
 </div>
 <p class="dateline" style="text-align:center;">Week of {{ $p.week_start }} · centered on {{ $p.today }}
   · generated {{ $p.generated }} · {{ len $p.days }}/7 days in</p>
+{{/* Visible feed links — near the top, not buried below the filter chips
+     (Ben: "there's no link to the feed"). The chips below stay JS filters;
+     these are the real navigation to each lens's own page. */}}
+<div class="feeds-row">
+  <span class="feeds-label">Feeds</span>
+  <a class="tag ai" href="/news/ai/">AI</a>
+  <a class="tag global-capital" href="/news/global-capital/">Global Capital</a>
+  <a class="tag mental-health" href="/news/mental-health/">Mental Health</a>
+</div>
 {{ partial "world-news.html" . }}
 {{/* The briefing leads, per AGENTS.md discipline 10's fixed page order:
      flash rail -> executive summary -> today's calendar -> ranked content.
@@ -24,17 +33,13 @@
 {{ partial "briefing.html" (dict "ctx" . "scope" "front") }}
 <div class="chip-row" role="group" aria-label="Filter by lens">
   <span class="chip on" data-lens="all">all lenses</span>
-  {{/* these stay JS filters, not links — the beat PAGES are under /news/.
-       Wrapping the label in an anchor here would navigate on click and
-       kill the in-page filter these chips exist to drive. */}}
+  {{/* these stay JS filters, not links — the beat PAGES are linked from the
+       "Feeds" row above. Wrapping the label in an anchor here would
+       navigate on click and kill the in-page filter these chips drive. */}}
   <span class="chip" data-lens="ai">AI</span>
   <span class="chip" data-lens="global-capital">Global Capital</span>
   <span class="chip" data-lens="mental-health">Mental Health</span>
 </div>
-<p style="text-align:center;margin:.5rem 0 0;font-size:.8rem;color:var(--ink-faint);">
-  Or open a beat: <a href="/news/ai/">AI</a> ·
-  <a href="/news/global-capital/">Global Capital</a> ·
-  <a href="/news/mental-health/">Mental Health</a></p>
 <div style="text-align:center; margin-top:.9rem;">
   <button class="copy-chat-btn" id="copy-chat-week">💬 Copy this week for AI chat</button>
 </div>

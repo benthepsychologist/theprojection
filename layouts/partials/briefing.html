@@ -57,8 +57,21 @@
   <div class="briefing-sections">
     {{ range . }}
     <section class="briefing-section">
+      {{/* On the front page, sections are EXACTLY the three lenses (see the
+           header note above) — make the heading a link to that lens's own
+           feed page, so it doubles as visible navigation, not just a label.
+           Only on "front": a beat page's own sections are themes within
+           that lens, not other lenses, and have no page of their own. */}}
+      {{ $lensSlug := "" }}
+      {{ if eq $.scope "front" }}
+        {{ $heading := .heading }}
+        {{ range $slug, $l := $.ctx.Site.Params.lenses }}
+          {{ if eq $l.label $heading }}{{ $lensSlug = $slug }}{{ end }}
+        {{ end }}
+      {{ end }}
       <h3 class="briefing-heading">
-        <span class="briefing-emoji" aria-hidden="true">{{ .emoji }}</span>{{ .heading }}
+        <span class="briefing-emoji" aria-hidden="true">{{ .emoji }}</span>
+        {{ if $lensSlug }}<a href="/news/{{ $lensSlug }}/">{{ .heading }}</a>{{ else }}{{ .heading }}{{ end }}
       </h3>
       <ul>
         {{ range .bullets }}
