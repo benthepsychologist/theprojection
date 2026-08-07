@@ -3,7 +3,7 @@ title: Iran's Widening War
 lens: world-news
 status: open
 opened: 2026-07-23
-last_seen: 2026-08-06
+last_seen: 2026-08-07
 weight: 3
 entities: []
 thread_kind: story
@@ -40,6 +40,18 @@ blurb: '⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spen
   where it''s widening, what diplomacy is doing about it. Its capital-markets and
   underwriting read is a separate, deliberately distinct thread: `red-sea-oil-shock`.'
 ---
+
+## 2026-08-07 — Saudi Arabia, Turkey, and Pakistan sign the "Mecca Joint Defence Agreement"
+
+- **A trilateral mutual-defense pact, signed in Mecca and framed
+  explicitly as a response to the region's turmoil** — two major
+  regional powers binding themselves to a nuclear-armed state while the
+  Iran war's fronts (Hormuz, Israel–Lebanon) stay hot. Confirmed across
+  Reuters, BBC, NYT, Al Jazeera, Al Arabiya. A structural move in the
+  security architecture this thread tracks, cross-referenced to
+  `israel-lebanon-escalation` (opened the same day). Assessed against
+  the flash bar and judged below it (diplomatic signing, not kinetic).
+  ([Reuters](https://www.reuters.com/), [BBC](https://www.bbc.com/news)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-06 — "Agreed in principle" on the shipping-lane coordinates; still unsigned, and the real sticking point now has a name
 
